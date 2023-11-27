@@ -1,0 +1,58 @@
+"'Tela de atestados' As screen":
+
+    Container1 As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutAlignItems: =LayoutAlignItems.Stretch
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        PaddingBottom: =12
+        PaddingLeft: =12
+        PaddingRight: =12
+        PaddingTop: =12
+        Width: =Parent.Width
+        ZIndex: =1
+
+        ctnHeaderAtestados As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            DropShadow: =DropShadow.Semilight
+            Fill: =gblTema.WhiteColor
+            FillPortions: =0
+            Height: =75
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutGap: =12
+            LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingBottom: =12
+            PaddingLeft: =12
+            PaddingRight: =12
+            PaddingTop: =12
+            ZIndex: =1
+
+            ComponentLoggedUser_2 As ComponentLoggedUser:
+                ColorFromTheme: =gblTema.OffBlackColor
+                LayoutMinHeight: =640
+                LayoutMinWidth: =640
+                Y: =(Parent.Height - Self.Height) / 2
+
+            icoOpenMenu_1 As icon.Waffle:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                Color: =gblTema.AccentColor
+                DisabledBorderColor: =RGBA(245, 245, 245, 1)
+                DisabledColor: =RGBA(225, 223, 221, 1)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                FocusedBorderThickness: =4
+                Height: =36
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverColor: =RGBA(16, 110, 190, 1)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                Icon: =Icon.Waffle
+                OnSelect: |-
+                    =UpdateContext({locOpenMenu: !locOpenMenu})
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedColor: =RGBA(16, 110, 190, 1)
+                PressedFill: =RGBA(0, 0, 0, 0)
+                Width: =36
+                ZIndex: =2
+

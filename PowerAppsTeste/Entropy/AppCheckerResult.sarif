@@ -14,19 +14,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Tela inicial'.TextInput1.AccessibleLabel"
+                  "fullyQualifiedName": "'Tela de atestados'.Container1.ctnHeaderAtestados.icoOpenMenu_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Tela inicial'.TextInput1.AccessibleLabel",
+                  "fullyQualifiedName": "'Tela de atestados'.Container1.ctnHeaderAtestados.icoOpenMenu_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Tela inicial",
-                "type": "'Tela inicial'.TextInput1"
+                "module": "Tela de atestados",
+                "type": "'Tela de atestados'.Container1.ctnHeaderAtestados.icoOpenMenu_1"
               }
             }
           ],
@@ -44,19 +44,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.gblUsuarioLogado"
+                  "fullyQualifiedName": "'Tela de atestados'.Container1.ctnHeaderAtestados.icoOpenMenu_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.gblUsuarioLogado",
+                  "fullyQualifiedName": "'Tela de atestados'.Container1.ctnHeaderAtestados.icoOpenMenu_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "gblUsuarioLogado",
-                "module": "App",
-                "type": "App"
+                "member": "TabIndex",
+                "module": "Tela de atestados",
+                "type": "'Tela de atestados'.Container1.ctnHeaderAtestados.icoOpenMenu_1"
               }
             }
           ],
@@ -66,37 +66,7 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.gblTema"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.gblTema",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "gblTema",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 1
         }
       ],
@@ -123,20 +93,20 @@
               }
             },
             {
-              "id": "app-UnusedVariables",
+              "id": "acc-TabIndexShouldBeDefinedForInteractiveControl",
               "messageStrings": {
                 "issue": {
-                  "text": "Unused variable"
+                  "text": "Missing tab stop"
                 }
               },
               "properties": {
                 "componentType": "app",
                 "howToFix": [
-                  "Remove the unused variable."
+                  "Set TabIndex to 0 or greater to ensure that interactive elements have a tab stop."
                 ],
                 "level": "Medium",
-                "primaryCategory": "performance",
-                "whyFix": "This variable is declared but is not referenced by any control, so it is not needed."
+                "primaryCategory": "accessibility",
+                "whyFix": "People who use the keyboard with your app will not be able to access this element without a tab stop."
               }
             }
           ],

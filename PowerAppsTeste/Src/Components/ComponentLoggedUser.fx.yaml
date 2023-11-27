@@ -1,0 +1,42 @@
+ComponentLoggedUser As CanvasComponent:
+    ColorFromTheme: =RGBA(0, 0, 0, 1)
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =60
+    LoggedUser: =gblUsuarioLogado
+    Width: =300
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    ctnLoggedUser As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.None
+        Height: =Parent.Height
+        RadiusBottomLeft: =9
+        RadiusBottomRight: =9
+        RadiusTopLeft: =9
+        RadiusTopRight: =9
+        Width: =Parent.Width
+        ZIndex: =1
+
+        Image1 As image:
+            Height: =50
+            Image: =ComponentLoggedUser.LoggedUser.Image
+            RadiusBottomLeft: =30
+            RadiusBottomRight: =30
+            RadiusTopLeft: =30
+            RadiusTopRight: =30
+            Width: =50
+            X: =4
+            Y: =(Parent.Height - Self.Height) / 2
+            ZIndex: =1
+
+        Label1 As label:
+            Color: =ComponentLoggedUser.ColorFromTheme
+            FontWeight: =FontWeight.Bold
+            Size: =14
+            Text: =ComponentLoggedUser.LoggedUser.FullName
+            Width: =Parent.Width - Image1.Width - 12
+            X: =Image1.Width + 12
+            Y: =(Parent.Height - Self.Height) / 2
+            ZIndex: =2
+
