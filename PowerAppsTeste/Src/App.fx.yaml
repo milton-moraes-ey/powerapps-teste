@@ -1,0 +1,430 @@
+App As appinfo:
+    BackEnabled: =true
+    OnStart: |-
+        =Set(
+            gblTema,
+            {
+                OffBlackColor: ColorValue("#2E2E38"),
+                YellowColor: ColorValue("#FFE600"),
+                OffWhiteColor: ColorValue("#F6F6FA"),
+                WhiteColor: ColorValue("#FFFFFF"),
+                DarkGrayColor: ColorValue("#747480"),
+                LightGrayColor: ColorValue("#C4C4CD"),
+                AccentColor: ColorValue("#0078D4"),//#0078D4
+                LightBorderColor: ColorValue("#e6e6e6d9")
+            }
+        );
+        Set(
+            gblUsuarioLogado,
+            User()
+        );
+        ClearCollect(
+            colMenuNavegacao,
+            Table(
+                {
+                    Screen: 'Tela inicial',
+                    Label: "Home",
+                    Icon: Icon.Home
+                },
+                {
+                    Screen: 'Tela de atestados',
+                    Label: "Atestados",
+                    Icon: Icon.DocumentWithContent
+                },
+                {
+                    Screen: 'Tela de profissionais',
+                    Label: "Profissionais",
+                    Icon: Icon.People
+                },
+                {
+                    Screen: 'Tela de inteligencia de mercado',
+                    Label: "Inteligência de mercado",
+                    Icon: Icon.TrendingUpwards
+                },
+                {
+                    Screen: 'Tela de admins',
+                    Label: "Admin",
+                    Icon: Icon.Settings
+                }
+            )
+        );
+        ClearCollect(
+            colAtestados,
+            Table(
+                {
+                    NomeCliente: "Nike do Brasil Comércio e Participações LTDA 1",
+                    DataInicial: "NOV/2021",
+                    DataFinal: "DEZ-2021",
+                    Projeto: "Benchmarking de práticas de líderes de mercado",
+                    Serviço: "Auditoria sobre demonstracoes financeiras da Nike",
+                    Time: "David Pereira (Diretor executivo), Rodrigo Catani (Gerente SR), Renato Lorenço (Gerente), Fulano da Silva (Senior), Beltrano José (Staff)",
+                    LegalEntity: "Assesoria SP",
+                    Objetivo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu feugiat pretium nibh ipsum consequat nisl vel. Sit amet facilisis magna etiam tempor orci eu. Velit egestas dui id ornare arcu odio ut sem. Aliquam faucibus purus in massa tempor nec feugiat nisl. Felis bibendum ut tristique et. Volutpat blandit aliquam etiam erat. Nunc lobortis mattis aliquam faucibus purus in massa tempor. Egestas purus viverra accumsan in nisl nisi scelerisque. Viverra accumsan in nisl nisi scelerisque eu ultrices vitae. Vulputate ut pharetra sit amet aliquam id diam.",
+                    ID: "1"
+                },
+                {
+                    NomeCliente: "Nike do Brasil Comércio e Participações LTDA 2",
+                    DataInicial: "NOV/2021",
+                    DataFinal: "DEZ-2021",
+                    Projeto: "Benchmarking de práticas de líderes de mercado",
+                    Serviço: "Auditoria sobre demonstracoes financeiras da Nike",
+                    Time: "David Pereira (Diretor executivo), Rodrigo Catani (Gerente SR), Renato Lorenço (Gerente), Fulano da Silva (Senior), Beltrano José (Staff)",
+                    LegalEntity: "Assesoria SP",
+                    Objetivo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu feugiat pretium nibh ipsum consequat nisl vel. Sit amet facilisis magna etiam tempor orci eu. Velit egestas dui id ornare arcu odio ut sem. Aliquam faucibus purus in massa tempor nec feugiat nisl. Felis bibendum ut tristique et. Volutpat blandit aliquam etiam erat. Nunc lobortis mattis aliquam faucibus purus in massa tempor. Egestas purus viverra accumsan in nisl nisi scelerisque. Viverra accumsan in nisl nisi scelerisque eu ultrices vitae. Vulputate ut pharetra sit amet aliquam id diam.",
+                    ID: "2"
+                },
+                {
+                    NomeCliente: "Nike do Brasil Comércio e Participações LTDA 3",
+                    DataInicial: "NOV/2021",
+                    DataFinal: "DEZ-2021",
+                    Projeto: "Benchmarking de práticas de líderes de mercado",
+                    Serviço: "Auditoria sobre demonstracoes financeiras da Nike",
+                    Time: "David Pereira (Diretor executivo), Rodrigo Catani (Gerente SR), Renato Lorenço (Gerente), Fulano da Silva (Senior), Beltrano José (Staff)",
+                    LegalEntity: "Assesoria SP",
+                    Objetivo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu feugiat pretium nibh ipsum consequat nisl vel. Sit amet facilisis magna etiam tempor orci eu. Velit egestas dui id ornare arcu odio ut sem. Aliquam faucibus purus in massa tempor nec feugiat nisl. Felis bibendum ut tristique et. Volutpat blandit aliquam etiam erat. Nunc lobortis mattis aliquam faucibus purus in massa tempor. Egestas purus viverra accumsan in nisl nisi scelerisque. Viverra accumsan in nisl nisi scelerisque eu ultrices vitae. Vulputate ut pharetra sit amet aliquam id diam.",
+                    ID: "3"
+                },
+                {
+                    NomeCliente: "Nike do Brasil Comércio e Participações LTDA 4",
+                    DataInicial: "NOV/2021",
+                    DataFinal: "DEZ-2021",
+                    Projeto: "Benchmarking de práticas de líderes de mercado",
+                    Serviço: "Auditoria sobre demonstracoes financeiras da Nike",
+                    Time: "David Pereira (Diretor executivo), Rodrigo Catani (Gerente SR), Renato Lorenço (Gerente), Fulano da Silva (Senior), Beltrano José (Staff)",
+                    LegalEntity: "Assesoria SP",
+                    Objetivo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu feugiat pretium nibh ipsum consequat nisl vel. Sit amet facilisis magna etiam tempor orci eu. Velit egestas dui id ornare arcu odio ut sem. Aliquam faucibus purus in massa tempor nec feugiat nisl. Felis bibendum ut tristique et. Volutpat blandit aliquam etiam erat. Nunc lobortis mattis aliquam faucibus purus in massa tempor. Egestas purus viverra accumsan in nisl nisi scelerisque. Viverra accumsan in nisl nisi scelerisque eu ultrices vitae. Vulputate ut pharetra sit amet aliquam id diam.",
+                    ID: "4"
+                },
+                {
+                    NomeCliente: "Nike do Brasil Comércio e Participações LTDA 5",
+                    DataInicial: "NOV/2021",
+                    DataFinal: "DEZ-2021",
+                    Projeto: "Benchmarking de práticas de líderes de mercado",
+                    Serviço: "Auditoria sobre demonstracoes financeiras da Nike",
+                    Time: "David Pereira (Diretor executivo), Rodrigo Catani (Gerente SR), Renato Lorenço (Gerente), Fulano da Silva (Senior), Beltrano José (Staff)",
+                    LegalEntity: "Assesoria SP",
+                    Objetivo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu feugiat pretium nibh ipsum consequat nisl vel. Sit amet facilisis magna etiam tempor orci eu. Velit egestas dui id ornare arcu odio ut sem. Aliquam faucibus purus in massa tempor nec feugiat nisl. Felis bibendum ut tristique et. Volutpat blandit aliquam etiam erat. Nunc lobortis mattis aliquam faucibus purus in massa tempor. Egestas purus viverra accumsan in nisl nisi scelerisque. Viverra accumsan in nisl nisi scelerisque eu ultrices vitae. Vulputate ut pharetra sit amet aliquam id diam.",
+                    ID: "5"
+                },
+                {
+                    NomeCliente: "Nike do Brasil Comércio e Participações LTDA 6",
+                    DataInicial: "NOV/2021",
+                    DataFinal: "DEZ-2021",
+                    Projeto: "Benchmarking de práticas de líderes de mercado",
+                    Serviço: "Auditoria sobre demonstracoes financeiras da Nike",
+                    Time: "David Pereira (Diretor executivo), Rodrigo Catani (Gerente SR), Renato Lorenço (Gerente), Fulano da Silva (Senior), Beltrano José (Staff)",
+                    LegalEntity: "Assesoria SP",
+                    Objetivo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu feugiat pretium nibh ipsum consequat nisl vel. Sit amet facilisis magna etiam tempor orci eu. Velit egestas dui id ornare arcu odio ut sem. Aliquam faucibus purus in massa tempor nec feugiat nisl. Felis bibendum ut tristique et. Volutpat blandit aliquam etiam erat. Nunc lobortis mattis aliquam faucibus purus in massa tempor. Egestas purus viverra accumsan in nisl nisi scelerisque. Viverra accumsan in nisl nisi scelerisque eu ultrices vitae. Vulputate ut pharetra sit amet aliquam id diam.",
+                    ID: "6"
+                },
+                {
+                    NomeCliente: "Nike do Brasil Comércio e Participações LTDA 7",
+                    DataInicial: "NOV/2021",
+                    DataFinal: "DEZ-2021",
+                    Projeto: "Benchmarking de práticas de líderes de mercado",
+                    Serviço: "Auditoria sobre demonstracoes financeiras da Nike",
+                    Time: "David Pereira (Diretor executivo), Rodrigo Catani (Gerente SR), Renato Lorenço (Gerente), Fulano da Silva (Senior), Beltrano José (Staff)",
+                    LegalEntity: "Assesoria SP",
+                    Objetivo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu feugiat pretium nibh ipsum consequat nisl vel. Sit amet facilisis magna etiam tempor orci eu. Velit egestas dui id ornare arcu odio ut sem. Aliquam faucibus purus in massa tempor nec feugiat nisl. Felis bibendum ut tristique et. Volutpat blandit aliquam etiam erat. Nunc lobortis mattis aliquam faucibus purus in massa tempor. Egestas purus viverra accumsan in nisl nisi scelerisque. Viverra accumsan in nisl nisi scelerisque eu ultrices vitae. Vulputate ut pharetra sit amet aliquam id diam.",
+                    ID: "7"
+                },
+                {
+                    NomeCliente: "Nike do Brasil Comércio e Participações LTDA 8",
+                    DataInicial: "NOV/2021",
+                    DataFinal: "DEZ-2021",
+                    Projeto: "Benchmarking de práticas de líderes de mercado",
+                    Serviço: "Auditoria sobre demonstracoes financeiras da Nike",
+                    Time: "David Pereira (Diretor executivo), Rodrigo Catani (Gerente SR), Renato Lorenço (Gerente), Fulano da Silva (Senior), Beltrano José (Staff)",
+                    LegalEntity: "Assesoria SP",
+                    Objetivo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu feugiat pretium nibh ipsum consequat nisl vel. Sit amet facilisis magna etiam tempor orci eu. Velit egestas dui id ornare arcu odio ut sem. Aliquam faucibus purus in massa tempor nec feugiat nisl. Felis bibendum ut tristique et. Volutpat blandit aliquam etiam erat. Nunc lobortis mattis aliquam faucibus purus in massa tempor. Egestas purus viverra accumsan in nisl nisi scelerisque. Viverra accumsan in nisl nisi scelerisque eu ultrices vitae. Vulputate ut pharetra sit amet aliquam id diam.",
+                    ID: "8"
+                },
+                {
+                    NomeCliente: "Nike do Brasil Comércio e Participações LTDA 9",
+                    DataInicial: "NOV/2021",
+                    DataFinal: "DEZ-2021",
+                    Projeto: "Benchmarking de práticas de líderes de mercado",
+                    Serviço: "Auditoria sobre demonstracoes financeiras da Nike",
+                    Time: "David Pereira (Diretor executivo), Rodrigo Catani (Gerente SR), Renato Lorenço (Gerente), Fulano da Silva (Senior), Beltrano José (Staff)",
+                    LegalEntity: "Assesoria SP",
+                    Objetivo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu feugiat pretium nibh ipsum consequat nisl vel. Sit amet facilisis magna etiam tempor orci eu. Velit egestas dui id ornare arcu odio ut sem. Aliquam faucibus purus in massa tempor nec feugiat nisl. Felis bibendum ut tristique et. Volutpat blandit aliquam etiam erat. Nunc lobortis mattis aliquam faucibus purus in massa tempor. Egestas purus viverra accumsan in nisl nisi scelerisque. Viverra accumsan in nisl nisi scelerisque eu ultrices vitae. Vulputate ut pharetra sit amet aliquam id diam.",
+                    ID: "9"
+                },
+                {
+                    NomeCliente: "Nike do Brasil Comércio e Participações LTDA 10",
+                    DataInicial: "NOV/2021",
+                    DataFinal: "DEZ-2021",
+                    Projeto: "Benchmarking de práticas de líderes de mercado",
+                    Serviço: "Auditoria sobre demonstracoes financeiras da Nike",
+                    Time: "David Pereira (Diretor executivo), Rodrigo Catani (Gerente SR), Renato Lorenço (Gerente), Fulano da Silva (Senior), Beltrano José (Staff)",
+                    LegalEntity: "Assesoria SP",
+                    Objetivo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu feugiat pretium nibh ipsum consequat nisl vel. Sit amet facilisis magna etiam tempor orci eu. Velit egestas dui id ornare arcu odio ut sem. Aliquam faucibus purus in massa tempor nec feugiat nisl. Felis bibendum ut tristique et. Volutpat blandit aliquam etiam erat. Nunc lobortis mattis aliquam faucibus purus in massa tempor. Egestas purus viverra accumsan in nisl nisi scelerisque. Viverra accumsan in nisl nisi scelerisque eu ultrices vitae. Vulputate ut pharetra sit amet aliquam id diam.",
+                    ID: "10"
+                }
+            )
+        );
+        ClearCollect(
+            colProfissionaisCadastrados,
+            {
+                Name: "Milton Moraes",
+                DominioAtuacao: "Desenvolvedor Power Platform",
+                QuantidadeHoras: 1000,
+                Funcao: "Desenvolvedor",
+                Formacao: "Engenharia - Universidade Católica de Santos, 2020",
+                Certificacoes: "Certificacao A, Certificacao B, Certificacao C",
+                VinculoEmpregaticio: "Ribeirão Preto",
+                Email: "milton.moraes@br.ey.com"
+            },
+            {
+                Name: "Milton Moraes 2",
+                DominioAtuacao: "Desenvolvedor Power Platform",
+                QuantidadeHoras: 1000,
+                Funcao: "Desenvolvedor",
+                Formacao: "Engenharia - Universidade Católica de Santos, 2020",
+                Certificacoes: "Certificacao A, Certificacao B, Certificacao C",
+                VinculoEmpregaticio: "Ribeirão Preto",
+                Email: "milton.moraes@br.ey.com"
+            },
+            {
+                Name: "Milton Moraes 3",
+                DominioAtuacao: "Desenvolvedor Power Platform",
+                QuantidadeHoras: 1000,
+                Funcao: "Desenvolvedor",
+                Formacao: "Engenharia - Universidade Católica de Santos, 2020",
+                Certificacoes: "Certificacao A, Certificacao B, Certificacao C",
+                VinculoEmpregaticio: "Ribeirão Preto",
+                Email: "milton.moraes@br.ey.com"
+            },
+            {
+                Name: "Milton Moraes 4",
+                DominioAtuacao: "Desenvolvedor Power Platform",
+                QuantidadeHoras: 1000,
+                Funcao: "Desenvolvedor",
+                Formacao: "Engenharia - Universidade Católica de Santos, 2020",
+                Certificacoes: "Certificacao A, Certificacao B, Certificacao C",
+                VinculoEmpregaticio: "Ribeirão Preto",
+                Email: "milton.moraes@br.ey.com"
+            }
+        );
+        ClearCollect(
+            colEditais,
+            {
+                ID: "1",
+                Status: "NO GO",
+                Órgão: "Companhia Paranaense de Energia - COPEL",
+                UF: "PR",
+                Objeto: "Contratação de empresa especializada para o fornecimento de serviço de subscrição de solução de gerenciamento de vulnerabilidades e configurações em infraestrutura de rede e em aplicações web, incluindo serviços de implantação e serviços gerenciados contemplando gestão, monitoramento, manutenção e suporte técnico, pelo período de 36 (trinta e seis) meses.",
+                ModalidadeDeLicitacao: "Pregão eletrônico",
+                NumeroProcesso: "220068/2022",
+                ValorEstimado: "N/I",
+                Deadline: "12/07/2023",
+                Area: "Energy",
+                SL: "Consulting",
+                FOP: "",
+                PontoFocal: "Alexandre Freitas / Claudio Gonçalves",
+                RazaoNoGo: "NO GO: Revenda de licença e que abarca mais de 75% do valor da proposta. Infelizmente é NO GO.",
+                ValorApresentado: "",
+                Observacoes: "",
+                DataDoCertame: "",
+                Ata: "",
+                Contrato: "",
+                Link: ""
+            },
+            {
+                ID: "95",
+                Status: "GO",
+                Órgão: "Secretaria Municipal de Obras e Infraestrutura",
+                UF: "MG",
+                Objeto: "Avaliação Econômica, Financeira e Institucional dos serviços de Água e Esgoto do Município de Belo Horizonte ",
+                ModalidadeDeLicitacao: "Pregão eletrônico",
+                NumeroProcesso: "3",
+                ValorEstimado: "N/I",
+                Deadline: "12/07/2023",
+                Area: "GPS",
+                SL: "SAT",
+                FOP: "",
+                PontoFocal: "Gustavo Gusmão",
+                RazaoNoGo: "N/A",
+                ValorApresentado: "",
+                Observacoes: "",
+                DataDoCertame: "",
+                Ata: "",
+                Contrato: "",
+                Link: ""
+            },
+            {
+                ID: "445",
+                Status: "GO",
+                Órgão: "Sescoop",
+                UF: "PR",
+                Objeto: "Serviços de Consultoria do SESCOOP/PR",
+                ModalidadeDeLicitacao: "Credênciamento",
+                NumeroProcesso: "1",
+                ValorEstimado: "N/I",
+                Deadline: "12/07/2023",
+                Area: "GPS",
+                SL: "Consulting",
+                FOP: "Strategy & Transformation",
+                PontoFocal: "Freitas",
+                RazaoNoGo: "N/A",
+                ValorApresentado: "",
+                Observacoes: "",
+                DataDoCertame: "",
+                Ata: "",
+                Contrato: "",
+                Link: ""
+            },
+            {
+                ID: "198",
+                Status: "Entregue",
+                Órgão: "Companhia de Saneamento do Paraná - Sanepar",
+                UF: "PR",
+                Objeto: "Contratação de serviços técnicos especializados de auditoria interna baseados em riscos",
+                ModalidadeDeLicitacao: "Licitação",
+                NumeroProcesso: "09/2022",
+                ValorEstimado: "N/I",
+                Deadline: "17/11/2022",
+                Area: "P&U",
+                SL: "Consulting",
+                FOP: "Risk",
+                PontoFocal: "Claudio Gonçalves",
+                RazaoNoGo: "N/A",
+                ValorApresentado: "",
+                Observacoes: "",
+                DataDoCertame: "",
+                Ata: "",
+                Contrato: "",
+                Link: ""
+            },
+            {
+                ID: "290",
+                Status: "Entregue",
+                Órgão: "Sebrae,  - Pregão Eletrônico nº 22/2022 - Auditoria independente sobre as Demonstrações Contábeis - Prazo: 17/11/2022",
+                UF: "DF",
+                Objeto: "Auditoria independente sobre as Demonstrações Contábeis",
+                ModalidadeDeLicitacao: "Pregão eletrônico",
+                NumeroProcesso: "22",
+                ValorEstimado: "N/I",
+                Deadline: "12/07/2023",
+                Area: "GPS",
+                SL: "Assurance",
+                FOP: "",
+                PontoFocal: "Alexandre",
+                RazaoNoGo: "N/A",
+                ValorApresentado: "",
+                Observacoes: "",
+                DataDoCertame: "",
+                Ata: "",
+                Contrato: "",
+                Link: ""
+            },
+            {
+                ID: "460",
+                Status: "Em análise",
+                Órgão: "Companhia de Gás do Ceará - Cegás ",
+                UF: "CE",
+                Objeto: "Prestação de serviços de levantamento patrimonial da Cegás.",
+                ModalidadeDeLicitacao: "Licitação Nº 20230003/CEGÁS ",
+                NumeroProcesso: "20230003",
+                ValorEstimado: "815000",
+                Deadline: "12/05/2023",
+                Area: "P&U",
+                SL: "SAT",
+                FOP: "",
+                PontoFocal: "Tedesco",
+                RazaoNoGo: "NO GO: Revenda de licença e que abarca mais de 75% do valor da proposta. Infelizmente é NO GO.",
+                ValorApresentado: "",
+                Observacoes: "",
+                DataDoCertame: "",
+                Ata: "",
+                Contrato: "",
+                Link: ""
+            },
+            {
+                ID: "461",
+                Status: "Em análise",
+                Órgão: "Copasa-Companhia de Saneamento de Minas Gerais ",
+                UF: "MG",
+                Objeto: "Serviços de segurança de tecnologia no ambiente computacional da Copasa",
+                ModalidadeDeLicitacao: "Pregão eletrônico",
+                NumeroProcesso: "520230106",
+                ValorEstimado: "N/I",
+                Deadline: "04/04/2023",
+                Area: "P&U",
+                SL: "Consulting",
+                FOP: "Cybersecurity",
+                PontoFocal: "Marco",
+                RazaoNoGo: "N/A",
+                ValorApresentado: "",
+                Observacoes: "",
+                DataDoCertame: "",
+                Ata: "",
+                Contrato: "",
+                Link: ""
+            },
+            {
+                ID: "378",
+                Status: "Em andamento",
+                Órgão: "Copasa",
+                UF: "MG",
+                Objeto: "Serviços de monitoramento e segurança lógica,por meio de um Centro de Operação de Segurança próprio e localizado no Brasil ",
+                ModalidadeDeLicitacao: "Pregão",
+                NumeroProcesso: "05.2022/0558",
+                ValorEstimado: "N/I",
+                Deadline: "01/03/2023",
+                Area: "",
+                SL: "Consulting",
+                FOP: "Cybersecurity",
+                PontoFocal: "Salatiel",
+                RazaoNoGo: "N/A",
+                ValorApresentado: "1. TELMEX DO BRASIL S/A - R$ 69.000,00 (negociado R$ 58.000,00)
+        2. GEMINA SEGURANCA DIGITAL EIRELI - R$ 69.999,00
+        3. DINATECH BRASIL SERVIÇOS DE INFORMA LTDA R$ 101.000,00
+        4. BULL DO BRASIL SISTEMAS DE INFORMAÇÃO LTDA - R$ 105.000,00
+        5. NETWORK SECURE SEGURANÇA DA INFORMAÇÃO LTDA R$ 130.000,00
+        6. KRYPTUS SEGURANÇA DA INFORMAÇÃO S.A. - R$ 133.000,00
+        7. RUSSI SERVIÇOS LTDA - R$ 325.000,00
+        8. ERNST & YOUNG ASSESSORIA EMPRESARIAL LTDA - R$ 374.764,10
+        9. ALGAR TI CONSULTORIA S/A - R$ 15.000.000,00",
+                Observacoes: "",
+                DataDoCertame: "",
+                Ata: "",
+                Contrato: "",
+                Link: ""
+            },
+            {
+                ID: "39",
+                Status: "Lost",
+                Órgão: "Cia. de Processamento de Dados do Estado de São Paulo  - PRODESP",
+                UF: "SP",
+                Objeto: "Prestação de serviços especializados de auditoria independente, credenciada na estrutura de Chaves Públicas Brasileira – ICP Brasil para realização de auditoria anual nas Autoridades Certificadoras de (AC), Prestador de Serviço de Suporte (PPS) e Autoridade de Carimbo de Tempo (ACT) da PRODESP.",
+                ModalidadeDeLicitacao: "Pregão eletrônico",
+                NumeroProcesso: "072/2022",
+                ValorEstimado: "N/I",
+                Deadline: "25/07/2022",
+                Area: "GPS",
+                SL: "Consulting",
+                FOP: "Risk",
+                PontoFocal: "Fabricio Stallone / Felipe Berge / Juliana Carvalho",
+                RazaoNoGo: "",
+                ValorApresentado: "",
+                Observacoes: "1ª – Moreira Associados Auditores Independentes S/S (EPP) - R$ 564.000,00 (Valor negociado – R$ 539.998,80)
+        2ª – PKI Contabilidade e Auditoria Ltda (EPP)  - R$ 567.000,00
+        3ª – EY Auditores Independentes S/S  - R$ 882.000,00
+        4ª – INVICTA Construções e Dedetização Ltda ME (EPP)  - R$ 100.000.000,00
+        ",
+                DataDoCertame: "25/07/2022",
+                Ata: "SIM",
+                Contrato: "",
+                Link: "https://www.bec.sp.gov.br/bec_pregao_ui/edital/becprp16001.aspx?1wzKo23l%2bfOt5tKjIAyEZdPLwGfFMubvMyD8rUY4cklZ8LkOaY02XtHtRmXECb7L"
+            }
+        )
+    Theme: =PowerAppsTheme
+
+    Host As hostControl.DefaultHostControlVariant:
+        OnCancel: =false
+        OnEdit: =false
+        OnNew: =false
+        OnSave: =false
+        OnView: =false
+
