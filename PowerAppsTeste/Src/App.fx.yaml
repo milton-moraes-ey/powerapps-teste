@@ -18,36 +18,7 @@ App As appinfo:
             gblUsuarioLogado,
             User()
         );
-        ClearCollect(
-            colMenuNavegacao,
-            Table(
-                {
-                    Screen: 'Tela inicial',
-                    Label: "Home",
-                    Icon: Icon.Home
-                },
-                {
-                    Screen: 'Tela de atestados',
-                    Label: "Atestados",
-                    Icon: Icon.DocumentWithContent
-                },
-                {
-                    Screen: 'Tela de profissionais',
-                    Label: "Profissionais",
-                    Icon: Icon.People
-                },
-                {
-                    Screen: 'Tela de inteligencia de mercado',
-                    Label: "Inteligência de mercado",
-                    Icon: Icon.TrendingUpwards
-                },
-                {
-                    Screen: 'Tela de admins',
-                    Label: "Admin",
-                    Icon: Icon.Settings
-                }
-            )
-        );
+        
         ClearCollect(
             colAtestados,
             Table(

@@ -96,7 +96,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 5,
+    "BindingErrorCount": 0,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "DesktopOrTablet",
@@ -130,6 +130,6 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "Tela inicia"
+    "Tela inicial"
   ]
 }
