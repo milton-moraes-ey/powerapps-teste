@@ -1,0 +1,102 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "gps_profissionals",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "gps_profissional",
+    "Name": "Profissionais",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "gps_atestadoprofissional_prof_id": "AtestadoProfissionais",
+      "gps_formacao_academica": "formacao_academica",
+      "gps_gpn": "gpn",
+      "gps_historico_capacitacoes": "historico_capacitacoes",
+      "gps_id": "id",
+      "gps_nome_completo": "nome_completo",
+      "gps_profissional_AsyncOperations": "System Jobs",
+      "gps_profissional_BulkDeleteFailures": "Bulk Delete Failures",
+      "gps_profissional_DuplicateBaseRecord": "Duplicate Records (gps_profissional_DuplicateBaseRecord)",
+      "gps_profissional_DuplicateMatchingRecord": "Duplicate Records (gps_profissional_DuplicateMatchingRecord)",
+      "gps_profissional_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "gps_profissional_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "gps_profissional_ProcessSession": "Process Sessions",
+      "gps_profissional_SyncErrors": "Sync Errors",
+      "gps_profissionalid": "Profissional",
+      "gps_vinculo_empregaticio": "vinculo_empregaticio",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Profissionais",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Profissionais (Views)",
+    "Name": "_gps_profissional_views",
+    "RelatedEntityName": "Profissionais",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "007811f8-a1f4-4c85-83b8-e28aa11e1167": "Inactive Profissionais",
+      "32374477-a985-4aee-823d-53b3a1a47b8e": "Profissional Advanced Find View",
+      "492be2e6-6d19-4377-9601-8f6e477aa83d": "Profissional Lookup View",
+      "5fc3dbb7-6709-4b23-89af-d13b02eb71c5": "Profissional Associated View",
+      "78de618d-c7a2-4d74-9f0d-a7c5ca4c0631": "Active Profissionais"
+    }
+  },
+  {
+    "DisplayName": "Status (Profissionais)",
+    "Name": "gps_profissional_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Profissionais"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Profissionais",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Profissionais)",
+    "Name": "gps_profissional_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Profissionais"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Profissionais",
+    "Type": "OptionSetInfo"
+  }
+]

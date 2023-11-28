@@ -1,0 +1,101 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "gps_atestadoprofissionals",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "gps_atestadoprofissional",
+    "Name": "AtestadoProfissionais",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "gps_atestadoprofissional_AsyncOperations": "System Jobs",
+      "gps_atestadoprofissional_BulkDeleteFailures": "Bulk Delete Failures",
+      "gps_atestadoprofissional_DuplicateBaseRecord": "Duplicate Records (gps_atestadoprofissional_DuplicateBaseRecord)",
+      "gps_atestadoprofissional_DuplicateMatchingRecord": "Duplicate Records (gps_atestadoprofissional_DuplicateMatchingRecord)",
+      "gps_atestadoprofissional_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "gps_atestadoprofissional_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "gps_atestadoprofissional_ProcessSession": "Process Sessions",
+      "gps_atestadoprofissional_SyncErrors": "Sync Errors",
+      "gps_atestadoprofissionalid": "AtestadoProfissional",
+      "gps_atsd_id": "atsd_id",
+      "gps_horas_trabalhadas": "horas_trabalhadas",
+      "gps_id": "id",
+      "gps_prof_dominio_atuacao": "prof_dominio_atuacao",
+      "gps_prof_funcao_projeto": "prof_funcao_projeto",
+      "gps_prof_id": "prof_id",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "AtestadoProfissionais",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "AtestadoProfissionais (Views)",
+    "Name": "_gps_atestadoprofissional_views",
+    "RelatedEntityName": "AtestadoProfissionais",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "2c68e6b7-422a-4b99-b1a5-d8d3fc90f32d": "Active AtestadoProfissionais",
+      "3f95eab0-f8d3-4c84-88b6-381ac1e3d316": "Inactive AtestadoProfissionais",
+      "7b804fc6-d427-41ca-831e-67ba3c6e0fbb": "AtestadoProfissional Associated View",
+      "db4c00e0-45aa-4a6d-81ad-24df33e9ea3d": "AtestadoProfissional Lookup View",
+      "e15d1e95-86c6-4dbb-a4d9-29a29541e74d": "AtestadoProfissional Advanced Find View"
+    }
+  },
+  {
+    "DisplayName": "Status (AtestadoProfissionais)",
+    "Name": "gps_atestadoprofissional_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "AtestadoProfissionais"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "AtestadoProfissionais",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (AtestadoProfissionais)",
+    "Name": "gps_atestadoprofissional_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "AtestadoProfissionais"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "AtestadoProfissionais",
+    "Type": "OptionSetInfo"
+  }
+]

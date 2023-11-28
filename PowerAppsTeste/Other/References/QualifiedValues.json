@@ -1,0 +1,25 @@
+{
+  "QualifiedValues": [
+    {
+      "Kind": "default.cds_gps_atestado_forms",
+      "Namespace": "Atestados (Forms)",
+      "Values": {
+        "Information": "237a65dd-adc3-49c7-8e5a-9c97d98663c6"
+      }
+    },
+    {
+      "Kind": "default.cds_gps_atestadoprofissional_forms",
+      "Namespace": "AtestadoProfissionais (Forms)",
+      "Values": {
+        "Information": "df4babc4-7871-448b-868b-7ba4e0c8596a"
+      }
+    },
+    {
+      "Kind": "default.cds_gps_profissional_forms",
+      "Namespace": "Profissionais (Forms)",
+      "Values": {
+        "Information": "2ecd1b0b-60dd-45f6-a00b-fee5d757c1fd"
+      }
+    }
+  ]
+}

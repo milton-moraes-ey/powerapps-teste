@@ -1,0 +1,101 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "gps_atestados",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "gps_atestado",
+    "Name": "Atestados",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "gps_atestado_AsyncOperations": "System Jobs",
+      "gps_atestado_BulkDeleteFailures": "Bulk Delete Failures",
+      "gps_atestado_DuplicateBaseRecord": "Duplicate Records (gps_atestado_DuplicateBaseRecord)",
+      "gps_atestado_DuplicateMatchingRecord": "Duplicate Records (gps_atestado_DuplicateMatchingRecord)",
+      "gps_atestado_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "gps_atestado_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "gps_atestado_ProcessSession": "Process Sessions",
+      "gps_atestado_SyncErrors": "Sync Errors",
+      "gps_atestadoid": "Atestado",
+      "gps_atestadoprofissional_atsd_id": "AtestadoProfissionais",
+      "gps_cnpj_cliente": "cnpj_cliente",
+      "gps_cnpj_empresa_prestadora": "cnpj_empresa_prestadora",
+      "gps_id": "id",
+      "gps_nome_cliente": "nome_cliente",
+      "gps_nome_empresa_prestadora": "nome_empresa_prestadora",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Atestados",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Atestados (Views)",
+    "Name": "_gps_atestado_views",
+    "RelatedEntityName": "Atestados",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "3974ac8d-6bfc-498b-82f1-1f5a5c47f0fc": "Inactive Atestados",
+      "58e1308f-8571-4158-9b26-5967fd74250b": "Atestado Lookup View",
+      "7659e5c4-5d53-4628-a9fb-8b216f06d890": "Atestado Associated View",
+      "9bed14f8-d131-446b-a747-412da5c2f0bb": "Active Atestados",
+      "a1a7f4e6-95c9-4b45-8c2c-241b09948ce0": "Atestado Advanced Find View"
+    }
+  },
+  {
+    "DisplayName": "Status (Atestados)",
+    "Name": "gps_atestado_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Atestados"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Atestados",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Atestados)",
+    "Name": "gps_atestado_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Atestados"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Atestados",
+    "Type": "OptionSetInfo"
+  }
+]
