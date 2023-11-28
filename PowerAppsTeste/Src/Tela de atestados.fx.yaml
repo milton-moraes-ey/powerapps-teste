@@ -1,6 +1,6 @@
 "'Tela de atestados' As screen":
 
-    Container1 As groupContainer.verticalAutoLayoutContainer:
+    ctnMainAtestados As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
         LayoutAlignItems: =LayoutAlignItems.Stretch
         LayoutDirection: =LayoutDirection.Vertical
@@ -58,6 +58,7 @@
                 ZIndex: =2
 
         ctnCounteudoAtestados As groupContainer.verticalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMinHeight: =100
             LayoutMinWidth: =250
