@@ -64,6 +64,130 @@
             LayoutMode: =LayoutMode.Auto
             ZIndex: =2
 
+            ctnAcoesTelaAtestados As groupContainer.manualLayoutContainer:
+                DropShadow: =DropShadow.None
+                FillPortions: =0
+                Height: =60
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                ZIndex: =1
+
+                lblTituloAtestados As label:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    Color: =gblTema.OffBlackColor
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledColor: =RGBA(161, 159, 157, 1)
+                    FocusedBorderThickness: =4
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Bold
+                    Size: =16
+                    Text: ="Atestados"
+                    Width: =350
+                    Y: =(Parent.Height - Self.Height) / 2 
+                    ZIndex: =1
+
+                ctnAcoesAtestados As groupContainer.horizontalAutoLayoutContainer:
+                    DropShadow: =DropShadow.None
+                    Height: =60
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutGap: =12
+                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                    LayoutMode: =LayoutMode.Auto
+                    PaddingBottom: =6
+                    PaddingLeft: =6
+                    PaddingRight: =6
+                    PaddingTop: =6
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Width: =430
+                    X: =Parent.Width - Self.Width - 0
+                    ZIndex: =2
+
+                    btnNovoAtestado As button:
+                        BorderColor: =If(locMostrarContainerNovoAtestado, gblTema.WhiteColor, gblTema.AccentColor)
+                        BorderThickness: =1
+                        Color: =If(locMostrarContainerNovoAtestado, gblTema.WhiteColor, gblTema.AccentColor)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(161, 159, 157, 1)
+                        DisabledFill: =RGBA(242, 242, 241, 0)
+                        Fill: =If(locMostrarContainerNovoAtestado, gblTema.AccentColor, gblTema.WhiteColor)
+                        FillPortions: =1
+                        FocusedBorderColor: =ColorFade(Self.Fill, 75%)
+                        FocusedBorderThickness: =1
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Normal
+                        HoverBorderColor: =If(locMostrarContainerNovoAtestado, gblTema.AccentColor, ColorFade(gblTema.AccentColor, -10%))
+                        HoverColor: =Self.Color
+                        HoverFill: |-
+                            =If(
+                                locMostrarContainerNovoAtestado,
+                                ColorFade(
+                                    gblTema.AccentColor,
+                                    -10%
+                                ),
+                                ColorFade(
+                                    Self.Fill,
+                                    -5%
+                                )
+                            )
+                        LayoutMinWidth: =100
+                        OnSelect: |-
+                            =UpdateContext({locMostrarContainerPesquisaAtestados: false, locMostrarContainerNovoAtestado: true, locMostrarFormEmpresaAtestante: true, locMostrarFormEmpresaPrestouServico: false, locMostrarFormInserirEquipeAtestado: false});
+                        PressedBorderColor: =RGBA(0, 69, 120, 1)
+                        PressedColor: =RGBA(255, 255, 255, 1)
+                        PressedFill: =RGBA(16, 110, 190, 1)
+                        RadiusBottomLeft: =4
+                        RadiusBottomRight: =4
+                        RadiusTopLeft: =4
+                        RadiusTopRight: =4
+                        Size: =12
+                        Text: ="+ Criar atestado"
+                        Width: =120
+                        X: =420
+                        Y: =197
+                        ZIndex: =1
+
+                    btnAtestados As button:
+                        BorderColor: =If(locMostrarContainerPesquisaAtestados, gblTema.WhiteColor, gblTema.AccentColor)
+                        BorderThickness: =1
+                        Color: =If(locMostrarContainerPesquisaAtestados, gblTema.WhiteColor, gblTema.AccentColor)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(161, 159, 157, 1)
+                        DisabledFill: =RGBA(242, 242, 241, 0)
+                        Fill: =If(locMostrarContainerPesquisaAtestados, gblTema.AccentColor, gblTema.WhiteColor)
+                        FillPortions: =1
+                        FocusedBorderColor: =ColorFade(Self.Fill, 75%)
+                        FocusedBorderThickness: =1
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Normal
+                        HoverBorderColor: =If(locMostrarContainerPesquisaAtestados, gblTema.AccentColor, ColorFade(gblTema.AccentColor, -10%))
+                        HoverColor: =Self.Color
+                        HoverFill: =If(locMostrarContainerPesquisaAtestados,ColorFade(gblTema.AccentColor,-10%),ColorFade(Self.Fill,-5%))
+                        LayoutMinWidth: =120
+                        OnSelect: |-
+                            =UpdateContext({locMostrarContainerPesquisaAtestados: true, locMostrarContainerNovoAtestado: false})
+                        PressedBorderColor: =RGBA(0, 69, 120, 1)
+                        PressedColor: =RGBA(255, 255, 255, 1)
+                        PressedFill: =RGBA(16, 110, 190, 1)
+                        RadiusBottomLeft: =4
+                        RadiusBottomRight: =4
+                        RadiusTopLeft: =4
+                        RadiusTopRight: =4
+                        Size: =12
+                        Text: ="Atestados"
+                        Width: =120
+                        X: =420
+                        Y: =197
+                        ZIndex: =4
+
     ComponentWinSizeNavigateMenu_2 As ComponentWinSizeNavigateMenu:
         AccentColorFromTheme: =gblTema.AccentColor
         DefaultColorFromTheme: =gblTema.DarkGrayColor
