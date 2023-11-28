@@ -2450,8 +2450,13 @@
                                             )
                                         )
                                     );
-                                    
-                                    UpdateContext({locMostrarFormEmpresaPrestouServico: false, locMostrarFormEmpresaAtestante: false, locMostrarFormInserirEquipeAtestado: true})
+                                    UpdateContext(
+                                        {
+                                            locMostrarFormEmpresaPrestouServico: false,
+                                            locMostrarFormEmpresaAtestante: false,
+                                            locMostrarFormInserirEquipeAtestado: true
+                                        }
+                                    )
                                 PressedBorderColor: =RGBA(0, 69, 120, 1)
                                 PressedColor: =Self.Color
                                 PressedFill: =Self.Fill
@@ -2803,26 +2808,34 @@
                                 FontWeight: =FontWeight.Normal
                                 HoverBorderColor: =RGBA(0, 0, 0, 0)
                                 HoverFill: =ColorFade(gblTema.AccentColor, -10%)
-                                OnSelect: |-
+                                OnSelect: |+
                                     =Collect(
                                         colMembrosEquipe,
                                         {
                                             atsd_id: gblRegistroDoAtestado,
                                             prof_id: dcvIDProfissionalAtestado.Selected,
                                             prof_dominio_atuacao: dcvProfissionalDominioAtuacao.Value,
-                                            horas_trabalhadas: dcvHorasTrabalhadas.Value,
+                                            horas_trabalhadas: Value(dcvHorasTrabalhadas.Value),
                                             prof_funcao_projeto: dcvProfissionalFuncaoNoProjeto.Value
                                         }
                                     );
-                                    ResetForm(frmAdicionarMembrosDaEquipe)
                                     
-                                    /*
-                                      prof_id: ThisRecord.prof_id,
-                                                prof_funcao_projeto: ThisRecord.Funcao,
-                                                prof_dominio_atuacao: ThisRecord.DominioAtuacao,
-                                                horas_trabalhadas: Value(ThisRecord.QuantidadeHoras)
                                     
-                                    */
+                                    /*Patch(
+                                        AtestadoProfissionais,
+                                        Defaults(AtestadoProfissionais),
+                                        {
+                                            
+                                            prof_id: dcvIDProfissionalAtestado.Selected,
+                                            horas_trabalhadas: Value(dcvHorasTrabalhadas.Value),
+                                            prof_funcao_projeto: dcvProfissionalFuncaoNoProjeto.Value,
+                                            prof_dominio_atuacao: dcvProfissionalDominioAtuacao.Value
+                                        }
+                                    );*/
+                                    
+                                    
+                                    ResetForm(frmAdicionarMembrosDaEquipe);
+                                    
                                 PressedBorderColor: =RGBA(0, 69, 120, 1)
                                 PressedColor: =RGBA(255, 255, 255, 1)
                                 PressedFill: =RGBA(16, 110, 190, 1)
@@ -2853,7 +2866,7 @@
                             Visible: =If(CountRows(glrMembrosAdicionados.AllItems) > 0, true, false)
                             Width: =Parent.Width - 24
                             X: =(Parent.Width - Self.Width) / 2
-                            Y: =Label7_4.Y + Label7_4.Height + 6
+                            Y: =71
                             ZIndex: =1
 
                             Label7 As label:
@@ -3231,18 +3244,18 @@
                                             )
                                         )
                                     );*/
-                                    ForAll(colMembrosEquipe,
-                                    Patch(
-                                        AtestadoProfissionais,
-                                        Defaults(AtestadoProfissionais),
-                                        {
-                                            atsd_id:ThisRecord.atsd_id,
-                                            prof_id: ThisRecord.prof_id,
-                                            horas_trabalhadas: ThisRecord.horas_trabalhadas,
-                                            prof_funcao_projeto: ThisRecord.prof_funcao_projeto,
-                                            prof_dominio_atuacao: ThisRecord.prof_dominio_atuacao
-                                        }
-                                    ));
+                                    ForAll(
+                                        colMembrosEquipe,
+                                        Patch(
+                                            AtestadoProfissionais,
+                                            Defaults(AtestadoProfissionais),
+                                            {
+                                                prof_id: ThisRecord.prof_id,
+                                                horas_trabalhadas: Value(ThisRecord.horas_trabalhadas),
+                                                prof_funcao_projeto: ThisRecord.prof_funcao_projeto,
+                                                prof_dominio_atuacao: ThisRecord.prof_dominio_atuacao        }
+                                        )
+                                    );
                                     UpdateContext({locMostrarConfirmacaoDeCadastro: true});
                                 PressedBorderColor: =RGBA(0, 69, 120, 1)
                                 PressedColor: =RGBA(255, 255, 255, 1)
