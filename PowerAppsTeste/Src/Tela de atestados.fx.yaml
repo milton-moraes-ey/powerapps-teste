@@ -1982,7 +1982,7 @@
                             Height: =70
                             MaxLength: =DataSourceInfo([@Atestados], DataSourceInfo.MaxLength, "gps_local_signatario")
                             Required: =false
-                            Update: =DataCardValue16.Value
+                            Update: =dcvLocalSignatario.Value
                             Width: =435
                             X: =0
                             Y: =3
@@ -1999,7 +1999,7 @@
                                 Y: =10
                                 ZIndex: =1
 
-                            "DataCardValue16 As 'Text input'":
+                            "dcvLocalSignatario As 'Text input'":
                                 AccessibleLabel: =Parent.DisplayName
                                 BasePaletteColor: =
                                 DisplayMode: =Parent.DisplayMode
@@ -2021,7 +2021,7 @@
                                 Width: =Parent.Width - 48
                                 Wrap: =true
                                 X: =24
-                                Y: =DataCardValue16.Y + DataCardValue16.Height
+                                Y: =dcvLocalSignatario.Y + dcvLocalSignatario.Height
                                 ZIndex: =3
 
                             StarVisible22 As Text:
@@ -2044,7 +2044,7 @@
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
                             Required: =false
-                            Update: =DataCardValue21.Selected.Value
+                            Update: =dcvRegistrado.Selected.Value
                             Width: =435
                             X: =1
                             Y: =3
@@ -2061,7 +2061,7 @@
                                 Y: =10
                                 ZIndex: =1
 
-                            DataCardValue21 As Combobox.pcfdataset:
+                            dcvRegistrado As Combobox.pcfdataset:
                                 AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
                                 DisplayMode: =Parent.DisplayMode
                                 Height: =32
@@ -2072,6 +2072,14 @@
                                 Y: =DataCardKey23.Y + DataCardKey23.Height + 4
                                 ZIndex: =2
 
+                                Value1 As pcfDataField.textualColumn:
+                                    FieldDisplayName: ="Value"
+                                    FieldName: ="Value"
+                                    FieldType: ="l"
+                                    FieldVariantName: ="textualColumn"
+                                    Order: =1
+                                    ZIndex: =26
+
                             ErrorMessage23 As Text:
                                 DisplayMode: =DisplayMode.Edit
                                 Height: =30
@@ -2080,7 +2088,7 @@
                                 Width: =Parent.Width - 48
                                 Wrap: =true
                                 X: =24
-                                Y: =DataCardValue21.Y + DataCardValue21.Height
+                                Y: =dcvRegistrado.Y + dcvRegistrado.Height
                                 ZIndex: =3
 
                             StarVisible23 As Text:
