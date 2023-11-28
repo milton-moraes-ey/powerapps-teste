@@ -1,2 +1,601 @@
 "'Controle de tema' As screen":
 
+    lblTituloAtestados_2 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =gblTema.OffBlackColor
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(161, 159, 157, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Size: =22
+        Text: ="Style guide "
+        Width: =350
+        X: =24
+        Y: =40
+        ZIndex: =1
+
+    lblTituloAtestados_3 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =gblTema.OffBlackColor
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(161, 159, 157, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Size: =16
+        Text: ="Elementos de tela"
+        Width: =350
+        X: =24
+        Y: =91
+        ZIndex: =2
+
+    lblTituloAtestados_4 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =gblTema.OffBlackColor
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(161, 159, 157, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Size: =16
+        Text: ="Elementos de texto"
+        Width: =350
+        X: =24
+        Y: =417
+        ZIndex: =3
+
+    Container1_1 As groupContainer.manualLayoutContainer:
+        Height: =286
+        Width: =363
+        X: =24
+        Y: =131
+        ZIndex: =4
+
+        btnPadraoBotao As button:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(161, 159, 157, 1)
+            DisabledFill: =RGBA(242, 242, 241, 0)
+            Fill: =gblTema.AccentColor
+            FocusedBorderColor: =ColorFade(Self.Fill, 75%)
+            FocusedBorderThickness: =1
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Normal
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =ColorFade(gblTema.AccentColor, -10%)
+            PressedBorderColor: =RGBA(0, 69, 120, 1)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =RGBA(16, 110, 190, 1)
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Size: =14
+            Text: ="Exemplo"
+            Width: =140
+            X: =12
+            Y: =16
+            ZIndex: =1
+
+        btnOutline As button:
+            BorderColor: =gblTema.AccentColor
+            BorderThickness: =1
+            Color: =gblTema.AccentColor
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(161, 159, 157, 1)
+            DisabledFill: =RGBA(242, 242, 241, 0)
+            Fill: =gblTema.WhiteColor
+            FocusedBorderColor: =ColorFade(Self.Fill, 75%)
+            FocusedBorderThickness: =1
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Normal
+            HoverBorderColor: =ColorFade(gblTema.AccentColor, -10%)
+            HoverColor: =Self.Color
+            HoverFill: =ColorFade(Self.Fill, -5%)
+            PressedBorderColor: =RGBA(0, 69, 120, 1)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =RGBA(16, 110, 190, 1)
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Size: =14
+            Text: ="Exemplo"
+            Width: =140
+            X: =168
+            Y: =16
+            ZIndex: =2
+
+        txtPadraoDeInput As text:
+            BorderColor: =gblTema.LightBorderColor
+            BorderThickness: =1
+            Color: =gblTema.OffBlackColor
+            Default: ="Exemplo de input"
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(161, 159, 157, 1)
+            DisabledFill: =RGBA(242, 242, 241, 0)
+            Fill: =gblTema.OffWhiteColor
+            FocusedBorderThickness: =1
+            Font: =Font.'Segoe UI'
+            HoverBorderColor: =Self.BorderColor
+            HoverColor: =RGBA(50, 49, 48, 1)
+            HoverFill: =ColorFade(Self.Fill, -5%)
+            PressedBorderColor: =RGBA(0, 120, 212, 1)
+            PressedColor: =RGBA(50, 49, 48, 1)
+            PressedFill: =RGBA(255, 255, 255, 1)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Width: =328
+            X: =12
+            Y: =70
+            ZIndex: =3
+
+        ComboBox1 As combobox:
+            BorderColor: =gblTema.LightBorderColor
+            ChevronBackground: =Color.Transparent
+            ChevronDisabledBackground: =RGBA(242, 242, 241, 0)
+            ChevronDisabledFill: =RGBA(161, 159, 157, 1)
+            ChevronFill: =gblTema.DarkGrayColor
+            ChevronHoverBackground: =RGBA(245, 245, 245, 1)
+            ChevronHoverFill: =RGBA(50, 49, 48, 1)
+            Color: =RGBA(50, 49, 48, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(161, 159, 157, 1)
+            DisabledFill: =RGBA(242, 242, 241, 0)
+            Fill: =gblTema.OffWhiteColor
+            FocusedBorderThickness: =1
+            Font: =Font.'Segoe UI'
+            HoverBorderColor: =Self.BorderColor
+            HoverColor: =RGBA(50, 49, 48, 1)
+            HoverFill: =ColorFade(Self.Fill, -5%)
+            Items: =ComboBoxSample
+            PressedBorderColor: =Self.BorderColor
+            PressedFill: =RGBA(0, 120, 212, 1)
+            SearchItems: =Search(ComboBoxSample,ComboBox1.SearchText,"Value1")
+            SelectionFill: =RGBA(0, 120, 212, 1)
+            Size: =14
+            X: =12
+            Y: =129
+            ZIndex: =4
+
+        "DatePickerCanvas1 As 'Date picker'":
+            BasePaletteColor: =
+            DisplayMode: =DisplayMode.Edit
+            Format: ='DatePickerCanvas.Format'.Short
+            Height: =40
+            Placeholder: ="Selecionar data"
+            Width: =320
+            X: =16
+            Y: =184
+            ZIndex: =5
+
+        icoExemploOpenMenu As icon.Waffle:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            Color: =gblTema.AccentColor
+            DisabledBorderColor: =RGBA(245, 245, 245, 1)
+            DisabledColor: =RGBA(225, 223, 221, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =36
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =RGBA(16, 110, 190, 1)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Icon: =Icon.Waffle
+            OnSelect: |-
+                =UpdateContext({locOpenMenu: !locOpenMenu})
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =RGBA(16, 110, 190, 1)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =36
+            X: =16
+            Y: =241
+            ZIndex: =6
+
+    Container2 As groupContainer.manualLayoutContainer:
+        Height: =173
+        Width: =363
+        X: =24
+        Y: =457
+        ZIndex: =5
+
+        lblTituloAtestados_1 As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =gblTema.OffBlackColor
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(161, 159, 157, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Size: =16
+            Text: ="Títulos"
+            Width: =350
+            ZIndex: =1
+
+        lblObjetivo_1 As label:
+            Align: =Align.Justify
+            AutoHeight: =true
+            Color: =gblTema.OffBlackColor
+            DisplayMode: =DisplayMode.View
+            FontWeight: =FontWeight.Lighter
+            Height: =41
+            OnSelect: |-
+                =UpdateContext({locMostrarContextMenu: false})
+            Size: |-
+                =//If(App.Width<=LookUp(App.SizeBreakpoints,Value=1200,Value),14,14)
+                
+                12
+            Text: ="Exemplo de texto corrido"
+            VerticalAlign: =VerticalAlign.Top
+            Width: =229
+            Y: =78
+            ZIndex: =2
+
+        lblResultados_1 As label:
+            AutoHeight: =true
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =gblTema.DarkGrayColor
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(161, 159, 157, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Italic: =true
+            Size: =12
+            Text: ="Texto de indicação e de divisão de seções"
+            Width: =336
+            Y: =114
+            ZIndex: =3
+
+        lblTitulo_1 As label:
+            AutoHeight: =true
+            Color: =gblTema.AccentColor
+            FontWeight: =FontWeight.Bold
+            Height: =87
+            OnSelect: |-
+                =UpdateContext({locMostrarContextMenu: false})
+            Size: |-
+                =//If(App.Width<=LookUp(App.SizeBreakpoints,Value=1200,Value),14,16)\
+                14
+            Text: ="Texto de destaque"
+            Width: =363
+            Y: =40
+            ZIndex: =4
+
+    lblTituloAtestados_5 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =gblTema.OffBlackColor
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(161, 159, 157, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Size: =16
+        Text: ="Cores do tema"
+        Width: =350
+        X: =410
+        Y: =91
+        ZIndex: =6
+
+    Container3 As groupContainer.manualLayoutContainer:
+        Height: =516
+        Width: =350
+        X: =410
+        Y: =136
+        ZIndex: =7
+
+        Group1 As group:
+            Height: =5
+            Width: =5
+            X: =40
+            Y: =40
+            ZIndex: =17
+
+            Rectangle6_7 As rectangle:
+                BorderColor: =RGBA(139, 154, 159, 1)
+                DisabledFill: =RGBA(161, 159, 157, 1)
+                Fill: =gblTema.YellowColor
+                FocusedBorderThickness: =4
+                Height: =46
+                HoverFill: =RGBA(0, 120, 212, 1)
+                OnSelect: =
+                PressedFill: =RGBA(0, 120, 212, 1)
+                X: =12
+                Y: =450
+                ZIndex: =8
+
+            lblObjetivo_9 As label:
+                Align: =Align.Justify
+                AutoHeight: =true
+                Color: =gblTema.OffBlackColor
+                DisplayMode: =DisplayMode.View
+                Height: =41
+                OnSelect: |-
+                    =UpdateContext({locMostrarContextMenu: false})
+                Size: =14
+                Text: ="YellowColor"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =229
+                X: =121
+                Y: =457
+                ZIndex: =16
+
+        Group2 As group:
+            Height: =5
+            Width: =5
+            X: =40
+            Y: =40
+            ZIndex: =17
+
+            Rectangle6_6 As rectangle:
+                BorderColor: =RGBA(139, 154, 159, 1)
+                BorderThickness: =1
+                DisabledFill: =RGBA(161, 159, 157, 1)
+                Fill: =gblTema.WhiteColor
+                FocusedBorderThickness: =4
+                Height: =46
+                HoverFill: =RGBA(0, 120, 212, 1)
+                OnSelect: =
+                PressedFill: =RGBA(0, 120, 212, 1)
+                X: =12
+                Y: =384
+                ZIndex: =7
+
+            lblObjetivo_8 As label:
+                Align: =Align.Justify
+                AutoHeight: =true
+                Color: =gblTema.OffBlackColor
+                DisplayMode: =DisplayMode.View
+                Height: =41
+                OnSelect: |-
+                    =UpdateContext({locMostrarContextMenu: false})
+                Size: =14
+                Text: ="WhiteColor"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =229
+                X: =121
+                Y: =391
+                ZIndex: =15
+
+        Group3 As group:
+            Height: =5
+            Width: =5
+            X: =40
+            Y: =40
+            ZIndex: =17
+
+            Rectangle6_5 As rectangle:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                DisabledFill: =RGBA(161, 159, 157, 1)
+                Fill: =gblTema.OffWhiteColor
+                FocusedBorderThickness: =4
+                Height: =46
+                HoverFill: =RGBA(0, 120, 212, 1)
+                OnSelect: =
+                PressedFill: =RGBA(0, 120, 212, 1)
+                X: =12
+                Y: =322
+                ZIndex: =6
+
+            lblObjetivo_7 As label:
+                Align: =Align.Justify
+                AutoHeight: =true
+                Color: =gblTema.OffBlackColor
+                DisplayMode: =DisplayMode.View
+                Height: =41
+                OnSelect: |-
+                    =UpdateContext({locMostrarContextMenu: false})
+                Size: =14
+                Text: ="OffWhiteColor"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =229
+                X: =121
+                Y: =329
+                ZIndex: =14
+
+        Group4 As group:
+            Height: =5
+            Width: =5
+            X: =40
+            Y: =40
+            ZIndex: =17
+
+            Rectangle6_2 As rectangle:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                DisabledFill: =RGBA(161, 159, 157, 1)
+                Fill: =gblTema.LightBorderColor
+                FocusedBorderThickness: =4
+                Height: =46
+                HoverFill: =RGBA(0, 120, 212, 1)
+                OnSelect: =
+                PressedFill: =RGBA(0, 120, 212, 1)
+                X: =12
+                Y: =260
+                ZIndex: =3
+
+            lblObjetivo_6 As label:
+                Align: =Align.Justify
+                AutoHeight: =true
+                Color: =gblTema.OffBlackColor
+                DisplayMode: =DisplayMode.View
+                Height: =41
+                OnSelect: |-
+                    =UpdateContext({locMostrarContextMenu: false})
+                Size: =14
+                Text: ="LightBorderColor"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =229
+                X: =121
+                Y: =267
+                ZIndex: =13
+
+        Group5 As group:
+            Height: =5
+            Width: =5
+            X: =40
+            Y: =40
+            ZIndex: =17
+
+            Rectangle6_3 As rectangle:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                DisabledFill: =RGBA(161, 159, 157, 1)
+                Fill: =gblTema.LightGrayColor
+                FocusedBorderThickness: =4
+                Height: =46
+                HoverFill: =RGBA(0, 120, 212, 1)
+                OnSelect: =
+                PressedFill: =RGBA(0, 120, 212, 1)
+                X: =12
+                Y: =198
+                ZIndex: =4
+
+            lblObjetivo_5 As label:
+                Align: =Align.Justify
+                AutoHeight: =true
+                Color: =gblTema.OffBlackColor
+                DisplayMode: =DisplayMode.View
+                Height: =41
+                OnSelect: |-
+                    =UpdateContext({locMostrarContextMenu: false})
+                Size: =14
+                Text: ="LightGrayColor"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =229
+                X: =121
+                Y: =205
+                ZIndex: =12
+
+        Group6 As group:
+            Height: =5
+            Width: =5
+            X: =40
+            Y: =40
+            ZIndex: =17
+
+            Rectangle6_1 As rectangle:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                DisabledFill: =RGBA(161, 159, 157, 1)
+                Fill: =gblTema.DarkGrayColor
+                FocusedBorderThickness: =4
+                Height: =46
+                HoverFill: =RGBA(0, 120, 212, 1)
+                OnSelect: =
+                PressedFill: =RGBA(0, 120, 212, 1)
+                X: =12
+                Y: =136
+                ZIndex: =2
+
+            lblObjetivo_4 As label:
+                Align: =Align.Justify
+                AutoHeight: =true
+                Color: =gblTema.OffBlackColor
+                DisplayMode: =DisplayMode.View
+                Height: =41
+                OnSelect: |-
+                    =UpdateContext({locMostrarContextMenu: false})
+                Size: =14
+                Text: ="DarkGrayColor"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =229
+                X: =121
+                Y: =143
+                ZIndex: =11
+
+        Group7 As group:
+            Height: =5
+            Width: =5
+            X: =40
+            Y: =40
+            ZIndex: =17
+
+            Rectangle6_4 As rectangle:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                DisabledFill: =RGBA(161, 159, 157, 1)
+                Fill: =gblTema.OffBlackColor
+                FocusedBorderThickness: =4
+                Height: =46
+                HoverFill: =RGBA(0, 120, 212, 1)
+                OnSelect: =
+                PressedFill: =RGBA(0, 120, 212, 1)
+                X: =12
+                Y: =74
+                ZIndex: =5
+
+            lblObjetivo_3 As label:
+                Align: =Align.Justify
+                AutoHeight: =true
+                Color: =gblTema.OffBlackColor
+                DisplayMode: =DisplayMode.View
+                Height: =41
+                OnSelect: |-
+                    =UpdateContext({locMostrarContextMenu: false})
+                Size: =14
+                Text: ="OffBlackColor"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =229
+                X: =121
+                Y: =81
+                ZIndex: =10
+
+        Group8 As group:
+            Height: =5
+            Width: =5
+            X: =40
+            Y: =40
+            ZIndex: =17
+
+            Rectangle6 As rectangle:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                DisabledFill: =RGBA(161, 159, 157, 1)
+                Fill: =gblTema.AccentColor
+                FocusedBorderThickness: =4
+                Height: =46
+                HoverFill: =RGBA(0, 120, 212, 1)
+                OnSelect: =
+                PressedFill: =RGBA(0, 120, 212, 1)
+                X: =12
+                Y: =12
+                ZIndex: =1
+
+            lblObjetivo_2 As label:
+                Align: =Align.Justify
+                AutoHeight: =true
+                Color: =gblTema.OffBlackColor
+                DisplayMode: =DisplayMode.View
+                Height: =41
+                OnSelect: |-
+                    =UpdateContext({locMostrarContextMenu: false})
+                Size: =14
+                Text: ="AccentColor"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =229
+                X: =121
+                Y: =19
+                ZIndex: =9
+
