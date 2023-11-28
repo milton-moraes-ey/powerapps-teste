@@ -10,15 +10,15 @@ App As appinfo:
                 WhiteColor: ColorValue("#FFFFFF"),
                 DarkGrayColor: ColorValue("#747480"),
                 LightGrayColor: ColorValue("#C4C4CD"),
-                AccentColor: ColorValue("#0078D4"),//#0078D4
-                LightBorderColor: ColorValue("#e6e6e6d9")
+                AccentColor: ColorValue("#0078D4"),
+                //#0078D4
+        LightBorderColor: ColorValue("#e6e6e6d9")
             }
         );
         Set(
             gblUsuarioLogado,
             User()
         );
-        
         ClearCollect(
             colMenuNavegacao,
             Table(
@@ -49,121 +49,9 @@ App As appinfo:
                 }
             )
         );
-        
         ClearCollect(
             colAtestados,
-            Table(
-                {
-                    NomeCliente: "Nike do Brasil Comércio e Participações LTDA 1",
-                    DataInicial: "NOV/2021",
-                    DataFinal: "DEZ-2021",
-                    Projeto: "Benchmarking de práticas de líderes de mercado",
-                    Serviço: "Auditoria sobre demonstracoes financeiras da Nike",
-                    Time: "David Pereira (Diretor executivo), Rodrigo Catani (Gerente SR), Renato Lorenço (Gerente), Fulano da Silva (Senior), Beltrano José (Staff)",
-                    LegalEntity: "Assesoria SP",
-                    Objetivo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu feugiat pretium nibh ipsum consequat nisl vel. Sit amet facilisis magna etiam tempor orci eu. Velit egestas dui id ornare arcu odio ut sem. Aliquam faucibus purus in massa tempor nec feugiat nisl. Felis bibendum ut tristique et. Volutpat blandit aliquam etiam erat. Nunc lobortis mattis aliquam faucibus purus in massa tempor. Egestas purus viverra accumsan in nisl nisi scelerisque. Viverra accumsan in nisl nisi scelerisque eu ultrices vitae. Vulputate ut pharetra sit amet aliquam id diam.",
-                    ID: "1"
-                },
-                {
-                    NomeCliente: "Nike do Brasil Comércio e Participações LTDA 2",
-                    DataInicial: "NOV/2021",
-                    DataFinal: "DEZ-2021",
-                    Projeto: "Benchmarking de práticas de líderes de mercado",
-                    Serviço: "Auditoria sobre demonstracoes financeiras da Nike",
-                    Time: "David Pereira (Diretor executivo), Rodrigo Catani (Gerente SR), Renato Lorenço (Gerente), Fulano da Silva (Senior), Beltrano José (Staff)",
-                    LegalEntity: "Assesoria SP",
-                    Objetivo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu feugiat pretium nibh ipsum consequat nisl vel. Sit amet facilisis magna etiam tempor orci eu. Velit egestas dui id ornare arcu odio ut sem. Aliquam faucibus purus in massa tempor nec feugiat nisl. Felis bibendum ut tristique et. Volutpat blandit aliquam etiam erat. Nunc lobortis mattis aliquam faucibus purus in massa tempor. Egestas purus viverra accumsan in nisl nisi scelerisque. Viverra accumsan in nisl nisi scelerisque eu ultrices vitae. Vulputate ut pharetra sit amet aliquam id diam.",
-                    ID: "2"
-                },
-                {
-                    NomeCliente: "Nike do Brasil Comércio e Participações LTDA 3",
-                    DataInicial: "NOV/2021",
-                    DataFinal: "DEZ-2021",
-                    Projeto: "Benchmarking de práticas de líderes de mercado",
-                    Serviço: "Auditoria sobre demonstracoes financeiras da Nike",
-                    Time: "David Pereira (Diretor executivo), Rodrigo Catani (Gerente SR), Renato Lorenço (Gerente), Fulano da Silva (Senior), Beltrano José (Staff)",
-                    LegalEntity: "Assesoria SP",
-                    Objetivo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu feugiat pretium nibh ipsum consequat nisl vel. Sit amet facilisis magna etiam tempor orci eu. Velit egestas dui id ornare arcu odio ut sem. Aliquam faucibus purus in massa tempor nec feugiat nisl. Felis bibendum ut tristique et. Volutpat blandit aliquam etiam erat. Nunc lobortis mattis aliquam faucibus purus in massa tempor. Egestas purus viverra accumsan in nisl nisi scelerisque. Viverra accumsan in nisl nisi scelerisque eu ultrices vitae. Vulputate ut pharetra sit amet aliquam id diam.",
-                    ID: "3"
-                },
-                {
-                    NomeCliente: "Nike do Brasil Comércio e Participações LTDA 4",
-                    DataInicial: "NOV/2021",
-                    DataFinal: "DEZ-2021",
-                    Projeto: "Benchmarking de práticas de líderes de mercado",
-                    Serviço: "Auditoria sobre demonstracoes financeiras da Nike",
-                    Time: "David Pereira (Diretor executivo), Rodrigo Catani (Gerente SR), Renato Lorenço (Gerente), Fulano da Silva (Senior), Beltrano José (Staff)",
-                    LegalEntity: "Assesoria SP",
-                    Objetivo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu feugiat pretium nibh ipsum consequat nisl vel. Sit amet facilisis magna etiam tempor orci eu. Velit egestas dui id ornare arcu odio ut sem. Aliquam faucibus purus in massa tempor nec feugiat nisl. Felis bibendum ut tristique et. Volutpat blandit aliquam etiam erat. Nunc lobortis mattis aliquam faucibus purus in massa tempor. Egestas purus viverra accumsan in nisl nisi scelerisque. Viverra accumsan in nisl nisi scelerisque eu ultrices vitae. Vulputate ut pharetra sit amet aliquam id diam.",
-                    ID: "4"
-                },
-                {
-                    NomeCliente: "Nike do Brasil Comércio e Participações LTDA 5",
-                    DataInicial: "NOV/2021",
-                    DataFinal: "DEZ-2021",
-                    Projeto: "Benchmarking de práticas de líderes de mercado",
-                    Serviço: "Auditoria sobre demonstracoes financeiras da Nike",
-                    Time: "David Pereira (Diretor executivo), Rodrigo Catani (Gerente SR), Renato Lorenço (Gerente), Fulano da Silva (Senior), Beltrano José (Staff)",
-                    LegalEntity: "Assesoria SP",
-                    Objetivo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu feugiat pretium nibh ipsum consequat nisl vel. Sit amet facilisis magna etiam tempor orci eu. Velit egestas dui id ornare arcu odio ut sem. Aliquam faucibus purus in massa tempor nec feugiat nisl. Felis bibendum ut tristique et. Volutpat blandit aliquam etiam erat. Nunc lobortis mattis aliquam faucibus purus in massa tempor. Egestas purus viverra accumsan in nisl nisi scelerisque. Viverra accumsan in nisl nisi scelerisque eu ultrices vitae. Vulputate ut pharetra sit amet aliquam id diam.",
-                    ID: "5"
-                },
-                {
-                    NomeCliente: "Nike do Brasil Comércio e Participações LTDA 6",
-                    DataInicial: "NOV/2021",
-                    DataFinal: "DEZ-2021",
-                    Projeto: "Benchmarking de práticas de líderes de mercado",
-                    Serviço: "Auditoria sobre demonstracoes financeiras da Nike",
-                    Time: "David Pereira (Diretor executivo), Rodrigo Catani (Gerente SR), Renato Lorenço (Gerente), Fulano da Silva (Senior), Beltrano José (Staff)",
-                    LegalEntity: "Assesoria SP",
-                    Objetivo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu feugiat pretium nibh ipsum consequat nisl vel. Sit amet facilisis magna etiam tempor orci eu. Velit egestas dui id ornare arcu odio ut sem. Aliquam faucibus purus in massa tempor nec feugiat nisl. Felis bibendum ut tristique et. Volutpat blandit aliquam etiam erat. Nunc lobortis mattis aliquam faucibus purus in massa tempor. Egestas purus viverra accumsan in nisl nisi scelerisque. Viverra accumsan in nisl nisi scelerisque eu ultrices vitae. Vulputate ut pharetra sit amet aliquam id diam.",
-                    ID: "6"
-                },
-                {
-                    NomeCliente: "Nike do Brasil Comércio e Participações LTDA 7",
-                    DataInicial: "NOV/2021",
-                    DataFinal: "DEZ-2021",
-                    Projeto: "Benchmarking de práticas de líderes de mercado",
-                    Serviço: "Auditoria sobre demonstracoes financeiras da Nike",
-                    Time: "David Pereira (Diretor executivo), Rodrigo Catani (Gerente SR), Renato Lorenço (Gerente), Fulano da Silva (Senior), Beltrano José (Staff)",
-                    LegalEntity: "Assesoria SP",
-                    Objetivo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu feugiat pretium nibh ipsum consequat nisl vel. Sit amet facilisis magna etiam tempor orci eu. Velit egestas dui id ornare arcu odio ut sem. Aliquam faucibus purus in massa tempor nec feugiat nisl. Felis bibendum ut tristique et. Volutpat blandit aliquam etiam erat. Nunc lobortis mattis aliquam faucibus purus in massa tempor. Egestas purus viverra accumsan in nisl nisi scelerisque. Viverra accumsan in nisl nisi scelerisque eu ultrices vitae. Vulputate ut pharetra sit amet aliquam id diam.",
-                    ID: "7"
-                },
-                {
-                    NomeCliente: "Nike do Brasil Comércio e Participações LTDA 8",
-                    DataInicial: "NOV/2021",
-                    DataFinal: "DEZ-2021",
-                    Projeto: "Benchmarking de práticas de líderes de mercado",
-                    Serviço: "Auditoria sobre demonstracoes financeiras da Nike",
-                    Time: "David Pereira (Diretor executivo), Rodrigo Catani (Gerente SR), Renato Lorenço (Gerente), Fulano da Silva (Senior), Beltrano José (Staff)",
-                    LegalEntity: "Assesoria SP",
-                    Objetivo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu feugiat pretium nibh ipsum consequat nisl vel. Sit amet facilisis magna etiam tempor orci eu. Velit egestas dui id ornare arcu odio ut sem. Aliquam faucibus purus in massa tempor nec feugiat nisl. Felis bibendum ut tristique et. Volutpat blandit aliquam etiam erat. Nunc lobortis mattis aliquam faucibus purus in massa tempor. Egestas purus viverra accumsan in nisl nisi scelerisque. Viverra accumsan in nisl nisi scelerisque eu ultrices vitae. Vulputate ut pharetra sit amet aliquam id diam.",
-                    ID: "8"
-                },
-                {
-                    NomeCliente: "Nike do Brasil Comércio e Participações LTDA 9",
-                    DataInicial: "NOV/2021",
-                    DataFinal: "DEZ-2021",
-                    Projeto: "Benchmarking de práticas de líderes de mercado",
-                    Serviço: "Auditoria sobre demonstracoes financeiras da Nike",
-                    Time: "David Pereira (Diretor executivo), Rodrigo Catani (Gerente SR), Renato Lorenço (Gerente), Fulano da Silva (Senior), Beltrano José (Staff)",
-                    LegalEntity: "Assesoria SP",
-                    Objetivo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu feugiat pretium nibh ipsum consequat nisl vel. Sit amet facilisis magna etiam tempor orci eu. Velit egestas dui id ornare arcu odio ut sem. Aliquam faucibus purus in massa tempor nec feugiat nisl. Felis bibendum ut tristique et. Volutpat blandit aliquam etiam erat. Nunc lobortis mattis aliquam faucibus purus in massa tempor. Egestas purus viverra accumsan in nisl nisi scelerisque. Viverra accumsan in nisl nisi scelerisque eu ultrices vitae. Vulputate ut pharetra sit amet aliquam id diam.",
-                    ID: "9"
-                },
-                {
-                    NomeCliente: "Nike do Brasil Comércio e Participações LTDA 10",
-                    DataInicial: "NOV/2021",
-                    DataFinal: "DEZ-2021",
-                    Projeto: "Benchmarking de práticas de líderes de mercado",
-                    Serviço: "Auditoria sobre demonstracoes financeiras da Nike",
-                    Time: "David Pereira (Diretor executivo), Rodrigo Catani (Gerente SR), Renato Lorenço (Gerente), Fulano da Silva (Senior), Beltrano José (Staff)",
-                    LegalEntity: "Assesoria SP",
-                    Objetivo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu feugiat pretium nibh ipsum consequat nisl vel. Sit amet facilisis magna etiam tempor orci eu. Velit egestas dui id ornare arcu odio ut sem. Aliquam faucibus purus in massa tempor nec feugiat nisl. Felis bibendum ut tristique et. Volutpat blandit aliquam etiam erat. Nunc lobortis mattis aliquam faucibus purus in massa tempor. Egestas purus viverra accumsan in nisl nisi scelerisque. Viverra accumsan in nisl nisi scelerisque eu ultrices vitae. Vulputate ut pharetra sit amet aliquam id diam.",
-                    ID: "10"
-                }
-            )
+            Atestados
         );
         ClearCollect(
             colProfissionaisCadastrados,

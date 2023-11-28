@@ -318,7 +318,7 @@
                         Size: |-
                             =//If(App.Width<=LookUp(App.SizeBreakpoints,Value=1200,Value),14,16)
                             14
-                        Text: =ThisItem.NomeCliente
+                        Text: =ThisItem.nome_cliente
                         Width: =466
                         Y: |
                             =12
@@ -335,7 +335,7 @@
                             =//If(App.Width<=LookUp(App.SizeBreakpoints,Value=1200,Value),14,14)
                             
                             12
-                        Text: =ThisItem.Projeto
+                        Text: =ThisItem.atsd_obj_trab
                         VerticalAlign: =VerticalAlign.Top
                         Width: |-
                             =//If(App.Width<=LookUp(App.SizeBreakpoints,Value=1200,Value),483,If(App.Width>LookUp(App.SizeBreakpoints,Value=1200,Value)&&App.Width<=LookUp(App.SizeBreakpoints,Value=1800,Value), Parent .Width*0.7, Parent .Width*0.7))
@@ -381,7 +381,7 @@
                             =//If(App.Width<=LookUp(App.SizeBreakpoints,Value=1200,Value),14,14)
                             
                             12
-                        Text: =ThisItem.Time
+                        Text: =ThisItem.nome_signatario
                         VerticalAlign: =VerticalAlign.Top
                         Width: |-
                             =//If(App.Width<=LookUp(App.SizeBreakpoints,Value=1200,Value),483,If(App.Width>LookUp(App.SizeBreakpoints,Value=1200,Value)&&App.Width<=LookUp(App.SizeBreakpoints,Value=1800,Value), Parent .Width*0.7, Parent .Width*0.7))
@@ -428,7 +428,7 @@
                             =//If(App.Width<=LookUp(App.SizeBreakpoints,Value=1200,Value),14,14)
                             
                             12
-                        Text: =ThisItem.Objetivo
+                        Text: =ThisItem.atsd_descr_obj_trab
                         VerticalAlign: =VerticalAlign.Top
                         Width: |-
                             =//If(App.Width<=LookUp(App.SizeBreakpoints,Value=1200,Value),483,If(App.Width>LookUp(App.SizeBreakpoints,Value=1200,Value)&&App.Width<=LookUp(App.SizeBreakpoints,Value=1800,Value), Parent .Width*0.7, Parent .Width*0.7))
@@ -469,7 +469,7 @@
                         Height: =52
                         OnSelect: =
                         Size: =12
-                        Text: =ThisItem.DataInicial & " - " & ThisItem.DataFinal
+                        Text: =ThisItem.atsd_data_inicio & " - " & ThisItem.atsd_data_fim
                         Width: =190
                         X: =(Parent.TemplateWidth - Self.Width) * 0.95
                         Y: =lblTitulo.Y

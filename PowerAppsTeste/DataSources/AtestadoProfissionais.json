@@ -6,6 +6,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "gps_atestadoprofissional",
+    "MaxGetRowsCount": 2000,
     "Name": "AtestadoProfissionais",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
