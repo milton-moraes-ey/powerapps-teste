@@ -2528,59 +2528,6 @@
                             UseFluentV9Cards: =true
                             ZIndex: =1
 
-                            atsd_id_DataCard1 As typedDataCard.fluentV9ComboBoxEditCard:
-                                BorderStyle: =BorderStyle.Solid
-                                DataField: ="gps_atsd_id"
-                                Default: =ThisItem.atsd_id
-                                DisplayMode: =Parent.DisplayMode
-                                DisplayName: =DataSourceInfo([@AtestadoProfissionais],DataSourceInfo.DisplayName,"gps_atsd_id")
-                                Fill: =RGBA(0, 0, 0, 0)
-                                Height: =70
-                                Required: =false
-                                Update: =DataCardValue23.Selected
-                                Width: =647
-                                X: =0
-                                Y: =0
-                                ZIndex: =1
-
-                                DataCardKey26 As Text:
-                                    DisplayMode: =DisplayMode.Edit
-                                    Height: =22
-                                    Text: =Parent.DisplayName
-                                    Weight: ='TextCanvas.Weight'.Semibold
-                                    Width: =Parent.Width - 48
-                                    Wrap: =false
-                                    X: =24
-                                    Y: =10
-                                    ZIndex: =1
-
-                                DataCardValue23 As Combobox.pcfdataset:
-                                    AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
-                                    DisplayMode: =Parent.DisplayMode
-                                    Height: =32
-                                    Items: =Choices([@AtestadoProfissionais].gps_atsd_id)
-                                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                                    Width: =Parent.Width - 48
-                                    X: =24
-                                    Y: =DataCardKey26.Y + DataCardKey26.Height + 4
-                                    ZIndex: =2
-
-                                    "'Created On1' As pcfDataField.textualColumn":
-                                        FieldDisplayName: ="Created On"
-                                        FieldName: ="createdon"
-                                        FieldType: ="d"
-                                        FieldVariantName: ="textualColumn"
-                                        Order: =2
-                                        ZIndex: =22
-
-                                    id1 As pcfDataField.textualColumn:
-                                        FieldDisplayName: ="id"
-                                        FieldName: ="gps_id"
-                                        FieldType: ="s"
-                                        FieldVariantName: ="textualColumn"
-                                        Order: =1
-                                        ZIndex: =23
-
                             prof_id_DataCard1 As typedDataCard.fluentV9ComboBoxEditCard:
                                 BorderStyle: =BorderStyle.Solid
                                 DataField: ="gps_prof_id"
@@ -2592,7 +2539,7 @@
                                 Required: =false
                                 Update: =DataCardValue24.Selected
                                 Width: =647
-                                X: =1
+                                X: =0
                                 Y: =0
                                 ZIndex: =1
 
@@ -2646,8 +2593,8 @@
                                 Required: =false
                                 Update: =DataCardValue25.Value
                                 Width: =647
-                                X: =0
-                                Y: =1
+                                X: =1
+                                Y: =0
                                 ZIndex: =1
 
                                 DataCardKey28 As Text:
@@ -2709,7 +2656,7 @@
                                 Required: =false
                                 Update: =DataCardValue26.Value
                                 Width: =647
-                                X: =1
+                                X: =0
                                 Y: =1
                                 ZIndex: =1
 
@@ -2771,8 +2718,8 @@
                                 Required: =false
                                 Update: =Value(DataCardValue27.Value)
                                 Width: =647
-                                X: =0
-                                Y: =2
+                                X: =1
+                                Y: =1
                                 ZIndex: =1
 
                                 DataCardKey30 As Text:
@@ -2850,7 +2797,6 @@
                                     =Collect(
                                         colMembrosEquipe,
                                         {
-                                            atsd_id: DataCardValue23.Selected,
                                             prof_id: DataCardValue24.Selected,
                                             DominioAtuacao: DataCardValue26.Value,
                                             QuantidadeHoras: DataCardValue27.Value,
