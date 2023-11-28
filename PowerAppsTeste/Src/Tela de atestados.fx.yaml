@@ -3183,16 +3183,19 @@
                                             )
                                         )
                                     );
-                                    Patch(
-                                        AtestadoProfissionais,
-                                        Defaults(AtestadoProfissionais),
-                                        {
-                                            atsd_id: gblRegistroDoAtestado,
-                                            prof_id: dcvIDProfissionalAtestado.Selected,
-                                            prof_funcao_projeto: dcvProfissionalFuncaoNoProjeto.Value,
-                                            prof_dominio_atuacao: dcvProfissionalDominioAtuacao.Value,
-                                            horas_trabalhadas: Value(dcvHorasTrabalhadas.Value)
-                                        }
+                                    ForAll(
+                                        colMembrosEquipe,
+                                        Patch(
+                                            AtestadoProfissionais,
+                                            Defaults(AtestadoProfissionais),
+                                            {
+                                                atsd_id: gblRegistroDoAtestado,
+                                                prof_id: ThisRecord.prof_id,
+                                                prof_funcao_projeto: ThisRecord.Funcao,
+                                                prof_dominio_atuacao: ThisRecord.DominioAtuacao,
+                                                horas_trabalhadas: Value(ThisRecord.QuantidadeHoras)
+                                            }
+                                        )
                                     );
                                     UpdateContext({locMostrarConfirmacaoDeCadastro: true});
                                 PressedBorderColor: =RGBA(0, 69, 120, 1)
