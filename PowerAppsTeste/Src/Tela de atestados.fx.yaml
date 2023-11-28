@@ -2414,42 +2414,7 @@
                                 HoverBorderColor: =RGBA(0, 0, 0, 0)
                                 HoverFill: =Color.Transparent
                                 OnSelect: |-
-                                    =Set(
-                                        gblRegistroDoAtestado,
-                                        Patch(
-                                            colAtestados,
-                                            Defaults(colAtestados),
-                                            Patch(
-                                                Atestados,
-                                                Defaults(Atestados),
-                                                {
-                                                    nome_cliente: dcvNomeCliente.Value,
-                                                    cnpj_cliente: dcvCnpjCliente.Value,
-                                                    endr_cliente: dcvEnderecoCliente.Value,
-                                                    num_func_cliente: Value(dctNumeroFuncionariosDoCliente.Value),
-                                                    ativ_econ_cliente: dcvAtividadeEconomicaDoCliente.Value,
-                                                    receita_bruta_cliente: Value(dcvReceitaBrutaDoCliente.Value),
-                                                    tot_atv_cliente: Value(dcvTotalAtivosDoCliente.Value),
-                                                    patrim_liq_cliente: Value(dcvPatrimonioLiquidoCliente.Value),
-                                                    nome_empresa_prestadora: dcvNomeEmpresaPrestadora.Value,
-                                                    cnpj_empresa_prestadora: dcvCnpjEmpresaPrestadora.Value,
-                                                    endr_empresa_prestadora: dcvEnderecoEmpresaPretadora.Value,
-                                                    atsd_obj_trab: dcvObjetoTrabalho.Value,
-                                                    atsd_descr_obj_trab: dcvDescricaoDoObjetoDoTrabalho.Value,
-                                                    atsd_qtd_hrs: Value(dcvQuantidadeTotalDeHoras.Value),
-                                                    atsd_local: dcvLocal.Value,
-                                                    atsd_data_inicio: dtvDataInicio.SelectedDate,
-                                                    atsd_data_fim: dtvDataFim.SelectedDate,
-                                                    proj_engagement_code: dcvEngagementCode.Value,
-                                                    atsd_registrado: dcvRegistrado.Selected.Value,
-                                                    astd_file_uploaded: {
-                                                        FileName: First(dcvArquivoAtestado.Attachments).Name,
-                                                        Value: First(dcvArquivoAtestado.Attachments).Value
-                                                    }
-                                                }
-                                            )
-                                        )
-                                    );
+                                    =
                                     UpdateContext(
                                         {
                                             locMostrarFormEmpresaPrestouServico: false,
@@ -2812,7 +2777,7 @@
                                     =Collect(
                                         colMembrosEquipe,
                                         {
-                                            atsd_id: gblRegistroDoAtestado,
+                                           /* atsd_id: gblRegistroDoAtestado,*/
                                             prof_id: dcvIDProfissionalAtestado.Selected,
                                             prof_dominio_atuacao: dcvProfissionalDominioAtuacao.Value,
                                             horas_trabalhadas: Value(dcvHorasTrabalhadas.Value),
