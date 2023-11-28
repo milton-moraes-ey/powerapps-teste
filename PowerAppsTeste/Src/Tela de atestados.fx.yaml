@@ -56,3 +56,18 @@
                 Width: =36
                 ZIndex: =2
 
+        ctnCounteudoAtestados As groupContainer.verticalAutoLayoutContainer:
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            ZIndex: =2
+
+    ComponentWinSizeNavigateMenu_2 As ComponentWinSizeNavigateMenu:
+        AccentColorFromTheme: =gblTema.AccentColor
+        DefaultColorFromTheme: =gblTema.DarkGrayColor
+        Visible: =locOpenMenu
+        X: =ctnHeaderAtestados.Width - Self.Width
+        Y: =68
+        ZIndex: =2
+

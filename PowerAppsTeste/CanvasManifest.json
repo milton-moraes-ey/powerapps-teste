@@ -96,7 +96,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 0,
+    "BindingErrorCount": 1,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "DesktopOrTablet",
@@ -130,6 +130,11 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "Tela de atestados"
+    "Tela de atestados",
+    "Tela inicial",
+    "Tela de profissionais",
+    "Tela de inteligencia de mercado",
+    "Tela de admin",
+    "Controle de tema"
   ]
 }

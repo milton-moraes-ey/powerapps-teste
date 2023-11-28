@@ -1,0 +1,88 @@
+ComponentWinSizeNavigateMenu As CanvasComponent:
+    AccentColorFromTheme: =RGBA(0, 0, 0, 1)
+    ActiveScreen: =App.ActiveScreen
+    DefaultColorFromTheme: =RGBA(0, 0, 0, 1)
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =350
+    NavigationTable: =colMenuNavegacao
+    Width: =290
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    ctnWinSizeNavigateMenu As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.Regular
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =322
+        RadiusBottomLeft: =6
+        RadiusBottomRight: =6
+        RadiusTopLeft: =6
+        RadiusTopRight: =6
+        Width: =266
+        X: =12
+        Y: =12
+        ZIndex: =3
+
+        "glrWinSizeNavigateMenu As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+            DelayItemLoading: =true
+            Height: =Parent.Height - 12
+            Items: =ComponentWinSizeNavigateMenu.NavigationTable
+            Layout: =Layout.Vertical
+            LoadingSpinner: =LoadingSpinner.Data
+            TemplatePadding: =0
+            TemplateSize: =60
+            Width: =Parent.Width - 12
+            X: =12
+            Y: |
+                =12
+            ZIndex: =1
+
+            Title1 As label:
+                AutoHeight: =true
+                Color: =If(ThisItem.Screen = ComponentWinSizeNavigateMenu.ActiveScreen, ComponentWinSizeNavigateMenu.AccentColorFromTheme, ComponentWinSizeNavigateMenu.DefaultColorFromTheme)
+                FontWeight: =If(ThisItem.Screen = ComponentWinSizeNavigateMenu.ActiveScreen, FontWeight.Semibold, FontWeight.Lighter)
+                Height: =Self.Size * 1.8
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =12
+                Text: =ThisItem.Label
+                VerticalAlign: =VerticalAlign.Top
+                Width: |
+                    =180
+                X: =icoWinSizeNavigateMenu.X + icoWinSizeNavigateMenu.Width + 12
+                Y: =(Parent.TemplateHeight - Self.Height) / 2
+                ZIndex: =2
+
+            Rectangle1 As rectangle:
+                Fill: =ComponentWinSizeNavigateMenu.AccentColorFromTheme
+                Height: =Parent.TemplateHeight
+                OnSelect: =Select(Parent)
+                Visible: =If(ThisItem.Screen = ComponentWinSizeNavigateMenu.ActiveScreen, true, false)
+                Width: =4
+                ZIndex: =6
+
+            icoWinSizeNavigateMenu As icon.Add:
+                Color: =If(ThisItem.Screen = ComponentWinSizeNavigateMenu.ActiveScreen, ComponentWinSizeNavigateMenu.AccentColorFromTheme, ComponentWinSizeNavigateMenu.DefaultColorFromTheme)
+                Height: =36
+                Icon: =ThisItem.Icon
+                OnSelect: =Select(Parent)
+                Width: =36
+                X: =12
+                Y: =(Parent.TemplateHeight - Self.Height) / 2
+                ZIndex: =7
+
+            btnNavigateMenu_1 As button:
+                BorderColor: =Color.Transparent
+                Fill: =Color.Transparent
+                Height: =Parent.TemplateHeight
+                HoverFill: =Color.Transparent
+                OnSelect: =Navigate(ThisItem.Screen, ScreenTransition.Fade);
+                PressedFill: =Color.Transparent
+                Size: =24
+                Text: =""
+                Width: =Parent.TemplateWidth
+                ZIndex: =8
+
