@@ -2,7 +2,7 @@
   "DatasetName": "default.cds",
   "EntityName": "Atestados",
   "environmentVariableName": "",
-  "InstanceUrl": "https://gps-dev.crm2.dynamics.com",
+  "InstanceUrl": "https://gps-dev.crm2.dynamics.com/",
   "LocalReferenceDSJson": {
     "entitySetName": "gps_atestados",
     "logicalName": "gps_atestado"
