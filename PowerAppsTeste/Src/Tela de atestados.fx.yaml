@@ -2263,9 +2263,6 @@
                             Y: =4
                             ZIndex: =1
 
-                            ErrorMessage25 As Text:
-                                DisplayMode: =DisplayMode.Edit
-
                             DataCardKey25 As Text:
                                 DisplayMode: =DisplayMode.Edit
                                 Height: =34
@@ -2296,6 +2293,10 @@
                                 X: =30
                                 Y: =DataCardKey25.Y + DataCardKey25.Height + 5
                                 ZIndex: =2
+
+                            ErrorMessage25 As Text:
+                                DisplayMode: =DisplayMode.Edit
+                                ZIndex: =25
 
                     ctnFooterFormEmpresaPrestouServico As groupContainer.horizontalAutoLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
@@ -2564,21 +2565,21 @@
                                     Y: =DataCardKey26.Y + DataCardKey26.Height + 4
                                     ZIndex: =2
 
-                                    id1 As pcfDataField.textualColumn:
-                                        FieldDisplayName: ="id"
-                                        FieldName: ="gps_id"
-                                        FieldType: ="s"
-                                        FieldVariantName: ="textualColumn"
-                                        Order: =1
-                                        ZIndex: =0
-
                                     "'Created On1' As pcfDataField.textualColumn":
                                         FieldDisplayName: ="Created On"
                                         FieldName: ="createdon"
                                         FieldType: ="d"
                                         FieldVariantName: ="textualColumn"
                                         Order: =2
-                                        ZIndex: =0
+                                        ZIndex: =22
+
+                                    id1 As pcfDataField.textualColumn:
+                                        FieldDisplayName: ="id"
+                                        FieldName: ="gps_id"
+                                        FieldType: ="s"
+                                        FieldVariantName: ="textualColumn"
+                                        Order: =1
+                                        ZIndex: =23
 
                             prof_id_DataCard1 As typedDataCard.fluentV9ComboBoxEditCard:
                                 BorderStyle: =BorderStyle.Solid
@@ -2622,16 +2623,16 @@
                                         FieldName: ="gps_id"
                                         FieldType: ="s"
                                         FieldVariantName: ="textualColumn"
-                                        Order: =1
-                                        ZIndex: =0
-
-                                    "'Created On2' As pcfDataField.textualColumn":
-                                        FieldDisplayName: ="Created On"
-                                        FieldName: ="createdon"
-                                        FieldType: ="d"
-                                        FieldVariantName: ="textualColumn"
                                         Order: =2
-                                        ZIndex: =0
+                                        ZIndex: =21
+
+                                    nome_completo1 As pcfDataField.textualColumn:
+                                        FieldDisplayName: ="nome_completo"
+                                        FieldName: ="gps_nome_completo"
+                                        FieldType: ="s"
+                                        FieldVariantName: ="textualColumn"
+                                        Order: =1
+                                        ZIndex: =24
 
                             prof_funcao_projeto_DataCard1 As typedDataCard.fluentV9TextualEditCard:
                                 BorderStyle: =BorderStyle.Solid
