@@ -117,7 +117,7 @@
             "Name": "Image1",
             "Parent": "ctnLoggedUser",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 267,
+            "PublishOrderIndex": 276,
             "Rules": [
               {
                 "Category": "Data",
@@ -416,7 +416,7 @@
             "Name": "Label1",
             "Parent": "ctnLoggedUser",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 268,
+            "PublishOrderIndex": 277,
             "Rules": [
               {
                 "Category": "Data",
@@ -788,7 +788,7 @@
         "Name": "ctnLoggedUser",
         "Parent": "ComponentLoggedUser",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 266,
+        "PublishOrderIndex": 275,
         "Rules": [
           {
             "Category": "Design",
@@ -988,7 +988,7 @@
       "LoggedUser",
       "ColorFromTheme"
     ],
-    "LastModifiedTimestamp": "638367728872646646",
+    "LastModifiedTimestamp": "638367869514723796",
     "Name": "ComponentLoggedUser",
     "Rules": [
       {
@@ -1078,7 +1078,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638367728872646646",
+  "LastModifiedTimestamp": "638367869514723796",
   "Name": "0dc751b8f1ea4223b1ea8e9db4cd8893",
   "OverridableProperties": {},
   "TemplateOriginalName": "15e38f0aaf834738aa74cc08fa2cbba5",
