@@ -3201,9 +3201,9 @@
                                             {
                                                 atsd_id: gblRegistroDoAtestado,
                                                 prof_id: ThisRecord.prof_id,
-                                                prof_funcao_projeto: ThisRecord.Funcao,
-                                                prof_dominio_atuacao: ThisRecord.DominioAtuacao,
-                                                horas_trabalhadas: Value(ThisRecord.QuantidadeHoras)
+                                                prof_funcao_projeto: ThisRecord.prof_funcao_projeto,
+                                                prof_dominio_atuacao: ThisRecord.prof_dominio_atuacao,
+                                                horas_trabalhadas: Value(ThisRecord.horas_trabalhadas)
                                             }
                                         )
                                     );
