@@ -2510,7 +2510,7 @@
                                 Fill: =RGBA(0, 0, 0, 0)
                                 Height: =70
                                 Required: =false
-                                Update: =DataCardValue24.Selected
+                                Update: =dcvIDProfissionalAtestado.Selected
                                 Width: =647
                                 X: =0
                                 Y: =0
@@ -2527,7 +2527,7 @@
                                     Y: =10
                                     ZIndex: =1
 
-                                DataCardValue24 As Combobox.pcfdataset:
+                                dcvIDProfissionalAtestado As Combobox.pcfdataset:
                                     AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
                                     DisplayMode: =Parent.DisplayMode
                                     Height: =32
@@ -2564,7 +2564,7 @@
                                 Height: =70
                                 MaxLength: =DataSourceInfo([@AtestadoProfissionais], DataSourceInfo.MaxLength, "gps_prof_funcao_projeto")
                                 Required: =false
-                                Update: =DataCardValue25.Value
+                                Update: =dcvProfissionalFuncaoNoProjeto.Value
                                 Width: =647
                                 X: =1
                                 Y: =0
@@ -2581,7 +2581,7 @@
                                     Y: =10
                                     ZIndex: =1
 
-                                "DataCardValue25 As 'Text input'":
+                                "dcvProfissionalFuncaoNoProjeto As 'Text input'":
                                     AccessibleLabel: =Parent.DisplayName
                                     BasePaletteColor: =
                                     DisplayMode: =Parent.DisplayMode
@@ -2603,7 +2603,7 @@
                                     Width: =Parent.Width - 48
                                     Wrap: =true
                                     X: =24
-                                    Y: =DataCardValue25.Y + DataCardValue25.Height
+                                    Y: =dcvProfissionalFuncaoNoProjeto.Y + dcvProfissionalFuncaoNoProjeto.Height
                                     ZIndex: =3
 
                                 StarVisible28 As Text:
@@ -2627,7 +2627,7 @@
                                 Height: =70
                                 MaxLength: =DataSourceInfo([@AtestadoProfissionais], DataSourceInfo.MaxLength, "gps_prof_dominio_atuacao")
                                 Required: =false
-                                Update: =DataCardValue26.Value
+                                Update: =dcvProfissionalDominioAtuacao.Value
                                 Width: =647
                                 X: =0
                                 Y: =1
@@ -2644,7 +2644,7 @@
                                     Y: =10
                                     ZIndex: =1
 
-                                "DataCardValue26 As 'Text input'":
+                                "dcvProfissionalDominioAtuacao As 'Text input'":
                                     AccessibleLabel: =Parent.DisplayName
                                     BasePaletteColor: =
                                     DisplayMode: =Parent.DisplayMode
@@ -2666,7 +2666,7 @@
                                     Width: =Parent.Width - 48
                                     Wrap: =true
                                     X: =24
-                                    Y: =DataCardValue26.Y + DataCardValue26.Height
+                                    Y: =dcvProfissionalDominioAtuacao.Y + dcvProfissionalDominioAtuacao.Height
                                     ZIndex: =3
 
                                 StarVisible29 As Text:
@@ -2689,7 +2689,7 @@
                                 Fill: =RGBA(0, 0, 0, 0)
                                 Height: =70
                                 Required: =false
-                                Update: =Value(DataCardValue27.Value)
+                                Update: =Value(dcvHorasTrabalhadas.Value)
                                 Width: =647
                                 X: =1
                                 Y: =1
@@ -2706,7 +2706,7 @@
                                     Y: =10
                                     ZIndex: =1
 
-                                "DataCardValue27 As 'Text input'":
+                                "dcvHorasTrabalhadas As 'Text input'":
                                     AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
                                     BasePaletteColor: =
                                     DisplayMode: =Parent.DisplayMode
@@ -2726,7 +2726,7 @@
                                     Width: =Parent.Width - 48
                                     Wrap: =true
                                     X: =24
-                                    Y: =DataCardValue27.Y + DataCardValue27.Height
+                                    Y: =dcvHorasTrabalhadas.Y + dcvHorasTrabalhadas.Height
                                     ZIndex: =3
 
                                 StarVisible30 As Text:
@@ -2770,10 +2770,10 @@
                                     =Collect(
                                         colMembrosEquipe,
                                         {
-                                            prof_id: DataCardValue24.Selected,
-                                            DominioAtuacao: DataCardValue26.Value,
-                                            QuantidadeHoras: DataCardValue27.Value,
-                                            Funcao: DataCardValue25.Value
+                                            prof_id: dcvIDProfissionalAtestado.Selected,
+                                            DominioAtuacao: dcvProfissionalDominioAtuacao.Value,
+                                            QuantidadeHoras: dcvHorasTrabalhadas.Value,
+                                            Funcao: dcvProfissionalFuncaoNoProjeto.Value
                                         }
                                     );
                                 PressedBorderColor: =RGBA(0, 69, 120, 1)
@@ -3148,38 +3148,52 @@
                                 HoverBorderColor: =RGBA(0, 0, 0, 0)
                                 HoverFill: =ColorFade(gblTema.AccentColor, -10%)
                                 OnSelect: |
-                                    =Patch(
-                                        colAtestados,
-                                        Defaults(colAtestados),
+                                    =Set(
+                                        gblRegistroDoAtestado,
                                         Patch(
-                                            Atestados,
-                                            Defaults(Atestados),
-                                            {
-                                              nome_cliente: dcvNomeCliente.Value,
-                                              cnpj_cliente: dcvCnpjCliente.Value,
-                                              endr_cliente: dcvEnderecoCliente.Value, 
-                                              num_func_cliente: Value(dctNumeroFuncionariosDoCliente.Value),
-                                              ativ_econ_cliente: dcvAtividadeEconomicaDoCliente.Value,
-                                              receita_bruta_cliente: Value(dcvReceitaBrutaDoCliente.Value),
-                                              tot_atv_cliente: Value(dcvTotalAtivosDoCliente.Value),
-                                              patrim_liq_cliente: Value(dcvPatrimonioLiquidoCliente.Value),
-                                              nome_empresa_prestadora: dcvNomeEmpresaPrestadora.Value,
-                                              endr_empresa_prestadora: dcvEnderecoEmpresaPretadora.Value,
-                                              atsd_obj_trab: dcvObjetoTrabalho.Value,
-                                              atsd_descr_obj_trab: dcvDescricaoDoObjetoDoTrabalho.Value,
-                                              atsd_qtd_hrs: Value(dcvQuantidadeTotalDeHoras.Value),
-                                              atsd_local: dcvLocal.Value,
-                                              atsd_data_inicio: dtvDataInicio.SelectedDate,
-                                              atsd_data_fim: dtvDataFim.SelectedDate,
-                                              proj_engagement_code: dcvEngagementCode.Value,
-                                              atsd_registrado: dcvRegistrado.Selected.Value,
-                                              astd_file_uploaded: {FileName: First(dcvArquivoAtestado.Attachments).Name, Value: First(dcvArquivoAtestado.Attachments).Value}
-                                            }
+                                            colAtestados,
+                                            Defaults(colAtestados),
+                                            Patch(
+                                                Atestados,
+                                                Defaults(Atestados),
+                                                {
+                                                    nome_cliente: dcvNomeCliente.Value,
+                                                    cnpj_cliente: dcvCnpjCliente.Value,
+                                                    endr_cliente: dcvEnderecoCliente.Value,
+                                                    num_func_cliente: Value(dctNumeroFuncionariosDoCliente.Value),
+                                                    ativ_econ_cliente: dcvAtividadeEconomicaDoCliente.Value,
+                                                    receita_bruta_cliente: Value(dcvReceitaBrutaDoCliente.Value),
+                                                    tot_atv_cliente: Value(dcvTotalAtivosDoCliente.Value),
+                                                    patrim_liq_cliente: Value(dcvPatrimonioLiquidoCliente.Value),
+                                                    nome_empresa_prestadora: dcvNomeEmpresaPrestadora.Value,
+                                                    endr_empresa_prestadora: dcvEnderecoEmpresaPretadora.Value,
+                                                    atsd_obj_trab: dcvObjetoTrabalho.Value,
+                                                    atsd_descr_obj_trab: dcvDescricaoDoObjetoDoTrabalho.Value,
+                                                    atsd_qtd_hrs: Value(dcvQuantidadeTotalDeHoras.Value),
+                                                    atsd_local: dcvLocal.Value,
+                                                    atsd_data_inicio: dtvDataInicio.SelectedDate,
+                                                    atsd_data_fim: dtvDataFim.SelectedDate,
+                                                    proj_engagement_code: dcvEngagementCode.Value,
+                                                    atsd_registrado: dcvRegistrado.Selected.Value,
+                                                    astd_file_uploaded: {
+                                                        FileName: First(dcvArquivoAtestado.Attachments).Name,
+                                                        Value: First(dcvArquivoAtestado.Attachments).Value
+                                                    }
+                                                }
+                                            )
                                         )
                                     );
-                                    
-                                    
-                                    
+                                    Patch(
+                                        AtestadoProfissionais,
+                                        Defaults(AtestadoProfissionais),
+                                        {
+                                            atsd_id: gblRegistroDoAtestado,
+                                            prof_id: dcvIDProfissionalAtestado.Selected,
+                                            prof_funcao_projeto: dcvProfissionalFuncaoNoProjeto.Value,
+                                            prof_dominio_atuacao: dcvProfissionalDominioAtuacao.Value,
+                                            horas_trabalhadas: Value(dcvHorasTrabalhadas.Value)
+                                        }
+                                    );
                                     UpdateContext({locMostrarConfirmacaoDeCadastro: true});
                                 PressedBorderColor: =RGBA(0, 69, 120, 1)
                                 PressedColor: =RGBA(255, 255, 255, 1)
