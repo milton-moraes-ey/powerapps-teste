@@ -3173,7 +3173,7 @@
                                 HoverBorderColor: =RGBA(0, 0, 0, 0)
                                 HoverFill: =ColorFade(gblTema.AccentColor, -10%)
                                 OnSelect: |
-                                    =/*Set(
+                                    =Set(
                                         gblRegistroDoAtestado,
                                         Patch(
                                             colAtestados,
@@ -3208,7 +3208,7 @@
                                                 }
                                             )
                                         )
-                                    );*/
+                                    );
                                     ForAll(
                                         colMembrosEquipe,
                                         Patch(
@@ -3221,6 +3221,8 @@
                                                 prof_dominio_atuacao: ThisRecord.prof_dominio_atuacao        }
                                         )
                                     );
+                                    // Rodar um power automate, que pegue o uúltimo registro gerado. Com base nesse ultimo registro, podemos popular, através do Power Automate, o ID do atsd_id
+                                    
                                     UpdateContext({locMostrarConfirmacaoDeCadastro: true});
                                 PressedBorderColor: =RGBA(0, 69, 120, 1)
                                 PressedColor: =RGBA(255, 255, 255, 1)
