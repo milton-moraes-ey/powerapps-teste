@@ -197,7 +197,7 @@
             "Name": "txtSearchTextInput",
             "Parent": "ctnSearchTextInput",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 278,
+            "PublishOrderIndex": 272,
             "Rules": [
               {
                 "Category": "Data",
@@ -540,7 +540,7 @@
             "Name": "icoSearch",
             "Parent": "ctnSearchTextInput",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 279,
+            "PublishOrderIndex": 273,
             "Rules": [
               {
                 "Category": "Design",
@@ -816,7 +816,7 @@
         "Name": "ctnSearchTextInput",
         "Parent": "ComponentSearchTextInput",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 277,
+        "PublishOrderIndex": 271,
         "Rules": [
           {
             "Category": "Design",
