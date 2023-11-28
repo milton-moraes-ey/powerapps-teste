@@ -1415,68 +1415,6 @@
                         UseFluentV9Cards: =true
                         ZIndex: =3
 
-                        endr_empresa_prestadora_DataCard1 As typedDataCard.fluentV9TextualEditCard:
-                            BorderStyle: =BorderStyle.Solid
-                            DataField: ="gps_endr_empresa_prestadora"
-                            Default: =ThisItem.endr_empresa_prestadora
-                            DisplayMode: =Parent.DisplayMode
-                            DisplayName: =DataSourceInfo([@Atestados],DataSourceInfo.DisplayName,"gps_endr_empresa_prestadora")
-                            Fill: =RGBA(0, 0, 0, 0)
-                            Height: =70
-                            MaxLength: =DataSourceInfo([@Atestados], DataSourceInfo.MaxLength, "gps_endr_empresa_prestadora")
-                            Required: =true
-                            Update: =dcvEnderecoEmpresaPretadora.Value
-                            Width: =435
-                            X: =2
-                            Y: =0
-                            ZIndex: =1
-
-                            DataCardKey17 As Text:
-                                DisplayMode: =DisplayMode.Edit
-                                Height: =22
-                                Text: =Parent.DisplayName
-                                Weight: ='TextCanvas.Weight'.Semibold
-                                Width: =Parent.Width - 48
-                                Wrap: =false
-                                X: =24
-                                Y: =10
-                                ZIndex: =1
-
-                            "dcvEnderecoEmpresaPretadora As 'Text input'":
-                                AccessibleLabel: =Parent.DisplayName
-                                DisplayMode: =Parent.DisplayMode
-                                Height: =32
-                                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
-                                Required: =Parent.Required
-                                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                                Value: =Parent.Default
-                                Width: =Parent.Width - 48
-                                X: =24
-                                Y: =DataCardKey17.Y + DataCardKey17.Height + 4
-                                ZIndex: =2
-
-                            ErrorMessage17 As Text:
-                                DisplayMode: =DisplayMode.Edit
-                                Height: =30
-                                Text: =Parent.Error
-                                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                                Width: =Parent.Width - 48
-                                Wrap: =true
-                                X: =24
-                                Y: =dcvEnderecoEmpresaPretadora.Y + dcvEnderecoEmpresaPretadora.Height
-                                ZIndex: =3
-
-                            StarVisible17 As Text:
-                                Align: ='TextCanvas.Align'.Center
-                                DisplayMode: =DisplayMode.Edit
-                                Height: =30
-                                Text: ="*"
-                                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                                Width: =30
-                                X: =0
-                                Y: =DataCardKey17.Y
-                                ZIndex: =4
-
                         nome_empresa_prestadora_DataCard1 As typedDataCard.fluentV9TextualEditCard:
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="gps_nome_empresa_prestadora"
@@ -1601,6 +1539,68 @@
                                 Width: =30
                                 X: =0
                                 Y: =DataCardKey10.Y
+                                ZIndex: =4
+
+                        endr_empresa_prestadora_DataCard1 As typedDataCard.fluentV9TextualEditCard:
+                            BorderStyle: =BorderStyle.Solid
+                            DataField: ="gps_endr_empresa_prestadora"
+                            Default: =ThisItem.endr_empresa_prestadora
+                            DisplayMode: =Parent.DisplayMode
+                            DisplayName: =DataSourceInfo([@Atestados],DataSourceInfo.DisplayName,"gps_endr_empresa_prestadora")
+                            Fill: =RGBA(0, 0, 0, 0)
+                            Height: =70
+                            MaxLength: =DataSourceInfo([@Atestados], DataSourceInfo.MaxLength, "gps_endr_empresa_prestadora")
+                            Required: =true
+                            Update: =dcvEnderecoEmpresaPretadora.Value
+                            Width: =435
+                            X: =2
+                            Y: =0
+                            ZIndex: =1
+
+                            DataCardKey17 As Text:
+                                DisplayMode: =DisplayMode.Edit
+                                Height: =22
+                                Text: =Parent.DisplayName
+                                Weight: ='TextCanvas.Weight'.Semibold
+                                Width: =Parent.Width - 48
+                                Wrap: =false
+                                X: =24
+                                Y: =10
+                                ZIndex: =1
+
+                            "dcvEnderecoEmpresaPretadora As 'Text input'":
+                                AccessibleLabel: =Parent.DisplayName
+                                DisplayMode: =Parent.DisplayMode
+                                Height: =32
+                                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                                Required: =Parent.Required
+                                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                                Value: =Parent.Default
+                                Width: =Parent.Width - 48
+                                X: =24
+                                Y: =DataCardKey17.Y + DataCardKey17.Height + 4
+                                ZIndex: =2
+
+                            ErrorMessage17 As Text:
+                                DisplayMode: =DisplayMode.Edit
+                                Height: =30
+                                Text: =Parent.Error
+                                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                                Width: =Parent.Width - 48
+                                Wrap: =true
+                                X: =24
+                                Y: =dcvEnderecoEmpresaPretadora.Y + dcvEnderecoEmpresaPretadora.Height
+                                ZIndex: =3
+
+                            StarVisible17 As Text:
+                                Align: ='TextCanvas.Align'.Center
+                                DisplayMode: =DisplayMode.Edit
+                                Height: =30
+                                Text: ="*"
+                                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                Width: =30
+                                X: =0
+                                Y: =DataCardKey17.Y
                                 ZIndex: =4
 
                         atsd_obj_trab_DataCard1 As typedDataCard.fluentV9TextualEditCard:
@@ -2234,7 +2234,7 @@
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =50
                             Required: =false
-                            Update: =DataCardValue22.Attachments
+                            Update: =dcvArquivoAtestado.Attachments
                             Width: =435
                             X: =1
                             Y: =4
@@ -2251,7 +2251,7 @@
                                 Y: =10
                                 ZIndex: =1
 
-                            DataCardValue22 As attachments:
+                            dcvArquivoAtestado As attachments:
                                 AddAttachmentText: ="Upload file"
                                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                                 DisplayMode: =Parent.DisplayMode
@@ -3158,14 +3158,22 @@
                                               nome_cliente: dcvNomeCliente.Value,
                                               cnpj_cliente: dcvCnpjCliente.Value,
                                               endr_cliente: dcvEnderecoCliente.Value, 
-                                              num_func_cliente: dctNumeroFuncionariosDoCliente.Value,
+                                              num_func_cliente: Value(dctNumeroFuncionariosDoCliente.Value),
                                               ativ_econ_cliente: dcvAtividadeEconomicaDoCliente.Value,
                                               receita_bruta_cliente: Value(dcvReceitaBrutaDoCliente.Value),
                                               tot_atv_cliente: Value(dcvTotalAtivosDoCliente.Value),
                                               patrim_liq_cliente: Value(dcvPatrimonioLiquidoCliente.Value),
                                               nome_empresa_prestadora: dcvNomeEmpresaPrestadora.Value,
-                                              endr_empresa_prestadora: dc
-                                    
+                                              endr_empresa_prestadora: dcvEnderecoEmpresaPretadora.Value,
+                                              atsd_obj_trab: dcvObjetoTrabalho.Value,
+                                              atsd_descr_obj_trab: dcvDescricaoDoObjetoDoTrabalho.Value,
+                                              atsd_qtd_hrs: Value(dcvQuantidadeTotalDeHoras.Value),
+                                              atsd_local: dcvLocal.Value,
+                                              atsd_data_inicio: dtvDataInicio.SelectedDate,
+                                              atsd_data_fim: dtvDataFim.SelectedDate,
+                                              proj_engagement_code: dcvEngagementCode.Value,
+                                              atsd_registrado: dcvRegistrado.Selected.Value,
+                                              astd_file_uploaded: {FileName: First(dcvArquivoAtestado.Attachments).Name, Value: First(dcvArquivoAtestado.Attachments).Value}
                                             }
                                         )
                                     );
