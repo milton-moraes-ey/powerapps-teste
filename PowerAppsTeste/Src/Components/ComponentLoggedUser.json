@@ -117,7 +117,7 @@
             "Name": "Image1",
             "Parent": "ctnLoggedUser",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 276,
+            "PublishOrderIndex": 268,
             "Rules": [
               {
                 "Category": "Data",
@@ -416,7 +416,7 @@
             "Name": "Label1",
             "Parent": "ctnLoggedUser",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 277,
+            "PublishOrderIndex": 269,
             "Rules": [
               {
                 "Category": "Data",
@@ -788,7 +788,7 @@
         "Name": "ctnLoggedUser",
         "Parent": "ComponentLoggedUser",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 275,
+        "PublishOrderIndex": 267,
         "Rules": [
           {
             "Category": "Design",

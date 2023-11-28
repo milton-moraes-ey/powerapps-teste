@@ -29,7 +29,7 @@
                 "Name": "galleryTemplate1",
                 "Parent": "glrWinSizeNavigateMenu",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 280,
+                "PublishOrderIndex": 272,
                 "Rules": [
                   {
                     "Category": "Design",
@@ -110,7 +110,7 @@
                 "Name": "Rectangle1",
                 "Parent": "glrWinSizeNavigateMenu",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 281,
+                "PublishOrderIndex": 273,
                 "Rules": [
                   {
                     "Category": "Design",
@@ -348,7 +348,7 @@
                 "Name": "btnNavigateMenu_1",
                 "Parent": "glrWinSizeNavigateMenu",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 282,
+                "PublishOrderIndex": 274,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -667,7 +667,7 @@
                 "Name": "icoWinSizeNavigateMenu",
                 "Parent": "glrWinSizeNavigateMenu",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 283,
+                "PublishOrderIndex": 275,
                 "Rules": [
                   {
                     "Category": "Design",
@@ -940,7 +940,7 @@
                 "Name": "Title1",
                 "Parent": "glrWinSizeNavigateMenu",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 284,
+                "PublishOrderIndex": 276,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -1251,7 +1251,7 @@
             "Name": "glrWinSizeNavigateMenu",
             "Parent": "ctnWinSizeNavigateMenu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 279,
+            "PublishOrderIndex": 271,
             "Rules": [
               {
                 "Category": "Data",
@@ -1514,7 +1514,7 @@
         "Name": "ctnWinSizeNavigateMenu",
         "Parent": "ComponentWinSizeNavigateMenu",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 278,
+        "PublishOrderIndex": 270,
         "Rules": [
           {
             "Category": "Design",
