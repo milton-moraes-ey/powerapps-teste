@@ -2776,6 +2776,7 @@
                                             Funcao: dcvProfissionalFuncaoNoProjeto.Value
                                         }
                                     );
+                                    ResetForm(frmAdicionarMembrosDaEquipe)
                                 PressedBorderColor: =RGBA(0, 69, 120, 1)
                                 PressedColor: =RGBA(255, 255, 255, 1)
                                 PressedFill: =RGBA(16, 110, 190, 1)
@@ -3166,6 +3167,7 @@
                                                     tot_atv_cliente: Value(dcvTotalAtivosDoCliente.Value),
                                                     patrim_liq_cliente: Value(dcvPatrimonioLiquidoCliente.Value),
                                                     nome_empresa_prestadora: dcvNomeEmpresaPrestadora.Value,
+                                                    cnpj_empresa_prestadora: dcvCnpjEmpresaPrestadora.Value,
                                                     endr_empresa_prestadora: dcvEnderecoEmpresaPretadora.Value,
                                                     atsd_obj_trab: dcvObjetoTrabalho.Value,
                                                     atsd_descr_obj_trab: dcvDescricaoDoObjetoDoTrabalho.Value,
