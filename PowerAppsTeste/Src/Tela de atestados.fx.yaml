@@ -4,6 +4,7 @@
         Height: =Parent.Height
         LayoutAlignItems: =LayoutAlignItems.Stretch
         LayoutDirection: =LayoutDirection.Vertical
+        LayoutGap: =12
         LayoutMode: =LayoutMode.Auto
         PaddingBottom: =12
         PaddingLeft: =12

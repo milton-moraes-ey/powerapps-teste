@@ -28,7 +28,6 @@
     "DatePickerCanvas1": 78,
     "galleryTemplate1": 17,
     "glrWinSizeNavigateMenu": 16,
-    "Group1": 103,
     "Group2": 104,
     "Group3": 105,
     "Group4": 106,
@@ -77,7 +76,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "11/28/2023 12:10:49",
+  "HeaderLastSavedDateTimeUTC": "11/28/2023 12:19:24",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
@@ -100,10 +99,6 @@
     "CustomGallerySample": 0
   },
   "OrderGroupControls": {
-    "Group1": {
-      "lblObjetivo_9": 0,
-      "Rectangle6_7": 1
-    },
     "Group2": {
       "lblObjetivo_8": 0,
       "Rectangle6_6": 1
@@ -170,7 +165,6 @@
     "DatePickerCanvas1": {},
     "galleryTemplate1": {},
     "glrWinSizeNavigateMenu": {},
-    "Group1": {},
     "Group2": {},
     "Group3": {},
     "Group4": {},
@@ -256,7 +250,6 @@
     "DatePickerCanvas1": 945,
     "galleryTemplate1": 1194,
     "glrWinSizeNavigateMenu": 1193,
-    "Group1": 950,
     "Group2": 951,
     "Group3": 952,
     "Group4": 953,
