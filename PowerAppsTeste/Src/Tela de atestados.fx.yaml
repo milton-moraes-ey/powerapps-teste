@@ -2771,12 +2771,20 @@
                                         colMembrosEquipe,
                                         {
                                             prof_id: dcvIDProfissionalAtestado.Selected,
-                                            DominioAtuacao: dcvProfissionalDominioAtuacao.Value,
-                                            QuantidadeHoras: dcvHorasTrabalhadas.Value,
-                                            Funcao: dcvProfissionalFuncaoNoProjeto.Value
+                                            prof_dominio_atuacao: dcvProfissionalDominioAtuacao.Value,
+                                            horas_trabalhadas: dcvHorasTrabalhadas.Value,
+                                            prof_funcao_projeto: dcvProfissionalFuncaoNoProjeto.Value
                                         }
                                     );
                                     ResetForm(frmAdicionarMembrosDaEquipe)
+                                    
+                                    /*
+                                      prof_id: ThisRecord.prof_id,
+                                                prof_funcao_projeto: ThisRecord.Funcao,
+                                                prof_dominio_atuacao: ThisRecord.DominioAtuacao,
+                                                horas_trabalhadas: Value(ThisRecord.QuantidadeHoras)
+                                    
+                                    */
                                 PressedBorderColor: =RGBA(0, 69, 120, 1)
                                 PressedColor: =RGBA(255, 255, 255, 1)
                                 PressedFill: =RGBA(16, 110, 190, 1)
@@ -2821,7 +2829,7 @@
                                 FocusedBorderThickness: =4
                                 Font: =Font.'Segoe UI'
                                 OnSelect: =Select(Parent)
-                                Text: =ThisItem.DominioAtuacao
+                                Text: =ThisItem.prof_dominio_atuacao
                                 X: =351
                                 Y: =(Parent.TemplateHeight - Self.Height) / 2
                                 ZIndex: =1
@@ -2853,7 +2861,7 @@
                                 FocusedBorderThickness: =4
                                 Font: =Font.'Segoe UI'
                                 OnSelect: =Select(Parent)
-                                Text: =ThisItem.QuantidadeHoras
+                                Text: =ThisItem.horas_trabalhadas
                                 X: =662
                                 Y: =(Parent.TemplateHeight - Self.Height) / 2
                                 ZIndex: =3
@@ -2869,7 +2877,7 @@
                                 FocusedBorderThickness: =4
                                 Font: =Font.'Segoe UI'
                                 OnSelect: =Select(Parent)
-                                Text: =ThisItem.Funcao
+                                Text: =ThisItem.prof_funcao_projeto
                                 Width: =230
                                 X: =941
                                 Y: =(Parent.TemplateHeight - Self.Height) / 2
