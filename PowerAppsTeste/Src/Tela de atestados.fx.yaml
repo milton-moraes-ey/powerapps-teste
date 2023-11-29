@@ -3815,6 +3815,13 @@
                                                     atsd_data_fim: dtvDataFim.SelectedDate,
                                                     proj_engagement_code: dcvEngagementCode.Value,
                                                     atsd_registrado: dcvRegistrado.Selected.Value,
+                                                    nome_signatario: dcvNomeSignatario.Value,
+                                                    cargo_signatario: dcvCargoSignatario.Value,
+                                                    email_signatario: dcvEmailSignatario.Value,
+                                                    tel_signatario: dcvTelefoneSignatario.Value,
+                                                    endr_signatario: dcvEnderecoSignatario.Value,
+                                                    local_signatario: dcvLocalSignatario.Value,
+                                                    astd_data_assintr: dtvDataAssinatura.SelectedDate,
                                                     astd_file_uploaded: {
                                                         FileName: First(dcvArquivoAtestado.Attachments).Name,
                                                         Value: First(dcvArquivoAtestado.Attachments).Value
