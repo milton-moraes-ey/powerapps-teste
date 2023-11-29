@@ -3830,23 +3830,23 @@
                                             )
                                         )
                                     );
-                                    Set(
-                                        gblIDsMembrosEquipe,
-                                        Concat(
-                                            colMembrosEquipe,
-                                            prof_id.Profissional,
-                                            ","
-                                        )
-                                    );
+                                    
+                                    UpdateContext({
+                                        locMembrosDaEquipe: 
+                                        Concat(colMembrosEquipe, prof_id.Profissional, ";") 
+                                    });
+                                    
+                                    
                                     
                                     UpdateContext(
                                         {
                                             locStatusFlowDeCriacaoDeAtestadoProfissionais: '[FerramentaGPS]Relacionaratsd_idnatabelaAtestadoProfissionais'.Run(
                                                 gblRegistroDoAtestado.id,
-                                                gblIDsMembrosEquipe
+                                                locMembrosDaEquipe
                                             ).statusdeconclusao
                                         }
                                     );
+                                    
                                     /*ForAll(
                                         colMembrosEquipe,
                                         Patch(
