@@ -3827,9 +3827,10 @@
         ZIndex: =3
 
         ctnAddDescricaoAtestado As groupContainer.horizontalAutoLayoutContainer:
-            Fill: =gblTema.WhiteColor
+            Fill: =gblTema.OffWhiteColor
             Height: =Parent.Height * 0.6
             LayoutDirection: =LayoutDirection.Vertical
+            LayoutGap: =6
             LayoutMode: =LayoutMode.Auto
             PaddingBottom: =12
             PaddingLeft: =12
@@ -3862,7 +3863,33 @@
                     Height: =32
                     Icon: =Icon.Cancel
                     Width: =32
-                    X: =960
+                    X: =Parent.Width - Self.Width - 12
                     Y: =(Parent.Height - Self.Height) / 2
+                    ZIndex: =2
+
+            Container5 As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
+                LayoutGap: =20
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                PaddingBottom: =12
+                PaddingLeft: =12
+                PaddingRight: =12
+                PaddingTop: =12
+                ZIndex: =2
+
+                ctnDescricoesAdicionadas As groupContainer.manualLayoutContainer:
+                    DropShadow: =DropShadow.Semibold
+                    Fill: =gblTema.WhiteColor
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    ZIndex: =1
+
+                ctnAdicionarNovasDescricoes As groupContainer.manualLayoutContainer:
+                    DropShadow: =DropShadow.Semibold
+                    Fill: =gblTema.WhiteColor
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
                     ZIndex: =2
 
