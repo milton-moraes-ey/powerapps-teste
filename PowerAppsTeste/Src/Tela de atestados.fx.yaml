@@ -58,6 +58,10 @@
                 Width: =36
                 ZIndex: =2
 
+            Label2 As label:
+                Text: =locStatusFlowDeCriacaoDeAtestadoProfissionais
+                ZIndex: =3
+
         ctnCounteudoAtestados As groupContainer.verticalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             LayoutAlignItems: =LayoutAlignItems.Stretch
@@ -3830,14 +3834,22 @@
                                             )
                                         )
                                     );
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    Set(gblIDsMembrosEquipe, Concat(colMembrosEquipe,prof_id.Profissional, ";"));
-                                    
-                                    
+                                    Set(
+                                        gblIDsMembrosEquipe,
+                                        Concat(
+                                            colMembrosEquipe,
+                                            prof_id.Profissional,
+                                            ","
+                                        )
+                                    );
+                                    UpdateContext(
+                                        {
+                                            locStatusFlowDeCriacaoDeAtestadoProfissionais: '[FerramentaGPS]Relacionaratsd_idnatabelaAtestadoProfissionais'.Run(
+                                                gblRegistroDoAtestado.id,
+                                                gblIDsMembrosEquipe
+                                            )
+                                        }
+                                    );
                                     /*ForAll(
                                         colMembrosEquipe,
                                         Patch(
@@ -3850,8 +3862,6 @@
                                                 prof_dominio_atuacao: ThisRecord.prof_dominio_atuacao        }
                                         )
                                     );*/
-                                    
-                                    
                                     UpdateContext({locMostrarConfirmacaoDeCadastro: true});
                                 PressedBorderColor: =RGBA(0, 69, 120, 1)
                                 PressedColor: =RGBA(255, 255, 255, 1)

@@ -1,1 +1,48 @@
-{}
+{
+  "39c8e27f-da33-4049-a6e0-b9f99a513be2": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowEntityId": {
+          "value": "b4ea2cd6-248e-ee11-8179-000d3ac1611c"
+        },
+        "workflowName": {
+          "value": "4a895428-9006-bb45-f0ad-0e72ec398a98"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowEntityId": {
+          "value": "b4ea2cd6-248e-ee11-8179-000d3ac1611c"
+        },
+        "workflowName": {
+          "value": "4a895428-9006-bb45-f0ad-0e72ec398a98"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "[FerramentaGPS]Relacionaratsd_idnatabelaAtestadoProfissionais"
+    ],
+    "dependencies": {
+      "shared_commondataserviceforapps": "b01f8e89-0ee3-496a-bfe6-a344c256263c"
+    },
+    "dependents": [],
+    "id": "39c8e27f-da33-4049-a6e0-b9f99a513be2"
+  },
+  "b01f8e89-0ee3-496a-bfe6-a344c256263c": {
+    "connectionRef": {
+      "displayName": "Microsoft Dataverse",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/commondataserviceforapps/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_commondataserviceforapps"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "39c8e27f-da33-4049-a6e0-b9f99a513be2"
+    ],
+    "id": "b01f8e89-0ee3-496a-bfe6-a344c256263c"
+  }
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_logicflows",
+    "FlowNameId": "c456f469-1b67-4578-b3d4-090deda30d28",
+    "Name": "[FerramentaGPS]Relacionaratsd_idnatabelaAtestadoProfissionais",
+    "ServiceKind": "ConnectedWadl",
+    "Type": "ServiceInfo",
+    "WorkflowEntityId": "b4ea2cd6-248e-ee11-8179-000d3ac1611c"
+  }
+]

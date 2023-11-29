@@ -1754,66 +1754,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.gblIDsMembrosEquipe"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.gblIDsMembrosEquipe",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "gblIDsMembrosEquipe",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.gblRegistroDoAtestado"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.gblRegistroDoAtestado",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "gblRegistroDoAtestado",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "App.OnStart"
                 }
               ],
@@ -1837,7 +1777,7 @@
             "level": "Medium"
           },
           "ruleId": "app-CollectDelegatableDataSource",
-          "ruleIndex": 4
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -1866,7 +1806,7 @@
             "level": "Medium"
           },
           "ruleId": "app-DataSourceDefaultMaxRowsLimit",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -1896,7 +1836,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -1955,7 +1895,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -1985,7 +1925,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -2015,7 +1955,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
+          "ruleIndex": 5
         }
       ],
       "tool": {
@@ -2075,23 +2015,6 @@
               }
             },
             {
-              "id": "app-UnusedVariables",
-              "messageStrings": {
-                "issue": {
-                  "text": "Unused variable"
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "howToFix": [
-                  "Remove the unused variable."
-                ],
-                "level": "Medium",
-                "primaryCategory": "performance",
-                "whyFix": "This variable is declared but is not referenced by any control, so it is not needed."
-              }
-            },
-            {
               "id": "app-CollectDelegatableDataSource",
               "messageStrings": {
                 "issue": {
@@ -2126,6 +2049,23 @@
               }
             },
             {
+              "id": "app-UnusedVariables",
+              "messageStrings": {
+                "issue": {
+                  "text": "Unused variable"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Remove the unused variable."
+                ],
+                "level": "Medium",
+                "primaryCategory": "performance",
+                "whyFix": "This variable is declared but is not referenced by any control, so it is not needed."
+              }
+            },
+            {
               "id": "app-ScreenHasManyControls",
               "messageStrings": {
                 "issue": {
@@ -2143,7 +2083,7 @@
                 ],
                 "level": "Medium",
                 "primaryCategory": "performance",
-                "whyFix": "Each control consumes resources, and an app may become slow or unresponsive if a screen has too many controls. The estimated complexity of \"Tela de atestados\" is 443, which exceeds the maximum threshold recommended (300)."
+                "whyFix": "Each control consumes resources, and an app may become slow or unresponsive if a screen has too many controls. The estimated complexity of \"Tela de atestados\" is 444, which exceeds the maximum threshold recommended (300)."
               }
             }
           ],
