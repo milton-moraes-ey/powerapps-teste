@@ -3973,6 +3973,7 @@
                         LoadingSpinner: =LoadingSpinner.Data
                         TemplateFill: =gblTema.OffWhiteColor
                         TemplateSize: =46
+                        Visible: =If(CountRows(colDescricaoAdicionada) > 0, true, false)
                         Width: =Parent.Width - 24
                         X: =(Parent.Width - Self.Width) / 2
                         Y: |
@@ -4036,4 +4037,54 @@
                         X: =glrDescricoesAdicionadas.X + glrDescricoesAdicionadas.Width - Self.Width
                         Y: =Parent.Height - Self.Height - 12
                         ZIndex: =2
+
+                    ctnNenhumaDescricaoAdicionada As groupContainer.verticalAutoLayoutContainer:
+                        DropShadow: =DropShadow.None
+                        Height: =363
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutGap: =12
+                        LayoutJustifyContent: =LayoutJustifyContent.Center
+                        LayoutMode: =LayoutMode.Auto
+                        Visible: =If(CountRows(colDescricaoAdicionada) > 0, false, true)
+                        Width: =Parent.Width
+                        ZIndex: =3
+
+                        Label2_6 As label:
+                            Align: =Align.Center
+                            AutoHeight: =true
+                            BorderColor: =RGBA(0, 0, 0, 0)
+                            BorderStyle: =BorderStyle.None
+                            BorderThickness: =2
+                            Color: =gblTema.DarkGrayColor
+                            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                            DisabledColor: =RGBA(161, 159, 157, 1)
+                            FocusedBorderThickness: =4
+                            Font: =Font.'Segoe UI'
+                            Italic: =true
+                            Size: =12
+                            Text: ="Nenhuma descrição adicionada"
+                            Width: =300
+                            X: |
+                                =glrAtestados.X
+                            Y: =(Parent.Height - Self.Height) / 2
+                            ZIndex: =1
+
+                        imgNenhumMembroAdicionado_1 As image:
+                            BorderColor: =RGBA(0, 0, 0, 0)
+                            BorderStyle: =BorderStyle.None
+                            BorderThickness: =2
+                            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                            DisabledFill: =RGBA(0, 0, 0, 0)
+                            FocusedBorderThickness: =4
+                            Height: =Min(100, Parent.Height * 0.8)
+                            HoverBorderColor: =RGBA(0, 0, 0, 0)
+                            HoverFill: =RGBA(0, 0, 0, 0)
+                            Image: =empty
+                            PressedBorderColor: =RGBA(0, 0, 0, 0)
+                            PressedFill: =RGBA(0, 0, 0, 0)
+                            Transparency: =0.7
+                            X: =(Parent.Width - Self.Width) / 2
+                            Y: =(Parent.Height - Self.Height) / 2
+                            ZIndex: =2
 
