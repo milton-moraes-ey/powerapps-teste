@@ -2377,6 +2377,7 @@
 
                     Form1 As form.PowerApps_CoreControls_Form:
                         DataSource: =Atestados
+                        DefaultMode: =FormMode.New
                         LayoutMinHeight: =250
                         LayoutMinWidth: =400
                         UseFluentV9Cards: =true
@@ -3785,7 +3786,8 @@
                                 HoverBorderColor: =RGBA(0, 0, 0, 0)
                                 HoverFill: =ColorFade(gblTema.AccentColor, -10%)
                                 OnSelect: |
-                                    =Set(
+                                    =// Salvar os dados do Atestado na tabela de Atestados e na Collection de Atestados (colAtestados). Informar esse registro em uma variável global, para podermos encontrar o último atestado criado de forma mais fácil (gblRegistroDoAtestado)
+                                    Set(
                                         gblRegistroDoAtestado,
                                         Patch(
                                             colAtestados,
@@ -3821,7 +3823,15 @@
                                             )
                                         )
                                     );
-                                    ForAll(
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    Set(gblIDsMembrosEquipe, Concat(colMembrosEquipe,prof_id.Profissional, ";"));
+                                    
+                                    
+                                    /*ForAll(
                                         colMembrosEquipe,
                                         Patch(
                                             AtestadoProfissionais,
@@ -3832,8 +3842,8 @@
                                                 prof_funcao_projeto: ThisRecord.prof_funcao_projeto,
                                                 prof_dominio_atuacao: ThisRecord.prof_dominio_atuacao        }
                                         )
-                                    );
-                                    // Rodar um power automate, que pegue o uúltimo registro gerado. Com base nesse ultimo registro, podemos popular, através do Power Automate, o ID do atsd_id
+                                    );*/
+                                    
                                     
                                     UpdateContext({locMostrarConfirmacaoDeCadastro: true});
                                 PressedBorderColor: =RGBA(0, 69, 120, 1)
