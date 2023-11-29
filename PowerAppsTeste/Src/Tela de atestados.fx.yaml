@@ -3830,7 +3830,6 @@
             Fill: =gblTema.OffWhiteColor
             Height: =Parent.Height * 0.6
             LayoutDirection: =LayoutDirection.Vertical
-            LayoutGap: =6
             LayoutMode: =LayoutMode.Auto
             PaddingBottom: =12
             PaddingLeft: =12
@@ -3841,7 +3840,7 @@
             Y: =(Parent.Height - Self.Height) / 2
             ZIndex: =1
 
-            Container4 As groupContainer.manualLayoutContainer:
+            ctnTituloDescObjeto As groupContainer.manualLayoutContainer:
                 DropShadow: =DropShadow.None
                 FillPortions: =0
                 Height: =50
@@ -3867,8 +3866,9 @@
                     Y: =(Parent.Height - Self.Height) / 2
                     ZIndex: =2
 
-            Container5 As groupContainer.horizontalAutoLayoutContainer:
+            ctnOrganizadorDescObjeto As groupContainer.horizontalAutoLayoutContainer:
                 DropShadow: =DropShadow.None
+                LayoutAlignItems: =LayoutAlignItems.Stretch
                 LayoutGap: =20
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
@@ -3880,6 +3880,7 @@
                 ZIndex: =2
 
                 ctnDescricoesAdicionadas As groupContainer.manualLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
                     DropShadow: =DropShadow.Semibold
                     Fill: =gblTema.WhiteColor
                     LayoutMinHeight: =100
@@ -3887,6 +3888,7 @@
                     ZIndex: =1
 
                 ctnAdicionarNovasDescricoes As groupContainer.manualLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
                     DropShadow: =DropShadow.Semibold
                     Fill: =gblTema.WhiteColor
                     LayoutMinHeight: =100
