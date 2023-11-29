@@ -2054,7 +2054,7 @@
                             Height: =215
                             Required: =true
                             Update: =dcvDescricaoDoObjetoDoTrabalho.Value
-                            Width: =653
+                            Width: =1306
                             X: =0
                             Y: =5
                             ZIndex: =1
@@ -2108,7 +2108,7 @@
 
                             icoAddDescricaoDoObjeto As icon.Add:
                                 Color: =gblTema.AccentColor
-                                Fill: =gblTema.OffWhiteColor
+                                Fill: =gblTema.WhiteColor  
                                 Height: =32
                                 Icon: =Icon.Add
                                 OnSelect: |-
