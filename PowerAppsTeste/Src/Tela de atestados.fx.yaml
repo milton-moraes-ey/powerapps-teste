@@ -59,7 +59,7 @@
                 ZIndex: =2
 
             Label2 As label:
-                Text: =locStatusFlowDeCriacaoDeAtestadoProfissionais
+                Text: =locStatusFlowDeCriacaoDeAtestadoProfissionais.statusdeconclusao
                 ZIndex: =3
 
         ctnCounteudoAtestados As groupContainer.verticalAutoLayoutContainer:
@@ -3077,7 +3077,7 @@
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         Italic: =true
-                        Size: =12
+                        Size: =10
                         Text: ="Criar novo atestado - Adicionar membros da equipe"
                         X: |
                             =glrAtestados.X

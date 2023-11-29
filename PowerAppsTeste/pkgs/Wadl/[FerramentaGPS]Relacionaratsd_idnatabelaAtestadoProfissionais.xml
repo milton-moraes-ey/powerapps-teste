@@ -8,6 +8,11 @@
         <property name="text" type="string" />
         <property name="text_1" type="string" />
       </object>
+      <boolean name="ResponseActionOutput_statusdeconclusao_def" />
+      <object name="ResponseActionOutput">
+        <property name="statusdeconclusao" type="boolean" />
+      </object>
+      <object name="Run_responses_default_def" />
     </jsonTypes>
   </grammars>
   <resources siena:authenticationProviderHref="#PowerAppAuth" base="https://brazil-001.azure-apim.net/apim/logicflows">
@@ -24,10 +29,13 @@
               <doc title="id_atestado" />
             </param>
             <param style="plain" name="text_1" path="/text_1" type="xs:string" required="true">
-              <doc title="id_atestado_profissionais" />
+              <doc title="lista_profissionais_adicionados" />
             </param>
           </representation>
         </request>
+        <response>
+          <representation mediaType="application/json" element="service:ResponseActionOutput" />
+        </response>
       </method>
     </resource>
   </resources>
