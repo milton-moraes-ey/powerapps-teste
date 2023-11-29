@@ -3830,24 +3830,7 @@
                                             )
                                         )
                                     );
-                                    
-                                    UpdateContext({
-                                        locMembrosDaEquipe: 
-                                        Concat(colMembrosEquipe, prof_id.Profissional, ";") 
-                                    });
-                                    
-                                    
-                                    
-                                    UpdateContext(
-                                        {
-                                            locStatusFlowDeCriacaoDeAtestadoProfissionais: '[FerramentaGPS]Relacionaratsd_idnatabelaAtestadoProfissionais'.Run(
-                                                gblRegistroDoAtestado.id,
-                                                locMembrosDaEquipe
-                                            ).statusdeconclusao
-                                        }
-                                    );
-                                    
-                                    /*ForAll(
+                                    ForAll(
                                         colMembrosEquipe,
                                         Patch(
                                             AtestadoProfissionais,
@@ -3856,9 +3839,14 @@
                                                 prof_id: ThisRecord.prof_id,
                                                 horas_trabalhadas: Value(ThisRecord.horas_trabalhadas),
                                                 prof_funcao_projeto: ThisRecord.prof_funcao_projeto,
-                                                prof_dominio_atuacao: ThisRecord.prof_dominio_atuacao        }
-                                        )
-                                    );*/
+                                                prof_dominio_atuacao: ThisRecord.prof_dominio_atuacao
+                                            }
+                                        );
+                                        '[FerramentaGPS]Relacionaratsd_idnatabelaAtestadoProfissionais'.Run(
+                                            gblRegistroDoAtestado.id,
+                                            ThisRecord.prof_id.Profissional
+                                        ).statusdeconclusao
+                                    );
                                     UpdateContext({locMostrarConfirmacaoDeCadastro: true});
                                 PressedBorderColor: =RGBA(0, 69, 120, 1)
                                 PressedColor: =RGBA(255, 255, 255, 1)
