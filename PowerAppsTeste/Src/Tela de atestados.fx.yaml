@@ -4003,12 +4003,7 @@
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverFill: =ColorFade(gblTema.AccentColor, -10%)
                         OnSelect: |-
-                            =Collect(colDescricaoAdicionada,
-                                {
-                                    Descricao: txtAddDescObjeto.Value
-                                }
-                            );
-                            Reset(txtAddDescObjeto)
+                            =UpdateContext({locConcatenarDescricoesAdicionadas: Concat(colDescricaoAdicionada,Descricao, ",")})
                         PressedBorderColor: =RGBA(0, 69, 120, 1)
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: =RGBA(16, 110, 190, 1)
