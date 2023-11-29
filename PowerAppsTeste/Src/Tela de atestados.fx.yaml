@@ -810,7 +810,7 @@
                             DataCardKey1 As Text:
                                 DisplayMode: =DisplayMode.Edit
                                 Height: =22
-                                Text: =Parent.DisplayName
+                                Text: ="Nome do cliente"
                                 Weight: ='TextCanvas.Weight'.Semibold
                                 Width: =Parent.Width - 48
                                 Wrap: =false
@@ -873,7 +873,7 @@
                             DataCardKey2 As Text:
                                 DisplayMode: =DisplayMode.Edit
                                 Height: =22
-                                Text: =Parent.DisplayName
+                                Text: ="CNPJ"
                                 Weight: ='TextCanvas.Weight'.Semibold
                                 Width: =Parent.Width - 48
                                 Wrap: =false
@@ -936,7 +936,7 @@
                             DataCardKey3 As Text:
                                 DisplayMode: =DisplayMode.Edit
                                 Height: =22
-                                Text: =Parent.DisplayName
+                                Text: ="Endereço"
                                 Weight: ='TextCanvas.Weight'.Semibold
                                 Width: =Parent.Width - 48
                                 Wrap: =false
@@ -998,7 +998,7 @@
                             DataCardKey4 As Text:
                                 DisplayMode: =DisplayMode.Edit
                                 Height: =22
-                                Text: =Parent.DisplayName
+                                Text: ="Número de funcionários"
                                 Weight: ='TextCanvas.Weight'.Semibold
                                 Width: =Parent.Width - 48
                                 Wrap: =false
@@ -1059,7 +1059,7 @@
                             DataCardKey5 As Text:
                                 DisplayMode: =DisplayMode.Edit
                                 Height: =22
-                                Text: =Parent.DisplayName
+                                Text: ="Atividade econômica"
                                 Weight: ='TextCanvas.Weight'.Semibold
                                 Width: =Parent.Width - 48
                                 Wrap: =false
@@ -1121,7 +1121,7 @@
                             DataCardKey6 As Text:
                                 DisplayMode: =DisplayMode.Edit
                                 Height: =22
-                                Text: =Parent.DisplayName
+                                Text: ="Receita bruta"
                                 Weight: ='TextCanvas.Weight'.Semibold
                                 Width: =Parent.Width - 48
                                 Wrap: =false
@@ -1181,7 +1181,7 @@
                             DataCardKey7 As Text:
                                 DisplayMode: =DisplayMode.Edit
                                 Height: =22
-                                Text: =Parent.DisplayName
+                                Text: ="Total de ativos"
                                 Weight: ='TextCanvas.Weight'.Semibold
                                 Width: =Parent.Width - 48
                                 Wrap: =false
@@ -1241,7 +1241,7 @@
                             DataCardKey8 As Text:
                                 DisplayMode: =DisplayMode.Edit
                                 Height: =22
-                                Text: =Parent.DisplayName
+                                Text: ="Patrimônio líquido"
                                 Weight: ='TextCanvas.Weight'.Semibold
                                 Width: =Parent.Width - 48
                                 Wrap: =false
