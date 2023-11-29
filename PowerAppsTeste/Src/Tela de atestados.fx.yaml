@@ -3822,90 +3822,16 @@
     ctnPopUpAddDescricaoAtestado As groupContainer.manualLayoutContainer:
         Fill: =RGBA(0, 0, 0, 0.6)
         Height: =Parent.Height
-        Visible: =locMostrarMensagemDeEdicaoDeAtestado
+        Visible: =locMostrarPopUpParaAdicionarDescricao
         Width: =Parent.Width
         ZIndex: =3
 
-        ctnMensagemConfirmacao_3 As groupContainer.manualLayoutContainer:
+        Container1 As groupContainer.horizontalAutoLayoutContainer:
             Fill: =gblTema.WhiteColor
-            Height: =342
-            Width: =600
+            Height: =Parent.Height * 0.6
+            LayoutMode: =LayoutMode.Auto
+            Width: =Parent.Width * 0.8
             X: =(Parent.Width - Self.Width) / 2
             Y: =(Parent.Height - Self.Height) / 2
             ZIndex: =1
-
-            Icon8_3 As icon.CheckBadge:
-                Color: |-
-                    =ColorValue("#1bc58f")
-                DisplayMode: =DisplayMode.View
-                Icon: =Icon.CheckBadge
-                X: |
-                    =(Parent.Width - Self.Width) / 2
-                Y: =40
-                ZIndex: =2
-
-            Label1_4 As label:
-                Align: =Align.Center
-                AutoHeight: =true
-                Color: =gblTema.OffBlackColor
-                Font: =Font.'Segoe UI'
-                FontWeight: =FontWeight.Bold
-                Height: =57
-                Size: =18
-                Text: ="Atestado editado com sucesso!"
-                Width: =588
-                X: |
-                    =(Parent.Width - Self.Width) / 2
-                Y: =123
-                ZIndex: =3
-
-            Label13_3 As label:
-                Align: =Align.Center
-                AutoHeight: =true
-                Color: =gblTema.DarkGrayColor
-                Font: =Font.'Segoe UI'
-                Height: =70
-                LineHeight: =1.5
-                Size: =12
-                Text: ="Seu atestado foi editado com sucesso. Você pode conferir na aba 'Atestados'."
-                Width: =512
-                X: |
-                    =(Parent.Width - Self.Width) / 2
-                Y: =182
-                ZIndex: =4
-
-            btnConfirmarCadastro_1 As button:
-                BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =BorderStyle.None
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(161, 159, 157, 1)
-                DisabledFill: =RGBA(242, 242, 241, 0)
-                Fill: =gblTema.AccentColor
-                FocusedBorderColor: =ColorFade(Self.Fill, 75%)
-                FocusedBorderThickness: =1
-                Font: =Font.'Segoe UI'
-                FontWeight: =FontWeight.Normal
-                HoverBorderColor: =RGBA(0, 0, 0, 0)
-                HoverFill: =ColorFade(gblTema.AccentColor, -10%)
-                OnSelect: |-
-                    =UpdateContext(
-                        {
-                            locMostrarMensagemDeEdicaoDeAtestado: false,
-                            locAcaoEscolhida: Blank()
-                        }
-                    )
-                PressedBorderColor: =RGBA(0, 69, 120, 1)
-                PressedColor: =RGBA(255, 255, 255, 1)
-                PressedFill: =RGBA(16, 110, 190, 1)
-                RadiusBottomLeft: =4
-                RadiusBottomRight: =4
-                RadiusTopLeft: =4
-                RadiusTopRight: =4
-                Size: =14
-                Text: ="OK"
-                Width: =140
-                X: |
-                    =(Parent.Width - Self.Width) / 2
-                Y: =260
-                ZIndex: =5
 
