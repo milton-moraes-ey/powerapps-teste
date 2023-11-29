@@ -1,5 +1,5 @@
 {
-  "57eb6938-0662-444f-bfcf-3314b478b690": {
+  "77c5bb54-e5f6-466c-92b9-1a97289c26e5": {
     "connectionRef": {
       "displayName": "Microsoft Dataverse",
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/commondataserviceforapps/icon.png",
@@ -9,17 +9,17 @@
     "dataSources": [],
     "dependencies": {},
     "dependents": [
-      "f2370a44-ecb6-4fc3-8540-81196d05db1f"
+      "daee284c-cac9-4106-9a07-a91a2d6b6e93"
     ],
-    "id": "57eb6938-0662-444f-bfcf-3314b478b690"
+    "id": "77c5bb54-e5f6-466c-92b9-1a97289c26e5"
   },
-  "f2370a44-ecb6-4fc3-8540-81196d05db1f": {
+  "daee284c-cac9-4106-9a07-a91a2d6b6e93": {
     "connectionRef": {
       "displayName": "Logic flows",
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
-        "57eb6938-0662-444f-bfcf-3314b478b690": {
+        "77c5bb54-e5f6-466c-92b9-1a97289c26e5": {
           "value": "shared_commondataserviceforapps"
         },
         "workflowEntityId": {
@@ -31,7 +31,7 @@
       },
       "parameterHintsV2": {
         "shared_commondataserviceforapps": {
-          "value": "57eb6938-0662-444f-bfcf-3314b478b690"
+          "value": "77c5bb54-e5f6-466c-92b9-1a97289c26e5"
         },
         "workflowEntityId": {
           "value": "b4ea2cd6-248e-ee11-8179-000d3ac1611c"
@@ -46,9 +46,9 @@
       "[FerramentaGPS]Relacionaratsd_idnatabelaAtestadoProfissionais"
     ],
     "dependencies": {
-      "shared_commondataserviceforapps": "57eb6938-0662-444f-bfcf-3314b478b690"
+      "shared_commondataserviceforapps": "77c5bb54-e5f6-466c-92b9-1a97289c26e5"
     },
     "dependents": [],
-    "id": "f2370a44-ecb6-4fc3-8540-81196d05db1f"
+    "id": "daee284c-cac9-4106-9a07-a91a2d6b6e93"
   }
 }

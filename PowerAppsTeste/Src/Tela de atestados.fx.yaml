@@ -1410,12 +1410,12 @@
                         ZIndex: =2
 
                     frmDadosEmpresaPrestouServico As form.PowerApps_CoreControls_Form:
-                        AlignInContainer: =AlignInContainer.SetByContainer
                         BorderColor: =RGBA(245, 245, 245, 1)
                         DataSource: =Atestados
                         DefaultMode: =FormMode.New
                         LayoutMinHeight: =250
                         LayoutMinWidth: =400
+                        NumberOfColumns: =2
                         UseFluentV9Cards: =true
                         ZIndex: =3
 
@@ -1430,7 +1430,7 @@
                             MaxLength: =DataSourceInfo([@Atestados], DataSourceInfo.MaxLength, "gps_nome_empresa_prestadora")
                             Required: =true
                             Update: =dcvNomeEmpresaPrestadora.Value
-                            Width: =435
+                            Width: =653
                             X: =0
                             Y: =0
                             ZIndex: =1
@@ -1438,7 +1438,7 @@
                             DataCardKey9 As Text:
                                 DisplayMode: =DisplayMode.Edit
                                 Height: =22
-                                Text: =Parent.DisplayName
+                                Text: ="Nome da empresa prestadora do serviço"
                                 Weight: ='TextCanvas.Weight'.Semibold
                                 Width: =Parent.Width - 48
                                 Wrap: =false
@@ -1493,7 +1493,7 @@
                             MaxLength: =DataSourceInfo([@Atestados], DataSourceInfo.MaxLength, "gps_cnpj_empresa_prestadora")
                             Required: =true
                             Update: =dcvCnpjEmpresaPrestadora.Value
-                            Width: =435
+                            Width: =653
                             X: =1
                             Y: =0
                             ZIndex: =1
@@ -1501,7 +1501,7 @@
                             DataCardKey10 As Text:
                                 DisplayMode: =DisplayMode.Edit
                                 Height: =22
-                                Text: =Parent.DisplayName
+                                Text: ="CNPJ"
                                 Weight: ='TextCanvas.Weight'.Semibold
                                 Width: =Parent.Width - 48
                                 Wrap: =false
@@ -1556,15 +1556,15 @@
                             MaxLength: =DataSourceInfo([@Atestados], DataSourceInfo.MaxLength, "gps_endr_empresa_prestadora")
                             Required: =true
                             Update: =dcvEnderecoEmpresaPretadora.Value
-                            Width: =435
-                            X: =2
-                            Y: =0
+                            Width: =653
+                            X: =0
+                            Y: =1
                             ZIndex: =1
 
                             DataCardKey17 As Text:
                                 DisplayMode: =DisplayMode.Edit
                                 Height: =22
-                                Text: =Parent.DisplayName
+                                Text: ="Endereço"
                                 Weight: ='TextCanvas.Weight'.Semibold
                                 Width: =Parent.Width - 48
                                 Wrap: =false
@@ -1619,15 +1619,15 @@
                             MaxLength: =DataSourceInfo([@Atestados], DataSourceInfo.MaxLength, "gps_atsd_obj_trab")
                             Required: =true
                             Update: =dcvObjetoTrabalho.Value
-                            Width: =435
-                            X: =0
+                            Width: =653
+                            X: =1
                             Y: =1
                             ZIndex: =1
 
                             DataCardKey11 As Text:
                                 DisplayMode: =DisplayMode.Edit
                                 Height: =22
-                                Text: =Parent.DisplayName
+                                Text: ="Objeto do trabalho"
                                 Weight: ='TextCanvas.Weight'.Semibold
                                 Width: =Parent.Width - 48
                                 Wrap: =false
@@ -1681,15 +1681,15 @@
                             Height: =166
                             Required: =true
                             Update: =dcvDescricaoDoObjetoDoTrabalho.Value
-                            Width: =435
-                            X: =1
-                            Y: =1
+                            Width: =653
+                            X: =0
+                            Y: =2
                             ZIndex: =1
 
                             DataCardKey12 As Text:
                                 DisplayMode: =DisplayMode.Edit
                                 Height: =22
-                                Text: =Parent.DisplayName
+                                Text: ="Descrição"
                                 Weight: ='TextCanvas.Weight'.Semibold
                                 Width: =Parent.Width - 48
                                 Wrap: =false
@@ -1743,15 +1743,15 @@
                             Height: =70
                             Required: =true
                             Update: =Value(dcvQuantidadeTotalDeHoras.Value)
-                            Width: =435
-                            X: =2
-                            Y: =1
+                            Width: =653
+                            X: =1
+                            Y: =2
                             ZIndex: =1
 
                             DataCardKey13 As Text:
                                 DisplayMode: =DisplayMode.Edit
                                 Height: =22
-                                Text: =Parent.DisplayName
+                                Text: ="Quantidade de horas envolvidas"
                                 Weight: ='TextCanvas.Weight'.Semibold
                                 Width: =Parent.Width - 48
                                 Wrap: =false
@@ -1804,15 +1804,15 @@
                             MaxLength: =DataSourceInfo([@Atestados], DataSourceInfo.MaxLength, "gps_atsd_local")
                             Required: =true
                             Update: =dcvLocal.Value
-                            Width: =435
+                            Width: =653
                             X: =0
-                            Y: =2
+                            Y: =3
                             ZIndex: =1
 
                             DataCardKey14 As Text:
                                 DisplayMode: =DisplayMode.Edit
                                 Height: =22
-                                Text: =Parent.DisplayName
+                                Text: ="Local"
                                 Weight: ='TextCanvas.Weight'.Semibold
                                 Width: =Parent.Width - 48
                                 Wrap: =false
@@ -1866,15 +1866,15 @@
                             Height: =70
                             Required: =true
                             Update: =If(Not IsBlank(dtvDataInicio.SelectedDate), Date(Year(dtvDataInicio.SelectedDate), Month(dtvDataInicio.SelectedDate), Day(dtvDataInicio.SelectedDate)))
-                            Width: =435
+                            Width: =653
                             X: =1
-                            Y: =2
+                            Y: =3
                             ZIndex: =1
 
                             DataCardKey15 As Text:
                                 DisplayMode: =DisplayMode.Edit
                                 Height: =22
-                                Text: =Parent.DisplayName
+                                Text: ="Data de início"
                                 Weight: ='TextCanvas.Weight'.Semibold
                                 Width: =Parent.Width - 48
                                 Wrap: =false
@@ -1926,15 +1926,15 @@
                             Height: =70
                             Required: =true
                             Update: =If(Not IsBlank(dtvDataFim.SelectedDate), Date(Year(dtvDataFim.SelectedDate), Month(dtvDataFim.SelectedDate), Day(dtvDataFim.SelectedDate)))
-                            Width: =435
-                            X: =2
-                            Y: =2
+                            Width: =653
+                            X: =0
+                            Y: =4
                             ZIndex: =1
 
                             DataCardKey16 As Text:
                                 DisplayMode: =DisplayMode.Edit
                                 Height: =22
-                                Text: =Parent.DisplayName
+                                Text: ="Data final"
                                 Weight: ='TextCanvas.Weight'.Semibold
                                 Width: =Parent.Width - 48
                                 Wrap: =false
@@ -1949,7 +1949,7 @@
                                 Height: =32
                                 SelectedDate: =Parent.Default
                                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                                Width: =387
+                                Width: =Parent.Width - 48
                                 X: =24
                                 Y: =DataCardKey16.Y + DataCardKey16.Height + 4
                                 ZIndex: =2
@@ -1987,15 +1987,15 @@
                             MaxLength: =DataSourceInfo([@Atestados], DataSourceInfo.MaxLength, "gps_proj_engagement_code")
                             Required: =false
                             Update: =dcvEngagementCode.Value
-                            Width: =435
-                            X: =0
-                            Y: =3
+                            Width: =653
+                            X: =1
+                            Y: =4
                             ZIndex: =1
 
                             DataCardKey21 As Text:
                                 DisplayMode: =DisplayMode.Edit
                                 Height: =22
-                                Text: =Parent.DisplayName
+                                Text: ="Código do projeto"
                                 Weight: ='TextCanvas.Weight'.Semibold
                                 Width: =Parent.Width - 48
                                 Wrap: =false
@@ -2049,15 +2049,15 @@
                             Height: =70
                             Required: =false
                             Update: =dcvRegistrado.Selected.Value
-                            Width: =435
-                            X: =1
-                            Y: =3
+                            Width: =653
+                            X: =0
+                            Y: =5
                             ZIndex: =1
 
                             DataCardKey23 As Text:
                                 DisplayMode: =DisplayMode.Edit
                                 Height: =22
-                                Text: =Parent.DisplayName
+                                Text: ="Registrado"
                                 Weight: ='TextCanvas.Weight'.Semibold
                                 Width: =Parent.Width - 48
                                 Wrap: =false
@@ -2105,66 +2105,6 @@
                                 X: =0
                                 Y: =DataCardKey23.Y
                                 ZIndex: =4
-
-                        astd_data_assintr_DataCard1 As typedDataCard.fluentV9DateTimeEditCard:
-                            BorderStyle: =BorderStyle.Solid
-                            DataField: ="gps_astd_data_assintr"
-                            Default: =ThisItem.astd_data_assintr
-                            DisplayMode: =Parent.DisplayMode
-                            DisplayName: =DataSourceInfo([@Atestados],DataSourceInfo.DisplayName,"gps_astd_data_assintr")
-                            Fill: =RGBA(0, 0, 0, 0)
-                            Height: =70
-                            Required: =false
-                            Update: =If(Not IsBlank(DateValue3.SelectedDate), Date(Year(DateValue3.SelectedDate), Month(DateValue3.SelectedDate), Day(DateValue3.SelectedDate)))
-                            Width: =435
-                            X: =2
-                            Y: =3
-                            ZIndex: =1
-
-                            DataCardKey24 As Text:
-                                DisplayMode: =DisplayMode.Edit
-                                Height: =22
-                                Text: =Parent.DisplayName
-                                Weight: ='TextCanvas.Weight'.Semibold
-                                Width: =Parent.Width - 48
-                                Wrap: =false
-                                X: =24
-                                Y: =10
-                                ZIndex: =1
-
-                            "DateValue3 As 'Date picker'":
-                                AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
-                                BasePaletteColor: =
-                                DisplayMode: =Parent.DisplayMode
-                                Height: =36
-                                SelectedDate: =Parent.Default
-                                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                                Width: =387
-                                X: =24
-                                Y: =32
-                                ZIndex: =2
-
-                            ErrorMessage24 As Text:
-                                DisplayMode: =DisplayMode.Edit
-                                Height: =30
-                                Text: =Parent.Error
-                                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                                Width: =Parent.Width - 48
-                                Wrap: =true
-                                X: =24
-                                Y: =DateValue3.Y + DateValue3.Height
-                                ZIndex: =6
-
-                            StarVisible24 As Text:
-                                Align: ='TextCanvas.Align'.Center
-                                DisplayMode: =DisplayMode.Edit
-                                Height: =20
-                                Text: ="*"
-                                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                                Width: =30
-                                X: =0
-                                Y: =DataCardKey24.Y
-                                ZIndex: =7
 
                     ctnFooterFormEmpresaPrestouServico As groupContainer.horizontalAutoLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer

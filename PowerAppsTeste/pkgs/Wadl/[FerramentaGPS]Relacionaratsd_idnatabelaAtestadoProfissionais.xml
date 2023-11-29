@@ -29,7 +29,7 @@
               <doc title="id_atestado" />
             </param>
             <param style="plain" name="text_1" path="/text_1" type="xs:string" required="true">
-              <doc title="lista_profissionais_adicionados" />
+              <doc title="id_atestado_profissional" />
             </param>
           </representation>
         </request>
