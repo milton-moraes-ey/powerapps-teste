@@ -3826,12 +3826,43 @@
         Width: =Parent.Width
         ZIndex: =3
 
-        Container1 As groupContainer.horizontalAutoLayoutContainer:
+        ctnAddDescricaoAtestado As groupContainer.horizontalAutoLayoutContainer:
             Fill: =gblTema.WhiteColor
             Height: =Parent.Height * 0.6
+            LayoutDirection: =LayoutDirection.Vertical
             LayoutMode: =LayoutMode.Auto
+            PaddingBottom: =12
+            PaddingLeft: =12
+            PaddingRight: =12
+            PaddingTop: =12
             Width: =Parent.Width * 0.8
             X: =(Parent.Width - Self.Width) / 2
             Y: =(Parent.Height - Self.Height) / 2
             ZIndex: =1
+
+            Container4 As groupContainer.manualLayoutContainer:
+                DropShadow: =DropShadow.None
+                FillPortions: =0
+                Height: =50
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                ZIndex: =1
+
+                Label3 As label:
+                    FontWeight: =FontWeight.Bold
+                    Size: =16
+                    Text: ="Adicionar descrição do objeto de trabalho"
+                    Width: =462
+                    X: =10
+                    Y: =(Parent.Height - Self.Height) / 2
+                    ZIndex: =1
+
+                Icon5 As icon.Cancel:
+                    Color: =gblTema.AccentColor
+                    Height: =32
+                    Icon: =Icon.Cancel
+                    Width: =32
+                    X: =960
+                    Y: =(Parent.Height - Self.Height) / 2
+                    ZIndex: =2
 
