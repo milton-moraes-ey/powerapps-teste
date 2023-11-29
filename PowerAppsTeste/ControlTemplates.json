@@ -68,7 +68,7 @@
     "Name": "PowerApps_CoreControls_ComboboxCanvas",
     "OverridableProperties": {},
     "TemplateDisplayName": "Combobox",
-    "Version": "0.0.19"
+    "Version": "0.0.20"
   },
   "Date picker": {
     "CustomGroupControlTemplateName": "",
@@ -83,7 +83,7 @@
     "Name": "PowerApps_CoreControls_DatePickerCanvas",
     "OverridableProperties": {},
     "TemplateDisplayName": "Date picker",
-    "Version": "0.0.11"
+    "Version": "0.0.12"
   },
   "form": {
     "CustomGroupControlTemplateName": "",
@@ -254,7 +254,7 @@
     "OverridableProperties": {},
     "Version": "1.0"
   },
-  "Table (Dataverse only)": {
+  "Table": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
     "Id": "http://microsoft.com/appmagic/powercontrol/PowerAppsOneGrid",
@@ -266,8 +266,8 @@
     "LastModifiedTimestamp": "0",
     "Name": "PowerAppsOneGrid",
     "OverridableProperties": {},
-    "TemplateDisplayName": "Table (Dataverse only)",
-    "Version": "1.0.115"
+    "TemplateDisplayName": "Table",
+    "Version": "1.0.122"
   },
   "text": {
     "CustomGroupControlTemplateName": "",
@@ -296,7 +296,7 @@
     "Name": "PowerApps_CoreControls_TextCanvas",
     "OverridableProperties": {},
     "TemplateDisplayName": "Text",
-    "Version": "0.0.16"
+    "Version": "0.0.17"
   },
   "Text input": {
     "CustomGroupControlTemplateName": "",
@@ -311,7 +311,7 @@
     "Name": "PowerApps_CoreControls_TextInputCanvas",
     "OverridableProperties": {},
     "TemplateDisplayName": "Text input",
-    "Version": "0.0.20"
+    "Version": "0.0.21"
   },
   "typedDataCard": {
     "CustomGroupControlTemplateName": "",

@@ -1,4 +1,5 @@
 "'Tela de atestados' As screen":
+    OnVisible: =Select(btnAtestados)
 
     ctnMainAtestados As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
@@ -472,9 +473,9 @@
                         Height: =52
                         OnSelect: =
                         Size: =12
-                        Text: =ThisItem.atsd_data_inicio & " - " & ThisItem.atsd_data_fim
-                        Width: =190
-                        X: =(Parent.TemplateWidth - Self.Width) * 0.95
+                        Text: =Text(ThisItem.atsd_data_inicio, "dd/mm/yyyy") & " - " & Text(ThisItem.atsd_data_fim, "dd/mm/yyyy")
+                        Width: =233
+                        X: =Parent.TemplateWidth - Self.Width - icoConfiguracoesDoAtestado.Width - Parent.TemplatePadding
                         Y: =lblTitulo.Y
                         ZIndex: =10
 
@@ -642,13 +643,16 @@
                         Width: =300
                         ZIndex: =2
 
-                "tblControleAtestados As 'Table (Dataverse only)'.pcfdataset":
+                tblControleAtestados As Table.pcfdataset:
                     AlignInContainer: =AlignInContainer.Stretch
                     DisplayMode: =DisplayMode.Edit
+                    FontSize: =0
+                    HeaderFontSize: =0
                     Height: =If(Self.Y + 500 > Parent.Height, Parent.Height - Self.Y, 500)
                     Items: =colAtestados
                     LayoutMinHeight: =If(Self.Y + 500 > Parent.Height, Parent.Height - Self.Y, 500)
                     LayoutMinWidth: =If(Self.X + 800 > Parent.Width, Parent.Width - Self.X, 800)
+                    NoDataText: =""
                     ReflowBehavior: ='PowerAppsOneGrid.ReflowBehavior'.GridOnly
                     ShowFooter: ="no"
                     Visible: =If(CountRows(glrAtestados.AllItems) > 0 && !locAlternarVisualizacaoControleDeAtestados, true, false)
@@ -1570,6 +1574,7 @@
 
                             "dcvEnderecoEmpresaPretadora As 'Text input'":
                                 AccessibleLabel: =Parent.DisplayName
+                                BasePaletteColor: =
                                 DisplayMode: =Parent.DisplayMode
                                 Height: =32
                                 Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
@@ -2538,7 +2543,7 @@
                                     AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
                                     DisplayMode: =Parent.DisplayMode
                                     Height: =32
-                                    Items: =Choices([@AtestadoProfissionais].gps_prof_id)
+                                    Items: =Choices([@AtestadoProfissionais].prof_id)
                                     ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                                     Width: =Parent.Width - 48
                                     X: =24

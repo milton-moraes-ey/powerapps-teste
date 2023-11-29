@@ -54,6 +54,7 @@
       "gps_tel_signatario": "tel_signatario",
       "gps_testing_column": "testing_column",
       "gps_tot_atv_cliente": "tot_atv_cliente",
+      "gps_ultimo_registro_gerado": "ultimo_registro_gerado",
       "importsequencenumber": "Import Sequence Number",
       "modifiedby": "Modified By",
       "modifiedon": "Modified On",

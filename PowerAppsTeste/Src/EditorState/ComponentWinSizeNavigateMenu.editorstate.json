@@ -113,6 +113,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "btnNavigateMenu_1",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -337,6 +338,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ComponentWinSizeNavigateMenu",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -486,6 +488,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ctnWinSizeNavigateMenu",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -618,6 +621,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "galleryTemplate1",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -705,6 +709,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "glrWinSizeNavigateMenu",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -917,6 +922,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "icoWinSizeNavigateMenu",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1096,6 +1102,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%TemplateBrowseGalleryRectangle1.ID%",
       "Name": "Rectangle1",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1294,6 +1301,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%TemplateBrowseGalleryTitle.ID%",
       "Name": "Title1",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [

@@ -39,6 +39,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ComponentSearchTextInput",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -223,6 +224,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ctnSearchTextInput",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -446,6 +448,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "icoSearch",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -754,6 +757,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "txtSearchTextInput",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
