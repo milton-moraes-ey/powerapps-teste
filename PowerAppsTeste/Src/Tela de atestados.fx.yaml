@@ -3861,6 +3861,8 @@
                     Color: =gblTema.AccentColor
                     Height: =32
                     Icon: =Icon.Cancel
+                    OnSelect: |-
+                        =UpdateContext({locMostrarPopUpParaAdicionarDescricao: false})
                     Width: =32
                     X: =Parent.Width - Self.Width - 12
                     Y: =(Parent.Height - Self.Height) / 2
@@ -3886,6 +3888,57 @@
                     LayoutMinHeight: =100
                     LayoutMinWidth: =250
                     ZIndex: =1
+
+                    "txtAddDescObjeto As 'Text input'":
+                        AccessibleLabel: =
+                        BasePaletteColor: =
+                        DisplayMode: =Parent.DisplayMode
+                        Height: =40
+                        Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                        Required: =
+                        ValidationState: =
+                        Value: =
+                        Width: =Parent.Width - 60
+                        X: =(Parent.Width - Self.Width)  / 2
+                        Y: =65
+                        ZIndex: =1
+
+                    Label4 As label:
+                        FontWeight: =FontWeight.Bold
+                        Size: =11
+                        Text: |-
+                            ="Descrição:"
+                        X: =20
+                        Y: =25
+                        ZIndex: =2
+
+                    btnAdicionarDescricao As button:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(161, 159, 157, 1)
+                        DisabledFill: =RGBA(242, 242, 241, 0)
+                        Fill: =gblTema.AccentColor
+                        FocusedBorderColor: =ColorFade(Self.Fill, 75%)
+                        FocusedBorderThickness: =1
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Normal
+                        Height: =32
+                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                        HoverFill: =ColorFade(gblTema.AccentColor, -10%)
+                        PressedBorderColor: =RGBA(0, 69, 120, 1)
+                        PressedColor: =RGBA(255, 255, 255, 1)
+                        PressedFill: =RGBA(16, 110, 190, 1)
+                        RadiusBottomLeft: =4
+                        RadiusBottomRight: =4
+                        RadiusTopLeft: =4
+                        RadiusTopRight: =4
+                        Size: =12
+                        Text: ="+ Adicionar"
+                        Width: =130
+                        X: =txtAddDescObjeto.X + txtAddDescObjeto.Width - Self.Width
+                        Y: =txtAddDescObjeto.Y + txtAddDescObjeto.Height + 12
+                        ZIndex: =3
 
                 ctnAdicionarNovasDescricoes As groupContainer.manualLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
