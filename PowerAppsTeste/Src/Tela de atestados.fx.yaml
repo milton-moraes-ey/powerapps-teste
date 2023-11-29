@@ -3955,19 +3955,24 @@
                     LayoutMinWidth: =250
                     ZIndex: =2
 
-                    Gallery2 As gallery.galleryVertical:
+                    glrDescricoesAdicionadas As gallery.galleryVertical:
                         DelayItemLoading: =true
-                        Height: =363
+                        Height: =300
                         Items: =colDescricaoAdicionada
                         Layout: =Layout.Vertical
                         LoadingSpinner: =LoadingSpinner.Data
+                        TemplateFill: =gblTema.OffWhiteColor
                         TemplateSize: =46
-                        Width: =512
+                        Width: =Parent.Width - 24
+                        X: =(Parent.Width - Self.Width) / 2
+                        Y: |
+                            =12
                         ZIndex: =1
 
                         Label5 As label:
                             Height: =39
                             OnSelect: =Select(Parent)
+                            Size: =12
                             Text: =ThisItem.Descricao
                             X: =12
                             Y: =(Parent.TemplateHeight - Self.Height) / 2
@@ -3975,10 +3980,10 @@
 
                         Icon6 As icon.Trash:
                             Color: =gblTema.AccentColor
-                            Height: =32
+                            Height: =28
                             Icon: =Icon.Trash
                             OnSelect: =Remove(colDescricaoAdicionada, ThisItem)
-                            Width: =32
+                            Width: =28
                             X: =Parent.TemplateWidth - Self.Width - 12
                             Y: =(Parent.TemplateHeight - Self.Height) / 2
                             ZIndex: =2

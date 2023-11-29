@@ -1904,19 +1904,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnPopUpAddDescricaoAtestado.ctnAddDescricaoAtestado.ctnOrganizadorDescObjeto.ctnAdicionarNovasDescricoes.Gallery2.AccessibleLabel"
+                  "fullyQualifiedName": "'Tela de atestados'.ctnPopUpAddDescricaoAtestado.ctnAddDescricaoAtestado.ctnOrganizadorDescObjeto.ctnAdicionarNovasDescricoes.glrDescricoesAdicionadas.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnPopUpAddDescricaoAtestado.ctnAddDescricaoAtestado.ctnOrganizadorDescObjeto.ctnAdicionarNovasDescricoes.Gallery2.AccessibleLabel",
+                  "fullyQualifiedName": "'Tela de atestados'.ctnPopUpAddDescricaoAtestado.ctnAddDescricaoAtestado.ctnOrganizadorDescObjeto.ctnAdicionarNovasDescricoes.glrDescricoesAdicionadas.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Tela de atestados",
-                "type": "'Tela de atestados'.ctnPopUpAddDescricaoAtestado.ctnAddDescricaoAtestado.ctnOrganizadorDescObjeto.ctnAdicionarNovasDescricoes.Gallery2"
+                "type": "'Tela de atestados'.ctnPopUpAddDescricaoAtestado.ctnAddDescricaoAtestado.ctnOrganizadorDescObjeto.ctnAdicionarNovasDescricoes.glrDescricoesAdicionadas"
               }
             }
           ],
@@ -1934,19 +1934,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnPopUpAddDescricaoAtestado.ctnAddDescricaoAtestado.ctnOrganizadorDescObjeto.ctnAdicionarNovasDescricoes.Gallery2.TabIndex"
+                  "fullyQualifiedName": "'Tela de atestados'.ctnPopUpAddDescricaoAtestado.ctnAddDescricaoAtestado.ctnOrganizadorDescObjeto.ctnAdicionarNovasDescricoes.glrDescricoesAdicionadas.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnPopUpAddDescricaoAtestado.ctnAddDescricaoAtestado.ctnOrganizadorDescObjeto.ctnAdicionarNovasDescricoes.Gallery2.TabIndex",
+                  "fullyQualifiedName": "'Tela de atestados'.ctnPopUpAddDescricaoAtestado.ctnAddDescricaoAtestado.ctnOrganizadorDescObjeto.ctnAdicionarNovasDescricoes.glrDescricoesAdicionadas.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Tela de atestados",
-                "type": "'Tela de atestados'.ctnPopUpAddDescricaoAtestado.ctnAddDescricaoAtestado.ctnOrganizadorDescObjeto.ctnAdicionarNovasDescricoes.Gallery2"
+                "type": "'Tela de atestados'.ctnPopUpAddDescricaoAtestado.ctnAddDescricaoAtestado.ctnOrganizadorDescObjeto.ctnAdicionarNovasDescricoes.glrDescricoesAdicionadas"
               }
             }
           ],
@@ -1964,19 +1964,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnPopUpAddDescricaoAtestado.ctnAddDescricaoAtestado.ctnOrganizadorDescObjeto.ctnAdicionarNovasDescricoes.Gallery2.Icon6.AccessibleLabel"
+                  "fullyQualifiedName": "'Tela de atestados'.ctnPopUpAddDescricaoAtestado.ctnAddDescricaoAtestado.ctnOrganizadorDescObjeto.ctnAdicionarNovasDescricoes.glrDescricoesAdicionadas.Icon6.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnPopUpAddDescricaoAtestado.ctnAddDescricaoAtestado.ctnOrganizadorDescObjeto.ctnAdicionarNovasDescricoes.Gallery2.Icon6.AccessibleLabel",
+                  "fullyQualifiedName": "'Tela de atestados'.ctnPopUpAddDescricaoAtestado.ctnAddDescricaoAtestado.ctnOrganizadorDescObjeto.ctnAdicionarNovasDescricoes.glrDescricoesAdicionadas.Icon6.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Tela de atestados",
-                "type": "'Tela de atestados'.ctnPopUpAddDescricaoAtestado.ctnAddDescricaoAtestado.ctnOrganizadorDescObjeto.ctnAdicionarNovasDescricoes.Gallery2.Icon6"
+                "type": "'Tela de atestados'.ctnPopUpAddDescricaoAtestado.ctnAddDescricaoAtestado.ctnOrganizadorDescObjeto.ctnAdicionarNovasDescricoes.glrDescricoesAdicionadas.Icon6"
               }
             }
           ],
@@ -1994,19 +1994,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnPopUpAddDescricaoAtestado.ctnAddDescricaoAtestado.ctnOrganizadorDescObjeto.ctnAdicionarNovasDescricoes.Gallery2.Icon6.TabIndex"
+                  "fullyQualifiedName": "'Tela de atestados'.ctnPopUpAddDescricaoAtestado.ctnAddDescricaoAtestado.ctnOrganizadorDescObjeto.ctnAdicionarNovasDescricoes.glrDescricoesAdicionadas.Icon6.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnPopUpAddDescricaoAtestado.ctnAddDescricaoAtestado.ctnOrganizadorDescObjeto.ctnAdicionarNovasDescricoes.Gallery2.Icon6.TabIndex",
+                  "fullyQualifiedName": "'Tela de atestados'.ctnPopUpAddDescricaoAtestado.ctnAddDescricaoAtestado.ctnOrganizadorDescObjeto.ctnAdicionarNovasDescricoes.glrDescricoesAdicionadas.Icon6.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Tela de atestados",
-                "type": "'Tela de atestados'.ctnPopUpAddDescricaoAtestado.ctnAddDescricaoAtestado.ctnOrganizadorDescObjeto.ctnAdicionarNovasDescricoes.Gallery2.Icon6"
+                "type": "'Tela de atestados'.ctnPopUpAddDescricaoAtestado.ctnAddDescricaoAtestado.ctnOrganizadorDescObjeto.ctnAdicionarNovasDescricoes.glrDescricoesAdicionadas.Icon6"
               }
             }
           ],
