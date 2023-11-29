@@ -3926,6 +3926,13 @@
                         Height: =32
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverFill: =ColorFade(gblTema.AccentColor, -10%)
+                        OnSelect: |-
+                            =Collect(colDescricaoAdicionada,
+                                {
+                                    Descricao: txtAddDescObjeto.Value
+                                }
+                            );
+                            Reset(txtAddDescObjeto)
                         PressedBorderColor: =RGBA(0, 69, 120, 1)
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: =RGBA(16, 110, 190, 1)
@@ -3947,4 +3954,32 @@
                     LayoutMinHeight: =100
                     LayoutMinWidth: =250
                     ZIndex: =2
+
+                    Gallery2 As gallery.galleryVertical:
+                        DelayItemLoading: =true
+                        Height: =363
+                        Items: =colDescricaoAdicionada
+                        Layout: =Layout.Vertical
+                        LoadingSpinner: =LoadingSpinner.Data
+                        TemplateSize: =46
+                        Width: =512
+                        ZIndex: =1
+
+                        Label5 As label:
+                            Height: =39
+                            OnSelect: =Select(Parent)
+                            Text: =ThisItem.Descricao
+                            X: =12
+                            Y: =(Parent.TemplateHeight - Self.Height) / 2
+                            ZIndex: =1
+
+                        Icon6 As icon.Trash:
+                            Color: =gblTema.AccentColor
+                            Height: =32
+                            Icon: =Icon.Trash
+                            OnSelect: =Remove(colDescricaoAdicionada, ThisItem)
+                            Width: =32
+                            X: =Parent.TemplateWidth - Self.Width - 12
+                            Y: =(Parent.TemplateHeight - Self.Height) / 2
+                            ZIndex: =2
 
