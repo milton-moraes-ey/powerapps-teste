@@ -58,10 +58,6 @@
                 Width: =36
                 ZIndex: =2
 
-            Label2 As label:
-                Text: =locStatusFlowDeCriacaoDeAtestadoProfissionais.statusdeconclusao
-                ZIndex: =3
-
         ctnCounteudoAtestados As groupContainer.verticalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             LayoutAlignItems: =LayoutAlignItems.Stretch
@@ -3842,12 +3838,13 @@
                                             ","
                                         )
                                     );
+                                    
                                     UpdateContext(
                                         {
                                             locStatusFlowDeCriacaoDeAtestadoProfissionais: '[FerramentaGPS]Relacionaratsd_idnatabelaAtestadoProfissionais'.Run(
                                                 gblRegistroDoAtestado.id,
                                                 gblIDsMembrosEquipe
-                                            )
+                                            ).statusdeconclusao
                                         }
                                     );
                                     /*ForAll(
