@@ -4010,7 +4010,7 @@
                                     locConcatenarDescricoesAdicionadas: Concat(
                                         colDescricaoAdicionada,
                                         Descricao,
-                                        ","
+                                        ";"
                                     ),
                                     locMostrarPopUpParaAdicionarDescricao: false
                                 }
