@@ -144,7 +144,9 @@
                             )
                         LayoutMinWidth: =100
                         OnSelect: |-
-                            =UpdateContext({locMostrarContainerPesquisaAtestados: false, locMostrarContainerNovoAtestado: true, locMostrarFormEmpresaAtestante: true, locMostrarFormEmpresaPrestouServico: false, locMostrarFormInserirEquipeAtestado: false});
+                            =UpdateContext({locMostrarContainerPesquisaAtestados: false, locMostrarContainerNovoAtestado: true, locMostrarFormEmpresaAtestante: true, locMostrarFormEmpresaPrestouServico: false, locMostrarFormInserirEquipeAtestado: false, locConcatenarDescricoesAdicionadas:Blank()});
+                            
+                            Clear(colDescricaoAdicionada)
                         PressedBorderColor: =RGBA(0, 69, 120, 1)
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: =RGBA(16, 110, 190, 1)
