@@ -3832,6 +3832,8 @@
                                     );
                                     ForAll(
                                         colMembrosEquipe,
+                                        '[FerramentaGPS]Relacionaratsd_idnatabelaAtestadoProfissionais'.Run(
+                                            gblRegistroDoAtestado.id,
                                         Patch(
                                             AtestadoProfissionais,
                                             Defaults(AtestadoProfissionais),
@@ -3841,11 +3843,7 @@
                                                 prof_funcao_projeto: ThisRecord.prof_funcao_projeto,
                                                 prof_dominio_atuacao: ThisRecord.prof_dominio_atuacao
                                             }
-                                        );
-                                        '[FerramentaGPS]Relacionaratsd_idnatabelaAtestadoProfissionais'.Run(
-                                            gblRegistroDoAtestado.id,
-                                            ThisRecord.prof_id.Profissional
-                                        ).statusdeconclusao
+                                        ).AtestadoProfissional)
                                     );
                                     UpdateContext({locMostrarConfirmacaoDeCadastro: true});
                                 PressedBorderColor: =RGBA(0, 69, 120, 1)
