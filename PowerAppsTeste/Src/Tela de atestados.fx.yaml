@@ -2048,7 +2048,7 @@
                         atsd_descr_obj_trab_DataCard1 As typedDataCard.fluentV9TextualMultiLineEditCard:
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="gps_atsd_descr_obj_trab"
-                            Default: =ThisItem.atsd_descr_obj_trab
+                            Default: =locConcatenarDescricoesAdicionadas
                             DisplayMode: =Parent.DisplayMode
                             DisplayName: =DataSourceInfo([@Atestados],DataSourceInfo.DisplayName,"gps_atsd_descr_obj_trab")
                             Fill: =RGBA(0, 0, 0, 0)
