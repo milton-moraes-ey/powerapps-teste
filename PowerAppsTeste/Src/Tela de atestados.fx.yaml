@@ -1704,7 +1704,7 @@
                                 Height: =32
                                 SelectedDate: =Parent.Default
                                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                                Width: =387
+                                Width: =Parent.Width - 48
                                 X: =24
                                 Y: =DataCardKey15.Y + DataCardKey15.Height + 4
                                 ZIndex: =2
@@ -2051,7 +2051,7 @@
                             DisplayMode: =Parent.DisplayMode
                             DisplayName: =DataSourceInfo([@Atestados],DataSourceInfo.DisplayName,"gps_atsd_descr_obj_trab")
                             Fill: =RGBA(0, 0, 0, 0)
-                            Height: =166
+                            Height: =215
                             Required: =true
                             Update: =dcvDescricaoDoObjetoDoTrabalho.Value
                             Width: =653
@@ -2081,7 +2081,7 @@
                                 Value: =Parent.Default
                                 Width: =Parent.Width - 48
                                 X: =24
-                                Y: =DataCardKey12.Y + DataCardKey12.Height + 4
+                                Y: =icoAddDescricaoDoObjeto.Y + icoAddDescricaoDoObjeto.Height + 12
                                 ZIndex: =2
 
                             ErrorMessage12 As Text:
@@ -2106,13 +2106,16 @@
                                 Y: =DataCardKey12.Y
                                 ZIndex: =4
 
-                            Icon3 As icon.Add:
+                            icoAddDescricaoDoObjeto As icon.Add:
+                                Color: =gblTema.AccentColor
+                                Fill: =gblTema.OffWhiteColor
                                 Height: =32
                                 Icon: =Icon.Add
                                 OnSelect: |-
                                     =UpdateContext({locMostrarPopUpParaAdicionarDescricao: true})
                                 Width: =32
-                                X: =589
+                                X: =dcvDescricaoDoObjetoDoTrabalho.X + dcvDescricaoDoObjetoDoTrabalho.Width - Self.Width
+                                Y: =DataCardKey12.Y
                                 ZIndex: =5
 
                     ctnFooterFormEmpresaPrestouServico As groupContainer.horizontalAutoLayoutContainer:
