@@ -2039,69 +2039,6 @@
                                 Y: =DataCardKey21.Y
                                 ZIndex: =4
 
-                        local_signatario_DataCard1 As typedDataCard.fluentV9TextualEditCard:
-                            BorderStyle: =BorderStyle.Solid
-                            DataField: ="gps_local_signatario"
-                            Default: =ThisItem.local_signatario
-                            DisplayMode: =Parent.DisplayMode
-                            DisplayName: =DataSourceInfo([@Atestados],DataSourceInfo.DisplayName,"gps_local_signatario")
-                            Fill: =RGBA(0, 0, 0, 0)
-                            Height: =70
-                            MaxLength: =DataSourceInfo([@Atestados], DataSourceInfo.MaxLength, "gps_local_signatario")
-                            Required: =false
-                            Update: =dcvLocalSignatario.Value
-                            Width: =435
-                            X: =1
-                            Y: =3
-                            ZIndex: =1
-
-                            DataCardKey22 As Text:
-                                DisplayMode: =DisplayMode.Edit
-                                Height: =22
-                                Text: =Parent.DisplayName
-                                Weight: ='TextCanvas.Weight'.Semibold
-                                Width: =Parent.Width - 48
-                                Wrap: =false
-                                X: =24
-                                Y: =10
-                                ZIndex: =1
-
-                            "dcvLocalSignatario As 'Text input'":
-                                AccessibleLabel: =Parent.DisplayName
-                                BasePaletteColor: =
-                                DisplayMode: =Parent.DisplayMode
-                                Height: =32
-                                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
-                                Required: =Parent.Required
-                                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                                Value: =Parent.Default
-                                Width: =Parent.Width - 48
-                                X: =24
-                                Y: =DataCardKey22.Y + DataCardKey22.Height + 4
-                                ZIndex: =2
-
-                            ErrorMessage22 As Text:
-                                DisplayMode: =DisplayMode.Edit
-                                Height: =30
-                                Text: =Parent.Error
-                                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                                Width: =Parent.Width - 48
-                                Wrap: =true
-                                X: =24
-                                Y: =dcvLocalSignatario.Y + dcvLocalSignatario.Height
-                                ZIndex: =3
-
-                            StarVisible22 As Text:
-                                Align: ='TextCanvas.Align'.Center
-                                DisplayMode: =DisplayMode.Edit
-                                Height: =30
-                                Text: ="*"
-                                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                                Width: =30
-                                X: =0
-                                Y: =DataCardKey22.Y
-                                ZIndex: =4
-
                         atsd_registrado_DataCard1 As typedDataCard.fluentV9ComboBoxOptionSetSingleEditCard:
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="gps_atsd_registrado"
@@ -2113,7 +2050,7 @@
                             Required: =false
                             Update: =dcvRegistrado.Selected.Value
                             Width: =435
-                            X: =2
+                            X: =1
                             Y: =3
                             ZIndex: =1
 
@@ -2180,8 +2117,8 @@
                             Required: =false
                             Update: =If(Not IsBlank(DateValue3.SelectedDate), Date(Year(DateValue3.SelectedDate), Month(DateValue3.SelectedDate), Day(DateValue3.SelectedDate)))
                             Width: =435
-                            X: =0
-                            Y: =4
+                            X: =2
+                            Y: =3
                             ZIndex: =1
 
                             DataCardKey24 As Text:
@@ -2228,53 +2165,6 @@
                                 X: =0
                                 Y: =DataCardKey24.Y
                                 ZIndex: =7
-
-                        astd_file_uploaded_DataCard1 As typedDataCard.fluentV9FileEditCard:
-                            BorderStyle: =BorderStyle.Solid
-                            DataField: ="gps_astd_file_uploaded"
-                            Default: |-
-                                =If(!IsBlank(ThisItem.astd_file_uploaded.FileName), Table({DisplayName: ThisItem.astd_file_uploaded.FileName, Value: ThisItem.astd_file_uploaded.Value}), Blank())
-                            DisplayMode: =Parent.DisplayMode
-                            DisplayName: =DataSourceInfo([@Atestados],DataSourceInfo.DisplayName,"gps_astd_file_uploaded")
-                            Fill: =RGBA(0, 0, 0, 0)
-                            Height: =50
-                            Required: =false
-                            Update: =dcvArquivoAtestado.Attachments
-                            Width: =435
-                            X: =1
-                            Y: =4
-                            ZIndex: =1
-
-                            dckArquivoAtestado As Text:
-                                DisplayMode: =DisplayMode.Edit
-                                Height: =34
-                                Text: =Parent.DisplayName
-                                Weight: ='TextCanvas.Weight'.Semibold
-                                Width: =Parent.Width - 60
-                                Wrap: =false
-                                X: =30
-                                Y: =10
-                                ZIndex: =1
-
-                            dcvArquivoAtestado As attachments:
-                                AddAttachmentText: ="Upload file"
-                                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                                DisplayMode: =Parent.DisplayMode
-                                Height: =170
-                                IsInDataCard: =true
-                                Items: =Parent.Default
-                                MaxAttachments: =1
-                                MaxAttachmentsText: =""
-                                NoAttachmentsText: ="There is no file."
-                                PaddingBottom: =5
-                                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                                PaddingRight: =5
-                                PaddingTop: =5
-                                Tooltip: =Parent.DisplayName
-                                Width: =Parent.Width - 60
-                                X: =30
-                                Y: =dckArquivoAtestado.Y + dckArquivoAtestado.Height + 5
-                                ZIndex: =2
 
                     ctnFooterFormEmpresaPrestouServico As groupContainer.horizontalAutoLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
@@ -2485,590 +2375,30 @@
                         Width: =Parent.Width * 0.99
                         ZIndex: =2
 
-                    frmDadosEmpresaPrestouServico_1 As form.PowerApps_CoreControls_Form:
-                        AlignInContainer: =AlignInContainer.SetByContainer
-                        BorderColor: =RGBA(245, 245, 245, 1)
+                    Form1 As form.PowerApps_CoreControls_Form:
                         DataSource: =Atestados
-                        DefaultMode: =FormMode.New
                         LayoutMinHeight: =250
                         LayoutMinWidth: =400
                         UseFluentV9Cards: =true
                         ZIndex: =3
 
-                        nome_empresa_prestadora_DataCard1_1 As typedDataCard.fluentV9TextualEditCard:
+                        nome_signatario_DataCard2 As typedDataCard.fluentV9TextualEditCard:
                             BorderStyle: =BorderStyle.Solid
-                            DataField: ="gps_nome_empresa_prestadora"
-                            Default: =ThisItem.nome_empresa_prestadora
+                            DataField: ="gps_nome_signatario"
+                            Default: =ThisItem.nome_signatario
                             DisplayMode: =Parent.DisplayMode
-                            DisplayName: =DataSourceInfo([@Atestados],DataSourceInfo.DisplayName,"gps_nome_empresa_prestadora")
+                            DisplayName: =DataSourceInfo([@Atestados],DataSourceInfo.DisplayName,"gps_nome_signatario")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            MaxLength: =DataSourceInfo([@Atestados], DataSourceInfo.MaxLength, "gps_nome_empresa_prestadora")
-                            Required: =true
-                            Update: =dcvNomeEmpresaPrestadora_1.Value
-                            Width: =435
-                            X: =0
-                            Y: =0
-                            ZIndex: =1
-
-                            DataCardKey9_1 As Text:
-                                DisplayMode: =DisplayMode.Edit
-                                Height: =22
-                                Text: =Parent.DisplayName
-                                Weight: ='TextCanvas.Weight'.Semibold
-                                Width: =Parent.Width - 48
-                                Wrap: =false
-                                X: =24
-                                Y: =10
-                                ZIndex: =1
-
-                            "dcvNomeEmpresaPrestadora_1 As 'Text input'":
-                                AccessibleLabel: =Parent.DisplayName
-                                BasePaletteColor: =
-                                DisplayMode: =Parent.DisplayMode
-                                Height: =32
-                                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
-                                Required: =Parent.Required
-                                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                                Value: =Parent.Default
-                                Width: =Parent.Width - 48
-                                X: =24
-                                Y: =DataCardKey9_1.Y + DataCardKey9_1.Height + 4
-                                ZIndex: =2
-
-                            ErrorMessage9_1 As Text:
-                                DisplayMode: =DisplayMode.Edit
-                                Height: =30
-                                Text: =Parent.Error
-                                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                                Width: =Parent.Width - 48
-                                Wrap: =true
-                                X: =24
-                                Y: =dcvNomeEmpresaPrestadora_1.Y + dcvNomeEmpresaPrestadora_1.Height
-                                ZIndex: =3
-
-                            StarVisible9_1 As Text:
-                                Align: ='TextCanvas.Align'.Center
-                                DisplayMode: =DisplayMode.Edit
-                                Height: =30
-                                Text: ="*"
-                                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                                Width: =30
-                                X: =0
-                                Y: =DataCardKey9_1.Y
-                                ZIndex: =4
-
-                        cnpj_empresa_prestadora_DataCard1_1 As typedDataCard.fluentV9TextualEditCard:
-                            BorderStyle: =BorderStyle.Solid
-                            DataField: ="gps_cnpj_empresa_prestadora"
-                            Default: =ThisItem.cnpj_empresa_prestadora
-                            DisplayMode: =Parent.DisplayMode
-                            DisplayName: =DataSourceInfo([@Atestados],DataSourceInfo.DisplayName,"gps_cnpj_empresa_prestadora")
-                            Fill: =RGBA(0, 0, 0, 0)
-                            Height: =70
-                            MaxLength: =DataSourceInfo([@Atestados], DataSourceInfo.MaxLength, "gps_cnpj_empresa_prestadora")
-                            Required: =true
-                            Update: =dcvCnpjEmpresaPrestadora_1.Value
-                            Width: =435
-                            X: =1
-                            Y: =0
-                            ZIndex: =1
-
-                            DataCardKey10_1 As Text:
-                                DisplayMode: =DisplayMode.Edit
-                                Height: =22
-                                Text: =Parent.DisplayName
-                                Weight: ='TextCanvas.Weight'.Semibold
-                                Width: =Parent.Width - 48
-                                Wrap: =false
-                                X: =24
-                                Y: =10
-                                ZIndex: =1
-
-                            "dcvCnpjEmpresaPrestadora_1 As 'Text input'":
-                                AccessibleLabel: =Parent.DisplayName
-                                BasePaletteColor: =
-                                DisplayMode: =Parent.DisplayMode
-                                Height: =32
-                                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
-                                Required: =Parent.Required
-                                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                                Value: =Parent.Default
-                                Width: =Parent.Width - 48
-                                X: =24
-                                Y: =DataCardKey10_1.Y + DataCardKey10_1.Height + 4
-                                ZIndex: =2
-
-                            ErrorMessage10_1 As Text:
-                                DisplayMode: =DisplayMode.Edit
-                                Height: =30
-                                Text: =Parent.Error
-                                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                                Width: =Parent.Width - 48
-                                Wrap: =true
-                                X: =24
-                                Y: =dcvCnpjEmpresaPrestadora_1.Y + dcvCnpjEmpresaPrestadora_1.Height
-                                ZIndex: =3
-
-                            StarVisible10_1 As Text:
-                                Align: ='TextCanvas.Align'.Center
-                                DisplayMode: =DisplayMode.Edit
-                                Height: =30
-                                Text: ="*"
-                                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                                Width: =30
-                                X: =0
-                                Y: =DataCardKey10_1.Y
-                                ZIndex: =4
-
-                        endr_empresa_prestadora_DataCard1_1 As typedDataCard.fluentV9TextualEditCard:
-                            BorderStyle: =BorderStyle.Solid
-                            DataField: ="gps_endr_empresa_prestadora"
-                            Default: =ThisItem.endr_empresa_prestadora
-                            DisplayMode: =Parent.DisplayMode
-                            DisplayName: =DataSourceInfo([@Atestados],DataSourceInfo.DisplayName,"gps_endr_empresa_prestadora")
-                            Fill: =RGBA(0, 0, 0, 0)
-                            Height: =70
-                            MaxLength: =DataSourceInfo([@Atestados], DataSourceInfo.MaxLength, "gps_endr_empresa_prestadora")
-                            Required: =true
-                            Update: =dcvEnderecoEmpresaPretadora_1.Value
-                            Width: =435
-                            X: =2
-                            Y: =0
-                            ZIndex: =1
-
-                            DataCardKey17_1 As Text:
-                                DisplayMode: =DisplayMode.Edit
-                                Height: =22
-                                Text: =Parent.DisplayName
-                                Weight: ='TextCanvas.Weight'.Semibold
-                                Width: =Parent.Width - 48
-                                Wrap: =false
-                                X: =24
-                                Y: =10
-                                ZIndex: =1
-
-                            "dcvEnderecoEmpresaPretadora_1 As 'Text input'":
-                                AccessibleLabel: =Parent.DisplayName
-                                BasePaletteColor: =
-                                DisplayMode: =Parent.DisplayMode
-                                Height: =32
-                                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
-                                Required: =Parent.Required
-                                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                                Value: =Parent.Default
-                                Width: =Parent.Width - 48
-                                X: =24
-                                Y: =DataCardKey17_1.Y + DataCardKey17_1.Height + 4
-                                ZIndex: =2
-
-                            ErrorMessage17_1 As Text:
-                                DisplayMode: =DisplayMode.Edit
-                                Height: =30
-                                Text: =Parent.Error
-                                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                                Width: =Parent.Width - 48
-                                Wrap: =true
-                                X: =24
-                                Y: =dcvEnderecoEmpresaPretadora_1.Y + dcvEnderecoEmpresaPretadora_1.Height
-                                ZIndex: =3
-
-                            StarVisible17_1 As Text:
-                                Align: ='TextCanvas.Align'.Center
-                                DisplayMode: =DisplayMode.Edit
-                                Height: =30
-                                Text: ="*"
-                                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                                Width: =30
-                                X: =0
-                                Y: =DataCardKey17_1.Y
-                                ZIndex: =4
-
-                        atsd_obj_trab_DataCard1_1 As typedDataCard.fluentV9TextualEditCard:
-                            BorderStyle: =BorderStyle.Solid
-                            DataField: ="gps_atsd_obj_trab"
-                            Default: =ThisItem.atsd_obj_trab
-                            DisplayMode: =Parent.DisplayMode
-                            DisplayName: =DataSourceInfo([@Atestados],DataSourceInfo.DisplayName,"gps_atsd_obj_trab")
-                            Fill: =RGBA(0, 0, 0, 0)
-                            Height: =70
-                            MaxLength: =DataSourceInfo([@Atestados], DataSourceInfo.MaxLength, "gps_atsd_obj_trab")
-                            Required: =true
-                            Update: =dcvObjetoTrabalho_1.Value
-                            Width: =435
-                            X: =0
-                            Y: =1
-                            ZIndex: =1
-
-                            DataCardKey11_1 As Text:
-                                DisplayMode: =DisplayMode.Edit
-                                Height: =22
-                                Text: =Parent.DisplayName
-                                Weight: ='TextCanvas.Weight'.Semibold
-                                Width: =Parent.Width - 48
-                                Wrap: =false
-                                X: =24
-                                Y: =10
-                                ZIndex: =1
-
-                            "dcvObjetoTrabalho_1 As 'Text input'":
-                                AccessibleLabel: =Parent.DisplayName
-                                BasePaletteColor: =
-                                DisplayMode: =Parent.DisplayMode
-                                Height: =32
-                                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
-                                Required: =Parent.Required
-                                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                                Value: =Parent.Default
-                                Width: =Parent.Width - 48
-                                X: =24
-                                Y: =DataCardKey11_1.Y + DataCardKey11_1.Height + 4
-                                ZIndex: =2
-
-                            ErrorMessage11_1 As Text:
-                                DisplayMode: =DisplayMode.Edit
-                                Height: =30
-                                Text: =Parent.Error
-                                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                                Width: =Parent.Width - 48
-                                Wrap: =true
-                                X: =24
-                                Y: =dcvObjetoTrabalho_1.Y + dcvObjetoTrabalho_1.Height
-                                ZIndex: =3
-
-                            StarVisible11_1 As Text:
-                                Align: ='TextCanvas.Align'.Center
-                                DisplayMode: =DisplayMode.Edit
-                                Height: =30
-                                Text: ="*"
-                                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                                Width: =30
-                                X: =0
-                                Y: =DataCardKey11_1.Y
-                                ZIndex: =4
-
-                        atsd_descr_obj_trab_DataCard1_1 As typedDataCard.fluentV9TextualMultiLineEditCard:
-                            BorderStyle: =BorderStyle.Solid
-                            DataField: ="gps_atsd_descr_obj_trab"
-                            Default: =ThisItem.atsd_descr_obj_trab
-                            DisplayMode: =Parent.DisplayMode
-                            DisplayName: =DataSourceInfo([@Atestados],DataSourceInfo.DisplayName,"gps_atsd_descr_obj_trab")
-                            Fill: =RGBA(0, 0, 0, 0)
-                            Height: =166
-                            Required: =true
-                            Update: =dcvDescricaoDoObjetoDoTrabalho_1.Value
-                            Width: =435
-                            X: =1
-                            Y: =1
-                            ZIndex: =1
-
-                            DataCardKey12_1 As Text:
-                                DisplayMode: =DisplayMode.Edit
-                                Height: =22
-                                Text: =Parent.DisplayName
-                                Weight: ='TextCanvas.Weight'.Semibold
-                                Width: =Parent.Width - 48
-                                Wrap: =false
-                                X: =24
-                                Y: =10
-                                ZIndex: =1
-
-                            "dcvDescricaoDoObjetoDoTrabalho_1 As 'Text input'":
-                                AccessibleLabel: =Parent.DisplayName
-                                BasePaletteColor: =
-                                DisplayMode: =Parent.DisplayMode
-                                Height: =144
-                                Mode: ='TextInputCanvas.Mode'.Multiline
-                                Required: =Parent.Required
-                                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                                Value: =Parent.Default
-                                Width: =Parent.Width - 48
-                                X: =24
-                                Y: =DataCardKey12_1.Y + DataCardKey12_1.Height + 4
-                                ZIndex: =2
-
-                            ErrorMessage12_1 As Text:
-                                DisplayMode: =DisplayMode.Edit
-                                Height: =30
-                                Text: =Parent.Error
-                                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                                Width: =Parent.Width - 48
-                                Wrap: =true
-                                X: =24
-                                Y: =dcvDescricaoDoObjetoDoTrabalho_1.Y + dcvDescricaoDoObjetoDoTrabalho_1.Height
-                                ZIndex: =3
-
-                            StarVisible12_1 As Text:
-                                Align: ='TextCanvas.Align'.Center
-                                DisplayMode: =DisplayMode.Edit
-                                Height: =30
-                                Text: ="*"
-                                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                                Width: =30
-                                X: =0
-                                Y: =DataCardKey12_1.Y
-                                ZIndex: =4
-
-                        atsd_qtd_hrs_DataCard1_1 As typedDataCard.fluentV9NumberEditCard:
-                            BorderStyle: =BorderStyle.Solid
-                            DataField: ="gps_atsd_qtd_hrs"
-                            Default: =ThisItem.atsd_qtd_hrs
-                            DisplayMode: =Parent.DisplayMode
-                            DisplayName: =DataSourceInfo([@Atestados],DataSourceInfo.DisplayName,"gps_atsd_qtd_hrs")
-                            Fill: =RGBA(0, 0, 0, 0)
-                            Height: =70
-                            Required: =true
-                            Update: =Value(dcvQuantidadeTotalDeHoras_1.Value)
-                            Width: =435
-                            X: =2
-                            Y: =1
-                            ZIndex: =1
-
-                            DataCardKey13_1 As Text:
-                                DisplayMode: =DisplayMode.Edit
-                                Height: =22
-                                Text: =Parent.DisplayName
-                                Weight: ='TextCanvas.Weight'.Semibold
-                                Width: =Parent.Width - 48
-                                Wrap: =false
-                                X: =24
-                                Y: =10
-                                ZIndex: =1
-
-                            "dcvQuantidadeTotalDeHoras_1 As 'Text input'":
-                                AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
-                                BasePaletteColor: =
-                                DisplayMode: =Parent.DisplayMode
-                                Height: =32
-                                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                                Value: =Parent.Default
-                                Width: =Parent.Width - 48
-                                X: =24
-                                Y: =DataCardKey13_1.Y + DataCardKey13_1.Height + 4
-                                ZIndex: =2
-
-                            ErrorMessage13_1 As Text:
-                                DisplayMode: =DisplayMode.Edit
-                                Height: =30
-                                Text: =Parent.Error
-                                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                                Width: =Parent.Width - 48
-                                Wrap: =true
-                                X: =24
-                                Y: =dcvQuantidadeTotalDeHoras_1.Y + dcvQuantidadeTotalDeHoras_1.Height
-                                ZIndex: =3
-
-                            StarVisible13_1 As Text:
-                                Align: ='TextCanvas.Align'.Center
-                                DisplayMode: =DisplayMode.Edit
-                                Height: =30
-                                Text: ="*"
-                                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                                Width: =30
-                                X: =0
-                                Y: =DataCardKey13_1.Y
-                                ZIndex: =4
-
-                        atsd_local_DataCard1_1 As typedDataCard.fluentV9TextualEditCard:
-                            BorderStyle: =BorderStyle.Solid
-                            DataField: ="gps_atsd_local"
-                            Default: =ThisItem.atsd_local
-                            DisplayMode: =Parent.DisplayMode
-                            DisplayName: =DataSourceInfo([@Atestados],DataSourceInfo.DisplayName,"gps_atsd_local")
-                            Fill: =RGBA(0, 0, 0, 0)
-                            Height: =70
-                            MaxLength: =DataSourceInfo([@Atestados], DataSourceInfo.MaxLength, "gps_atsd_local")
-                            Required: =true
-                            Update: =dcvLocal_1.Value
-                            Width: =435
-                            X: =0
-                            Y: =2
-                            ZIndex: =1
-
-                            DataCardKey14_1 As Text:
-                                DisplayMode: =DisplayMode.Edit
-                                Height: =22
-                                Text: =Parent.DisplayName
-                                Weight: ='TextCanvas.Weight'.Semibold
-                                Width: =Parent.Width - 48
-                                Wrap: =false
-                                X: =24
-                                Y: =10
-                                ZIndex: =1
-
-                            "dcvLocal_1 As 'Text input'":
-                                AccessibleLabel: =Parent.DisplayName
-                                BasePaletteColor: =
-                                DisplayMode: =Parent.DisplayMode
-                                Height: =32
-                                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
-                                Required: =Parent.Required
-                                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                                Value: =Parent.Default
-                                Width: =Parent.Width - 48
-                                X: =24
-                                Y: =DataCardKey14_1.Y + DataCardKey14_1.Height + 4
-                                ZIndex: =2
-
-                            ErrorMessage14_1 As Text:
-                                DisplayMode: =DisplayMode.Edit
-                                Height: =30
-                                Text: =Parent.Error
-                                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                                Width: =Parent.Width - 48
-                                Wrap: =true
-                                X: =24
-                                Y: =dcvLocal_1.Y + dcvLocal_1.Height
-                                ZIndex: =3
-
-                            StarVisible14_1 As Text:
-                                Align: ='TextCanvas.Align'.Center
-                                DisplayMode: =DisplayMode.Edit
-                                Height: =30
-                                Text: ="*"
-                                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                                Width: =30
-                                X: =0
-                                Y: =DataCardKey14_1.Y
-                                ZIndex: =4
-
-                        atsd_data_inicio_DataCard1_1 As typedDataCard.fluentV9DateTimeEditCard:
-                            BorderStyle: =BorderStyle.Solid
-                            DataField: ="gps_atsd_data_inicio"
-                            Default: =ThisItem.atsd_data_inicio
-                            DisplayMode: =Parent.DisplayMode
-                            DisplayName: =DataSourceInfo([@Atestados],DataSourceInfo.DisplayName,"gps_atsd_data_inicio")
-                            Fill: =RGBA(0, 0, 0, 0)
-                            Height: =70
-                            Required: =true
-                            Update: =If(Not IsBlank(dtvDataInicio_1.SelectedDate), Date(Year(dtvDataInicio_1.SelectedDate), Month(dtvDataInicio_1.SelectedDate), Day(dtvDataInicio_1.SelectedDate)))
-                            Width: =435
-                            X: =1
-                            Y: =2
-                            ZIndex: =1
-
-                            DataCardKey15_1 As Text:
-                                DisplayMode: =DisplayMode.Edit
-                                Height: =22
-                                Text: =Parent.DisplayName
-                                Weight: ='TextCanvas.Weight'.Semibold
-                                Width: =Parent.Width - 48
-                                Wrap: =false
-                                X: =24
-                                Y: =10
-                                ZIndex: =1
-
-                            "dtvDataInicio_1 As 'Date picker'":
-                                AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
-                                BasePaletteColor: =
-                                DisplayMode: =Parent.DisplayMode
-                                Height: =32
-                                SelectedDate: =Parent.Default
-                                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                                Width: =387
-                                X: =24
-                                Y: =DataCardKey15_1.Y + DataCardKey15_1.Height + 4
-                                ZIndex: =2
-
-                            ErrorMessage15_1 As Text:
-                                DisplayMode: =DisplayMode.Edit
-                                Height: =30
-                                Text: =Parent.Error
-                                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                                Width: =Parent.Width - 48
-                                Wrap: =true
-                                X: =24
-                                Y: =dtvDataInicio_1.Y + dtvDataInicio_1.Height
-                                ZIndex: =6
-
-                            StarVisible15_1 As Text:
-                                Align: ='TextCanvas.Align'.Center
-                                DisplayMode: =DisplayMode.Edit
-                                Height: =20
-                                Text: ="*"
-                                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                                Width: =30
-                                X: =0
-                                Y: =DataCardKey15_1.Y
-                                ZIndex: =7
-
-                        atsd_data_fim_DataCard1_1 As typedDataCard.fluentV9DateTimeEditCard:
-                            BorderStyle: =BorderStyle.Solid
-                            DataField: ="gps_atsd_data_fim"
-                            Default: =ThisItem.atsd_data_fim
-                            DisplayMode: =Parent.DisplayMode
-                            DisplayName: =DataSourceInfo([@Atestados],DataSourceInfo.DisplayName,"gps_atsd_data_fim")
-                            Fill: =RGBA(0, 0, 0, 0)
-                            Height: =70
-                            Required: =true
-                            Update: =If(Not IsBlank(dtvDataFim_1.SelectedDate), Date(Year(dtvDataFim_1.SelectedDate), Month(dtvDataFim_1.SelectedDate), Day(dtvDataFim_1.SelectedDate)))
-                            Width: =435
-                            X: =2
-                            Y: =2
-                            ZIndex: =1
-
-                            DataCardKey16_1 As Text:
-                                DisplayMode: =DisplayMode.Edit
-                                Height: =22
-                                Text: =Parent.DisplayName
-                                Weight: ='TextCanvas.Weight'.Semibold
-                                Width: =Parent.Width - 48
-                                Wrap: =false
-                                X: =24
-                                Y: =10
-                                ZIndex: =1
-
-                            "dtvDataFim_1 As 'Date picker'":
-                                AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
-                                BasePaletteColor: =
-                                DisplayMode: =Parent.DisplayMode
-                                Height: =32
-                                SelectedDate: =Parent.Default
-                                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                                Width: =387
-                                X: =24
-                                Y: =DataCardKey16_1.Y + DataCardKey16_1.Height + 4
-                                ZIndex: =2
-
-                            ErrorMessage16_1 As Text:
-                                DisplayMode: =DisplayMode.Edit
-                                Height: =30
-                                Text: =Parent.Error
-                                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                                Width: =Parent.Width - 48
-                                Wrap: =true
-                                X: =24
-                                Y: =dtvDataFim_1.Y + dtvDataFim_1.Height
-                                ZIndex: =6
-
-                            StarVisible16_1 As Text:
-                                Align: ='TextCanvas.Align'.Center
-                                DisplayMode: =DisplayMode.Edit
-                                Height: =20
-                                Text: ="*"
-                                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                                Width: =30
-                                X: =0
-                                Y: =DataCardKey16_1.Y
-                                ZIndex: =7
-
-                        proj_engagement_code_DataCard1_1 As typedDataCard.fluentV9TextualEditCard:
-                            BorderStyle: =BorderStyle.Solid
-                            DataField: ="gps_proj_engagement_code"
-                            Default: =ThisItem.proj_engagement_code
-                            DisplayMode: =Parent.DisplayMode
-                            DisplayName: =DataSourceInfo([@Atestados],DataSourceInfo.DisplayName,"gps_proj_engagement_code")
-                            Fill: =RGBA(0, 0, 0, 0)
-                            Height: =70
-                            MaxLength: =DataSourceInfo([@Atestados], DataSourceInfo.MaxLength, "gps_proj_engagement_code")
+                            MaxLength: =DataSourceInfo([@Atestados], DataSourceInfo.MaxLength, "gps_nome_signatario")
                             Required: =false
-                            Update: =dcvEngagementCode_1.Value
+                            Update: =dcvNomeSignatario.Value
                             Width: =435
                             X: =0
-                            Y: =3
+                            Y: =0
                             ZIndex: =1
 
-                            DataCardKey21_1 As Text:
+                            DataCardKey33 As Text:
                                 DisplayMode: =DisplayMode.Edit
                                 Height: =22
                                 Text: =Parent.DisplayName
@@ -3079,9 +2409,8 @@
                                 Y: =10
                                 ZIndex: =1
 
-                            "dcvEngagementCode_1 As 'Text input'":
+                            "dcvNomeSignatario As 'Text input'":
                                 AccessibleLabel: =Parent.DisplayName
-                                BasePaletteColor: =
                                 DisplayMode: =Parent.DisplayMode
                                 Height: =32
                                 Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
@@ -3090,10 +2419,10 @@
                                 Value: =Parent.Default
                                 Width: =Parent.Width - 48
                                 X: =24
-                                Y: =DataCardKey21_1.Y + DataCardKey21_1.Height + 4
+                                Y: =DataCardKey33.Y + DataCardKey33.Height + 4
                                 ZIndex: =2
 
-                            ErrorMessage21_1 As Text:
+                            ErrorMessage32 As Text:
                                 DisplayMode: =DisplayMode.Edit
                                 Height: =30
                                 Text: =Parent.Error
@@ -3101,10 +2430,10 @@
                                 Width: =Parent.Width - 48
                                 Wrap: =true
                                 X: =24
-                                Y: =dcvEngagementCode_1.Y + dcvEngagementCode_1.Height
+                                Y: =dcvNomeSignatario.Y + dcvNomeSignatario.Height
                                 ZIndex: =3
 
-                            StarVisible21_1 As Text:
+                            StarVisible32 As Text:
                                 Align: ='TextCanvas.Align'.Center
                                 DisplayMode: =DisplayMode.Edit
                                 Height: =30
@@ -3112,10 +2441,258 @@
                                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                                 Width: =30
                                 X: =0
-                                Y: =DataCardKey21_1.Y
+                                Y: =DataCardKey33.Y
                                 ZIndex: =4
 
-                        local_signatario_DataCard1_1 As typedDataCard.fluentV9TextualEditCard:
+                        cargo_signatario_DataCard2 As typedDataCard.fluentV9TextualEditCard:
+                            BorderStyle: =BorderStyle.Solid
+                            DataField: ="gps_cargo_signatario"
+                            Default: =ThisItem.cargo_signatario
+                            DisplayMode: =Parent.DisplayMode
+                            DisplayName: =DataSourceInfo([@Atestados],DataSourceInfo.DisplayName,"gps_cargo_signatario")
+                            Fill: =RGBA(0, 0, 0, 0)
+                            Height: =70
+                            MaxLength: =DataSourceInfo([@Atestados], DataSourceInfo.MaxLength, "gps_cargo_signatario")
+                            Required: =false
+                            Update: =dcvCargoSignatario.Value
+                            Width: =435
+                            X: =1
+                            Y: =0
+                            ZIndex: =1
+
+                            DataCardKey34 As Text:
+                                DisplayMode: =DisplayMode.Edit
+                                Height: =22
+                                Text: =Parent.DisplayName
+                                Weight: ='TextCanvas.Weight'.Semibold
+                                Width: =Parent.Width - 48
+                                Wrap: =false
+                                X: =24
+                                Y: =10
+                                ZIndex: =1
+
+                            "dcvCargoSignatario As 'Text input'":
+                                AccessibleLabel: =Parent.DisplayName
+                                DisplayMode: =Parent.DisplayMode
+                                Height: =32
+                                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                                Required: =Parent.Required
+                                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                                Value: =Parent.Default
+                                Width: =Parent.Width - 48
+                                X: =24
+                                Y: =DataCardKey34.Y + DataCardKey34.Height + 4
+                                ZIndex: =2
+
+                            ErrorMessage33 As Text:
+                                DisplayMode: =DisplayMode.Edit
+                                Height: =30
+                                Text: =Parent.Error
+                                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                                Width: =Parent.Width - 48
+                                Wrap: =true
+                                X: =24
+                                Y: =dcvCargoSignatario.Y + dcvCargoSignatario.Height
+                                ZIndex: =3
+
+                            StarVisible33 As Text:
+                                Align: ='TextCanvas.Align'.Center
+                                DisplayMode: =DisplayMode.Edit
+                                Height: =30
+                                Text: ="*"
+                                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                Width: =30
+                                X: =0
+                                Y: =DataCardKey34.Y
+                                ZIndex: =4
+
+                        email_signatario_DataCard2 As typedDataCard.fluentV9TextualEditCard:
+                            BorderStyle: =BorderStyle.Solid
+                            DataField: ="gps_email_signatario"
+                            Default: =ThisItem.email_signatario
+                            DisplayMode: =Parent.DisplayMode
+                            DisplayName: =DataSourceInfo([@Atestados],DataSourceInfo.DisplayName,"gps_email_signatario")
+                            Fill: =RGBA(0, 0, 0, 0)
+                            Height: =70
+                            MaxLength: =DataSourceInfo([@Atestados], DataSourceInfo.MaxLength, "gps_email_signatario")
+                            Required: =false
+                            Update: =dcvEmailSignatario.Value
+                            Width: =435
+                            X: =2
+                            Y: =0
+                            ZIndex: =1
+
+                            DataCardKey35 As Text:
+                                DisplayMode: =DisplayMode.Edit
+                                Height: =22
+                                Text: =Parent.DisplayName
+                                Weight: ='TextCanvas.Weight'.Semibold
+                                Width: =Parent.Width - 48
+                                Wrap: =false
+                                X: =24
+                                Y: =10
+                                ZIndex: =1
+
+                            "dcvEmailSignatario As 'Text input'":
+                                AccessibleLabel: =Parent.DisplayName
+                                DisplayMode: =Parent.DisplayMode
+                                Height: =32
+                                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                                Required: =Parent.Required
+                                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                                Value: =Parent.Default
+                                Width: =Parent.Width - 48
+                                X: =24
+                                Y: =DataCardKey35.Y + DataCardKey35.Height + 4
+                                ZIndex: =2
+
+                            ErrorMessage34 As Text:
+                                DisplayMode: =DisplayMode.Edit
+                                Height: =30
+                                Text: =Parent.Error
+                                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                                Width: =Parent.Width - 48
+                                Wrap: =true
+                                X: =24
+                                Y: =dcvEmailSignatario.Y + dcvEmailSignatario.Height
+                                ZIndex: =3
+
+                            StarVisible34 As Text:
+                                Align: ='TextCanvas.Align'.Center
+                                DisplayMode: =DisplayMode.Edit
+                                Height: =30
+                                Text: ="*"
+                                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                Width: =30
+                                X: =0
+                                Y: =DataCardKey35.Y
+                                ZIndex: =4
+
+                        tel_signatario_DataCard2 As typedDataCard.fluentV9TextualEditCard:
+                            BorderStyle: =BorderStyle.Solid
+                            DataField: ="gps_tel_signatario"
+                            Default: =ThisItem.tel_signatario
+                            DisplayMode: =Parent.DisplayMode
+                            DisplayName: =DataSourceInfo([@Atestados],DataSourceInfo.DisplayName,"gps_tel_signatario")
+                            Fill: =RGBA(0, 0, 0, 0)
+                            Height: =70
+                            MaxLength: =DataSourceInfo([@Atestados], DataSourceInfo.MaxLength, "gps_tel_signatario")
+                            Required: =false
+                            Update: =dcvTelefoneSignatario.Value
+                            Width: =435
+                            X: =0
+                            Y: =1
+                            ZIndex: =1
+
+                            DataCardKey36 As Text:
+                                DisplayMode: =DisplayMode.Edit
+                                Height: =22
+                                Text: =Parent.DisplayName
+                                Weight: ='TextCanvas.Weight'.Semibold
+                                Width: =Parent.Width - 48
+                                Wrap: =false
+                                X: =24
+                                Y: =10
+                                ZIndex: =1
+
+                            "dcvTelefoneSignatario As 'Text input'":
+                                AccessibleLabel: =Parent.DisplayName
+                                DisplayMode: =Parent.DisplayMode
+                                Height: =32
+                                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                                Required: =Parent.Required
+                                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                                Value: =Parent.Default
+                                Width: =Parent.Width - 48
+                                X: =24
+                                Y: =DataCardKey36.Y + DataCardKey36.Height + 4
+                                ZIndex: =2
+
+                            ErrorMessage35 As Text:
+                                DisplayMode: =DisplayMode.Edit
+                                Height: =30
+                                Text: =Parent.Error
+                                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                                Width: =Parent.Width - 48
+                                Wrap: =true
+                                X: =24
+                                Y: =dcvTelefoneSignatario.Y + dcvTelefoneSignatario.Height
+                                ZIndex: =3
+
+                            StarVisible35 As Text:
+                                Align: ='TextCanvas.Align'.Center
+                                DisplayMode: =DisplayMode.Edit
+                                Height: =30
+                                Text: ="*"
+                                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                Width: =30
+                                X: =0
+                                Y: =DataCardKey36.Y
+                                ZIndex: =4
+
+                        endr_signatario_DataCard2 As typedDataCard.fluentV9TextualEditCard:
+                            BorderStyle: =BorderStyle.Solid
+                            DataField: ="gps_endr_signatario"
+                            Default: =ThisItem.endr_signatario
+                            DisplayMode: =Parent.DisplayMode
+                            DisplayName: =DataSourceInfo([@Atestados],DataSourceInfo.DisplayName,"gps_endr_signatario")
+                            Fill: =RGBA(0, 0, 0, 0)
+                            Height: =70
+                            MaxLength: =DataSourceInfo([@Atestados], DataSourceInfo.MaxLength, "gps_endr_signatario")
+                            Required: =false
+                            Update: =dcvEnderecoSignatario.Value
+                            Width: =435
+                            X: =1
+                            Y: =1
+                            ZIndex: =1
+
+                            DataCardKey37 As Text:
+                                DisplayMode: =DisplayMode.Edit
+                                Height: =22
+                                Text: =Parent.DisplayName
+                                Weight: ='TextCanvas.Weight'.Semibold
+                                Width: =Parent.Width - 48
+                                Wrap: =false
+                                X: =24
+                                Y: =10
+                                ZIndex: =1
+
+                            "dcvEnderecoSignatario As 'Text input'":
+                                AccessibleLabel: =Parent.DisplayName
+                                DisplayMode: =Parent.DisplayMode
+                                Height: =32
+                                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                                Required: =Parent.Required
+                                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                                Value: =Parent.Default
+                                Width: =Parent.Width - 48
+                                X: =24
+                                Y: =DataCardKey37.Y + DataCardKey37.Height + 4
+                                ZIndex: =2
+
+                            ErrorMessage36 As Text:
+                                DisplayMode: =DisplayMode.Edit
+                                Height: =30
+                                Text: =Parent.Error
+                                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                                Width: =Parent.Width - 48
+                                Wrap: =true
+                                X: =24
+                                Y: =dcvEnderecoSignatario.Y + dcvEnderecoSignatario.Height
+                                ZIndex: =3
+
+                            StarVisible36 As Text:
+                                Align: ='TextCanvas.Align'.Center
+                                DisplayMode: =DisplayMode.Edit
+                                Height: =30
+                                Text: ="*"
+                                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                Width: =30
+                                X: =0
+                                Y: =DataCardKey37.Y
+                                ZIndex: =4
+
+                        local_signatario_DataCard3 As typedDataCard.fluentV9TextualEditCard:
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="gps_local_signatario"
                             Default: =ThisItem.local_signatario
@@ -3125,13 +2702,13 @@
                             Height: =70
                             MaxLength: =DataSourceInfo([@Atestados], DataSourceInfo.MaxLength, "gps_local_signatario")
                             Required: =false
-                            Update: =dcvLocalSignatario_1.Value
+                            Update: =dcvLocalSignatario.Value
                             Width: =435
-                            X: =1
-                            Y: =3
+                            X: =2
+                            Y: =1
                             ZIndex: =1
 
-                            DataCardKey22_1 As Text:
+                            DataCardKey38 As Text:
                                 DisplayMode: =DisplayMode.Edit
                                 Height: =22
                                 Text: =Parent.DisplayName
@@ -3142,9 +2719,8 @@
                                 Y: =10
                                 ZIndex: =1
 
-                            "dcvLocalSignatario_1 As 'Text input'":
+                            "dcvLocalSignatario As 'Text input'":
                                 AccessibleLabel: =Parent.DisplayName
-                                BasePaletteColor: =
                                 DisplayMode: =Parent.DisplayMode
                                 Height: =32
                                 Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
@@ -3153,10 +2729,10 @@
                                 Value: =Parent.Default
                                 Width: =Parent.Width - 48
                                 X: =24
-                                Y: =DataCardKey22_1.Y + DataCardKey22_1.Height + 4
+                                Y: =DataCardKey38.Y + DataCardKey38.Height + 4
                                 ZIndex: =2
 
-                            ErrorMessage22_1 As Text:
+                            ErrorMessage37 As Text:
                                 DisplayMode: =DisplayMode.Edit
                                 Height: =30
                                 Text: =Parent.Error
@@ -3164,10 +2740,10 @@
                                 Width: =Parent.Width - 48
                                 Wrap: =true
                                 X: =24
-                                Y: =dcvLocalSignatario_1.Y + dcvLocalSignatario_1.Height
+                                Y: =dcvLocalSignatario.Y + dcvLocalSignatario.Height
                                 ZIndex: =3
 
-                            StarVisible22_1 As Text:
+                            StarVisible37 As Text:
                                 Align: ='TextCanvas.Align'.Center
                                 DisplayMode: =DisplayMode.Edit
                                 Height: =30
@@ -3175,77 +2751,10 @@
                                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                                 Width: =30
                                 X: =0
-                                Y: =DataCardKey22_1.Y
+                                Y: =DataCardKey38.Y
                                 ZIndex: =4
 
-                        atsd_registrado_DataCard1_1 As typedDataCard.fluentV9ComboBoxOptionSetSingleEditCard:
-                            BorderStyle: =BorderStyle.Solid
-                            DataField: ="gps_atsd_registrado"
-                            Default: =ThisItem.atsd_registrado
-                            DisplayMode: =Parent.DisplayMode
-                            DisplayName: =DataSourceInfo([@Atestados],DataSourceInfo.DisplayName,"gps_atsd_registrado")
-                            Fill: =RGBA(0, 0, 0, 0)
-                            Height: =70
-                            Required: =false
-                            Update: =dcvRegistrado_1.Selected.Value
-                            Width: =435
-                            X: =2
-                            Y: =3
-                            ZIndex: =1
-
-                            DataCardKey23_1 As Text:
-                                DisplayMode: =DisplayMode.Edit
-                                Height: =22
-                                Text: =Parent.DisplayName
-                                Weight: ='TextCanvas.Weight'.Semibold
-                                Width: =Parent.Width - 48
-                                Wrap: =false
-                                X: =24
-                                Y: =10
-                                ZIndex: =1
-
-                            dcvRegistrado_1 As Combobox.pcfdataset:
-                                AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
-                                DisplayMode: =Parent.DisplayMode
-                                Height: =32
-                                Items: =Choices('atsd_registrado (Atestados)')
-                                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                                Width: =Parent.Width - 48
-                                X: =24
-                                Y: =DataCardKey23_1.Y + DataCardKey23_1.Height + 4
-                                ZIndex: =2
-
-                                Value1_1 As pcfDataField.textualColumn:
-                                    FieldDisplayName: ="Value"
-                                    FieldName: ="Value"
-                                    FieldType: ="l"
-                                    FieldVariantName: ="textualColumn"
-                                    Order: =1
-                                    ZIndex: =26
-
-                            ErrorMessage23_1 As Text:
-                                DisplayMode: =DisplayMode.Edit
-                                Height: =30
-                                Text: =Parent.Error
-                                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                                Width: =Parent.Width - 48
-                                Wrap: =true
-                                X: =24
-                                Y: =dcvRegistrado_1.Y + dcvRegistrado_1.Height
-                                ZIndex: =3
-
-                            StarVisible23_1 As Text:
-                                Align: ='TextCanvas.Align'.Center
-                                DisplayMode: =DisplayMode.Edit
-                                Height: =20
-                                Text: ="*"
-                                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                                Width: =30
-                                X: =0
-                                Y: =DataCardKey23_1.Y
-                                ZIndex: =4
-
-                        astd_data_assintr_DataCard1_1 As typedDataCard.fluentV9DateTimeEditCard:
+                        astd_data_assintr_DataCard3 As typedDataCard.fluentV9DateTimeEditCard:
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="gps_astd_data_assintr"
                             Default: =ThisItem.astd_data_assintr
@@ -3254,13 +2763,13 @@
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
                             Required: =false
-                            Update: =If(Not IsBlank(DateValue3_1.SelectedDate), Date(Year(DateValue3_1.SelectedDate), Month(DateValue3_1.SelectedDate), Day(DateValue3_1.SelectedDate)))
+                            Update: =If(Not IsBlank(dtvDataAssinatura.SelectedDate), Date(Year(dtvDataAssinatura.SelectedDate), Month(dtvDataAssinatura.SelectedDate), Day(dtvDataAssinatura.SelectedDate)))
                             Width: =435
                             X: =0
-                            Y: =4
+                            Y: =2
                             ZIndex: =1
 
-                            DataCardKey24_1 As Text:
+                            DataCardKey39 As Text:
                                 DisplayMode: =DisplayMode.Edit
                                 Height: =22
                                 Text: =Parent.DisplayName
@@ -3271,19 +2780,18 @@
                                 Y: =10
                                 ZIndex: =1
 
-                            "DateValue3_1 As 'Date picker'":
+                            "dtvDataAssinatura As 'Date picker'":
                                 AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
-                                BasePaletteColor: =
                                 DisplayMode: =Parent.DisplayMode
-                                Height: =36
+                                Height: =32
                                 SelectedDate: =Parent.Default
                                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                                 Width: =387
                                 X: =24
-                                Y: =32
+                                Y: =DataCardKey39.Y + DataCardKey39.Height + 4
                                 ZIndex: =2
 
-                            ErrorMessage24_1 As Text:
+                            ErrorMessage38 As Text:
                                 DisplayMode: =DisplayMode.Edit
                                 Height: =30
                                 Text: =Parent.Error
@@ -3291,10 +2799,10 @@
                                 Width: =Parent.Width - 48
                                 Wrap: =true
                                 X: =24
-                                Y: =DateValue3_1.Y + DateValue3_1.Height
+                                Y: =dtvDataAssinatura.Y + dtvDataAssinatura.Height
                                 ZIndex: =6
 
-                            StarVisible24_1 As Text:
+                            StarVisible38 As Text:
                                 Align: ='TextCanvas.Align'.Center
                                 DisplayMode: =DisplayMode.Edit
                                 Height: =20
@@ -3302,10 +2810,10 @@
                                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                                 Width: =30
                                 X: =0
-                                Y: =DataCardKey24_1.Y
+                                Y: =DataCardKey39.Y
                                 ZIndex: =7
 
-                        astd_file_uploaded_DataCard1_1 As typedDataCard.fluentV9FileEditCard:
+                        astd_file_uploaded_DataCard2 As typedDataCard.fluentV9FileEditCard:
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="gps_astd_file_uploaded"
                             Default: |-
@@ -3315,13 +2823,13 @@
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =50
                             Required: =false
-                            Update: =dcvArquivoAtestado_1.Attachments
+                            Update: =dcvArquivoAtestado.Attachments
                             Width: =435
                             X: =1
-                            Y: =4
+                            Y: =2
                             ZIndex: =1
 
-                            dckArquivoAtestado_1 As Text:
+                            DataCardKey40 As Text:
                                 DisplayMode: =DisplayMode.Edit
                                 Height: =34
                                 Text: =Parent.DisplayName
@@ -3332,7 +2840,7 @@
                                 Y: =10
                                 ZIndex: =1
 
-                            dcvArquivoAtestado_1 As attachments:
+                            dcvArquivoAtestado As attachments:
                                 AddAttachmentText: ="Upload file"
                                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                                 DisplayMode: =Parent.DisplayMode
@@ -3349,8 +2857,31 @@
                                 Tooltip: =Parent.DisplayName
                                 Width: =Parent.Width - 60
                                 X: =30
-                                Y: =dckArquivoAtestado_1.Y + dckArquivoAtestado_1.Height + 5
+                                Y: =DataCardKey40.Y + DataCardKey40.Height + 5
                                 ZIndex: =2
+
+                            ErrorMessage39 As Text:
+                                DisplayMode: =DisplayMode.Edit
+                                Height: =10
+                                Size: =12
+                                Text: =Parent.Error
+                                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                                Width: =Parent.Width - 60
+                                X: =30
+                                Y: =dcvArquivoAtestado.Y + dcvArquivoAtestado.Height
+                                ZIndex: =3
+
+                            StarVisible39 As Text:
+                                Align: ='TextCanvas.Align'.Center
+                                DisplayMode: =DisplayMode.Edit
+                                Height: =DataCardKey40.Height
+                                Text: ="*"
+                                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                Width: =30
+                                Wrap: =false
+                                X: =0
+                                Y: =DataCardKey40.Y
+                                ZIndex: =4
 
                     ctnFooterFormEmpresaPrestouServico_2 As groupContainer.horizontalAutoLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
@@ -3423,7 +2954,7 @@
                                 HoverBorderColor: =RGBA(0, 0, 0, 0)
                                 HoverFill: =Color.Transparent
                                 OnSelect: |-
-                                    =UpdateContext({locMostrarFormEmpresaPrestouServico: true, locMostrarFormEmpresaAtestante: false, locMostrarEquipeDoAtestado: false})
+                                    =UpdateContext({locMostrarFormEmpresaPrestouServico: true, locMostrarFormEmpresaAtestante: false, locMostrarEquipeDoAtestado: false, locMostrarFormSignatarioAtestado: false})
                                 PressedBorderColor: =RGBA(0, 69, 120, 1)
                                 PressedColor: =Self.Color
                                 PressedFill: =Self.Fill
@@ -4216,7 +3747,7 @@
                                 HoverBorderColor: =RGBA(0, 0, 0, 0)
                                 HoverFill: =Color.Transparent
                                 OnSelect: |-
-                                    =UpdateContext({locMostrarFormEmpresaPrestouServico: true, locMostrarFormEmpresaAtestante: false, locMostrarFormInserirEquipeAtestado: false})
+                                    =UpdateContext({locMostrarFormEmpresaPrestouServico: false, locMostrarFormEmpresaAtestante: false, locMostrarFormInserirEquipeAtestado: false, locMostrarFormSignatarioAtestado: true})
                                 PressedBorderColor: =RGBA(0, 69, 120, 1)
                                 PressedColor: =Self.Color
                                 PressedFill: =Self.Fill
