@@ -2324,6 +2324,216 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'Tela de atestados'.ctnPopUpEditarAtestado.ctnFrmEditarAtestado.frmEditarDadosDaEmpresaPrestouServico.atsd_descr_obj_trab_DataCard2.ctnPopUpAddDescricaoAtestado_1.ctnAddDescricaoAtestado_1.ctnOrganizadorDescObjeto_1.ctnAdicionarNovasDescricoes_1.glrDescricoesAdicionadas_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Tela de atestados'.ctnPopUpEditarAtestado.ctnFrmEditarAtestado.frmEditarDadosDaEmpresaPrestouServico.atsd_descr_obj_trab_DataCard2.ctnPopUpAddDescricaoAtestado_1.ctnAddDescricaoAtestado_1.ctnOrganizadorDescObjeto_1.ctnAdicionarNovasDescricoes_1.glrDescricoesAdicionadas_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Tela de atestados",
+                "type": "'Tela de atestados'.ctnPopUpEditarAtestado.ctnFrmEditarAtestado.frmEditarDadosDaEmpresaPrestouServico.atsd_descr_obj_trab_DataCard2.ctnPopUpAddDescricaoAtestado_1.ctnAddDescricaoAtestado_1.ctnOrganizadorDescObjeto_1.ctnAdicionarNovasDescricoes_1.glrDescricoesAdicionadas_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Tela de atestados'.ctnPopUpEditarAtestado.ctnFrmEditarAtestado.frmEditarDadosDaEmpresaPrestouServico.atsd_descr_obj_trab_DataCard2.ctnPopUpAddDescricaoAtestado_1.ctnAddDescricaoAtestado_1.ctnOrganizadorDescObjeto_1.ctnDescricoesAdicionadas_1.txtAddDescObjeto_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Tela de atestados'.ctnPopUpEditarAtestado.ctnFrmEditarAtestado.frmEditarDadosDaEmpresaPrestouServico.atsd_descr_obj_trab_DataCard2.ctnPopUpAddDescricaoAtestado_1.ctnAddDescricaoAtestado_1.ctnOrganizadorDescObjeto_1.ctnDescricoesAdicionadas_1.txtAddDescObjeto_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Tela de atestados",
+                "type": "'Tela de atestados'.ctnPopUpEditarAtestado.ctnFrmEditarAtestado.frmEditarDadosDaEmpresaPrestouServico.atsd_descr_obj_trab_DataCard2.ctnPopUpAddDescricaoAtestado_1.ctnAddDescricaoAtestado_1.ctnOrganizadorDescObjeto_1.ctnDescricoesAdicionadas_1.txtAddDescObjeto_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Tela de atestados'.ctnPopUpEditarAtestado.ctnFrmEditarAtestado.frmEditarDadosDaEmpresaPrestouServico.atsd_descr_obj_trab_DataCard2.ctnPopUpAddDescricaoAtestado_1.ctnAddDescricaoAtestado_1.ctnTituloDescObjeto_1.Icon5_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Tela de atestados'.ctnPopUpEditarAtestado.ctnFrmEditarAtestado.frmEditarDadosDaEmpresaPrestouServico.atsd_descr_obj_trab_DataCard2.ctnPopUpAddDescricaoAtestado_1.ctnAddDescricaoAtestado_1.ctnTituloDescObjeto_1.Icon5_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Tela de atestados",
+                "type": "'Tela de atestados'.ctnPopUpEditarAtestado.ctnFrmEditarAtestado.frmEditarDadosDaEmpresaPrestouServico.atsd_descr_obj_trab_DataCard2.ctnPopUpAddDescricaoAtestado_1.ctnAddDescricaoAtestado_1.ctnTituloDescObjeto_1.Icon5_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Tela de atestados'.ctnPopUpEditarAtestado.ctnFrmEditarAtestado.frmEditarDadosDaEmpresaPrestouServico.atsd_descr_obj_trab_DataCard2.ctnPopUpAddDescricaoAtestado_1.ctnAddDescricaoAtestado_1.ctnTituloDescObjeto_1.Icon5_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Tela de atestados'.ctnPopUpEditarAtestado.ctnFrmEditarAtestado.frmEditarDadosDaEmpresaPrestouServico.atsd_descr_obj_trab_DataCard2.ctnPopUpAddDescricaoAtestado_1.ctnAddDescricaoAtestado_1.ctnTituloDescObjeto_1.Icon5_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Tela de atestados",
+                "type": "'Tela de atestados'.ctnPopUpEditarAtestado.ctnFrmEditarAtestado.frmEditarDadosDaEmpresaPrestouServico.atsd_descr_obj_trab_DataCard2.ctnPopUpAddDescricaoAtestado_1.ctnAddDescricaoAtestado_1.ctnTituloDescObjeto_1.Icon5_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Tela de atestados'.ctnPopUpEditarAtestado.ctnFrmEditarAtestado.frmEditarDadosDaEmpresaPrestouServico.atsd_descr_obj_trab_DataCard2.ctnPopUpAddDescricaoAtestado_1.ctnAddDescricaoAtestado_1.ctnOrganizadorDescObjeto_1.ctnAdicionarNovasDescricoes_1.glrDescricoesAdicionadas_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Tela de atestados'.ctnPopUpEditarAtestado.ctnFrmEditarAtestado.frmEditarDadosDaEmpresaPrestouServico.atsd_descr_obj_trab_DataCard2.ctnPopUpAddDescricaoAtestado_1.ctnAddDescricaoAtestado_1.ctnOrganizadorDescObjeto_1.ctnAdicionarNovasDescricoes_1.glrDescricoesAdicionadas_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Tela de atestados",
+                "type": "'Tela de atestados'.ctnPopUpEditarAtestado.ctnFrmEditarAtestado.frmEditarDadosDaEmpresaPrestouServico.atsd_descr_obj_trab_DataCard2.ctnPopUpAddDescricaoAtestado_1.ctnAddDescricaoAtestado_1.ctnOrganizadorDescObjeto_1.ctnAdicionarNovasDescricoes_1.glrDescricoesAdicionadas_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Tela de atestados'.ctnPopUpEditarAtestado.ctnFrmEditarAtestado.frmEditarDadosDaEmpresaPrestouServico.atsd_descr_obj_trab_DataCard2.ctnPopUpAddDescricaoAtestado_1.ctnAddDescricaoAtestado_1.ctnOrganizadorDescObjeto_1.ctnAdicionarNovasDescricoes_1.glrDescricoesAdicionadas_1.Icon6_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Tela de atestados'.ctnPopUpEditarAtestado.ctnFrmEditarAtestado.frmEditarDadosDaEmpresaPrestouServico.atsd_descr_obj_trab_DataCard2.ctnPopUpAddDescricaoAtestado_1.ctnAddDescricaoAtestado_1.ctnOrganizadorDescObjeto_1.ctnAdicionarNovasDescricoes_1.glrDescricoesAdicionadas_1.Icon6_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Tela de atestados",
+                "type": "'Tela de atestados'.ctnPopUpEditarAtestado.ctnFrmEditarAtestado.frmEditarDadosDaEmpresaPrestouServico.atsd_descr_obj_trab_DataCard2.ctnPopUpAddDescricaoAtestado_1.ctnAddDescricaoAtestado_1.ctnOrganizadorDescObjeto_1.ctnAdicionarNovasDescricoes_1.glrDescricoesAdicionadas_1.Icon6_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Tela de atestados'.ctnPopUpEditarAtestado.ctnFrmEditarAtestado.frmEditarDadosDaEmpresaPrestouServico.atsd_descr_obj_trab_DataCard2.ctnPopUpAddDescricaoAtestado_1.ctnAddDescricaoAtestado_1.ctnOrganizadorDescObjeto_1.ctnAdicionarNovasDescricoes_1.glrDescricoesAdicionadas_1.Icon6_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Tela de atestados'.ctnPopUpEditarAtestado.ctnFrmEditarAtestado.frmEditarDadosDaEmpresaPrestouServico.atsd_descr_obj_trab_DataCard2.ctnPopUpAddDescricaoAtestado_1.ctnAddDescricaoAtestado_1.ctnOrganizadorDescObjeto_1.ctnAdicionarNovasDescricoes_1.glrDescricoesAdicionadas_1.Icon6_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Tela de atestados",
+                "type": "'Tela de atestados'.ctnPopUpEditarAtestado.ctnFrmEditarAtestado.frmEditarDadosDaEmpresaPrestouServico.atsd_descr_obj_trab_DataCard2.ctnPopUpAddDescricaoAtestado_1.ctnAddDescricaoAtestado_1.ctnOrganizadorDescObjeto_1.ctnAdicionarNovasDescricoes_1.glrDescricoesAdicionadas_1.Icon6_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.OnStart"
                 }
               ],
@@ -2436,36 +2646,6 @@
           },
           "ruleId": "app-ScreenHasManyControls",
           "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Tela de atestados'.locAcaoEscolhida"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Tela de atestados'.locAcaoEscolhida",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "locAcaoEscolhida",
-                "module": "Tela de atestados",
-                "type": "'Tela de atestados'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 5
         },
         {
           "locations": [
@@ -2653,7 +2833,7 @@
                 ],
                 "level": "Medium",
                 "primaryCategory": "performance",
-                "whyFix": "Each control consumes resources, and an app may become slow or unresponsive if a screen has too many controls. The estimated complexity of \"Tela de atestados\" is 580, which exceeds the maximum threshold recommended (300)."
+                "whyFix": "Each control consumes resources, and an app may become slow or unresponsive if a screen has too many controls. The estimated complexity of \"Tela de atestados\" is 611, which exceeds the maximum threshold recommended (300)."
               }
             }
           ],
