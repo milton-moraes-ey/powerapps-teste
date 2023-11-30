@@ -5930,8 +5930,13 @@
                         Height: =32
                         Icon: =Icon.Edit
                         OnSelect: |-
-                            =ClearCollect(colDescricaoAtual, Split(dcvEditarDescricaoDoAtestado.Value, ";"));
-                            
+                            =ClearCollect(
+                                colDescricaoAtual,
+                                Split(
+                                    dcvEditarDescricaoDoAtestado.Value,
+                                    ";"
+                                )
+                            );
                             UpdateContext({locMostrarPopUpParaEditarDescricao: true})
                         Width: =32
                         X: =dcvEditarDescricaoDoAtestado.X + dcvEditarDescricaoDoAtestado.Width - Self.Width
