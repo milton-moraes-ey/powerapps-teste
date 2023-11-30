@@ -77605,7 +77605,8 @@
           "InvariantPropertyName": "Label",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
-        }
+        },
+        "BasePaletteColor"
       ],
       "DynamicProperties": [
         {
@@ -77662,6 +77663,11 @@
         {
           "Category": "Data",
           "PropertyName": "Label",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "BasePaletteColor",
           "RuleProviderType": "Unknown"
         },
         {

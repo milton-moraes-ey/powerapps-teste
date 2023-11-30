@@ -4219,14 +4219,14 @@
                     Italic: =true
                     Size: =12
                     Text: |-
-                        ="Editar atestado - " & Switch(
+                        ="Editar atestado" & Switch(
                             true,
                             locMostrarFormEditarEmpresasDoAtestado,
-                            "Dados da empresa atestante",
+                            "",
                             locMostrarFormEditarSignatarioDoAtestado,
-                            "Signatário do atestado",
+                            " - Signatário do atestado",
                             locMostrarFormEditarEquipeDoAtestado,
-                            "Equipe relacionada ao atestado"
+                            " - Equipe relacionada ao atestado"
                         )
                     Width: =500
                     X: =Parent.PaddingLeft
@@ -4415,6 +4415,7 @@
                     ZIndex: =7
 
             tglEntreEmpresas As Toggle:
+                BasePaletteColor: =
                 DisplayMode: =DisplayMode.Edit
                 Height: =35
                 Label: ="Empresa atestante"
