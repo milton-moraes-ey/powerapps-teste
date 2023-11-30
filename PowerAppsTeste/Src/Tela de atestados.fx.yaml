@@ -3434,7 +3434,7 @@
                                 RadiusBottomRight: =4
                                 RadiusTopLeft: =4
                                 RadiusTopRight: =4
-                                Size: =14
+                                Size: =12
                                 Text: ="Adicionar"
                                 Width: =120
                                 X: =Parent.Width - Self.Width - Parent.PaddingRight
@@ -3722,6 +3722,7 @@
                                 Font: =Font.'Segoe UI'
                                 FontWeight: =FontWeight.Bold
                                 Height: =38
+                                Size: =12
                                 Text: ="Voltar"
                                 Width: =81
                                 X: =40
@@ -3743,7 +3744,7 @@
                                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                                 PressedColor: =RGBA(16, 110, 190, 1)
                                 PressedFill: =RGBA(0, 0, 0, 0)
-                                Width: =30
+                                Width: =25
                                 ZIndex: =2
 
                             btnVoltarFormEmpresaPrestouServico As button:
@@ -3872,7 +3873,7 @@
                                 RadiusBottomRight: =4
                                 RadiusTopLeft: =4
                                 RadiusTopRight: =4
-                                Size: =14
+                                Size: =12
                                 Text: ="Salvar atestado"
                                 Width: =Parent.Width
                                 ZIndex: =4
@@ -5591,7 +5592,7 @@
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =166
                     Required: =true
-                    Update: =DataCardValue15.Value
+                    Update: =dcvEditarDescricaoDoAtestado.Value
                     Width: =1228
                     X: =0
                     Y: =5
@@ -5608,9 +5609,9 @@
                         Y: =10
                         ZIndex: =1
 
-                    "DataCardValue15 As 'Text input'":
+                    "dcvEditarDescricaoDoAtestado As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
-                        DisplayMode: =Parent.DisplayMode
+                        DisplayMode: =DisplayMode.View
                         Height: =144
                         Mode: ='TextInputCanvas.Mode'.Multiline
                         Required: =Parent.Required
@@ -5618,7 +5619,7 @@
                         Value: =Parent.Default
                         Width: =Parent.Width - 48
                         X: =24
-                        Y: =DataCardKey48.Y + DataCardKey48.Height + 4
+                        Y: =icoEditDescricaoDoObjeto.Y + icoEditDescricaoDoObjeto.Height + 12
                         ZIndex: =2
 
                     ErrorMessage47 As Text:
@@ -5629,7 +5630,7 @@
                         Width: =Parent.Width - 48
                         Wrap: =true
                         X: =24
-                        Y: =DataCardValue15.Y + DataCardValue15.Height
+                        Y: =dcvEditarDescricaoDoAtestado.Y + dcvEditarDescricaoDoAtestado.Height
                         ZIndex: =3
 
                     StarVisible47 As Text:
@@ -5901,6 +5902,18 @@
                                             X: =(Parent.Width - Self.Width) / 2
                                             Y: =(Parent.Height - Self.Height) / 2
                                             ZIndex: =2
+
+                    icoEditDescricaoDoObjeto As icon.Add:
+                        Color: =gblTema.AccentColor
+                        Fill: =gblTema.WhiteColor  
+                        Height: =32
+                        Icon: =Icon.Edit
+                        OnSelect: |-
+                            =UpdateContext({locMostrarPopUpParaEditarDescricao: true})
+                        Width: =32
+                        X: =dcvEditarDescricaoDoAtestado.X + dcvEditarDescricaoDoAtestado.Width - Self.Width
+                        Y: =DataCardKey48.Y
+                        ZIndex: =6
 
             frmEditarSignatarioDoAtestado As form.PowerApps_CoreControls_Form:
                 DataSource: =Atestados
