@@ -11,8 +11,8 @@ App As appinfo:
                 DarkGrayColor: ColorValue("#747480"),
                 LightGrayColor: ColorValue("#C4C4CD"),
                 AccentColor: ColorValue("#0078D4"),
-                //#0078D4
-        LightBorderColor: ColorValue("#e6e6e6d9")
+                LightBorderColor: ColorValue("#e6e6e6d9"),
+                RedWarningColor: ColorValue("#E53935")
             }
         );
         Set(

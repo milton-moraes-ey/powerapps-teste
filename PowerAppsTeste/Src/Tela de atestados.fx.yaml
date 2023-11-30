@@ -6692,13 +6692,24 @@
                         ZIndex: =4
 
                     Label4_3 As label:
+                        Color: =gblTema.RedWarningColor
+                        FontWeight: =FontWeight.Bold
+                        Italic: =true
+                        Size: =12
+                        Text: ="Evite usar "";"""
+                        Visible: =";" in txtEditarDescricoes.Value 
+                        X: =txtEditarDescricoes.X
+                        Y: =txtEditarDescricoes.Y + txtEditarDescricoes.Height
+                        ZIndex: =5
+
+                    Label4_4 As label:
                         Color: =gblTema.DarkGrayColor
                         Italic: =true
                         Size: =10
-                        Text: ="Evite usar "";"""
-                        X: =105
-                        Y: =24
-                        ZIndex: =5
+                        Text: =";" in txtEditarDescricoes.Value 
+                        X: =70
+                        Y: =340
+                        ZIndex: =6
 
                 ctnAdicionarNovasDescricoes_2 As groupContainer.manualLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
