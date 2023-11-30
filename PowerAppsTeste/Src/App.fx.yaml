@@ -53,49 +53,7 @@ App As appinfo:
             colAtestados,
             Atestados
         );
-        ClearCollect(
-            colProfissionaisCadastrados,
-            {
-                Name: "Milton Moraes",
-                DominioAtuacao: "Desenvolvedor Power Platform",
-                QuantidadeHoras: 1000,
-                Funcao: "Desenvolvedor",
-                Formacao: "Engenharia - Universidade Católica de Santos, 2020",
-                Certificacoes: "Certificacao A, Certificacao B, Certificacao C",
-                VinculoEmpregaticio: "Ribeirão Preto",
-                Email: "milton.moraes@br.ey.com"
-            },
-            {
-                Name: "Milton Moraes 2",
-                DominioAtuacao: "Desenvolvedor Power Platform",
-                QuantidadeHoras: 1000,
-                Funcao: "Desenvolvedor",
-                Formacao: "Engenharia - Universidade Católica de Santos, 2020",
-                Certificacoes: "Certificacao A, Certificacao B, Certificacao C",
-                VinculoEmpregaticio: "Ribeirão Preto",
-                Email: "milton.moraes@br.ey.com"
-            },
-            {
-                Name: "Milton Moraes 3",
-                DominioAtuacao: "Desenvolvedor Power Platform",
-                QuantidadeHoras: 1000,
-                Funcao: "Desenvolvedor",
-                Formacao: "Engenharia - Universidade Católica de Santos, 2020",
-                Certificacoes: "Certificacao A, Certificacao B, Certificacao C",
-                VinculoEmpregaticio: "Ribeirão Preto",
-                Email: "milton.moraes@br.ey.com"
-            },
-            {
-                Name: "Milton Moraes 4",
-                DominioAtuacao: "Desenvolvedor Power Platform",
-                QuantidadeHoras: 1000,
-                Funcao: "Desenvolvedor",
-                Formacao: "Engenharia - Universidade Católica de Santos, 2020",
-                Certificacoes: "Certificacao A, Certificacao B, Certificacao C",
-                VinculoEmpregaticio: "Ribeirão Preto",
-                Email: "milton.moraes@br.ey.com"
-            }
-        );
+        
         ClearCollect(
             colEditais,
             {

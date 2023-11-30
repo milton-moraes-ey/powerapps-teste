@@ -595,7 +595,7 @@
                                     UpdateContext({locAcaoEscolhida: "Deletar"}),
                                     UpdateContext({locAcaoEscolhida: "Exportar PDF"})
                                 );
-                                UpdateContext({locMostrarContextMenu: !locMostrarContextMenu, locMostrarEquipeDoAtestado: true})
+                                UpdateContext({locMostrarContextMenu: !locMostrarContextMenu, locMostrarEquipeDoAtestado: true, locDadosDoAtestado: ThisItem})
                             PressedBorderColor: =RGBA(0, 69, 120, 1)
                             PressedColor: =RGBA(255, 255, 255, 1)
                             PressedFill: =Color.Transparent
@@ -4164,7 +4164,7 @@
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                ZIndex: =1
+                ZIndex: =2
 
                 icoCancelarEdicaoAtestados As icon.Cancel:
                     BorderColor: =RGBA(0, 0, 0, 0)
@@ -4401,8 +4401,8 @@
                 BorderColor: =RGBA(245, 245, 245, 1)
                 BorderThickness: =1
                 DataSource: =Atestados
-                DefaultMode: =FormMode.New
                 Height: =Parent.Height * 0.85
+                Item: =locDadosDoAtestado
                 LayoutMinHeight: =220
                 LayoutMinWidth: =400
                 UseFluentV9Cards: =true
@@ -4410,7 +4410,7 @@
                 Width: =Parent.Width * 0.95
                 X: =(Parent.Width - Self.Width) / 2
                 Y: =Parent.PaddingTop + 32
-                ZIndex: =2
+                ZIndex: =3
 
                 nome_cliente_DataCard2 As typedDataCard.fluentV9TextualEditCard:
                     BorderStyle: =BorderStyle.Solid
@@ -4912,7 +4912,7 @@
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Visible: =locMostrarFormEditarEmpresasDoAtestado
-                ZIndex: =3
+                ZIndex: =4
 
                 Label2_8 As label:
                     AutoHeight: =true
@@ -4951,14 +4951,13 @@
                 AlignInContainer: =AlignInContainer.SetByContainer
                 BorderColor: =RGBA(245, 245, 245, 1)
                 DataSource: =Atestados
-                DefaultMode: =FormMode.New
                 FillPortions: =2
                 LayoutMinHeight: =250
                 LayoutMinWidth: =400
                 NumberOfColumns: =2
                 UseFluentV9Cards: =true
                 Visible: =locMostrarFormEditarEmpresasDoAtestado
-                ZIndex: =4
+                ZIndex: =5
 
                 nome_empresa_prestadora_DataCard2 As typedDataCard.fluentV9TextualEditCard:
                     BorderStyle: =BorderStyle.Solid
@@ -5894,7 +5893,7 @@
                 LayoutMinWidth: =400
                 UseFluentV9Cards: =true
                 Visible: =locMostrarFormEditarSignatarioDoAtestado
-                ZIndex: =5
+                ZIndex: =6
 
                 nome_signatario_DataCard1 As typedDataCard.fluentV9TextualEditCard:
                     BorderStyle: =BorderStyle.Solid
