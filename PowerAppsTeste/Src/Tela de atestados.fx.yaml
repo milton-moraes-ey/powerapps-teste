@@ -6630,28 +6630,14 @@
                     LayoutMinWidth: =250
                     ZIndex: =1
 
-                    "txtEditarDescricoes As 'Text input'":
-                        AccessibleLabel: =
-                        BasePaletteColor: =
-                        DisplayMode: =Parent.DisplayMode
-                        Height: |
-                            =120
-                        Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
-                        Required: =
-                        ValidationState: =
-                        Value: =
-                        Width: =Parent.Width - 60
-                        X: =(Parent.Width - Self.Width)  / 2
-                        Y: =65
-                        ZIndex: =1
-
                     Label4_2 As label:
                         FontWeight: =FontWeight.Bold
                         Size: =11
                         Text: |-
                             ="Descrição:"
                         X: =20
-                        Y: =25
+                        Y: |
+                            =24
                         ZIndex: =2
 
                     btnAdicionarDescricao_4 As button:
@@ -6689,6 +6675,21 @@
                         X: =txtEditarDescricoes.X + txtEditarDescricoes.Width - Self.Width
                         Y: =txtEditarDescricoes.Y + txtEditarDescricoes.Height + 12
                         ZIndex: =3
+
+                    "txtEditarDescricoes As 'Text input'":
+                        AccessibleLabel: =
+                        BasePaletteColor: =
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =120
+                        Mode: ='TextInputCanvas.Mode'.Multiline
+                        Required: =
+                        ValidationState: =
+                        Value: =
+                        Visible: =true
+                        Width: =Parent.Width - 48
+                        X: =24
+                        Y: =Label4_2.Y +Label4_2.Height
+                        ZIndex: =4
 
                 ctnAdicionarNovasDescricoes_2 As groupContainer.manualLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
