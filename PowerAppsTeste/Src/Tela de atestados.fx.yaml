@@ -2754,6 +2754,7 @@
 
                             "dtvDataAssinatura As 'Date picker'":
                                 AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                                BasePaletteColor: =
                                 DisplayMode: =Parent.DisplayMode
                                 Height: =32
                                 SelectedDate: =Parent.Default
@@ -4128,4 +4129,20 @@
                             X: =(Parent.Width - Self.Width) / 2
                             Y: =(Parent.Height - Self.Height) / 2
                             ZIndex: =2
+
+    ctnPopUpEditarAtestado As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(0, 0, 0, 0.5)
+        Height: =Parent.Height
+        Width: =Parent.Width
+        ZIndex: =4
+
+        Container4 As groupContainer.verticalAutoLayoutContainer:
+            Fill: =gblTema.WhiteColor
+            Height: =Parent.Height * 0.9
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMode: =LayoutMode.Auto
+            Width: =Parent.Width * 0.9
+            X: =(Parent.Width - Self.Width) / 2
+            Y: =(Parent.Height - Self.Height) / 2
+            ZIndex: =1
 

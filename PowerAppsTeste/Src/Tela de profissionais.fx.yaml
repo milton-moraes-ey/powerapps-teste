@@ -233,6 +233,7 @@
 
             "DateValue3 As 'Date picker'":
                 AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                BasePaletteColor: =
                 DisplayMode: =Parent.DisplayMode
                 Height: =32
                 SelectedDate: =Parent.Default
