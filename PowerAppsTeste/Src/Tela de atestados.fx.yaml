@@ -335,6 +335,7 @@
                             14
                         Text: =ThisItem.nome_cliente
                         Width: =466
+                        X: =6
                         Y: |
                             =12
                         ZIndex: =3
@@ -373,7 +374,7 @@
                             
                             12
                         Text: |-
-                            ="Projeto:"
+                            ="Objeto:"
                         VerticalAlign: =VerticalAlign.Top
                         Width: |-
                             =If(
