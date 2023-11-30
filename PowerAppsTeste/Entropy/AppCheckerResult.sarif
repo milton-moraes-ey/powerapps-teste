@@ -1694,19 +1694,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnNovoAtestado.ctnFrmSignatario.Form1.astd_file_uploaded_DataCard2.dcvArquivoAtestado.AccessibleLabel"
+                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnNovoAtestado.ctnFrmSignatario.frmInformacoesDoSignatario.astd_file_uploaded_DataCard2.dcvArquivoAtestado.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnNovoAtestado.ctnFrmSignatario.Form1.astd_file_uploaded_DataCard2.dcvArquivoAtestado.AccessibleLabel",
+                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnNovoAtestado.ctnFrmSignatario.frmInformacoesDoSignatario.astd_file_uploaded_DataCard2.dcvArquivoAtestado.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Tela de atestados",
-                "type": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnNovoAtestado.ctnFrmSignatario.Form1.astd_file_uploaded_DataCard2.dcvArquivoAtestado"
+                "type": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnNovoAtestado.ctnFrmSignatario.frmInformacoesDoSignatario.astd_file_uploaded_DataCard2.dcvArquivoAtestado"
               }
             }
           ],
