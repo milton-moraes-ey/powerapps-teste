@@ -4251,7 +4251,7 @@
                     RadiusBottomRight: =4
                     RadiusTopLeft: =4
                     RadiusTopRight: =4
-                    Size: =14
+                    Size: =12
                     Text: ="🛠 Equipe"
                     Width: =140
                     X: =btnSalvarEdicaoDeAtestado.X - Self.Width - Parent.PaddingRight
@@ -4280,7 +4280,7 @@
                     RadiusBottomRight: =4
                     RadiusTopLeft: =4
                     RadiusTopRight: =4
-                    Size: =14
+                    Size: =12
                     Text: ="Salvar"
                     Width: =140
                     X: =icoCancelarEdicaoAtestados.X - Self.Width - Parent.PaddingRight
@@ -4309,7 +4309,7 @@
                     RadiusBottomRight: =4
                     RadiusTopLeft: =4
                     RadiusTopRight: =4
-                    Size: =14
+                    Size: =12
                     Text: ="🛠 Signatário"
                     Width: =140
                     X: =btnVerEquipe.X - Self.Width - Parent.PaddingRight
@@ -4317,12 +4317,23 @@
                     ZIndex: =6
 
                 btnPadraoBotao_3 As button:
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    BorderStyle: =BorderStyle.None
+                    BorderColor: =gblTema.AccentColor
+                    BorderThickness: =1
+                    Color: |-
+                        =If(
+                            locMostrarFormEditarEmpresasDoAtestado,
+                            gblTema.AccentColor,
+                            gblTema.WhiteColor
+                        )
                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledColor: =RGBA(161, 159, 157, 1)
                     DisabledFill: =RGBA(242, 242, 241, 0)
-                    Fill: =gblTema.AccentColor
+                    Fill: |-
+                        =If(
+                            locMostrarFormEditarEmpresasDoAtestado,
+                            gblTema.OffWhiteColor,
+                            gblTema.AccentColor
+                        )
                     FocusedBorderColor: =ColorFade(Self.Fill, 75%)
                     FocusedBorderThickness: =1
                     Font: =Font.'Segoe UI'
@@ -4338,7 +4349,7 @@
                     RadiusBottomRight: =4
                     RadiusTopLeft: =4
                     RadiusTopRight: =4
-                    Size: =14
+                    Size: =12
                     Text: ="🛠 Empresas"
                     Width: =140
                     X: =btnSignatario.X - Self.Width - Parent.PaddingRight
