@@ -4430,6 +4430,57 @@
                 Y: =0
                 ZIndex: =2
 
+            ctnLabel_2 As groupContainer.manualLayoutContainer:
+                DropShadow: =DropShadow.None
+                FillPortions: =0
+                Height: =55
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                PaddingBottom: =12
+                PaddingLeft: =12
+                PaddingRight: =12
+                PaddingTop: =12
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Visible: =locMostrarFormEditarEmpresasDoAtestado && locToogleEntreEmpresas
+                X: =20
+                Y: =110
+                ZIndex: =3
+
+                Label2_11 As label:
+                    AutoHeight: =true
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    Color: =gblTema.DarkGrayColor
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledColor: =RGBA(161, 159, 157, 1)
+                    FocusedBorderThickness: =4
+                    Font: =Font.'Segoe UI'
+                    Italic: =true
+                    Size: =12
+                    Text: ="Editar atestado - Dados da empresa atestante"
+                    Width: =500
+                    Y: =Parent.PaddingTop
+                    ZIndex: =2
+
+                Rectangle2_6 As rectangle:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    DisabledFill: =RGBA(161, 159, 157, 1)
+                    Fill: =gblTema.DarkGrayColor
+                    FocusedBorderThickness: =4
+                    Height: =1
+                    HoverFill: =RGBA(0, 120, 212, 1)
+                    PressedFill: =RGBA(0, 120, 212, 1)
+                    Width: =Parent.Width * 0.99
+                    X: =(Parent.Width - Self.Width) / 2
+                    Y: =54
+                    ZIndex: =3
+
             frmEditarAtestadoDadosDaEmpresaAtestante As form.PowerApps_CoreControls_Form:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 BorderColor: =RGBA(245, 245, 245, 1)
@@ -4445,7 +4496,7 @@
                 Width: =Parent.Width * 0.95
                 X: =(Parent.Width - Self.Width) / 2
                 Y: =Parent.PaddingTop + 32
-                ZIndex: =3
+                ZIndex: =4
 
                 nome_cliente_DataCard2 As typedDataCard.fluentV9TextualEditCard:
                     BorderStyle: =BorderStyle.Solid
@@ -4955,7 +5006,7 @@
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Visible: =locMostrarFormEditarEmpresasDoAtestado && !locToogleEntreEmpresas
-                ZIndex: =4
+                ZIndex: =5
 
                 Label2_8 As label:
                     AutoHeight: =true
@@ -5001,7 +5052,7 @@
                 NumberOfColumns: =2
                 UseFluentV9Cards: =true
                 Visible: =locMostrarFormEditarEmpresasDoAtestado && !locToogleEntreEmpresas
-                ZIndex: =5
+                ZIndex: =6
 
                 nome_empresa_prestadora_DataCard2 As typedDataCard.fluentV9TextualEditCard:
                     BorderStyle: =BorderStyle.Solid
@@ -5991,7 +6042,7 @@
                 LayoutMinWidth: =400
                 UseFluentV9Cards: =true
                 Visible: =locMostrarFormEditarSignatarioDoAtestado
-                ZIndex: =6
+                ZIndex: =7
 
                 nome_signatario_DataCard1 As typedDataCard.fluentV9TextualEditCard:
                     BorderStyle: =BorderStyle.Solid
