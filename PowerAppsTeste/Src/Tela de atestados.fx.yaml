@@ -5606,7 +5606,7 @@
                 atsd_descr_obj_trab_DataCard2 As typedDataCard.fluentV9TextualMultiLineEditCard:
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="gps_atsd_descr_obj_trab"
-                    Default: =ThisItem.atsd_descr_obj_trab
+                    Default: =Coalesce(locConcatenarDescricoesAtuais, ThisItem.atsd_descr_obj_trab)
                     DisplayMode: =Parent.DisplayMode
                     DisplayName: =DataSourceInfo([@Atestados],DataSourceInfo.DisplayName,"gps_atsd_descr_obj_trab")
                     Fill: =RGBA(0, 0, 0, 0)
@@ -6500,7 +6500,7 @@
                     Height: =32
                     Icon: =Icon.Cancel
                     OnSelect: |-
-                        =UpdateContext({locMostrarPopUpParaEditarDescricao: false})
+                        =UpdateContext({locMostrarPopUpParaEditarDescricao: false, locConcatenarDescricoesAtuais: Blank()}); Clear(colDescricaoAtual)
                     Width: =32
                     X: =Parent.Width - Self.Width - 12
                     Y: =(Parent.Height - Self.Height) / 2
@@ -6646,12 +6646,12 @@
                         OnSelect: |-
                             =UpdateContext(
                                 {
-                                    locConcatenarDescricoesAdicionadas: Concat(
-                                        colDescricaoAdicionada,
-                                        Descricao,
+                                    locConcatenarDescricoesAtuais: Concat(
+                                        colDescricaoAtual,
+                                        Value,
                                         ";"
                                     ),
-                                    locMostrarPopUpParaAdicionarDescricao: false
+                                    locMostrarPopUpParaEditarDescricao: false
                                 }
                             )
                         PressedBorderColor: =RGBA(0, 69, 120, 1)

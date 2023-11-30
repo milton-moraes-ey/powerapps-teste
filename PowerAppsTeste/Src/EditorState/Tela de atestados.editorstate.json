@@ -1691,8 +1691,8 @@
         },
         {
           "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
-          "AutoRuleBindingString": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "ThisItem.atsd_descr_obj_trab",
           "InvariantPropertyName": "Default",
           "IsLockable": true,
           "NameMapSourceSchema": "?"
@@ -19318,7 +19318,7 @@
       "MetaDataIDKey": "",
       "Name": "ctnLabelResultados",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -21130,7 +21130,7 @@
       "MetaDataIDKey": "",
       "Name": "ctnNenhumResultadoEncontrado",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -21422,7 +21422,7 @@
       "MetaDataIDKey": "",
       "Name": "ctnNovoAtestado",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -23349,7 +23349,7 @@
       "MetaDataIDKey": "",
       "Name": "ctnResultadosPesquisarAtestados",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -45021,7 +45021,7 @@
       "MetaDataIDKey": "",
       "Name": "frmEditarAtestadoDadosDaEmpresaAtestante",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -45388,7 +45388,7 @@
       "MetaDataIDKey": "",
       "Name": "frmEditarSignatarioDoAtestado",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -76723,7 +76723,7 @@
       "MetaDataIDKey": "",
       "Name": "tblControleAtestados",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
