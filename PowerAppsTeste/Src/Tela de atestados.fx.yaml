@@ -203,6 +203,12 @@
                         Y: =197
                         ZIndex: =4
 
+                Label2 As label:
+                    Text: ="sss"
+                    X: =350
+                    Y: =10
+                    ZIndex: =3
+
             ctnResultadosPesquisarAtestados As groupContainer.horizontalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 BorderColor: =RGBA(230, 230, 230, 1)
@@ -2348,65 +2354,6 @@
                         UseFluentV9Cards: =true
                         ZIndex: =3
 
-                        astd_data_assintr_DataCard1 As typedDataCard.fluentV9DateTimeEditCard:
-                            BorderStyle: =BorderStyle.Solid
-                            DataField: ="gps_astd_data_assintr"
-                            Default: =ThisItem.astd_data_assintr
-                            DisplayMode: =Parent.DisplayMode
-                            DisplayName: =DataSourceInfo([@Atestados],DataSourceInfo.DisplayName,"gps_astd_data_assintr")
-                            Fill: =RGBA(0, 0, 0, 0)
-                            Height: =70
-                            Required: =false
-                            Update: =If(Not IsBlank(dtvDataAssinatura.SelectedDate), Date(Year(dtvDataAssinatura.SelectedDate), Month(dtvDataAssinatura.SelectedDate), Day(dtvDataAssinatura.SelectedDate)))
-                            Width: =435
-                            X: =0
-                            Y: =2
-                            ZIndex: =1
-
-                            DataCardKey18 As Text:
-                                DisplayMode: =DisplayMode.Edit
-                                Height: =22
-                                Text: ="Data da assinatura"
-                                Weight: ='TextCanvas.Weight'.Semibold
-                                Width: =Parent.Width - 48
-                                Wrap: =false
-                                X: =24
-                                Y: =10
-                                ZIndex: =1
-
-                            "dtvDataAssinatura As 'Date picker'":
-                                AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
-                                DisplayMode: =Parent.DisplayMode
-                                Height: =32
-                                SelectedDate: =Parent.Default
-                                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                                Width: =(Parent.Width - 48)
-                                X: =24
-                                Y: =DataCardKey18.Y + DataCardKey18.Height + 4
-                                ZIndex: =2
-
-                            ErrorMessage18 As Text:
-                                DisplayMode: =DisplayMode.Edit
-                                Height: =30
-                                Text: =Parent.Error
-                                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                                Width: =Parent.Width - 48
-                                Wrap: =true
-                                X: =24
-                                Y: =dtvDataAssinatura.Y + dtvDataAssinatura.Height
-                                ZIndex: =6
-
-                            StarVisible18 As Text:
-                                Align: ='TextCanvas.Align'.Center
-                                DisplayMode: =DisplayMode.Edit
-                                Height: =20
-                                Text: ="*"
-                                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                                Width: =30
-                                X: =0
-                                Y: =DataCardKey18.Y
-                                ZIndex: =7
-
                         nome_signatario_DataCard2 As typedDataCard.fluentV9TextualEditCard:
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="gps_nome_signatario"
@@ -2785,6 +2732,65 @@
                                 Y: =DataCardKey38.Y
                                 ZIndex: =4
 
+                        astd_data_assintr_DataCard1 As typedDataCard.fluentV9DateTimeEditCard:
+                            BorderStyle: =BorderStyle.Solid
+                            DataField: ="gps_astd_data_assintr"
+                            Default: =ThisItem.astd_data_assintr
+                            DisplayMode: =Parent.DisplayMode
+                            DisplayName: =DataSourceInfo([@Atestados],DataSourceInfo.DisplayName,"gps_astd_data_assintr")
+                            Fill: =RGBA(0, 0, 0, 0)
+                            Height: =70
+                            Required: =false
+                            Update: =If(Not IsBlank(dtvDataAssinatura.SelectedDate), Date(Year(dtvDataAssinatura.SelectedDate), Month(dtvDataAssinatura.SelectedDate), Day(dtvDataAssinatura.SelectedDate)))
+                            Width: =435
+                            X: =0
+                            Y: =2
+                            ZIndex: =1
+
+                            DataCardKey18 As Text:
+                                DisplayMode: =DisplayMode.Edit
+                                Height: =22
+                                Text: ="Data da assinatura"
+                                Weight: ='TextCanvas.Weight'.Semibold
+                                Width: =Parent.Width - 48
+                                Wrap: =false
+                                X: =24
+                                Y: =10
+                                ZIndex: =1
+
+                            "dtvDataAssinatura As 'Date picker'":
+                                AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                                DisplayMode: =Parent.DisplayMode
+                                Height: =32
+                                SelectedDate: =Parent.Default
+                                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                                Width: =(Parent.Width - 48)
+                                X: =24
+                                Y: =DataCardKey18.Y + DataCardKey18.Height + 4
+                                ZIndex: =2
+
+                            ErrorMessage18 As Text:
+                                DisplayMode: =DisplayMode.Edit
+                                Height: =30
+                                Text: =Parent.Error
+                                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                                Width: =Parent.Width - 48
+                                Wrap: =true
+                                X: =24
+                                Y: =dtvDataAssinatura.Y + dtvDataAssinatura.Height
+                                ZIndex: =6
+
+                            StarVisible18 As Text:
+                                Align: ='TextCanvas.Align'.Center
+                                DisplayMode: =DisplayMode.Edit
+                                Height: =20
+                                Text: ="*"
+                                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                Width: =30
+                                X: =0
+                                Y: =DataCardKey18.Y
+                                ZIndex: =7
+
                         astd_file_uploaded_DataCard2 As typedDataCard.fluentV9FileEditCard:
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="gps_astd_file_uploaded"
@@ -3104,7 +3110,7 @@
                                 DisplayName: =DataSourceInfo([@AtestadoProfissionais],DataSourceInfo.DisplayName,"gps_prof_id")
                                 Fill: =RGBA(0, 0, 0, 0)
                                 Height: =70
-                                Required: =false
+                                Required: =true
                                 Update: =dcvIDProfissionalAtestado.Selected
                                 Width: =647
                                 X: =0
@@ -3114,7 +3120,7 @@
                                 DataCardKey27 As Text:
                                     DisplayMode: =DisplayMode.Edit
                                     Height: =22
-                                    Text: ="Profissional"
+                                    Text: ="Profissional *"
                                     Weight: ='TextCanvas.Weight'.Semibold
                                     Width: =Parent.Width - 48
                                     Wrap: =false

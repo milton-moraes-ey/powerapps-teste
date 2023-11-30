@@ -30,7 +30,7 @@
                 "OptimizeForDevices": "Off",
                 "Parent": "glrWinSizeNavigateMenu",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 327,
+                "PublishOrderIndex": 332,
                 "Rules": [
                   {
                     "Category": "Design",
@@ -112,7 +112,7 @@
                 "OptimizeForDevices": "Off",
                 "Parent": "glrWinSizeNavigateMenu",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 328,
+                "PublishOrderIndex": 333,
                 "Rules": [
                   {
                     "Category": "Design",
@@ -351,7 +351,7 @@
                 "OptimizeForDevices": "Off",
                 "Parent": "glrWinSizeNavigateMenu",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 329,
+                "PublishOrderIndex": 334,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -671,7 +671,7 @@
                 "OptimizeForDevices": "Off",
                 "Parent": "glrWinSizeNavigateMenu",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 330,
+                "PublishOrderIndex": 335,
                 "Rules": [
                   {
                     "Category": "Design",
@@ -945,7 +945,7 @@
                 "OptimizeForDevices": "Off",
                 "Parent": "glrWinSizeNavigateMenu",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 331,
+                "PublishOrderIndex": 336,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -1257,7 +1257,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "ctnWinSizeNavigateMenu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 326,
+            "PublishOrderIndex": 331,
             "Rules": [
               {
                 "Category": "Data",
@@ -1521,7 +1521,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "ComponentWinSizeNavigateMenu",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 325,
+        "PublishOrderIndex": 330,
         "Rules": [
           {
             "Category": "Design",
