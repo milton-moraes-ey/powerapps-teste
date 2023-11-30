@@ -4182,7 +4182,7 @@
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                ZIndex: =2
+                ZIndex: =1
 
                 icoCancelarEdicaoAtestados As icon.Cancel:
                     BorderColor: =RGBA(0, 0, 0, 0)
@@ -4413,6 +4413,19 @@
                     X: =btnSignatario.X - Self.Width - Parent.PaddingRight
                     Y: =(Parent.Height - Self.Height) / 2
                     ZIndex: =7
+
+            tglEntreEmpresas As Toggle:
+                DisplayMode: =DisplayMode.Edit
+                Height: =35
+                Label: ="Empresa atestante"
+                LayoutMinHeight: =35
+                LayoutMinWidth: =110
+                OnCheck: =false
+                OnUncheck: =false
+                Width: =110
+                X: =0
+                Y: =0
+                ZIndex: =2
 
             frmEditarAtestadoDadosDaEmpresaAtestante As form.PowerApps_CoreControls_Form:
                 AlignInContainer: =AlignInContainer.SetByContainer
