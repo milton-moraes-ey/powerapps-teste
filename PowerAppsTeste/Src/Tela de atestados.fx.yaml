@@ -595,7 +595,7 @@
                                     UpdateContext({locAcaoEscolhida: "Deletar"}),
                                     UpdateContext({locAcaoEscolhida: "Exportar PDF"})
                                 );
-                                UpdateContext({locMostrarContextMenu: !locMostrarContextMenu, locMostrarEquipeDoAtestado: true, locDadosDoAtestado: ThisItem})
+                                UpdateContext({locMostrarContextMenu: !locMostrarContextMenu, locMostrarEquipeDoAtestado: true, locDadosDoAtestado: glrAtestados.Selected})
                             PressedBorderColor: =RGBA(0, 69, 120, 1)
                             PressedColor: =RGBA(255, 255, 255, 1)
                             PressedFill: =Color.Transparent
@@ -4952,6 +4952,7 @@
                 BorderColor: =RGBA(245, 245, 245, 1)
                 DataSource: =Atestados
                 FillPortions: =2
+                Item: =locDadosDoAtestado
                 LayoutMinHeight: =250
                 LayoutMinWidth: =400
                 NumberOfColumns: =2
@@ -5889,6 +5890,7 @@
 
             frmEditarSignatarioDoAtestado As form.PowerApps_CoreControls_Form:
                 DataSource: =Atestados
+                Item: =locDadosDoAtestado
                 LayoutMinHeight: =250
                 LayoutMinWidth: =400
                 UseFluentV9Cards: =true
