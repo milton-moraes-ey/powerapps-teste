@@ -1333,6 +1333,7 @@
                                 Font: =Font.'Segoe UI'
                                 FontWeight: =FontWeight.Bold
                                 Height: =38
+                                Size: =12
                                 Text: ="Avançar"
                                 Width: =81
                                 ZIndex: =1
@@ -1352,7 +1353,7 @@
                                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                                 PressedColor: =RGBA(16, 110, 190, 1)
                                 PressedFill: =RGBA(0, 0, 0, 0)
-                                Width: =30
+                                Width: =25
                                 X: =81
                                 ZIndex: =2
 
@@ -2171,10 +2172,11 @@
                                 Font: =Font.'Segoe UI'
                                 FontWeight: =FontWeight.Bold
                                 Height: =38
+                                Size: =12
                                 Text: ="Voltar"
                                 Width: =81
-                                X: =40
-                                Y: =2
+                                X: =39
+                                Y: =1
                                 ZIndex: =1
 
                             icoVoltar As icon.ArrowRight:
@@ -2192,7 +2194,8 @@
                                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                                 PressedColor: =RGBA(16, 110, 190, 1)
                                 PressedFill: =RGBA(0, 0, 0, 0)
-                                Width: =30
+                                Width: =25
+                                Y: =1
                                 ZIndex: =2
 
                             btnVoltarFormEmpresaAtestante As button:
@@ -2244,6 +2247,7 @@
                                 Font: =Font.'Segoe UI'
                                 FontWeight: =FontWeight.Bold
                                 Height: =38
+                                Size: =12
                                 Text: ="Avançar"
                                 Width: =81
                                 ZIndex: =1
@@ -2263,7 +2267,7 @@
                                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                                 PressedColor: =RGBA(16, 110, 190, 1)
                                 PressedFill: =RGBA(0, 0, 0, 0)
-                                Width: =30
+                                Width: =25
                                 X: =81
                                 ZIndex: =2
 
@@ -2900,6 +2904,7 @@
                                 Font: =Font.'Segoe UI'
                                 FontWeight: =FontWeight.Bold
                                 Height: =38
+                                Size: =12
                                 Text: ="Voltar"
                                 Width: =81
                                 X: =40
@@ -2921,7 +2926,7 @@
                                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                                 PressedColor: =RGBA(16, 110, 190, 1)
                                 PressedFill: =RGBA(0, 0, 0, 0)
-                                Width: =30
+                                Width: =25
                                 ZIndex: =2
 
                             btnVoltarFormEmpresaAtestante_1 As button:
@@ -2973,6 +2978,7 @@
                                 Font: =Font.'Segoe UI'
                                 FontWeight: =FontWeight.Bold
                                 Height: =38
+                                Size: =12
                                 Text: ="Avançar"
                                 Width: =81
                                 ZIndex: =1
@@ -2992,7 +2998,7 @@
                                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                                 PressedColor: =RGBA(16, 110, 190, 1)
                                 PressedFill: =RGBA(0, 0, 0, 0)
-                                Width: =30
+                                Width: =25
                                 X: =81
                                 ZIndex: =2
 

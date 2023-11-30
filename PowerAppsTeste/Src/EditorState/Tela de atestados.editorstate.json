@@ -9213,7 +9213,7 @@
       "MetaDataIDKey": "",
       "Name": "btnVoltarFormEmpresaAtestante",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -47674,7 +47674,7 @@
       "MetaDataIDKey": "",
       "Name": "icoVoltar",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -49004,7 +49004,7 @@
       "MetaDataIDKey": "",
       "Name": "imgNenhumMembroAdicionado_2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -52368,7 +52368,7 @@
       "MetaDataIDKey": "",
       "Name": "Label2_9",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -56676,7 +56676,14 @@
         "LineHeight",
         "BorderThickness",
         "FocusedBorderThickness",
-        "Size",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Size",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Italic",
         "Underline",
         "Strikethrough",
@@ -56967,7 +56974,14 @@
         "LineHeight",
         "BorderThickness",
         "FocusedBorderThickness",
-        "Size",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Size",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Italic",
         "Underline",
         "Strikethrough",
@@ -57258,7 +57272,14 @@
         "LineHeight",
         "BorderThickness",
         "FocusedBorderThickness",
-        "Size",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Size",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Italic",
         "Underline",
         "Strikethrough",
@@ -61268,7 +61289,14 @@
         "LineHeight",
         "BorderThickness",
         "FocusedBorderThickness",
-        "Size",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Size",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Italic",
         "Underline",
         "Strikethrough",
@@ -61850,7 +61878,14 @@
         "LineHeight",
         "BorderThickness",
         "FocusedBorderThickness",
-        "Size",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Size",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Italic",
         "Underline",
         "Strikethrough",
