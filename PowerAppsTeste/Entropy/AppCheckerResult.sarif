@@ -2682,6 +2682,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'Tela de atestados'.locMostrarEquipeDoAtestado"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Tela de atestados'.locMostrarEquipeDoAtestado",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "locMostrarEquipeDoAtestado",
+                "module": "Tela de atestados",
+                "type": "'Tela de atestados'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "'Tela de atestados'.locMostrarMensagemDeEdicaoDeAtestado"
                 }
               ],
@@ -2833,7 +2863,7 @@
                 ],
                 "level": "Medium",
                 "primaryCategory": "performance",
-                "whyFix": "Each control consumes resources, and an app may become slow or unresponsive if a screen has too many controls. The estimated complexity of \"Tela de atestados\" is 611, which exceeds the maximum threshold recommended (300)."
+                "whyFix": "Each control consumes resources, and an app may become slow or unresponsive if a screen has too many controls. The estimated complexity of \"Tela de atestados\" is 613, which exceeds the maximum threshold recommended (300)."
               }
             }
           ],
