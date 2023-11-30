@@ -2815,9 +2815,13 @@
 
                             dcvArquivoAtestado As attachments:
                                 AddAttachmentText: ="Upload file"
-                                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                                BorderColor: =gblTema.LightGrayColor
+                                BorderThickness: =1
                                 DisplayMode: =Parent.DisplayMode
+                                DropTargetBorderThickness: =1
+                                FocusedBorderThickness: =1
                                 Height: =170
+                                HoverFill: =gblTema.LightBorderColor
                                 IsInDataCard: =true
                                 Items: =Parent.Default
                                 MaxAttachments: =1
