@@ -4423,6 +4423,7 @@
                 Item: =locDadosDoAtestado
                 LayoutMinHeight: =220
                 LayoutMinWidth: =400
+                NumberOfColumns: =2
                 UseFluentV9Cards: =true
                 Visible: =locMostrarFormEditarEmpresasDoAtestado
                 Width: =Parent.Width * 0.95
@@ -4441,7 +4442,7 @@
                     MaxLength: =DataSourceInfo([@Atestados], DataSourceInfo.MaxLength, "gps_nome_cliente")
                     Required: =true
                     Update: =DataCardValue3.Value
-                    Width: =409
+                    Width: =614
                     X: =0
                     Y: =0
                     ZIndex: =1
@@ -4504,7 +4505,7 @@
                     MaxLength: =DataSourceInfo([@Atestados], DataSourceInfo.MaxLength, "gps_cnpj_cliente")
                     Required: =true
                     Update: =DataCardValue4.Value
-                    Width: =409
+                    Width: =614
                     X: =1
                     Y: =0
                     ZIndex: =1
@@ -4556,6 +4557,66 @@
                         Y: =DataCardKey26.Y
                         ZIndex: =4
 
+                num_func_cliente_DataCard2 As typedDataCard.fluentV9NumberEditCard:
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="gps_num_func_cliente"
+                    Default: =ThisItem.num_func_cliente
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@Atestados],DataSourceInfo.DisplayName,"gps_num_func_cliente")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =70
+                    Required: =false
+                    Update: =Value(DataCardValue6.Value)
+                    Width: =614
+                    X: =1
+                    Y: =1
+                    ZIndex: =1
+
+                    DataCardKey32 As Text:
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =22
+                        Text: =Parent.DisplayName
+                        Weight: ='TextCanvas.Weight'.Semibold
+                        Width: =Parent.Width - 48
+                        Wrap: =false
+                        X: =24
+                        Y: =10
+                        ZIndex: =1
+
+                    "DataCardValue6 As 'Text input'":
+                        AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                        BasePaletteColor: =
+                        DisplayMode: =Parent.DisplayMode
+                        Height: =32
+                        ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                        Value: =Parent.Default
+                        Width: =Parent.Width - 48
+                        X: =24
+                        Y: =DataCardKey32.Y + DataCardKey32.Height + 4
+                        ZIndex: =2
+
+                    ErrorMessage31 As Text:
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =30
+                        Text: =Parent.Error
+                        Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =Parent.Width - 48
+                        Wrap: =true
+                        X: =24
+                        Y: =DataCardValue6.Y + DataCardValue6.Height
+                        ZIndex: =3
+
+                    StarVisible31 As Text:
+                        Align: ='TextCanvas.Align'.Center
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =30
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        X: =0
+                        Y: =DataCardKey32.Y
+                        ZIndex: =4
+
                 endr_cliente_DataCard2 As typedDataCard.fluentV9TextualEditCard:
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="gps_endr_cliente"
@@ -4567,9 +4628,9 @@
                     MaxLength: =DataSourceInfo([@Atestados], DataSourceInfo.MaxLength, "gps_endr_cliente")
                     Required: =false
                     Update: =DataCardValue5.Value
-                    Width: =409
-                    X: =2
-                    Y: =0
+                    Width: =614
+                    X: =0
+                    Y: =1
                     ZIndex: =1
 
                     DataCardKey31 As Text:
@@ -4619,66 +4680,6 @@
                         Y: =DataCardKey31.Y
                         ZIndex: =4
 
-                num_func_cliente_DataCard2 As typedDataCard.fluentV9NumberEditCard:
-                    BorderStyle: =BorderStyle.Solid
-                    DataField: ="gps_num_func_cliente"
-                    Default: =ThisItem.num_func_cliente
-                    DisplayMode: =Parent.DisplayMode
-                    DisplayName: =DataSourceInfo([@Atestados],DataSourceInfo.DisplayName,"gps_num_func_cliente")
-                    Fill: =RGBA(0, 0, 0, 0)
-                    Height: =70
-                    Required: =false
-                    Update: =Value(DataCardValue6.Value)
-                    Width: =409
-                    X: =0
-                    Y: =1
-                    ZIndex: =1
-
-                    DataCardKey32 As Text:
-                        DisplayMode: =DisplayMode.Edit
-                        Height: =22
-                        Text: =Parent.DisplayName
-                        Weight: ='TextCanvas.Weight'.Semibold
-                        Width: =Parent.Width - 48
-                        Wrap: =false
-                        X: =24
-                        Y: =10
-                        ZIndex: =1
-
-                    "DataCardValue6 As 'Text input'":
-                        AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
-                        BasePaletteColor: =
-                        DisplayMode: =Parent.DisplayMode
-                        Height: =32
-                        ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                        Value: =Parent.Default
-                        Width: =Parent.Width - 48
-                        X: =24
-                        Y: =DataCardKey32.Y + DataCardKey32.Height + 4
-                        ZIndex: =2
-
-                    ErrorMessage31 As Text:
-                        DisplayMode: =DisplayMode.Edit
-                        Height: =30
-                        Text: =Parent.Error
-                        Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                        Width: =Parent.Width - 48
-                        Wrap: =true
-                        X: =24
-                        Y: =DataCardValue6.Y + DataCardValue6.Height
-                        ZIndex: =3
-
-                    StarVisible31 As Text:
-                        Align: ='TextCanvas.Align'.Center
-                        DisplayMode: =DisplayMode.Edit
-                        Height: =30
-                        Text: ="*"
-                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                        Width: =30
-                        X: =0
-                        Y: =DataCardKey32.Y
-                        ZIndex: =4
-
                 ativ_econ_cliente_DataCard2 As typedDataCard.fluentV9TextualEditCard:
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="gps_ativ_econ_cliente"
@@ -4690,9 +4691,9 @@
                     MaxLength: =DataSourceInfo([@Atestados], DataSourceInfo.MaxLength, "gps_ativ_econ_cliente")
                     Required: =true
                     Update: =DataCardValue7.Value
-                    Width: =409
-                    X: =1
-                    Y: =1
+                    Width: =614
+                    X: =0
+                    Y: =2
                     ZIndex: =1
 
                     DataCardKey39 As Text:
@@ -4752,9 +4753,9 @@
                     Height: =70
                     Required: =false
                     Update: =Value(DataCardValue8.Value)
-                    Width: =409
-                    X: =2
-                    Y: =1
+                    Width: =614
+                    X: =1
+                    Y: =2
                     ZIndex: =1
 
                     DataCardKey41 As Text:
@@ -4812,9 +4813,9 @@
                     Height: =70
                     Required: =false
                     Update: =Value(DataCardValue9.Value)
-                    Width: =409
+                    Width: =614
                     X: =0
-                    Y: =2
+                    Y: =3
                     ZIndex: =1
 
                     DataCardKey42 As Text:
@@ -4872,9 +4873,9 @@
                     Height: =70
                     Required: =false
                     Update: =Value(DataCardValue10.Value)
-                    Width: =409
+                    Width: =614
                     X: =1
-                    Y: =2
+                    Y: =3
                     ZIndex: =1
 
                     DataCardKey43 As Text:
@@ -5638,6 +5639,7 @@
                         Required: =Parent.Required
                         ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                         Value: =Parent.Default
+                        Visible: =false
                         Width: =Parent.Width - 48
                         X: =24
                         Y: =icoEditDescricaoDoObjeto.Y + icoEditDescricaoDoObjeto.Height + 12
@@ -5942,6 +5944,28 @@
                         X: =dcvEditarDescricaoDoAtestado.X + dcvEditarDescricaoDoAtestado.Width - Self.Width
                         Y: =DataCardKey48.Y
                         ZIndex: =6
+
+                    glrDescricaoDoObjeto As gallery.variableTemplateHeightGallery:
+                        DelayItemLoading: =true
+                        Fill: =Color.Transparent
+                        Height: |
+                            =144
+                        Items: =Split(Parent.Default, ";")
+                        Layout: =Layout.Vertical
+                        LoadingSpinner: =LoadingSpinner.Data
+                        TemplateFill: =gblTema.OffWhiteColor
+                        TemplateSize: =280
+                        Width: =Parent.Width - 48
+                        X: =24
+                        Y: =icoEditDescricaoDoObjeto.Y + icoEditDescricaoDoObjeto.Height + 12
+                        ZIndex: =7
+
+                        HtmlText3 As htmlViewer:
+                            HtmlText: ="<li> " & ThisItem.Value
+                            OnSelect: =Select(Parent)
+                            X: =10
+                            Y: =10
+                            ZIndex: =2
 
             frmEditarSignatarioDoAtestado As form.PowerApps_CoreControls_Form:
                 DataSource: =Atestados
@@ -6471,7 +6495,7 @@
 
         ctnAddDescricaoAtestado_2 As groupContainer.horizontalAutoLayoutContainer:
             Fill: =gblTema.OffWhiteColor
-            Height: =Parent.Height * 0.6
+            Height: =Parent.Height * 0.9
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMode: =LayoutMode.Auto
             PaddingBottom: =12
@@ -6505,7 +6529,13 @@
                     Height: =32
                     Icon: =Icon.Cancel
                     OnSelect: |-
-                        =UpdateContext({locMostrarPopUpParaEditarDescricao: false, locConcatenarDescricoesAtuais: Blank()}); Clear(colDescricaoAtual)
+                        =UpdateContext(
+                            {
+                                locMostrarPopUpParaEditarDescricao: false,
+                                locConcatenarDescricoesAtuais: Blank()
+                            }
+                        );
+                        Clear(colDescricaoAtual)
                     Width: =32
                     X: =Parent.Width - Self.Width - 12
                     Y: =(Parent.Height - Self.Height) / 2
@@ -6571,10 +6601,10 @@
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverFill: =ColorFade(gblTema.AccentColor, -10%)
                         OnSelect: |-
-                            =Patch(colDescricaoAtual, Defaults(colDescricaoAtual),
-                                {
-                                    Value: txtEditarDescricoes.Value
-                                }
+                            =Patch(
+                                colDescricaoAtual,
+                                Defaults(colDescricaoAtual),
+                                {Value: txtEditarDescricoes.Value}
                             );
                             Reset(txtEditarDescricoes)
                         PressedBorderColor: =RGBA(0, 69, 120, 1)
@@ -6601,7 +6631,7 @@
 
                     glrDescricoesAtual As gallery.galleryVertical:
                         DelayItemLoading: =true
-                        Height: =288
+                        Height: =520
                         Items: =colDescricaoAtual
                         Layout: =Layout.Vertical
                         LoadingSpinner: =LoadingSpinner.Data
@@ -6675,7 +6705,7 @@
 
                     ctnNenhumaDescricaoAdicionada_2 As groupContainer.verticalAutoLayoutContainer:
                         DropShadow: =DropShadow.None
-                        Height: =363
+                        Height: =581
                         LayoutAlignItems: =LayoutAlignItems.Center
                         LayoutDirection: =LayoutDirection.Vertical
                         LayoutGap: =12
