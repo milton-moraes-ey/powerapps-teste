@@ -598,7 +598,6 @@
                                 UpdateContext(
                                     {
                                         locMostrarContextMenu: !locMostrarContextMenu,
-                                        locMostrarEquipeDoAtestado: true,
                                         locDadosDoAtestado: glrAtestados.Selected,
                                         locMostrarPopUpParaAdicionarDescricao: false
                                     }
