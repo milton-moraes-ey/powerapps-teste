@@ -1,5 +1,6 @@
 "'Tela de atestados' As screen":
-    OnVisible: =Select(btnAtestados)
+    OnVisible: |-
+        =Select(btnAtestados); UpdateContext({locAlternarVisualizacaoControleDeAtestados: true})
 
     ctnMainAtestados As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
