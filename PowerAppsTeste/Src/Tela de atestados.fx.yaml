@@ -4222,7 +4222,7 @@
                         ="Editar atestado" & Switch(
                             true,
                             locMostrarFormEditarEmpresasDoAtestado,
-                            "",
+                            " - Dados das empresas",
                             locMostrarFormEditarSignatarioDoAtestado,
                             " - Signatário do atestado",
                             locMostrarFormEditarEquipeDoAtestado,
@@ -4418,7 +4418,7 @@
                 BasePaletteColor: =
                 DisplayMode: =DisplayMode.Edit
                 Height: =35
-                Label: =If(locToogleEntreEmpresas, "Empresa atestante", "Empresa que prestou o serviço")
+                Label: =If(locToogleEntreEmpresas, "Cliente", "EY")
                 LayoutMinHeight: =35
                 LayoutMinWidth: =110
                 OnCheck: |-
