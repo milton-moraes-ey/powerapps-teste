@@ -4151,6 +4151,7 @@
             LayoutAlignItems: =LayoutAlignItems.Stretch
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMode: =LayoutMode.Auto
+            PaddingBottom: =12
             Width: =Parent.Width * 0.9
             X: =(Parent.Width - Self.Width) / 2
             Y: =(Parent.Height - Self.Height) / 2
