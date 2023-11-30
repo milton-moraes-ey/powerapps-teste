@@ -518,7 +518,7 @@
                         BorderColor: =RGBA(245, 245, 245, 1)
                         DelayItemLoading: =true
                         Fill: =gblTema.LightGrayColor
-                        Height: =154
+                        Height: =130
                         Items: |-
                             =Table(
                                 {label: "Editar", icon: Icon.Edit},
@@ -529,7 +529,7 @@
                         LoadingSpinner: =LoadingSpinner.Data
                         TemplateFill: =gblTema.WhiteColor
                         TemplatePadding: =6
-                        TemplateSize: =42
+                        TemplateSize: =35
                         Visible: =If(ThisItem.IsSelected, locMostrarContextMenu, false)
                         Width: =195
                         X: =icoConfiguracoesDoAtestado.X - Self.Width - 12
@@ -548,6 +548,7 @@
                             PaddingLeft: =12
                             PaddingRight: =0
                             PaddingTop: =0
+                            Size: =12
                             Text: =ThisItem.label
                             VerticalAlign: =VerticalAlign.Top
                             Width: =Parent.TemplateWidth - Icon2.X -  Icon2.Width - 6
@@ -562,7 +563,7 @@
                             DisabledColor: =RGBA(225, 223, 221, 1)
                             DisabledFill: =RGBA(0, 0, 0, 0)
                             FocusedBorderThickness: =4
-                            Height: =24
+                            Height: =22
                             HoverBorderColor: =RGBA(0, 0, 0, 0)
                             HoverColor: =RGBA(16, 110, 190, 1)
                             HoverFill: =RGBA(0, 0, 0, 0)
@@ -570,7 +571,7 @@
                             PressedBorderColor: =RGBA(0, 0, 0, 0)
                             PressedColor: =RGBA(16, 110, 190, 1)
                             PressedFill: =RGBA(0, 0, 0, 0)
-                            Width: =24
+                            Width: =22
                             X: =6
                             Y: =(Parent.TemplateHeight - Self.Height) / 2
                             ZIndex: =3
