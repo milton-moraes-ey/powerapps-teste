@@ -4421,8 +4421,10 @@
                 Label: ="Empresa atestante"
                 LayoutMinHeight: =35
                 LayoutMinWidth: =110
-                OnCheck: =false
-                OnUncheck: =false
+                OnCheck: |-
+                    =UpdateContext({locToogleEntreEmpresas: true})
+                OnUncheck: |-
+                    =UpdateContext({locToogleEntreEmpresas: false})
                 Width: =110
                 X: =0
                 Y: =0
