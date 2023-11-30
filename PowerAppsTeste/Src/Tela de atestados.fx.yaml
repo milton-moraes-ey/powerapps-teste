@@ -6691,6 +6691,15 @@
                         Y: =Label4_2.Y +Label4_2.Height
                         ZIndex: =4
 
+                    Label4_3 As label:
+                        Color: =gblTema.DarkGrayColor
+                        Italic: =true
+                        Size: =10
+                        Text: ="Evite usar "";"""
+                        X: =105
+                        Y: =24
+                        ZIndex: =5
+
                 ctnAdicionarNovasDescricoes_2 As groupContainer.manualLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
                     DropShadow: =DropShadow.Semibold
