@@ -600,7 +600,10 @@
                                     {
                                         locMostrarContextMenu: !locMostrarContextMenu,
                                         locDadosDoAtestado: glrAtestados.Selected,
-                                        locMostrarPopUpParaAdicionarDescricao: false
+                                        locMostrarPopUpParaAdicionarDescricao: false,
+                                        locMostrarFormEditarEmpresasDoAtestado: true,
+                                        locMostrarFormEditarSignatarioDoAtestado: false,
+                                        locMostrarFormEditarEquipeDoAtestado: false
                                     }
                                 )
                             PressedBorderColor: =RGBA(0, 69, 120, 1)
@@ -4456,6 +4459,7 @@
 
                     "DataCardValue3 As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
+                        BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
                         Height: =32
                         Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
@@ -4518,6 +4522,7 @@
 
                     "DataCardValue4 As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
+                        BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
                         Height: =32
                         Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
@@ -4580,6 +4585,7 @@
 
                     "DataCardValue5 As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
+                        BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
                         Height: =32
                         Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
@@ -4641,6 +4647,7 @@
 
                     "DataCardValue6 As 'Text input'":
                         AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                        BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
                         Height: =32
                         ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
@@ -4701,6 +4708,7 @@
 
                     "DataCardValue7 As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
+                        BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
                         Height: =32
                         Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
@@ -4762,6 +4770,7 @@
 
                     "DataCardValue8 As 'Text input'":
                         AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                        BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
                         Height: =32
                         ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
@@ -4821,6 +4830,7 @@
 
                     "DataCardValue9 As 'Text input'":
                         AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                        BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
                         Height: =32
                         ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
@@ -4880,6 +4890,7 @@
 
                     "DataCardValue10 As 'Text input'":
                         AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                        BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
                         Height: =32
                         ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
@@ -5004,6 +5015,7 @@
 
                     "DataCardValue11 As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
+                        BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
                         Height: =32
                         Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
@@ -5066,6 +5078,7 @@
 
                     "DataCardValue12 As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
+                        BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
                         Height: =32
                         Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
@@ -5128,6 +5141,7 @@
 
                     "DataCardValue13 As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
+                        BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
                         Height: =32
                         Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
@@ -5190,6 +5204,7 @@
 
                     "DataCardValue14 As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
+                        BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
                         Height: =32
                         Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
@@ -5251,6 +5266,7 @@
 
                     "DateValue1 As 'Date picker'":
                         AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                        BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
                         Height: =32
                         SelectedDate: =Parent.Default
@@ -5310,6 +5326,7 @@
 
                     "DateValue4 As 'Date picker'":
                         AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                        BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
                         Height: =32
                         SelectedDate: =Parent.Default
@@ -5369,6 +5386,7 @@
 
                     "DataCardValue16 As 'Text input'":
                         AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                        BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
                         Height: =32
                         ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
@@ -5429,6 +5447,7 @@
 
                     "DataCardValue17 As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
+                        BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
                         Height: =32
                         Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
@@ -5491,6 +5510,7 @@
 
                     "DataCardValue18 As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
+                        BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
                         Height: =32
                         Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
@@ -5611,6 +5631,7 @@
 
                     "dcvEditarDescricaoDoAtestado As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
+                        BasePaletteColor: =
                         DisplayMode: =DisplayMode.View
                         Height: =144
                         Mode: ='TextInputCanvas.Mode'.Multiline
@@ -5955,6 +5976,7 @@
 
                     "DataCardValue20 As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
+                        BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
                         Height: =32
                         Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
@@ -6017,6 +6039,7 @@
 
                     "DataCardValue21 As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
+                        BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
                         Height: =32
                         Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
@@ -6079,6 +6102,7 @@
 
                     "DataCardValue22 As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
+                        BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
                         Height: =32
                         Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
@@ -6141,6 +6165,7 @@
 
                     "DataCardValue23 As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
+                        BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
                         Height: =32
                         Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
@@ -6203,6 +6228,7 @@
 
                     "DataCardValue24 As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
+                        BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
                         Height: =32
                         Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
@@ -6265,6 +6291,7 @@
 
                     "DataCardValue25 As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
+                        BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
                         Height: =32
                         Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
@@ -6326,6 +6353,7 @@
 
                     "DateValue5 As 'Date picker'":
                         AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                        BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
                         Height: =32
                         SelectedDate: =Parent.Default
@@ -6499,7 +6527,7 @@
                     LayoutMinWidth: =250
                     ZIndex: =1
 
-                    "txtAddDescObjeto_2 As 'Text input'":
+                    "txtEditarDescricoes As 'Text input'":
                         AccessibleLabel: =
                         BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
@@ -6537,12 +6565,12 @@
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverFill: =ColorFade(gblTema.AccentColor, -10%)
                         OnSelect: |-
-                            =Collect(colDescricaoAdicionada,
+                            =Patch(colDescricaoAtual, Defaults(colDescricaoAtual),
                                 {
-                                    Descricao: txtAddDescObjeto_2.Value
+                                    Value: txtEditarDescricoes.Value
                                 }
                             );
-                            Reset(txtAddDescObjeto_2)
+                            Reset(txtEditarDescricoes)
                         PressedBorderColor: =RGBA(0, 69, 120, 1)
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: =RGBA(16, 110, 190, 1)
@@ -6553,8 +6581,8 @@
                         Size: =12
                         Text: ="+ Adicionar"
                         Width: =130
-                        X: =txtAddDescObjeto_2.X + txtAddDescObjeto_2.Width - Self.Width
-                        Y: =txtAddDescObjeto_2.Y + txtAddDescObjeto_2.Height + 12
+                        X: =txtEditarDescricoes.X + txtEditarDescricoes.Width - Self.Width
+                        Y: =txtEditarDescricoes.Y + txtEditarDescricoes.Height + 12
                         ZIndex: =3
 
                 ctnAdicionarNovasDescricoes_2 As groupContainer.manualLayoutContainer:
