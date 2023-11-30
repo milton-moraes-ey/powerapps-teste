@@ -203,12 +203,6 @@
                         Y: =197
                         ZIndex: =4
 
-                Label2 As label:
-                    Text: ="sss"
-                    X: =350
-                    Y: =10
-                    ZIndex: =3
-
             ctnResultadosPesquisarAtestados As groupContainer.horizontalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 BorderColor: =RGBA(230, 230, 230, 1)
@@ -3120,7 +3114,7 @@
                                 DataCardKey27 As Text:
                                     DisplayMode: =DisplayMode.Edit
                                     Height: =22
-                                    Text: ="Profissional *"
+                                    Text: ="Profissional"
                                     Weight: ='TextCanvas.Weight'.Semibold
                                     Width: =Parent.Width - 48
                                     Wrap: =false
@@ -3154,6 +3148,28 @@
                                         FieldVariantName: ="textualColumn"
                                         Order: =1
                                         ZIndex: =24
+
+                                ErrorMessage28_1 As Text:
+                                    DisplayMode: =DisplayMode.Edit
+                                    Height: =30
+                                    Text: =Parent.Error
+                                    Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                                    Width: =Parent.Width - 48
+                                    Wrap: =true
+                                    X: =48
+                                    Y: =dcvProfissionalFuncaoNoProjeto.Y + dcvProfissionalFuncaoNoProjeto.Height
+                                    ZIndex: =3
+
+                                StarVisible28_1 As Text:
+                                    Align: ='TextCanvas.Align'.Center
+                                    DisplayMode: =DisplayMode.Edit
+                                    Height: =30
+                                    Text: ="*"
+                                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                    Width: =30
+                                    X: =0
+                                    Y: =6
+                                    ZIndex: =4
 
                             prof_funcao_projeto_DataCard1 As typedDataCard.fluentV9TextualEditCard:
                                 BorderStyle: =BorderStyle.Solid
@@ -3360,6 +3376,7 @@
                                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                                 DisabledColor: =RGBA(161, 159, 157, 1)
                                 DisabledFill: =RGBA(242, 242, 241, 0)
+                                DisplayMode: =If(frmAdicionarMembrosDaEquipe.Valid, DisplayMode.Edit, DisplayMode.Disabled)
                                 Fill: =gblTema.AccentColor
                                 FocusedBorderColor: =ColorFade(Self.Fill, 75%)
                                 FocusedBorderThickness: =1
@@ -3758,6 +3775,7 @@
                                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                                 DisabledColor: =RGBA(161, 159, 157, 1)
                                 DisabledFill: =RGBA(242, 242, 241, 0)
+                                DisplayMode: =If( frmDadosDaEmpresaAtestante.Valid && frmDadosEmpresaPrestouServico.Valid, DisplayMode.Edit, DisplayMode.Disabled)
                                 Fill: =gblTema.AccentColor
                                 FocusedBorderColor: =ColorFade(Self.Fill, 75%)
                                 FocusedBorderThickness: =1
