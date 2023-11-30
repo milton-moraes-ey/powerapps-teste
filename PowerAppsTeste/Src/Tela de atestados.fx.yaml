@@ -3833,18 +3833,23 @@
                                         colMembrosEquipe,
                                         '[FerramentaGPS]Relacionaratsd_idnatabelaAtestadoProfissionais'.Run(
                                             gblRegistroDoAtestado.id,
-                                        Patch(
-                                            AtestadoProfissionais,
-                                            Defaults(AtestadoProfissionais),
-                                            {
-                                                prof_id: ThisRecord.prof_id,
-                                                horas_trabalhadas: Value(ThisRecord.horas_trabalhadas),
-                                                prof_funcao_projeto: ThisRecord.prof_funcao_projeto,
-                                                prof_dominio_atuacao: ThisRecord.prof_dominio_atuacao
-                                            }
-                                        ).AtestadoProfissional)
+                                            Patch(
+                                                AtestadoProfissionais,
+                                                Defaults(AtestadoProfissionais),
+                                                {
+                                                    prof_id: ThisRecord.prof_id,
+                                                    horas_trabalhadas: Value(ThisRecord.horas_trabalhadas),
+                                                    prof_funcao_projeto: ThisRecord.prof_funcao_projeto,
+                                                    prof_dominio_atuacao: ThisRecord.prof_dominio_atuacao
+                                                }
+                                            ).AtestadoProfissional
+                                        ).statusdeconclusao
                                     );
-                                    UpdateContext({locMostrarConfirmacaoDeCadastro: true});
+                                    If(
+                                        !IsBlank(gblRegistroDoAtestado),
+                                        UpdateContext({locMostrarConfirmacaoDeCadastro: true}),
+                                        UpdateContext({locMostrarConfirmacaoDeCadastro: false})
+                                    );
                                 PressedBorderColor: =RGBA(0, 69, 120, 1)
                                 PressedColor: =RGBA(255, 255, 255, 1)
                                 PressedFill: =RGBA(16, 110, 190, 1)
