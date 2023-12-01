@@ -6545,6 +6545,87 @@
                         Y: =DataCardKey62.Y
                         ZIndex: =4
 
+            btnSalvarEdicaoDeAtestado_1 As button:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(161, 159, 157, 1)
+                DisabledFill: =RGBA(242, 242, 241, 0)
+                Fill: =gblTema.GreenSuccessColor
+                FocusedBorderColor: =ColorFade(Self.Fill, 75%)
+                FocusedBorderThickness: =1
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Normal
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverFill: =ColorFade(gblTema.AccentColor, -10%)
+                OnSelect: |-
+                    =Set(
+                        gblEditarRegistroAtestado,
+                        Patch(
+                            colAtestados,
+                            LookUp(
+                                colAtestados,
+                                id = glrAtestados.Selected.id
+                            ),
+                            Patch(
+                                Atestados,
+                                LookUp(
+                                    Atestados,
+                                    id = glrAtestados.Selected.id
+                                ),
+                                
+                                {
+                                    nome_cliente: dcvNomeCliente.Value,
+                                    cnpj_cliente: dcvCnpjCliente.Value,
+                                    endr_cliente: dcvEnderecoCliente.Value,
+                                    num_func_cliente: Value(dctNumeroFuncionariosDoCliente.Value),
+                                    ativ_econ_cliente: dcvAtividadeEconomicaDoCliente.Value,
+                                    receita_bruta_cliente: Value(dcvReceitaBrutaDoCliente.Value),
+                                    tot_atv_cliente: Value(dcvTotalAtivosDoCliente.Value),
+                                    patrim_liq_cliente: Value(dcvPatrimonioLiquidoCliente.Value),
+                                    nome_empresa_prestadora: dcvNomeEmpresaPrestadora.Value,
+                                    cnpj_empresa_prestadora: dcvCnpjEmpresaPrestadora.Value,
+                                    endr_empresa_prestadora: dcvEnderecoEmpresaPretadora.Value,
+                                    atsd_obj_trab: dcvObjetoTrabalho.Value,
+                                    atsd_descr_obj_trab: dcvDescricaoDoObjetoDoTrabalho.Value,
+                                    atsd_qtd_hrs: Value(dcvQuantidadeTotalDeHoras.Value),
+                                    atsd_local: dcvLocal.Value,
+                                    atsd_data_inicio: dtvDataInicio.SelectedDate,
+                                    atsd_data_fim: dtvDataFim.SelectedDate,
+                                    proj_engagement_code: dcvEngagementCode.Value,
+                                    atsd_registrado: dcvRegistrado.Selected.Value,
+                                    nome_signatario: dcvNomeSignatario.Value,
+                                    cargo_signatario: dcvCargoSignatario.Value,
+                                    email_signatario: dcvEmailSignatario.Value,
+                                    tel_signatario: dcvTelefoneSignatario.Value,
+                                    endr_signatario: dcvEnderecoSignatario.Value,
+                                    local_signatario: dcvLocalSignatario.Value,
+                                    astd_data_assintr: dtvDataAssinatura.SelectedDate,
+                                    astd_file_uploaded: {
+                                        FileName: First(dcvArquivoAtestado.Attachments).Name,
+                                        Value: First(dcvArquivoAtestado.Attachments).Value
+                                    }
+                                }
+                                
+                            )
+                        )
+                    );
+                    UpdateContext({locMostrarMensagemDeEdicaoDeAtestado: true})
+                PressedBorderColor: =RGBA(0, 69, 120, 1)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =RGBA(16, 110, 190, 1)
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Size: =12
+                Text: ="Salvar"
+                Width: |
+                    =120
+                X: =icoCancelarEdicaoAtestados.X - Self.Width - Parent.PaddingRight
+                Y: =(Parent.Height - Self.Height) / 2
+                ZIndex: =8
+
     ctnPopUpEditarDescricaoAtestado As groupContainer.manualLayoutContainer:
         Fill: =RGBA(0, 0, 0, 0.6)
         Height: =Parent.Height
