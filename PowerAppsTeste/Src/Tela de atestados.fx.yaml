@@ -4663,17 +4663,9 @@
                     X: =btnSalvarEdicaoDeAtestado.X - Self.Width - Parent.PaddingRight
                     ZIndex: =11
 
-            RadioGroupCanvas1 As Radio.pcfdataset:
-                AlignInContainer: =AlignInContainer.Stretch
-                DisplayMode: =DisplayMode.Edit
-                Height: =96
-                Items: =["Empresa atestante", "Empresa prestadora de serviço"]
-                Layout: ='RadioGroupCanvas.Layout'.Horizontal
-                LayoutMinHeight: =96
-                LayoutMinWidth: =320
-                Width: =320
-                X: =0
-                Y: =0
+            Radio1 As radio:
+                Items: =["Dados da EY", "Dados do cliente"]
+                Layout: =Layout.Horizontal
                 ZIndex: =2
 
             tglEntreEmpresas As Toggle:
@@ -4691,7 +4683,7 @@
                 Width: =110
                 X: =0
                 Y: =0
-                ZIndex: =3
+                ZIndex: =4
 
             ctnLabel_2 As groupContainer.manualLayoutContainer:
                 DropShadow: =DropShadow.None
@@ -4710,7 +4702,7 @@
                 Visible: =locMostrarFormEditarEmpresasDoAtestado && locToogleEntreEmpresas
                 X: =20
                 Y: =110
-                ZIndex: =4
+                ZIndex: =5
 
                 Label2_11 As label:
                     AutoHeight: =true
@@ -4759,7 +4751,7 @@
                 Width: =Parent.Width * 0.95
                 X: =(Parent.Width - Self.Width) / 2
                 Y: =Parent.PaddingTop + 32
-                ZIndex: =5
+                ZIndex: =6
 
                 nome_cliente_DataCard2 As typedDataCard.fluentV9TextualEditCard:
                     BorderStyle: =BorderStyle.Solid
@@ -5269,7 +5261,7 @@
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Visible: =locMostrarFormEditarEmpresasDoAtestado && !locToogleEntreEmpresas
-                ZIndex: =6
+                ZIndex: =7
 
                 Label2_8 As label:
                     AutoHeight: =true
@@ -5315,7 +5307,7 @@
                 NumberOfColumns: =2
                 UseFluentV9Cards: =true
                 Visible: =locMostrarFormEditarEmpresasDoAtestado && !locToogleEntreEmpresas
-                ZIndex: =7
+                ZIndex: =8
 
                 nome_empresa_prestadora_DataCard2 As typedDataCard.fluentV9TextualEditCard:
                     BorderStyle: =BorderStyle.Solid
@@ -6046,7 +6038,7 @@
                 LayoutMinWidth: =400
                 UseFluentV9Cards: =true
                 Visible: =locMostrarFormEditarSignatarioDoAtestado
-                ZIndex: =8
+                ZIndex: =9
 
                 nome_signatario_DataCard1 As typedDataCard.fluentV9TextualEditCard:
                     BorderStyle: =BorderStyle.Solid
