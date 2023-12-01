@@ -6482,9 +6482,9 @@
                     DisplayMode: =Parent.DisplayMode
                     DisplayName: =DataSourceInfo([@Atestados],DataSourceInfo.DisplayName,"gps_atsd_descr_obj_trab")
                     Fill: =RGBA(0, 0, 0, 0)
-                    Height: =166
+                    Height: =381
                     Required: =true
-                    Update: =DataCardValue3.Value
+                    Update: =dcvEditarDescricaoDoAtestado.Value
                     Width: =1228
                     X: =0
                     Y: =4
@@ -6501,19 +6501,6 @@
                         Y: =10
                         ZIndex: =1
 
-                    "DataCardValue3 As 'Text input'":
-                        AccessibleLabel: =Parent.DisplayName
-                        DisplayMode: =Parent.DisplayMode
-                        Height: =144
-                        Mode: ='TextInputCanvas.Mode'.Multiline
-                        Required: =Parent.Required
-                        ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                        Value: =Parent.Default
-                        Width: =Parent.Width - 48
-                        X: =24
-                        Y: =DataCardKey63.Y + DataCardKey63.Height + 4
-                        ZIndex: =2
-
                     ErrorMessage62 As Text:
                         DisplayMode: =DisplayMode.Edit
                         Height: =30
@@ -6522,7 +6509,7 @@
                         Width: =Parent.Width - 48
                         Wrap: =true
                         X: =24
-                        Y: =DataCardValue3.Y + DataCardValue3.Height
+                        Y: =dcvEditarDescricaoDoAtestado.Y + dcvEditarDescricaoDoAtestado.Height
                         ZIndex: =3
 
                     StarVisible62 As Text:
@@ -6573,8 +6560,7 @@
                     glrDescricaoDoObjeto As gallery.variableTemplateHeightGallery:
                         DelayItemLoading: =true
                         Fill: =RGBA(242, 242, 242, 0)
-                        Height: |
-                            =144
+                        Height: =310
                         Items: =Split(Parent.Default, ";")
                         Layout: =Layout.Vertical
                         LoadingSpinner: =LoadingSpinner.Data
