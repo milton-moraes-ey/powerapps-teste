@@ -7048,7 +7048,7 @@
                     Height: =30
                     Italic: =true
                     Size: =12
-                    Text: =If(CountRows(glrMembrosAdicionados_1.AllItems) > 0, "Mebros adicionados", "Lista de membros vazia")
+                    Text: =If(CountRows(glrMembrosAdicionados_1.AllItems) > 0, "Membros adicionados", "Lista de membros vazia")
                     Width: =Parent.Width
                     X: =(Parent.Width - Self.Width) / 2
                     Y: =2
