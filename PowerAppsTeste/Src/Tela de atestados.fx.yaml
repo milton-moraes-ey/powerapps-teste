@@ -4440,7 +4440,8 @@
                     HoverBorderColor: =RGBA(0, 0, 0, 0)
                     HoverFill: =ColorFade(gblTema.AccentColor, -10%)
                     OnSelect: |-
-                        =UpdateContext({locMostrarFormEditarEmpresasDoAtestado: false, locMostrarFormEditarSignatarioDoAtestado: false, locMostrarFormEditarEquipeDoAtestado: true, locMostrarDadosDoProjeto: false})
+                        =UpdateContext({locMostrarFormEditarEmpresasDoAtestado: false, locMostrarFormEditarSignatarioDoAtestado: false, locMostrarFormEditarEquipeDoAtestado: true, locMostrarDadosDoProjeto: false});
+                        ClearCollect(colAtestadoProfissionais, Filter(AtestadoProfissionais, atsd_id.id = locDadosDoAtestado.id))
                     PressedBorderColor: =RGBA(0, 69, 120, 1)
                     PressedColor: =RGBA(255, 255, 255, 1)
                     PressedFill: =RGBA(16, 110, 190, 1)
@@ -6914,7 +6915,7 @@
                     BorderColor: =RGBA(245, 245, 245, 1)
                     DelayItemLoading: =true
                     Height: =Parent.Height - Label7_8.Height - Label2_12.Height - 6
-                    Items: =colEditarMembrosEquipe
+                    Items: =colAtestadoProfissionais
                     Layout: =Layout.Vertical
                     LoadingSpinner: =LoadingSpinner.Data
                     TemplateSize: =51
@@ -7003,7 +7004,7 @@
                         HoverColor: =RGBA(16, 110, 190, 1)
                         HoverFill: =RGBA(0, 0, 0, 0)
                         Icon: =Icon.Trash
-                        OnSelect: =Remove(colEditarMembrosEquipe, ThisItem)
+                        OnSelect: =Remove(colAtestadoProfissionais, ThisItem)
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedColor: =RGBA(16, 110, 190, 1)
                         PressedFill: =RGBA(0, 0, 0, 0)
