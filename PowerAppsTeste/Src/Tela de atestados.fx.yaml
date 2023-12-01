@@ -4395,45 +4395,45 @@
                                 colAtestados,
                                 LookUp(
                                     colAtestados,
-                                    id = glrAtestados.Selected.id
+                                    id = locDadosDoAtestado.id
                                 ),
                                 Patch(
                                     Atestados,
                                     LookUp(
                                         Atestados,
-                                        id = glrAtestados.Selected.id
+                                        id = locDadosDoAtestado.id
                                     ),
                                     
                                     {
-                                        nome_cliente: dcvNomeCliente.Value,
-                                        cnpj_cliente: dcvCnpjCliente.Value,
-                                        endr_cliente: dcvEnderecoCliente.Value,
-                                        num_func_cliente: Value(dctNumeroFuncionariosDoCliente.Value),
-                                        ativ_econ_cliente: dcvAtividadeEconomicaDoCliente.Value,
-                                        receita_bruta_cliente: Value(dcvReceitaBrutaDoCliente.Value),
-                                        tot_atv_cliente: Value(dcvTotalAtivosDoCliente.Value),
-                                        patrim_liq_cliente: Value(dcvPatrimonioLiquidoCliente.Value),
-                                        nome_empresa_prestadora: dcvNomeEmpresaPrestadora.Value,
-                                        cnpj_empresa_prestadora: dcvCnpjEmpresaPrestadora.Value,
-                                        endr_empresa_prestadora: dcvEnderecoEmpresaPretadora.Value,
-                                        atsd_obj_trab: dcvObjetoTrabalho.Value,
-                                        atsd_descr_obj_trab: dcvDescricaoDoObjetoDoTrabalho.Value,
-                                        atsd_qtd_hrs: Value(dcvQuantidadeTotalDeHoras.Value),
-                                        atsd_local: dcvLocal.Value,
-                                        atsd_data_inicio: dtvDataInicio.SelectedDate,
-                                        atsd_data_fim: dtvDataFim.SelectedDate,
-                                        proj_engagement_code: dcvEngagementCode.Value,
-                                        atsd_registrado: dcvRegistrado.Selected.Value,
-                                        nome_signatario: dcvNomeSignatario.Value,
-                                        cargo_signatario: dcvCargoSignatario.Value,
-                                        email_signatario: dcvEmailSignatario.Value,
-                                        tel_signatario: dcvTelefoneSignatario.Value,
-                                        endr_signatario: dcvEnderecoSignatario.Value,
-                                        local_signatario: dcvLocalSignatario.Value,
-                                        astd_data_assintr: dtvDataAssinatura.SelectedDate,
+                                        nome_cliente: dcvEditarNomeCliente.Value,
+                                        cnpj_cliente: dcvEditarCnpjCliente.Value,
+                                        endr_cliente: dcvEditarEnderecoCliente.Value,
+                                        num_func_cliente: Value(dcvEditarNumeroFuncionarioCliente.Value),
+                                        ativ_econ_cliente: dcvEditarAtividadeEconomicaCliente.Value,
+                                        receita_bruta_cliente: Value(dcvEditarReceitaBrutaCliente.Value),
+                                        tot_atv_cliente: Value(dcvEditarTotalAtivoCliente.Value),
+                                        patrim_liq_cliente: Value(dcvEditarPatrimonioLiqCliente.Value),
+                                        nome_empresa_prestadora: dcvEditarNomeEmpresaPrestadora.Value,
+                                        cnpj_empresa_prestadora: dcvEditarCnpjEmpresaPrestadora.Value,
+                                        endr_empresa_prestadora: dcvEditarEnderecoEmpresaPrestadora.Value,
+                                        atsd_obj_trab: dcvEditarObjetoAtestado.Value,
+                                        atsd_descr_obj_trab: dcvEditarDescricaoDoAtestado.Value,
+                                        atsd_qtd_hrs: Value(dcvEditarQtdHorasAtestado.Value),
+                                        atsd_local: dcvEditarLocalAtestado.Value,
+                                        atsd_data_inicio: dtvEditarDataInicioAtestado.SelectedDate,
+                                        atsd_data_fim: dtvEditarDataFinalAtestado.SelectedDate,
+                                        proj_engagement_code: dcvEditarEngagementCode.Value,
+                                        atsd_registrado: dcvEditarRegistrado.Selected.Value,
+                                        nome_signatario: dcvEditarNomeSignatario.Value,
+                                        cargo_signatario: dcvEditarCargoSignatario.Value,
+                                        email_signatario: dcvEditarEmailSignatario.Value,
+                                        tel_signatario: dcvEditarTelefoneSignatario.Value,
+                                        endr_signatario: dcvEditarEnderecoSignatario.Value,
+                                        local_signatario: dcvEditarLocalSignatario.Value,
+                                        astd_data_assintr: dtvEditarDataAssinaturaSignatario.SelectedDate,
                                         astd_file_uploaded: {
-                                            FileName: First(dcvArquivoAtestado.Attachments).Name,
-                                            Value: First(dcvArquivoAtestado.Attachments).Value
+                                            FileName: First(dcvEditarArquivoUploadedAtestado.Attachments).Name,
+                                            Value: First(dcvEditarArquivoUploadedAtestado.Attachments).Value
                                         }
                                     }
                                     
@@ -5076,7 +5076,7 @@
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =70
                     Required: =false
-                    Update: =Value(dcvEditarAtividadeEconomiCliente.Value)
+                    Update: =Value(dcvEditarTotalAtivoCliente.Value)
                     Width: =614
                     X: =0
                     Y: =3
@@ -5093,7 +5093,7 @@
                         Y: =10
                         ZIndex: =1
 
-                    "dcvEditarAtividadeEconomiCliente As 'Text input'":
+                    "dcvEditarTotalAtivoCliente As 'Text input'":
                         AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
                         BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
@@ -5113,7 +5113,7 @@
                         Width: =Parent.Width - 48
                         Wrap: =true
                         X: =24
-                        Y: =dcvEditarAtividadeEconomiCliente.Y + dcvEditarAtividadeEconomiCliente.Height
+                        Y: =dcvEditarTotalAtivoCliente.Y + dcvEditarTotalAtivoCliente.Height
                         ZIndex: =3
 
                     StarVisible41 As Text:
