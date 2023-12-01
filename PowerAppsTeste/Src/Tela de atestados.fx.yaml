@@ -6631,7 +6631,7 @@
                         DataCardKey71 As Text:
                             DisplayMode: =DisplayMode.Edit
                             Height: =22
-                            Text: =Parent.DisplayName
+                            Text: ="* Profissional"
                             Weight: ='TextCanvas.Weight'.Semibold
                             Width: =Parent.Width - 48
                             Wrap: =false
@@ -6677,7 +6677,7 @@
                         DataCardKey72 As Text:
                             DisplayMode: =DisplayMode.Edit
                             Height: =22
-                            Text: =Parent.DisplayName
+                            Text: ="Função no projeto"
                             Weight: ='TextCanvas.Weight'.Semibold
                             Width: =Parent.Width - 48
                             Wrap: =false
@@ -6740,7 +6740,7 @@
                         DataCardKey73 As Text:
                             DisplayMode: =DisplayMode.Edit
                             Height: =22
-                            Text: =Parent.DisplayName
+                            Text: ="Domínio de atuação"
                             Weight: ='TextCanvas.Weight'.Semibold
                             Width: =Parent.Width - 48
                             Wrap: =false
@@ -6802,7 +6802,9 @@
                         DataCardKey74 As Text:
                             DisplayMode: =DisplayMode.Edit
                             Height: =22
-                            Text: =Parent.DisplayName
+                            Text: |-
+                                ="Quantidade de horas trabalhadas
+                                "
                             Weight: ='TextCanvas.Weight'.Semibold
                             Width: =Parent.Width - 48
                             Wrap: =false
