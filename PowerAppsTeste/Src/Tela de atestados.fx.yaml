@@ -4486,7 +4486,6 @@
                                         Atestados,
                                         id = locDadosDoAtestado.id
                                     ),
-                                    
                                     {
                                         nome_cliente: dcvEditarNomeCliente.Value,
                                         cnpj_cliente: dcvEditarCnpjCliente.Value,
@@ -4519,7 +4518,6 @@
                                             Value: First(dcvEditarArquivoUploadedAtestado.Attachments).Value
                                         }
                                     }
-                                    
                                 )
                             )
                         );
@@ -6623,7 +6621,7 @@
                         DisplayName: =DataSourceInfo([@AtestadoProfissionais],DataSourceInfo.DisplayName,"gps_prof_id")
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =70
-                        Required: =false
+                        Required: =true
                         Update: =dcvEditarProfissionalAtestado.Selected
                         Width: =600
                         X: =0
@@ -6866,6 +6864,7 @@
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(161, 159, 157, 1)
                         DisabledFill: =RGBA(242, 242, 241, 0)
+                        DisplayMode: =If(frmEditarMembrosDaEquipe.Valid, DisplayMode.Edit, DisplayMode.Disabled)
                         Fill: =gblTema.AccentColor
                         FocusedBorderColor: =ColorFade(Self.Fill, 75%)
                         FocusedBorderThickness: =1
@@ -6893,7 +6892,7 @@
                         RadiusBottomRight: =4
                         RadiusTopLeft: =4
                         RadiusTopRight: =4
-                        Size: =14
+                        Size: =12
                         Text: ="Adicionar"
                         Width: =120
                         X: =Parent.Width - Self.Width - Parent.PaddingRight
@@ -6938,6 +6937,7 @@
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         OnSelect: =Select(Parent)
+                        Size: =12
                         Text: =ThisItem.prof_dominio_atuacao
                         X: =351
                         Y: =(Parent.TemplateHeight - Self.Height) / 2
@@ -6955,6 +6955,7 @@
                         Font: =Font.'Segoe UI'
                         Height: =Parent.TemplateHeight
                         OnSelect: =Select(Parent)
+                        Size: =12
                         Text: =ThisItem.prof_id.nome_completo
                         Width: =200
                         X: =13
@@ -6972,6 +6973,7 @@
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         OnSelect: =Select(Parent)
+                        Size: =12
                         Text: =ThisItem.horas_trabalhadas
                         X: =662
                         Y: =(Parent.TemplateHeight - Self.Height) / 2
@@ -6988,6 +6990,7 @@
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         OnSelect: =Select(Parent)
+                        Size: =12
                         Text: =ThisItem.prof_funcao_projeto
                         Width: =230
                         X: =940.8120000000001
@@ -7063,6 +7066,7 @@
                     Font: =Font.'Segoe UI'
                     FontWeight: =FontWeight.Semibold
                     OnSelect: =
+                    Size: =12
                     Text: ="Nome do profissional"
                     Visible: =If(CountRows(glrMembrosAdicionados_1.AllItems) > 0, true, false)
                     Width: =192
@@ -7082,6 +7086,7 @@
                     Font: =Font.'Segoe UI'
                     FontWeight: =FontWeight.Semibold
                     OnSelect: =
+                    Size: =12
                     Text: ="Domínio de atuação"
                     Visible: =If(CountRows(glrMembrosAdicionados_1.AllItems) > 0, true, false)
                     Width: =192
@@ -7101,6 +7106,7 @@
                     Font: =Font.'Segoe UI'
                     FontWeight: =FontWeight.Semibold
                     OnSelect: =
+                    Size: =12
                     Text: ="Qntd horas"
                     Visible: =If(CountRows(glrMembrosAdicionados_1.AllItems) > 0, true, false)
                     Width: =192
@@ -7120,6 +7126,7 @@
                     Font: =Font.'Segoe UI'
                     FontWeight: =FontWeight.Semibold
                     OnSelect: =
+                    Size: =12
                     Text: ="Função no projeto"
                     Visible: =If(CountRows(glrMembrosAdicionados_1.AllItems) > 0, true, false)
                     Width: =192
