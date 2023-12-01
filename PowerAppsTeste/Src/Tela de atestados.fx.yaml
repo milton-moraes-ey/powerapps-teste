@@ -3970,7 +3970,7 @@
 
         ctnAddDescricaoAtestado As groupContainer.horizontalAutoLayoutContainer:
             Fill: =gblTema.OffWhiteColor
-            Height: =Parent.Height * 0.6
+            Height: =Parent.Height * 0.9
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMode: =LayoutMode.Auto
             PaddingBottom: =12
@@ -4099,7 +4099,7 @@
 
                     glrDescricoesAdicionadas As gallery.galleryVertical:
                         DelayItemLoading: =true
-                        Height: =288
+                        Height: =537
                         Items: =colDescricaoAdicionada
                         Layout: =Layout.Vertical
                         LoadingSpinner: =LoadingSpinner.Data
@@ -4172,7 +4172,7 @@
 
                     ctnNenhumaDescricaoAdicionada As groupContainer.verticalAutoLayoutContainer:
                         DropShadow: =DropShadow.None
-                        Height: =363
+                        Height: =593
                         LayoutAlignItems: =LayoutAlignItems.Center
                         LayoutDirection: =LayoutDirection.Vertical
                         LayoutGap: =12
