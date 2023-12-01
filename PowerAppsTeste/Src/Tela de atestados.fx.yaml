@@ -4638,6 +4638,7 @@
                     =UpdateContext({locToogleEntreEmpresas: true})
                 OnUncheck: |-
                     =UpdateContext({locToogleEntreEmpresas: false})
+                Visible: =locMostrarFormEditarEmpresasDoAtestado
                 Width: =110
                 X: =0
                 Y: =0
@@ -6008,7 +6009,7 @@
                     Height: =70
                     MaxLength: =DataSourceInfo([@Atestados], DataSourceInfo.MaxLength, "gps_nome_signatario")
                     Required: =false
-                    Update: =DataCardValue20.Value
+                    Update: =dcvEditarNomeSignatario.Value
                     Width: =409
                     X: =0
                     Y: =0
@@ -6025,7 +6026,7 @@
                         Y: =10
                         ZIndex: =1
 
-                    "DataCardValue20 As 'Text input'":
+                    "dcvEditarNomeSignatario As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
                         BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
@@ -6047,7 +6048,7 @@
                         Width: =Parent.Width - 48
                         Wrap: =true
                         X: =24
-                        Y: =DataCardValue20.Y + DataCardValue20.Height
+                        Y: =dcvEditarNomeSignatario.Y + dcvEditarNomeSignatario.Height
                         ZIndex: =3
 
                     StarVisible54 As Text:
@@ -6071,7 +6072,7 @@
                     Height: =70
                     MaxLength: =DataSourceInfo([@Atestados], DataSourceInfo.MaxLength, "gps_cargo_signatario")
                     Required: =false
-                    Update: =DataCardValue21.Value
+                    Update: =dcvEditarCargoSignatario.Value
                     Width: =409
                     X: =1
                     Y: =0
@@ -6088,7 +6089,7 @@
                         Y: =10
                         ZIndex: =1
 
-                    "DataCardValue21 As 'Text input'":
+                    "dcvEditarCargoSignatario As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
                         BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
@@ -6110,7 +6111,7 @@
                         Width: =Parent.Width - 48
                         Wrap: =true
                         X: =24
-                        Y: =DataCardValue21.Y + DataCardValue21.Height
+                        Y: =dcvEditarCargoSignatario.Y + dcvEditarCargoSignatario.Height
                         ZIndex: =3
 
                     StarVisible55 As Text:
@@ -6134,7 +6135,7 @@
                     Height: =70
                     MaxLength: =DataSourceInfo([@Atestados], DataSourceInfo.MaxLength, "gps_email_signatario")
                     Required: =false
-                    Update: =DataCardValue22.Value
+                    Update: =dcvEditarEmailSignatario.Value
                     Width: =409
                     X: =2
                     Y: =0
@@ -6151,7 +6152,7 @@
                         Y: =10
                         ZIndex: =1
 
-                    "DataCardValue22 As 'Text input'":
+                    "dcvEditarEmailSignatario As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
                         BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
@@ -6173,7 +6174,7 @@
                         Width: =Parent.Width - 48
                         Wrap: =true
                         X: =24
-                        Y: =DataCardValue22.Y + DataCardValue22.Height
+                        Y: =dcvEditarEmailSignatario.Y + dcvEditarEmailSignatario.Height
                         ZIndex: =3
 
                     StarVisible56 As Text:
@@ -6197,7 +6198,7 @@
                     Height: =70
                     MaxLength: =DataSourceInfo([@Atestados], DataSourceInfo.MaxLength, "gps_tel_signatario")
                     Required: =false
-                    Update: =DataCardValue23.Value
+                    Update: =dcvEditarTelefoneSignatario.Value
                     Width: =409
                     X: =0
                     Y: =1
@@ -6214,7 +6215,7 @@
                         Y: =10
                         ZIndex: =1
 
-                    "DataCardValue23 As 'Text input'":
+                    "dcvEditarTelefoneSignatario As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
                         BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
@@ -6236,7 +6237,7 @@
                         Width: =Parent.Width - 48
                         Wrap: =true
                         X: =24
-                        Y: =DataCardValue23.Y + DataCardValue23.Height
+                        Y: =dcvEditarTelefoneSignatario.Y + dcvEditarTelefoneSignatario.Height
                         ZIndex: =3
 
                     StarVisible57 As Text:
@@ -6260,7 +6261,7 @@
                     Height: =70
                     MaxLength: =DataSourceInfo([@Atestados], DataSourceInfo.MaxLength, "gps_endr_signatario")
                     Required: =false
-                    Update: =DataCardValue24.Value
+                    Update: =dcvEditarEnderecoSignatario.Value
                     Width: =409
                     X: =1
                     Y: =1
@@ -6277,7 +6278,7 @@
                         Y: =10
                         ZIndex: =1
 
-                    "DataCardValue24 As 'Text input'":
+                    "dcvEditarEnderecoSignatario As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
                         BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
@@ -6299,7 +6300,7 @@
                         Width: =Parent.Width - 48
                         Wrap: =true
                         X: =24
-                        Y: =DataCardValue24.Y + DataCardValue24.Height
+                        Y: =dcvEditarEnderecoSignatario.Y + dcvEditarEnderecoSignatario.Height
                         ZIndex: =3
 
                     StarVisible58 As Text:
@@ -6323,7 +6324,7 @@
                     Height: =70
                     MaxLength: =DataSourceInfo([@Atestados], DataSourceInfo.MaxLength, "gps_local_signatario")
                     Required: =false
-                    Update: =DataCardValue25.Value
+                    Update: =dcvEditarLocalSignatario.Value
                     Width: =409
                     X: =2
                     Y: =1
@@ -6340,7 +6341,7 @@
                         Y: =10
                         ZIndex: =1
 
-                    "DataCardValue25 As 'Text input'":
+                    "dcvEditarLocalSignatario As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
                         BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
@@ -6362,7 +6363,7 @@
                         Width: =Parent.Width - 48
                         Wrap: =true
                         X: =24
-                        Y: =DataCardValue25.Y + DataCardValue25.Height
+                        Y: =dcvEditarLocalSignatario.Y + dcvEditarLocalSignatario.Height
                         ZIndex: =3
 
                     StarVisible59 As Text:
@@ -6385,7 +6386,7 @@
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =70
                     Required: =false
-                    Update: =If(Not IsBlank(DateValue5.SelectedDate), Date(Year(DateValue5.SelectedDate), Month(DateValue5.SelectedDate), Day(DateValue5.SelectedDate)))
+                    Update: =If(Not IsBlank(dtvEditarDataAssinaturaSignatario.SelectedDate), Date(Year(dtvEditarDataAssinaturaSignatario.SelectedDate), Month(dtvEditarDataAssinaturaSignatario.SelectedDate), Day(dtvEditarDataAssinaturaSignatario.SelectedDate)))
                     Width: =409
                     X: =0
                     Y: =2
@@ -6402,7 +6403,7 @@
                         Y: =10
                         ZIndex: =1
 
-                    "DateValue5 As 'Date picker'":
+                    "dtvEditarDataAssinaturaSignatario As 'Date picker'":
                         AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
                         BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
@@ -6422,7 +6423,7 @@
                         Width: =Parent.Width - 48
                         Wrap: =true
                         X: =24
-                        Y: =DateValue5.Y + DateValue5.Height
+                        Y: =dtvEditarDataAssinaturaSignatario.Y + dtvEditarDataAssinaturaSignatario.Height
                         ZIndex: =6
 
                     StarVisible60 As Text:
@@ -6446,7 +6447,7 @@
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =50
                     Required: =false
-                    Update: =DataCardValue26.Attachments
+                    Update: =dcvEditarArquivoUploadedAtestado.Attachments
                     Width: =409
                     X: =1
                     Y: =2
@@ -6463,7 +6464,7 @@
                         Y: =10
                         ZIndex: =1
 
-                    DataCardValue26 As attachments:
+                    dcvEditarArquivoUploadedAtestado As attachments:
                         AddAttachmentText: ="Upload file"
                         BorderColor: =gblTema.LightGrayColor
                         BorderThickness: =1
@@ -6493,7 +6494,7 @@
                         Visible: =Parent.DisplayMode=DisplayMode.Edit
                         Width: =Parent.Width - 60
                         X: =30
-                        Y: =DataCardValue26.Y + DataCardValue26.Height
+                        Y: =dcvEditarArquivoUploadedAtestado.Y + dcvEditarArquivoUploadedAtestado.Height
                         ZIndex: =3
 
                     StarVisible61 As Text:

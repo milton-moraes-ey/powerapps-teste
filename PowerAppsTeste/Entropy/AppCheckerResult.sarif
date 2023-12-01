@@ -2354,19 +2354,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnPopUpEditarAtestado.ctnFrmEditarAtestado.frmEditarSignatarioDoAtestado.astd_file_uploaded_DataCard1.DataCardValue26.AccessibleLabel"
+                  "fullyQualifiedName": "'Tela de atestados'.ctnPopUpEditarAtestado.ctnFrmEditarAtestado.frmEditarSignatarioDoAtestado.astd_file_uploaded_DataCard1.dcvEditarArquivoUploadedAtestado.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnPopUpEditarAtestado.ctnFrmEditarAtestado.frmEditarSignatarioDoAtestado.astd_file_uploaded_DataCard1.DataCardValue26.AccessibleLabel",
+                  "fullyQualifiedName": "'Tela de atestados'.ctnPopUpEditarAtestado.ctnFrmEditarAtestado.frmEditarSignatarioDoAtestado.astd_file_uploaded_DataCard1.dcvEditarArquivoUploadedAtestado.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Tela de atestados",
-                "type": "'Tela de atestados'.ctnPopUpEditarAtestado.ctnFrmEditarAtestado.frmEditarSignatarioDoAtestado.astd_file_uploaded_DataCard1.DataCardValue26"
+                "type": "'Tela de atestados'.ctnPopUpEditarAtestado.ctnFrmEditarAtestado.frmEditarSignatarioDoAtestado.astd_file_uploaded_DataCard1.dcvEditarArquivoUploadedAtestado"
               }
             }
           ],
