@@ -2384,6 +2384,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'Tela de atestados'.ctnPopUpEditarAtestado.ctnFrmEditarAtestado.RadioGroupCanvas1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Tela de atestados'.ctnPopUpEditarAtestado.ctnFrmEditarAtestado.RadioGroupCanvas1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Tela de atestados",
+                "type": "'Tela de atestados'.ctnPopUpEditarAtestado.ctnFrmEditarAtestado.RadioGroupCanvas1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "'Tela de atestados'.ctnPopUpEditarAtestado.ctnFrmEditarAtestado.frmEditarDadosDaEmpresaPrestouServico.atsd_descr_obj_trab_DataCard2.icoEditDescricaoDoObjeto.AccessibleLabel"
                 }
               ],
