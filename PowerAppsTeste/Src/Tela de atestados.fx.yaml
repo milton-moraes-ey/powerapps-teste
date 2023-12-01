@@ -6491,6 +6491,7 @@
                         Label8 As label:
                             AutoHeight: =true
                             OnSelect: =Select(Parent)
+                            Size: =12
                             Text: =ThisItem.Value
                             Width: =Parent.TemplateWidth - 20
                             X: =10
