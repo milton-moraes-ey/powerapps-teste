@@ -2952,6 +2952,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'Tela de atestados'.locMostrarEquipeDoAtestado"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Tela de atestados'.locMostrarEquipeDoAtestado",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "locMostrarEquipeDoAtestado",
+                "module": "Tela de atestados",
+                "type": "'Tela de atestados'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "'Tela de atestados'.locMostrarMensagemDeEdicaoDeAtestado"
                 }
               ],

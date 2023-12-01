@@ -4313,6 +4313,7 @@
             Height: =Parent.Height * 0.95
             LayoutAlignItems: =LayoutAlignItems.Stretch
             LayoutDirection: =LayoutDirection.Vertical
+            LayoutGap: =If(locMostrarFormEditarEquipeDoAtestado, 12, 0)
             LayoutMode: =LayoutMode.Auto
             PaddingBottom: =12
             Width: =Parent.Width * 0.9
@@ -4441,7 +4442,7 @@
                     HoverFill: =ColorFade(gblTema.AccentColor, -10%)
                     OnSelect: |-
                         =UpdateContext({locMostrarFormEditarEmpresasDoAtestado: false, locMostrarFormEditarSignatarioDoAtestado: false, locMostrarFormEditarEquipeDoAtestado: true, locMostrarDadosDoProjeto: false});
-                        ClearCollect(colAtestadoProfissionais, Filter(AtestadoProfissionais, atsd_id.id = locDadosDoAtestado.id))
+                        ClearCollect(colEditarMembrosEquipe, Filter(AtestadoProfissionais, atsd_id.id = locDadosDoAtestado.id))
                     PressedBorderColor: =RGBA(0, 69, 120, 1)
                     PressedColor: =RGBA(255, 255, 255, 1)
                     PressedFill: =RGBA(16, 110, 190, 1)
@@ -6598,7 +6599,7 @@
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
                 PaddingRight: =4
-                Visible: =If(!locMostrarEquipeDoAtestado, true, false)
+                Visible: =locMostrarFormEditarEquipeDoAtestado
                 Width: =Parent.Width * 0.98
                 ZIndex: =11
 
@@ -6873,8 +6874,9 @@
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverFill: =ColorFade(gblTema.AccentColor, -10%)
                         OnSelect: |-
-                            =Collect(
+                            =Patch(
                                 colEditarMembrosEquipe,
+                                Defaults(colEditarMembrosEquipe),
                                 {
                                     prof_id: dcvEditarProfissionalAtestado.Selected,
                                     prof_dominio_atuacao: dcvEditarDominioAtuacao.Value,
@@ -6906,7 +6908,7 @@
                 PaddingLeft: =12
                 PaddingRight: =12
                 PaddingTop: =12
-                Visible: =If(!locMostrarEquipeDoAtestado, true, false)
+                Visible: =locMostrarFormEditarEquipeDoAtestado
                 Width: |
                     =Parent.Width * 0.98
                 ZIndex: =12
@@ -6915,7 +6917,7 @@
                     BorderColor: =RGBA(245, 245, 245, 1)
                     DelayItemLoading: =true
                     Height: =Parent.Height - Label7_8.Height - Label2_12.Height - 6
-                    Items: =colAtestadoProfissionais
+                    Items: =colEditarMembrosEquipe
                     Layout: =Layout.Vertical
                     LoadingSpinner: =LoadingSpinner.Data
                     TemplateSize: =51
@@ -7004,7 +7006,7 @@
                         HoverColor: =RGBA(16, 110, 190, 1)
                         HoverFill: =RGBA(0, 0, 0, 0)
                         Icon: =Icon.Trash
-                        OnSelect: =Remove(colAtestadoProfissionais, ThisItem)
+                        OnSelect: =Remove(colEditarMembrosEquipe, ThisItem)
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedColor: =RGBA(16, 110, 190, 1)
                         PressedFill: =RGBA(0, 0, 0, 0)
