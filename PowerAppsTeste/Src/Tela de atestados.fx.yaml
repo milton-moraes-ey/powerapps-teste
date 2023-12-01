@@ -4390,7 +4390,7 @@
                             locMostrarFormEditarEquipeDoAtestado,
                             " - Equipe relacionada ao atestado"
                         )
-                    Width: =500
+                    Width: =350
                     X: =Parent.PaddingLeft
                     Y: =Parent.PaddingTop
                     ZIndex: =2
@@ -4451,7 +4451,8 @@
                     RadiusTopRight: =4
                     Size: =12
                     Text: ="🛠 Equipe"
-                    Width: =140
+                    Width: |
+                        =120
                     X: =btnSalvarEdicaoDeAtestado.X - Self.Width - Parent.PaddingRight
                     Y: =(Parent.Height - Self.Height) / 2
                     ZIndex: =4
@@ -4531,7 +4532,8 @@
                     RadiusTopRight: =4
                     Size: =12
                     Text: ="Salvar"
-                    Width: =140
+                    Width: |
+                        =120
                     X: =icoCancelarEdicaoAtestados.X - Self.Width - Parent.PaddingRight
                     Y: =(Parent.Height - Self.Height) / 2
                     ZIndex: =5
@@ -4577,12 +4579,13 @@
                     RadiusTopRight: =4
                     Size: =12
                     Text: ="🛠 Signatário"
-                    Width: =140
+                    Width: |
+                        =120
                     X: =btnVerEquipe.X - Self.Width - Parent.PaddingRight
                     Y: =(Parent.Height - Self.Height) / 2
                     ZIndex: =6
 
-                btnPadraoBotao_3 As button:
+                btnEmpresasAtestado As button:
                     BorderColor: =Color.Transparent
                     BorderThickness: =1
                     Color: |-
@@ -4622,10 +4625,36 @@
                     RadiusTopRight: =4
                     Size: =12
                     Text: ="🛠 Empresas"
-                    Width: =140
+                    Width: |
+                        =120
                     X: =btnSignatario.X - Self.Width - Parent.PaddingRight
                     Y: =(Parent.Height - Self.Height) / 2
                     ZIndex: =7
+
+                Rectangle3 As rectangle:
+                    Fill: =gblTema.LightBorderColor
+                    Height: =Parent.Height
+                    Width: =1
+                    X: =btnEmpresasAtestado.X - Self.Width - Parent.PaddingRight
+                    ZIndex: =8
+
+                icoDeletarAtestado As icon.Trash:
+                    Color: =gblTema.AccentColor
+                    Height: =32
+                    Icon: =Icon.Trash
+                    Width: =32
+                    X: =Rectangle3.X - Self.Width - Parent.PaddingRight
+                    Y: =12
+                    ZIndex: =9
+
+                icoVerAtestadoEmPDF As icon.Trash:
+                    Color: =gblTema.AccentColor
+                    Height: =32
+                    Icon: =Icon.DocumentPDF
+                    Width: =32
+                    X: =icoDeletarAtestado.X - Self.Width - Parent.PaddingRight
+                    Y: =11
+                    ZIndex: =10
 
             tglEntreEmpresas As Toggle:
                 BasePaletteColor: =
