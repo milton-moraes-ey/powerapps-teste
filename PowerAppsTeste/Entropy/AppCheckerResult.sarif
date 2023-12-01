@@ -1574,66 +1574,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.icoConfiguracoesDoAtestado.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.icoConfiguracoesDoAtestado.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Tela de atestados",
-                "type": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.icoConfiguracoesDoAtestado"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.icoConfiguracoesDoAtestado.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.icoConfiguracoesDoAtestado.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Tela de atestados",
-                "type": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.icoConfiguracoesDoAtestado"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblIndicadorProjeto.FocusedBorderThickness"
                 }
               ],
@@ -3013,7 +2953,7 @@
                 ],
                 "level": "Medium",
                 "primaryCategory": "performance",
-                "whyFix": "Each control consumes resources, and an app may become slow or unresponsive if a screen has too many controls. The estimated complexity of \"Tela de atestados\" is 596, which exceeds the maximum threshold recommended (300)."
+                "whyFix": "Each control consumes resources, and an app may become slow or unresponsive if a screen has too many controls. The estimated complexity of \"Tela de atestados\" is 591, which exceeds the maximum threshold recommended (300)."
               }
             }
           ],

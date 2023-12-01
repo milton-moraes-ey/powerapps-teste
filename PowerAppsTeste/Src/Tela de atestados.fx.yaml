@@ -291,6 +291,7 @@
                     LoadingSpinner: =LoadingSpinner.Data
                     TemplatePadding: =12
                     TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(250, Self.Height - 60))
+                    Transition: =Transition.Push
                     Visible: =If(CountRows(Self.AllItems) > 0 && locAlternarVisualizacaoControleDeAtestados, true, false)
                     Width: |-
                         =//If(App.Width<=LookUp(App.SizeBreakpoints,Value=1200,Value), Parent .Width*0.95,If(App.Width>LookUp(App.SizeBreakpoints,Value=1200,Value)&&App.Width<=LookUp(App.SizeBreakpoints,Value=1800,Value), Parent .Width*0.95,1700))
@@ -488,31 +489,9 @@
                         Size: =12
                         Text: =Text(ThisItem.atsd_data_inicio, "dd/mm/yyyy") & " - " & Text(ThisItem.atsd_data_fim, "dd/mm/yyyy")
                         Width: =233
-                        X: =Parent.TemplateWidth - Self.Width - icoConfiguracoesDoAtestado.Width - Parent.TemplatePadding
+                        X: =Parent.TemplateWidth - Self.Width  - Parent.TemplatePadding
                         Y: =lblTitulo.Y
                         ZIndex: =9
-
-                    icoConfiguracoesDoAtestado As icon.More:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        Color: =RGBA(0, 120, 212, 1)
-                        DisabledBorderColor: =RGBA(245, 245, 245, 1)
-                        DisabledColor: =RGBA(225, 223, 221, 1)
-                        DisabledFill: =RGBA(0, 0, 0, 0)
-                        FocusedBorderThickness: =4
-                        Height: =32
-                        HoverBorderColor: =RGBA(0, 0, 0, 0)
-                        HoverColor: =RGBA(16, 110, 190, 1)
-                        HoverFill: =RGBA(0, 0, 0, 0)
-                        Icon: =Icon.Settings
-                        OnSelect: |-
-                            = UpdateContext({locMostrarContextMenu: true})
-                        PressedBorderColor: =RGBA(0, 0, 0, 0)
-                        PressedColor: =RGBA(16, 110, 190, 1)
-                        PressedFill: =RGBA(0, 0, 0, 0)
-                        Width: =32
-                        X: =Parent.TemplateWidth - Self.Width - Parent.TemplatePadding 
-                        Y: =lblPeriodoAtestado.Y
-                        ZIndex: =10
 
                     btnTemplateFillBackground_2 As button:
                         BorderColor: =RGBA(0, 0, 0, 0)
@@ -524,7 +503,7 @@
                         Font: =Font.'Segoe UI'
                         Height: =Parent.TemplateHeight
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
-                        HoverFill: =Self.Fill
+                        HoverFill: =RGBA(0,0,0,0.05)
                         OnSelect: |-
                             =UpdateContext(
                                 {
