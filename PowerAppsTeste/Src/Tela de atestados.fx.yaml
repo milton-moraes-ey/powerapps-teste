@@ -322,7 +322,7 @@
                         Width: =Parent.TemplateWidth
                         X: =(Parent.TemplateWidth - Self.Width) / 2
                         Y: =(Parent.TemplateHeight - Self.Height) / 2
-                        ZIndex: =2
+                        ZIndex: =1
 
                     lblTitulo As label:
                         AutoHeight: =true
@@ -339,7 +339,7 @@
                         X: =6
                         Y: |
                             =12
-                        ZIndex: =3
+                        ZIndex: =2
 
                     lblProjeto As label:
                         AutoHeight: =true
@@ -361,7 +361,7 @@
                         Wrap: =false
                         X: =lblIndicadorProjeto.X + lblIndicadorProjeto.Width + 2
                         Y: =lblTitulo.Y + lblTitulo.Height + 6
-                        ZIndex: =4
+                        ZIndex: =3
 
                     lblIndicadorProjeto As label:
                         AutoHeight: =true
@@ -385,7 +385,7 @@
                         Wrap: =false
                         X: =6
                         Y: =lblTitulo.Y + lblTitulo.Height + 6
-                        ZIndex: =5
+                        ZIndex: =4
 
                     lblTime As label:
                         AutoHeight: =true
@@ -407,7 +407,7 @@
                         Wrap: =false
                         X: =lblIndicadorTime.X + lblIndicadorTime.Width + 2
                         Y: =100
-                        ZIndex: =6
+                        ZIndex: =5
 
                     lblIndicadorTime As label:
                         AutoHeight: =true
@@ -431,7 +431,7 @@
                         Wrap: =false
                         X: =6
                         Y: =100
-                        ZIndex: =7
+                        ZIndex: =6
 
                     lblObjetivo As label:
                         Align: =Align.Justify
@@ -453,7 +453,7 @@
                             (Parent.TemplateWidth - lblIndicadorObjetivo.Width -  lblIndicadorObjetivo.X) * 0.95
                         X: =lblIndicadorObjetivo.X + lblIndicadorObjetivo.Width + 2
                         Y: =145
-                        ZIndex: =8
+                        ZIndex: =7
 
                     lblIndicadorObjetivo As label:
                         AutoHeight: =true
@@ -477,7 +477,7 @@
                         Wrap: =false
                         X: =6
                         Y: =145
-                        ZIndex: =9
+                        ZIndex: =8
 
                     lblPeriodoAtestado As label:
                         AutoHeight: =true
@@ -490,7 +490,7 @@
                         Width: =233
                         X: =Parent.TemplateWidth - Self.Width - icoConfiguracoesDoAtestado.Width - Parent.TemplatePadding
                         Y: =lblTitulo.Y
-                        ZIndex: =10
+                        ZIndex: =9
 
                     icoConfiguracoesDoAtestado As icon.More:
                         BorderColor: =RGBA(0, 0, 0, 0)
@@ -512,113 +512,44 @@
                         Width: =32
                         X: =Parent.TemplateWidth - Self.Width - Parent.TemplatePadding 
                         Y: =lblPeriodoAtestado.Y
-                        ZIndex: =11
+                        ZIndex: =10
 
-                    "glrContextMenu As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
-                        BorderColor: =RGBA(245, 245, 245, 1)
-                        DelayItemLoading: =true
-                        Fill: =gblTema.LightGrayColor
-                        Height: =130
-                        Items: |-
-                            =Table(
-                                {label: "Editar", icon: Icon.Edit},
-                                {label: "Deletar", icon: Icon.Trash},
-                                {label: "Exportar PDF", icon: Icon.DocumentPDF}
+                    btnTemplateFillBackground_2 As button:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(161, 159, 157, 1)
+                        DisabledFill: =RGBA(242, 242, 241, 0)
+                        Fill: =Color.Transparent
+                        Font: =Font.'Segoe UI'
+                        Height: =Parent.TemplateHeight
+                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                        HoverFill: =Self.Fill
+                        OnSelect: |-
+                            =UpdateContext(
+                                {
+                                    locAcaoEscolhida: "Editar",
+                                    locDadosDoAtestado: ThisItem,
+                                    locMostrarPopUpParaAdicionarDescricao: false,
+                                    locMostrarFormEditarEmpresasDoAtestado: true,
+                                    locMostrarFormEditarSignatarioDoAtestado: false,
+                                    locMostrarFormEditarEquipeDoAtestado: false,
+                                    locMostrarDadosDoProjeto: false
+                                }
                             )
-                        Layout: =Layout.Vertical
-                        LoadingSpinner: =LoadingSpinner.Data
-                        TemplateFill: =gblTema.WhiteColor
-                        TemplatePadding: =6
-                        TemplateSize: =35
-                        Visible: =If(ThisItem.IsSelected, locMostrarContextMenu, false)
-                        Width: =195
-                        X: =icoConfiguracoesDoAtestado.X - Self.Width - 12
-                        Y: =icoConfiguracoesDoAtestado.Y
-                        ZIndex: =12
-
-                        Title3 As label:
-                            AutoHeight: =true
-                            Color: =gblTema.OffBlackColor
-                            DisabledColor: =RGBA(161, 159, 157, 1)
-                            Font: =Font.'Segoe UI'
-                            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                            Height: =33
-                            OnSelect: =Select(Parent)
-                            PaddingBottom: =0
-                            PaddingLeft: =12
-                            PaddingRight: =0
-                            PaddingTop: =0
-                            Size: =12
-                            Text: =ThisItem.label
-                            VerticalAlign: =VerticalAlign.Top
-                            Width: =Parent.TemplateWidth - Icon2.X -  Icon2.Width - 6
-                            X: =Icon2.X + Icon2.Width +  2
-                            Y: =(Parent.TemplateHeight - Self.Height) / 2
-                            ZIndex: =2
-
-                        "Icon2 As icon.'3DPrinting'":
-                            BorderColor: =RGBA(0, 0, 0, 0)
-                            Color: =gblTema.OffBlackColor
-                            DisabledBorderColor: =RGBA(245, 245, 245, 1)
-                            DisabledColor: =RGBA(225, 223, 221, 1)
-                            DisabledFill: =RGBA(0, 0, 0, 0)
-                            FocusedBorderThickness: =4
-                            Height: =22
-                            HoverBorderColor: =RGBA(0, 0, 0, 0)
-                            HoverColor: =RGBA(16, 110, 190, 1)
-                            HoverFill: =RGBA(0, 0, 0, 0)
-                            Icon: =ThisItem.icon
-                            PressedBorderColor: =RGBA(0, 0, 0, 0)
-                            PressedColor: =RGBA(16, 110, 190, 1)
-                            PressedFill: =RGBA(0, 0, 0, 0)
-                            Width: =22
-                            X: =6
-                            Y: =(Parent.TemplateHeight - Self.Height) / 2
-                            ZIndex: =3
-
-                        btnTemplateFillBackground_1 As button:
-                            BorderColor: =RGBA(0, 0, 0, 0)
-                            BorderStyle: =BorderStyle.None
-                            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                            DisabledColor: =RGBA(161, 159, 157, 1)
-                            DisabledFill: =RGBA(242, 242, 241, 0)
-                            Fill: =Color.Transparent
-                            Font: =Font.'Segoe UI'
-                            Height: =Parent.TemplateHeight
-                            HoverBorderColor: =RGBA(0, 0, 0, 0)
-                            HoverFill: =Self.Fill
-                            OnSelect: |-
-                                =Switch(
-                                    ThisItem.label,
-                                    "Editar",
-                                    UpdateContext({locAcaoEscolhida: "Editar"}),
-                                    "Deletar",
-                                    UpdateContext({locAcaoEscolhida: "Deletar"}),
-                                    UpdateContext({locAcaoEscolhida: "Exportar PDF"})
-                                );
-                                UpdateContext(
-                                    {
-                                        locMostrarContextMenu: !locMostrarContextMenu,
-                                        locDadosDoAtestado: glrAtestados.Selected,
-                                        locMostrarPopUpParaAdicionarDescricao: false,
-                                        locMostrarFormEditarEmpresasDoAtestado: true,
-                                        locMostrarFormEditarSignatarioDoAtestado: false,
-                                        locMostrarFormEditarEquipeDoAtestado: false
-                                    }
-                                )
-                            PressedBorderColor: =RGBA(0, 69, 120, 1)
-                            PressedColor: =RGBA(255, 255, 255, 1)
-                            PressedFill: =Color.Transparent
-                            RadiusBottomLeft: =8
-                            RadiusBottomRight: =8
-                            RadiusTopLeft: =8
-                            RadiusTopRight: =8
-                            Size: =0
-                            Text: =""
-                            Width: =Parent.TemplateWidth
-                            X: =(Parent.TemplateWidth - Self.Width) / 2
-                            Y: =(Parent.TemplateHeight - Self.Height) / 2
-                            ZIndex: =4
+                        PressedBorderColor: =RGBA(0, 69, 120, 1)
+                        PressedColor: =RGBA(255, 255, 255, 1)
+                        PressedFill: =Self.Fill
+                        RadiusBottomLeft: =8
+                        RadiusBottomRight: =8
+                        RadiusTopLeft: =8
+                        RadiusTopRight: =8
+                        Size: =0
+                        Text: =""
+                        Width: =Parent.TemplateWidth
+                        X: =(Parent.TemplateWidth - Self.Width) / 2
+                        Y: =(Parent.TemplateHeight - Self.Height) / 2
+                        ZIndex: =11
 
                 ctnNenhumResultadoEncontrado As groupContainer.verticalAutoLayoutContainer:
                     DropShadow: =DropShadow.None
@@ -6510,7 +6441,7 @@
                         Wrap: =true
                         X: =24
                         Y: =dcvEditarDescricaoDoAtestado.Y + dcvEditarDescricaoDoAtestado.Height
-                        ZIndex: =3
+                        ZIndex: =2
 
                     StarVisible62 As Text:
                         Align: ='TextCanvas.Align'.Center
@@ -6521,7 +6452,7 @@
                         Width: =30
                         X: =0
                         Y: =DataCardKey63.Y
-                        ZIndex: =4
+                        ZIndex: =3
 
                     icoEditDescricaoDoObjeto As icon.Add:
                         Color: =gblTema.AccentColor
@@ -6540,7 +6471,7 @@
                         Width: =32
                         X: =dcvEditarDescricaoDoAtestado.X + dcvEditarDescricaoDoAtestado.Width - Self.Width
                         Y: =DataCardKey63.Y
-                        ZIndex: =5
+                        ZIndex: =4
 
                     "dcvEditarDescricaoDoAtestado As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
@@ -6555,7 +6486,7 @@
                         Width: =Parent.Width - 48
                         X: =24
                         Y: =icoEditDescricaoDoObjeto.Y + icoEditDescricaoDoObjeto.Height + 12
-                        ZIndex: =6
+                        ZIndex: =5
 
                     glrDescricaoDoObjeto As gallery.variableTemplateHeightGallery:
                         DelayItemLoading: =true
@@ -6570,7 +6501,7 @@
                         Width: =Parent.Width - 48
                         X: =24
                         Y: =icoEditDescricaoDoObjeto.Y + icoEditDescricaoDoObjeto.Height + 12
-                        ZIndex: =7
+                        ZIndex: =6
 
                         HtmlText3_1 As htmlViewer:
                             HtmlText: ="<li> " & ThisItem.Value
