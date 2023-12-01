@@ -4453,7 +4453,7 @@
                     Text: ="🛠 Equipe"
                     Width: |
                         =120
-                    X: =btnSalvarEdicaoDeAtestado.X - Self.Width - Parent.PaddingRight
+                    X: =Rectangle3_1.X - Self.Width - Parent.PaddingRight
                     Y: =(Parent.Height - Self.Height) / 2
                     ZIndex: =4
 
@@ -4463,7 +4463,7 @@
                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledColor: =RGBA(161, 159, 157, 1)
                     DisabledFill: =RGBA(242, 242, 241, 0)
-                    Fill: =gblTema.AccentColor
+                    Fill: =gblTema.GreenSuccessColor
                     FocusedBorderColor: =ColorFade(Self.Fill, 75%)
                     FocusedBorderThickness: =1
                     Font: =Font.'Segoe UI'
@@ -4655,6 +4655,13 @@
                     X: =icoDeletarAtestado.X - Self.Width - Parent.PaddingRight
                     Y: =11
                     ZIndex: =10
+
+                Rectangle3_1 As rectangle:
+                    Fill: =gblTema.LightBorderColor
+                    Height: =Parent.Height
+                    Width: =1
+                    X: =btnSalvarEdicaoDeAtestado.X - Self.Width - Parent.PaddingRight
+                    ZIndex: =11
 
             tglEntreEmpresas As Toggle:
                 BasePaletteColor: =
