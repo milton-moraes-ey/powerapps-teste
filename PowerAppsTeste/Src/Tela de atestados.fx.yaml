@@ -4269,7 +4269,13 @@
                     HoverFill: =RGBA(0, 0, 0, 0)
                     Icon: =Icon.Cancel
                     OnSelect: |-
-                        =UpdateContext({locAcaoEscolhida: Blank()})
+                        =UpdateContext(
+                            {
+                                locAcaoEscolhida: Blank(),
+                                locConcatenarDescricoesAtuais: Blank()
+                            }
+                        );
+                        Clear(colDescricaoAtual)
                     PressedBorderColor: =RGBA(0, 0, 0, 0)
                     PressedColor: =RGBA(16, 110, 190, 1)
                     PressedFill: =RGBA(0, 0, 0, 0)
@@ -6482,12 +6488,14 @@
                         Y: =icoEditDescricaoDoObjeto.Y + icoEditDescricaoDoObjeto.Height + 12
                         ZIndex: =6
 
-                        HtmlText3_1 As htmlViewer:
-                            HtmlText: ="<li> " & ThisItem.Value
+                        Label8 As label:
+                            AutoHeight: =true
                             OnSelect: =Select(Parent)
+                            Text: =ThisItem.Value
+                            Width: =Parent.TemplateWidth - 20
                             X: =10
                             Y: =10
-                            ZIndex: =2
+                            ZIndex: =1
 
     ctnPopUpEditarDescricaoAtestado As groupContainer.manualLayoutContainer:
         Fill: =RGBA(0, 0, 0, 0.6)
