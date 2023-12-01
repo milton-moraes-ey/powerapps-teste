@@ -4386,7 +4386,7 @@
                             locMostrarFormEditarEmpresasDoAtestado,
                             " - Dados das empresas",
                             locMostrarFormEditarSignatarioDoAtestado,
-                            " - Signatário do atestado",
+                            " - Dados do signatário",
                             locMostrarFormEditarEquipeDoAtestado,
                             " - Equipe relacionada ao atestado"
                         )
