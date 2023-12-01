@@ -4470,7 +4470,58 @@
                     HoverBorderColor: =RGBA(0, 0, 0, 0)
                     HoverFill: =ColorFade(gblTema.AccentColor, -10%)
                     OnSelect: |-
-                        =UpdateContext({locMostrarMensagemDeEdicaoDeAtestado: true})
+                        =Set(
+                            gblEditarRegistroAtestado,
+                            Patch(
+                                colAtestados,
+                                LookUp(
+                                    colAtestados,
+                                    id = glrAtestados.Selected.id
+                                ),
+                                Patch(
+                                    Atestados,
+                                    LookUp(
+                                        Atestados,
+                                        id = glrAtestados.Selected.id
+                                    ),
+                                    
+                                    {
+                                        nome_cliente: dcvNomeCliente.Value,
+                                        cnpj_cliente: dcvCnpjCliente.Value,
+                                        endr_cliente: dcvEnderecoCliente.Value,
+                                        num_func_cliente: Value(dctNumeroFuncionariosDoCliente.Value),
+                                        ativ_econ_cliente: dcvAtividadeEconomicaDoCliente.Value,
+                                        receita_bruta_cliente: Value(dcvReceitaBrutaDoCliente.Value),
+                                        tot_atv_cliente: Value(dcvTotalAtivosDoCliente.Value),
+                                        patrim_liq_cliente: Value(dcvPatrimonioLiquidoCliente.Value),
+                                        nome_empresa_prestadora: dcvNomeEmpresaPrestadora.Value,
+                                        cnpj_empresa_prestadora: dcvCnpjEmpresaPrestadora.Value,
+                                        endr_empresa_prestadora: dcvEnderecoEmpresaPretadora.Value,
+                                        atsd_obj_trab: dcvObjetoTrabalho.Value,
+                                        atsd_descr_obj_trab: dcvDescricaoDoObjetoDoTrabalho.Value,
+                                        atsd_qtd_hrs: Value(dcvQuantidadeTotalDeHoras.Value),
+                                        atsd_local: dcvLocal.Value,
+                                        atsd_data_inicio: dtvDataInicio.SelectedDate,
+                                        atsd_data_fim: dtvDataFim.SelectedDate,
+                                        proj_engagement_code: dcvEngagementCode.Value,
+                                        atsd_registrado: dcvRegistrado.Selected.Value,
+                                        nome_signatario: dcvNomeSignatario.Value,
+                                        cargo_signatario: dcvCargoSignatario.Value,
+                                        email_signatario: dcvEmailSignatario.Value,
+                                        tel_signatario: dcvTelefoneSignatario.Value,
+                                        endr_signatario: dcvEnderecoSignatario.Value,
+                                        local_signatario: dcvLocalSignatario.Value,
+                                        astd_data_assintr: dtvDataAssinatura.SelectedDate,
+                                        astd_file_uploaded: {
+                                            FileName: First(dcvArquivoAtestado.Attachments).Name,
+                                            Value: First(dcvArquivoAtestado.Attachments).Value
+                                        }
+                                    }
+                                    
+                                )
+                            )
+                        );
+                        UpdateContext({locMostrarMensagemDeEdicaoDeAtestado: true})
                     PressedBorderColor: =RGBA(0, 69, 120, 1)
                     PressedColor: =RGBA(255, 255, 255, 1)
                     PressedFill: =RGBA(16, 110, 190, 1)
@@ -4670,7 +4721,7 @@
                     Height: =70
                     MaxLength: =DataSourceInfo([@Atestados], DataSourceInfo.MaxLength, "gps_nome_cliente")
                     Required: =true
-                    Update: =DataCardValue3.Value
+                    Update: =dcvEditarNomeCliente.Value
                     Width: =614
                     X: =0
                     Y: =0
@@ -4687,7 +4738,7 @@
                         Y: =10
                         ZIndex: =1
 
-                    "DataCardValue3 As 'Text input'":
+                    "dcvEditarNomeCliente As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
                         BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
@@ -4709,7 +4760,7 @@
                         Width: =Parent.Width - 48
                         Wrap: =true
                         X: =24
-                        Y: =DataCardValue3.Y + DataCardValue3.Height
+                        Y: =dcvEditarNomeCliente.Y + dcvEditarNomeCliente.Height
                         ZIndex: =3
 
                     StarVisible25 As Text:
@@ -4733,7 +4784,7 @@
                     Height: =70
                     MaxLength: =DataSourceInfo([@Atestados], DataSourceInfo.MaxLength, "gps_cnpj_cliente")
                     Required: =true
-                    Update: =DataCardValue4.Value
+                    Update: =dcvEditarCnpjCliente.Value
                     Width: =614
                     X: =1
                     Y: =0
@@ -4750,7 +4801,7 @@
                         Y: =10
                         ZIndex: =1
 
-                    "DataCardValue4 As 'Text input'":
+                    "dcvEditarCnpjCliente As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
                         BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
@@ -4772,7 +4823,7 @@
                         Width: =Parent.Width - 48
                         Wrap: =true
                         X: =24
-                        Y: =DataCardValue4.Y + DataCardValue4.Height
+                        Y: =dcvEditarCnpjCliente.Y + dcvEditarCnpjCliente.Height
                         ZIndex: =3
 
                     StarVisible26 As Text:
@@ -4796,7 +4847,7 @@
                     Height: =70
                     MaxLength: =DataSourceInfo([@Atestados], DataSourceInfo.MaxLength, "gps_endr_cliente")
                     Required: =false
-                    Update: =DataCardValue5.Value
+                    Update: =dcvEditarEnderecoCliente.Value
                     Width: =614
                     X: =0
                     Y: =1
@@ -4813,7 +4864,7 @@
                         Y: =10
                         ZIndex: =1
 
-                    "DataCardValue5 As 'Text input'":
+                    "dcvEditarEnderecoCliente As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
                         BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
@@ -4835,7 +4886,7 @@
                         Width: =Parent.Width - 48
                         Wrap: =true
                         X: =24
-                        Y: =DataCardValue5.Y + DataCardValue5.Height
+                        Y: =dcvEditarEnderecoCliente.Y + dcvEditarEnderecoCliente.Height
                         ZIndex: =3
 
                     StarVisible27 As Text:
@@ -4858,7 +4909,7 @@
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =70
                     Required: =false
-                    Update: =Value(DataCardValue6.Value)
+                    Update: =Value(dcvEditarNumeroFuncionarioCliente.Value)
                     Width: =614
                     X: =1
                     Y: =1
@@ -4875,7 +4926,7 @@
                         Y: =10
                         ZIndex: =1
 
-                    "DataCardValue6 As 'Text input'":
+                    "dcvEditarNumeroFuncionarioCliente As 'Text input'":
                         AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
                         BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
@@ -4895,7 +4946,7 @@
                         Width: =Parent.Width - 48
                         Wrap: =true
                         X: =24
-                        Y: =DataCardValue6.Y + DataCardValue6.Height
+                        Y: =dcvEditarNumeroFuncionarioCliente.Y + dcvEditarNumeroFuncionarioCliente.Height
                         ZIndex: =3
 
                     StarVisible31 As Text:
@@ -4919,7 +4970,7 @@
                     Height: =70
                     MaxLength: =DataSourceInfo([@Atestados], DataSourceInfo.MaxLength, "gps_ativ_econ_cliente")
                     Required: =true
-                    Update: =DataCardValue7.Value
+                    Update: =dcvEditarAtividadeEconomicaCliente.Value
                     Width: =614
                     X: =0
                     Y: =2
@@ -4936,7 +4987,7 @@
                         Y: =10
                         ZIndex: =1
 
-                    "DataCardValue7 As 'Text input'":
+                    "dcvEditarAtividadeEconomicaCliente As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
                         BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
@@ -4958,7 +5009,7 @@
                         Width: =Parent.Width - 48
                         Wrap: =true
                         X: =24
-                        Y: =DataCardValue7.Y + DataCardValue7.Height
+                        Y: =dcvEditarAtividadeEconomicaCliente.Y + dcvEditarAtividadeEconomicaCliente.Height
                         ZIndex: =3
 
                     StarVisible38 As Text:
@@ -4981,7 +5032,7 @@
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =70
                     Required: =false
-                    Update: =Value(DataCardValue8.Value)
+                    Update: =Value(dcvEditarReceitaBrutaCliente.Value)
                     Width: =614
                     X: =1
                     Y: =2
@@ -4998,7 +5049,7 @@
                         Y: =10
                         ZIndex: =1
 
-                    "DataCardValue8 As 'Text input'":
+                    "dcvEditarReceitaBrutaCliente As 'Text input'":
                         AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
                         BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
@@ -5018,7 +5069,7 @@
                         Width: =Parent.Width - 48
                         Wrap: =true
                         X: =24
-                        Y: =DataCardValue8.Y + DataCardValue8.Height
+                        Y: =dcvEditarReceitaBrutaCliente.Y + dcvEditarReceitaBrutaCliente.Height
                         ZIndex: =3
 
                     StarVisible40 As Text:
@@ -5041,7 +5092,7 @@
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =70
                     Required: =false
-                    Update: =Value(DataCardValue9.Value)
+                    Update: =Value(dcvEditarAtividadeEconomiCliente.Value)
                     Width: =614
                     X: =0
                     Y: =3
@@ -5058,7 +5109,7 @@
                         Y: =10
                         ZIndex: =1
 
-                    "DataCardValue9 As 'Text input'":
+                    "dcvEditarAtividadeEconomiCliente As 'Text input'":
                         AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
                         BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
@@ -5078,7 +5129,7 @@
                         Width: =Parent.Width - 48
                         Wrap: =true
                         X: =24
-                        Y: =DataCardValue9.Y + DataCardValue9.Height
+                        Y: =dcvEditarAtividadeEconomiCliente.Y + dcvEditarAtividadeEconomiCliente.Height
                         ZIndex: =3
 
                     StarVisible41 As Text:
@@ -5101,7 +5152,7 @@
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =70
                     Required: =false
-                    Update: =Value(DataCardValue10.Value)
+                    Update: =Value(dcvEditarPatrimonioLiqCliente.Value)
                     Width: =614
                     X: =1
                     Y: =3
@@ -5118,7 +5169,7 @@
                         Y: =10
                         ZIndex: =1
 
-                    "DataCardValue10 As 'Text input'":
+                    "dcvEditarPatrimonioLiqCliente As 'Text input'":
                         AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
                         BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
@@ -5138,7 +5189,7 @@
                         Width: =Parent.Width - 48
                         Wrap: =true
                         X: =24
-                        Y: =DataCardValue10.Y + DataCardValue10.Height
+                        Y: =dcvEditarPatrimonioLiqCliente.Y + dcvEditarPatrimonioLiqCliente.Height
                         ZIndex: =3
 
                     StarVisible42 As Text:
@@ -5226,7 +5277,7 @@
                     Height: =70
                     MaxLength: =DataSourceInfo([@Atestados], DataSourceInfo.MaxLength, "gps_nome_empresa_prestadora")
                     Required: =true
-                    Update: =DataCardValue11.Value
+                    Update: =dcvEditarNomeEmpresaPrestadora.Value
                     Width: =614
                     X: =0
                     Y: =0
@@ -5243,7 +5294,7 @@
                         Y: =10
                         ZIndex: =1
 
-                    "DataCardValue11 As 'Text input'":
+                    "dcvEditarNomeEmpresaPrestadora As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
                         BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
@@ -5265,7 +5316,7 @@
                         Width: =Parent.Width - 48
                         Wrap: =true
                         X: =24
-                        Y: =DataCardValue11.Y + DataCardValue11.Height
+                        Y: =dcvEditarNomeEmpresaPrestadora.Y + dcvEditarNomeEmpresaPrestadora.Height
                         ZIndex: =3
 
                     StarVisible43 As Text:
@@ -5289,7 +5340,7 @@
                     Height: =70
                     MaxLength: =DataSourceInfo([@Atestados], DataSourceInfo.MaxLength, "gps_cnpj_empresa_prestadora")
                     Required: =true
-                    Update: =DataCardValue12.Value
+                    Update: =dcvEditarCnpjEmpresaPrestadora.Value
                     Width: =614
                     X: =1
                     Y: =0
@@ -5306,7 +5357,7 @@
                         Y: =10
                         ZIndex: =1
 
-                    "DataCardValue12 As 'Text input'":
+                    "dcvEditarCnpjEmpresaPrestadora As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
                         BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
@@ -5328,7 +5379,7 @@
                         Width: =Parent.Width - 48
                         Wrap: =true
                         X: =24
-                        Y: =DataCardValue12.Y + DataCardValue12.Height
+                        Y: =dcvEditarCnpjEmpresaPrestadora.Y + dcvEditarCnpjEmpresaPrestadora.Height
                         ZIndex: =3
 
                     StarVisible44 As Text:
@@ -5352,7 +5403,7 @@
                     Height: =70
                     MaxLength: =DataSourceInfo([@Atestados], DataSourceInfo.MaxLength, "gps_endr_empresa_prestadora")
                     Required: =true
-                    Update: =DataCardValue13.Value
+                    Update: =dcvEditarEnderecoEmpresaPrestadora.Value
                     Width: =614
                     X: =0
                     Y: =1
@@ -5369,7 +5420,7 @@
                         Y: =10
                         ZIndex: =1
 
-                    "DataCardValue13 As 'Text input'":
+                    "dcvEditarEnderecoEmpresaPrestadora As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
                         BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
@@ -5391,7 +5442,7 @@
                         Width: =Parent.Width - 48
                         Wrap: =true
                         X: =24
-                        Y: =DataCardValue13.Y + DataCardValue13.Height
+                        Y: =dcvEditarEnderecoEmpresaPrestadora.Y + dcvEditarEnderecoEmpresaPrestadora.Height
                         ZIndex: =3
 
                     StarVisible45 As Text:
@@ -5415,7 +5466,7 @@
                     Height: =70
                     MaxLength: =DataSourceInfo([@Atestados], DataSourceInfo.MaxLength, "gps_atsd_obj_trab")
                     Required: =true
-                    Update: =DataCardValue14.Value
+                    Update: =dcvEditarObjetoAtestado.Value
                     Width: =614
                     X: =1
                     Y: =1
@@ -5432,7 +5483,7 @@
                         Y: =10
                         ZIndex: =1
 
-                    "DataCardValue14 As 'Text input'":
+                    "dcvEditarObjetoAtestado As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
                         BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
@@ -5454,7 +5505,7 @@
                         Width: =Parent.Width - 48
                         Wrap: =true
                         X: =24
-                        Y: =DataCardValue14.Y + DataCardValue14.Height
+                        Y: =dcvEditarObjetoAtestado.Y + dcvEditarObjetoAtestado.Height
                         ZIndex: =3
 
                     StarVisible46 As Text:
@@ -5477,7 +5528,7 @@
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =70
                     Required: =true
-                    Update: =If(Not IsBlank(DateValue1.SelectedDate), Date(Year(DateValue1.SelectedDate), Month(DateValue1.SelectedDate), Day(DateValue1.SelectedDate)))
+                    Update: =If(Not IsBlank(dtvEditarDataInicioAtestado.SelectedDate), Date(Year(dtvEditarDataInicioAtestado.SelectedDate), Month(dtvEditarDataInicioAtestado.SelectedDate), Day(dtvEditarDataInicioAtestado.SelectedDate)))
                     Width: =614
                     X: =0
                     Y: =2
@@ -5494,7 +5545,7 @@
                         Y: =10
                         ZIndex: =1
 
-                    "DateValue1 As 'Date picker'":
+                    "dtvEditarDataInicioAtestado As 'Date picker'":
                         AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
                         BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
@@ -5514,7 +5565,7 @@
                         Width: =Parent.Width - 48
                         Wrap: =true
                         X: =24
-                        Y: =DateValue1.Y + DateValue1.Height
+                        Y: =dtvEditarDataInicioAtestado.Y + dtvEditarDataInicioAtestado.Height
                         ZIndex: =6
 
                     StarVisible50 As Text:
@@ -5537,7 +5588,7 @@
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =70
                     Required: =true
-                    Update: =If(Not IsBlank(DateValue4.SelectedDate), Date(Year(DateValue4.SelectedDate), Month(DateValue4.SelectedDate), Day(DateValue4.SelectedDate)))
+                    Update: =If(Not IsBlank(dtvEditarDataFinalAtestado.SelectedDate), Date(Year(dtvEditarDataFinalAtestado.SelectedDate), Month(dtvEditarDataFinalAtestado.SelectedDate), Day(dtvEditarDataFinalAtestado.SelectedDate)))
                     Width: =614
                     X: =1
                     Y: =2
@@ -5554,7 +5605,7 @@
                         Y: =10
                         ZIndex: =1
 
-                    "DateValue4 As 'Date picker'":
+                    "dtvEditarDataFinalAtestado As 'Date picker'":
                         AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
                         BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
@@ -5574,7 +5625,7 @@
                         Width: =Parent.Width - 48
                         Wrap: =true
                         X: =24
-                        Y: =DateValue4.Y + DateValue4.Height
+                        Y: =dtvEditarDataFinalAtestado.Y + dtvEditarDataFinalAtestado.Height
                         ZIndex: =6
 
                     StarVisible51 As Text:
@@ -5597,7 +5648,7 @@
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =70
                     Required: =true
-                    Update: =Value(DataCardValue16.Value)
+                    Update: =Value(dcvEditarQuantidadeHorasAtestado.Value)
                     Width: =614
                     X: =0
                     Y: =3
@@ -5614,7 +5665,7 @@
                         Y: =10
                         ZIndex: =1
 
-                    "DataCardValue16 As 'Text input'":
+                    "dcvEditarQuantidadeHorasAtestado As 'Text input'":
                         AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
                         BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
@@ -5634,7 +5685,7 @@
                         Width: =Parent.Width - 48
                         Wrap: =true
                         X: =24
-                        Y: =DataCardValue16.Y + DataCardValue16.Height
+                        Y: =dcvEditarQuantidadeHorasAtestado.Y + dcvEditarQuantidadeHorasAtestado.Height
                         ZIndex: =3
 
                     StarVisible48 As Text:
@@ -5658,7 +5709,7 @@
                     Height: =70
                     MaxLength: =DataSourceInfo([@Atestados], DataSourceInfo.MaxLength, "gps_atsd_local")
                     Required: =true
-                    Update: =DataCardValue17.Value
+                    Update: =dcvEditarLocalAtestado.Value
                     Width: =614
                     X: =1
                     Y: =3
@@ -5675,7 +5726,7 @@
                         Y: =10
                         ZIndex: =1
 
-                    "DataCardValue17 As 'Text input'":
+                    "dcvEditarLocalAtestado As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
                         BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
@@ -5697,7 +5748,7 @@
                         Width: =Parent.Width - 48
                         Wrap: =true
                         X: =24
-                        Y: =DataCardValue17.Y + DataCardValue17.Height
+                        Y: =dcvEditarLocalAtestado.Y + dcvEditarLocalAtestado.Height
                         ZIndex: =3
 
                     StarVisible49 As Text:
@@ -5721,7 +5772,7 @@
                     Height: =70
                     MaxLength: =DataSourceInfo([@Atestados], DataSourceInfo.MaxLength, "gps_proj_engagement_code")
                     Required: =false
-                    Update: =DataCardValue18.Value
+                    Update: =dcvEditarEngagementCodeAtestado.Value
                     Width: =614
                     X: =0
                     Y: =4
@@ -5738,7 +5789,7 @@
                         Y: =10
                         ZIndex: =1
 
-                    "DataCardValue18 As 'Text input'":
+                    "dcvEditarEngagementCodeAtestado As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
                         BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
@@ -5760,7 +5811,7 @@
                         Width: =Parent.Width - 48
                         Wrap: =true
                         X: =24
-                        Y: =DataCardValue18.Y + DataCardValue18.Height
+                        Y: =dcvEditarEngagementCodeAtestado.Y + dcvEditarEngagementCodeAtestado.Height
                         ZIndex: =3
 
                     StarVisible52 As Text:
@@ -5783,7 +5834,7 @@
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =70
                     Required: =false
-                    Update: =DataCardValue19.Selected.Value
+                    Update: =dcvEditarRegistradoAtestado.Selected.Value
                     Width: =614
                     X: =1
                     Y: =4
@@ -5800,7 +5851,7 @@
                         Y: =10
                         ZIndex: =1
 
-                    DataCardValue19 As Combobox.pcfdataset:
+                    dcvEditarRegistradoAtestado As Combobox.pcfdataset:
                         AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
                         DisplayMode: =Parent.DisplayMode
                         Height: =32
@@ -5819,7 +5870,7 @@
                         Width: =Parent.Width - 48
                         Wrap: =true
                         X: =24
-                        Y: =DataCardValue19.Y + DataCardValue19.Height
+                        Y: =dcvEditarRegistradoAtestado.Y + dcvEditarRegistradoAtestado.Height
                         ZIndex: =3
 
                     StarVisible53 As Text:
@@ -5895,265 +5946,6 @@
                         X: =0
                         Y: =DataCardKey48.Y
                         ZIndex: =4
-
-                    ctnPopUpAddDescricaoAtestado_1 As groupContainer.manualLayoutContainer:
-                        Fill: =RGBA(0, 0, 0, 0.6)
-                        Height: =Parent.Height
-                        Visible: =locMostrarPopUpParaAdicionarDescricao
-                        Width: =Parent.Width
-                        ZIndex: =5
-
-                        ctnAddDescricaoAtestado_1 As groupContainer.horizontalAutoLayoutContainer:
-                            Fill: =gblTema.OffWhiteColor
-                            Height: =Parent.Height * 0.6
-                            LayoutDirection: =LayoutDirection.Vertical
-                            LayoutMode: =LayoutMode.Auto
-                            PaddingBottom: =12
-                            PaddingLeft: =12
-                            PaddingRight: =12
-                            PaddingTop: =12
-                            Width: =Parent.Width * 0.8
-                            X: =(Parent.Width - Self.Width) / 2
-                            Y: =(Parent.Height - Self.Height) / 2
-                            ZIndex: =1
-
-                            ctnTituloDescObjeto_1 As groupContainer.manualLayoutContainer:
-                                DropShadow: =DropShadow.None
-                                FillPortions: =0
-                                Height: =50
-                                LayoutMinHeight: =100
-                                LayoutMinWidth: =250
-                                ZIndex: =1
-
-                                Label3_1 As label:
-                                    FontWeight: =FontWeight.Bold
-                                    Size: =16
-                                    Text: ="Adicionar descrição do objeto de trabalho"
-                                    Width: =462
-                                    X: =10
-                                    Y: =(Parent.Height - Self.Height) / 2
-                                    ZIndex: =1
-
-                                Icon5_1 As icon.Cancel:
-                                    Color: =gblTema.AccentColor
-                                    Height: =32
-                                    Icon: =Icon.Cancel
-                                    OnSelect: |-
-                                        =UpdateContext({locMostrarPopUpParaAdicionarDescricao: false})
-                                    Width: =32
-                                    X: =Parent.Width - Self.Width - 12
-                                    Y: =(Parent.Height - Self.Height) / 2
-                                    ZIndex: =2
-
-                            ctnOrganizadorDescObjeto_1 As groupContainer.horizontalAutoLayoutContainer:
-                                DropShadow: =DropShadow.None
-                                LayoutAlignItems: =LayoutAlignItems.Stretch
-                                LayoutGap: =20
-                                LayoutMinHeight: =100
-                                LayoutMinWidth: =250
-                                LayoutMode: =LayoutMode.Auto
-                                PaddingBottom: =12
-                                PaddingLeft: =12
-                                PaddingRight: =12
-                                PaddingTop: =12
-                                ZIndex: =2
-
-                                ctnDescricoesAdicionadas_1 As groupContainer.manualLayoutContainer:
-                                    AlignInContainer: =AlignInContainer.SetByContainer
-                                    DropShadow: =DropShadow.Semibold
-                                    Fill: =gblTema.WhiteColor
-                                    LayoutMinHeight: =100
-                                    LayoutMinWidth: =250
-                                    ZIndex: =1
-
-                                    "txtAddDescObjeto_1 As 'Text input'":
-                                        AccessibleLabel: =
-                                        BasePaletteColor: =
-                                        DisplayMode: =Parent.DisplayMode
-                                        Height: =40
-                                        Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
-                                        Required: =
-                                        ValidationState: =
-                                        Value: =
-                                        Width: =Parent.Width - 60
-                                        X: =(Parent.Width - Self.Width)  / 2
-                                        Y: =65
-                                        ZIndex: =1
-
-                                    Label4_1 As label:
-                                        FontWeight: =FontWeight.Bold
-                                        Size: =11
-                                        Text: |-
-                                            ="Descrição:"
-                                        X: =20
-                                        Y: =25
-                                        ZIndex: =2
-
-                                    btnAdicionarDescricao_2 As button:
-                                        BorderColor: =RGBA(0, 0, 0, 0)
-                                        BorderStyle: =BorderStyle.None
-                                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                                        DisabledColor: =RGBA(161, 159, 157, 1)
-                                        DisabledFill: =RGBA(242, 242, 241, 0)
-                                        Fill: =gblTema.AccentColor
-                                        FocusedBorderColor: =ColorFade(Self.Fill, 75%)
-                                        FocusedBorderThickness: =1
-                                        Font: =Font.'Segoe UI'
-                                        FontWeight: =FontWeight.Normal
-                                        Height: =32
-                                        HoverBorderColor: =RGBA(0, 0, 0, 0)
-                                        HoverFill: =ColorFade(gblTema.AccentColor, -10%)
-                                        OnSelect: |-
-                                            =Collect(colDescricaoAdicionada,
-                                                {
-                                                    Descricao: txtAddDescObjeto_1.Value
-                                                }
-                                            );
-                                            Reset(txtAddDescObjeto_1)
-                                        PressedBorderColor: =RGBA(0, 69, 120, 1)
-                                        PressedColor: =RGBA(255, 255, 255, 1)
-                                        PressedFill: =RGBA(16, 110, 190, 1)
-                                        RadiusBottomLeft: =4
-                                        RadiusBottomRight: =4
-                                        RadiusTopLeft: =4
-                                        RadiusTopRight: =4
-                                        Size: =12
-                                        Text: ="+ Adicionar"
-                                        Width: =130
-                                        X: =txtAddDescObjeto_1.X + txtAddDescObjeto_1.Width - Self.Width
-                                        Y: =txtAddDescObjeto_1.Y + txtAddDescObjeto_1.Height + 12
-                                        ZIndex: =3
-
-                                ctnAdicionarNovasDescricoes_1 As groupContainer.manualLayoutContainer:
-                                    AlignInContainer: =AlignInContainer.SetByContainer
-                                    DropShadow: =DropShadow.Semibold
-                                    Fill: =gblTema.WhiteColor
-                                    LayoutMinHeight: =100
-                                    LayoutMinWidth: =250
-                                    ZIndex: =2
-
-                                    glrDescricoesAdicionadas_1 As gallery.galleryVertical:
-                                        DelayItemLoading: =true
-                                        Height: =288
-                                        Items: =colDescricaoAdicionada
-                                        Layout: =Layout.Vertical
-                                        LoadingSpinner: =LoadingSpinner.Data
-                                        TemplateFill: =gblTema.OffWhiteColor
-                                        TemplateSize: =46
-                                        Visible: =If(CountRows(colDescricaoAdicionada) > 0, true, false)
-                                        Width: =Parent.Width - 24
-                                        X: =(Parent.Width - Self.Width) / 2
-                                        Y: |
-                                            =12
-                                        ZIndex: =1
-
-                                        Label5_1 As label:
-                                            Height: =39
-                                            OnSelect: =Select(Parent)
-                                            Size: =12
-                                            Text: =ThisItem.Descricao
-                                            X: =12
-                                            Y: =(Parent.TemplateHeight - Self.Height) / 2
-                                            ZIndex: =1
-
-                                        Icon6_1 As icon.Trash:
-                                            Color: =gblTema.AccentColor
-                                            Height: =28
-                                            Icon: =Icon.Trash
-                                            OnSelect: =Remove(colDescricaoAdicionada, ThisItem)
-                                            Width: =28
-                                            X: =Parent.TemplateWidth - Self.Width - 12
-                                            Y: =(Parent.TemplateHeight - Self.Height) / 2
-                                            ZIndex: =2
-
-                                    btnAdicionarDescricao_3 As button:
-                                        BorderColor: =RGBA(0, 0, 0, 0)
-                                        BorderStyle: =BorderStyle.None
-                                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                                        DisabledColor: =RGBA(161, 159, 157, 1)
-                                        DisabledFill: =RGBA(242, 242, 241, 0)
-                                        Fill: =gblTema.AccentColor
-                                        FocusedBorderColor: =ColorFade(Self.Fill, 75%)
-                                        FocusedBorderThickness: =1
-                                        Font: =Font.'Segoe UI'
-                                        FontWeight: =FontWeight.Normal
-                                        Height: =32
-                                        HoverBorderColor: =RGBA(0, 0, 0, 0)
-                                        HoverFill: =ColorFade(gblTema.AccentColor, -10%)
-                                        OnSelect: |-
-                                            =UpdateContext(
-                                                {
-                                                    locConcatenarDescricoesAdicionadas: Concat(
-                                                        colDescricaoAdicionada,
-                                                        Descricao,
-                                                        ";"
-                                                    ),
-                                                    locMostrarPopUpParaAdicionarDescricao: false
-                                                }
-                                            )
-                                        PressedBorderColor: =RGBA(0, 69, 120, 1)
-                                        PressedColor: =RGBA(255, 255, 255, 1)
-                                        PressedFill: =RGBA(16, 110, 190, 1)
-                                        RadiusBottomLeft: =4
-                                        RadiusBottomRight: =4
-                                        RadiusTopLeft: =4
-                                        RadiusTopRight: =4
-                                        Size: =12
-                                        Text: ="Confirmar"
-                                        Width: =130
-                                        X: =glrDescricoesAdicionadas_1.X + glrDescricoesAdicionadas_1.Width - Self.Width
-                                        Y: =Parent.Height - Self.Height - 12
-                                        ZIndex: =2
-
-                                    ctnNenhumaDescricaoAdicionada_1 As groupContainer.verticalAutoLayoutContainer:
-                                        DropShadow: =DropShadow.None
-                                        Height: =363
-                                        LayoutAlignItems: =LayoutAlignItems.Center
-                                        LayoutDirection: =LayoutDirection.Vertical
-                                        LayoutGap: =12
-                                        LayoutJustifyContent: =LayoutJustifyContent.Center
-                                        LayoutMode: =LayoutMode.Auto
-                                        Visible: =If(CountRows(colDescricaoAdicionada) > 0, false, true)
-                                        Width: =Parent.Width
-                                        ZIndex: =3
-
-                                        Label2_9 As label:
-                                            Align: =Align.Center
-                                            AutoHeight: =true
-                                            BorderColor: =RGBA(0, 0, 0, 0)
-                                            BorderStyle: =BorderStyle.None
-                                            BorderThickness: =2
-                                            Color: =gblTema.DarkGrayColor
-                                            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                                            DisabledColor: =RGBA(161, 159, 157, 1)
-                                            FocusedBorderThickness: =4
-                                            Font: =Font.'Segoe UI'
-                                            Italic: =true
-                                            Size: =12
-                                            Text: ="Nenhuma descrição adicionada"
-                                            Width: =300
-                                            X: |
-                                                =glrAtestados.X
-                                            Y: =(Parent.Height - Self.Height) / 2
-                                            ZIndex: =1
-
-                                        imgNenhumMembroAdicionado_2 As image:
-                                            BorderColor: =RGBA(0, 0, 0, 0)
-                                            BorderStyle: =BorderStyle.None
-                                            BorderThickness: =2
-                                            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                                            DisabledFill: =RGBA(0, 0, 0, 0)
-                                            FocusedBorderThickness: =4
-                                            Height: =Min(100, Parent.Height * 0.8)
-                                            HoverBorderColor: =RGBA(0, 0, 0, 0)
-                                            HoverFill: =RGBA(0, 0, 0, 0)
-                                            Image: =empty
-                                            PressedBorderColor: =RGBA(0, 0, 0, 0)
-                                            PressedFill: =RGBA(0, 0, 0, 0)
-                                            Transparency: =0.7
-                                            X: =(Parent.Width - Self.Width) / 2
-                                            Y: =(Parent.Height - Self.Height) / 2
-                                            ZIndex: =2
 
                     icoEditDescricaoDoObjeto As icon.Add:
                         Color: =gblTema.AccentColor
