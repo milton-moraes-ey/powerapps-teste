@@ -2176,6 +2176,7 @@
                                 Required: =Parent.Required
                                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                                 Value: =Parent.Default
+                                Visible: =false
                                 Width: =Parent.Width - 48
                                 X: =24
                                 Y: =icoAddDescricaoDoObjeto.Y + icoAddDescricaoDoObjeto.Height + 12
@@ -2214,6 +2215,86 @@
                                 X: =dcvDescricaoDoObjetoDoTrabalho.X + dcvDescricaoDoObjetoDoTrabalho.Width - Self.Width
                                 Y: =DataCardKey12.Y
                                 ZIndex: =5
+
+                            glrDescricaoDoObjeto_1 As gallery.variableTemplateHeightGallery:
+                                DelayItemLoading: =true
+                                Fill: =RGBA(242, 242, 242, 0)
+                                Height: =310
+                                Items: =Split(Parent.Default, ";")
+                                Layout: =Layout.Vertical
+                                LoadingSpinner: =LoadingSpinner.Data
+                                TemplateFill: |-
+                                    =ColorValue("#F5F5F5")
+                                TemplateSize: =280
+                                Visible: =If(CountRows(Split(Parent.Default, ";")) < 0, false, true)
+                                Width: =Parent.Width - 48
+                                X: |+
+                                    =12
+                                    
+                                Y: =icoAddDescricaoDoObjeto.Y + icoAddDescricaoDoObjeto.Height + 12
+                                ZIndex: =6
+
+                                Label8_1 As label:
+                                    AutoHeight: =true
+                                    OnSelect: =Select(Parent)
+                                    Size: =12
+                                    Text: =ThisItem.Value
+                                    Width: =Parent.TemplateWidth - 20
+                                    X: =10
+                                    Y: =10
+                                    ZIndex: =1
+
+                            ctnNenhumaDescricaoAdicionada_1 As groupContainer.verticalAutoLayoutContainer:
+                                DropShadow: =DropShadow.None
+                                Height: =256
+                                LayoutAlignItems: =LayoutAlignItems.Center
+                                LayoutDirection: =LayoutDirection.Vertical
+                                LayoutGap: =12
+                                LayoutJustifyContent: =LayoutJustifyContent.Center
+                                LayoutMode: =LayoutMode.Auto
+                                Visible: =If(CountRows(Split(Parent.Default, ";")) > 0, false, true)
+                                Width: =1258
+                                X: =12
+                                Y: =54
+                                ZIndex: =7
+
+                                Label2_9 As label:
+                                    Align: =Align.Center
+                                    AutoHeight: =true
+                                    BorderColor: =RGBA(0, 0, 0, 0)
+                                    BorderStyle: =BorderStyle.None
+                                    BorderThickness: =2
+                                    Color: =gblTema.DarkGrayColor
+                                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                                    DisabledColor: =RGBA(161, 159, 157, 1)
+                                    FocusedBorderThickness: =4
+                                    Font: =Font.'Segoe UI'
+                                    Italic: =true
+                                    Size: =12
+                                    Text: ="Adicione a descrição clicando no botão '+' "
+                                    Width: =500
+                                    X: |
+                                        =glrAtestados.X
+                                    Y: =(Parent.Height - Self.Height) / 2
+                                    ZIndex: =1
+
+                                imgNenhumMembroAdicionado_2 As image:
+                                    BorderColor: =RGBA(0, 0, 0, 0)
+                                    BorderStyle: =BorderStyle.None
+                                    BorderThickness: =2
+                                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                                    DisabledFill: =RGBA(0, 0, 0, 0)
+                                    FocusedBorderThickness: =4
+                                    Height: =Min(100, Parent.Height * 0.8)
+                                    HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                    HoverFill: =RGBA(0, 0, 0, 0)
+                                    Image: =empty
+                                    PressedBorderColor: =RGBA(0, 0, 0, 0)
+                                    PressedFill: =RGBA(0, 0, 0, 0)
+                                    Transparency: =0.7
+                                    X: =(Parent.Width - Self.Width) / 2
+                                    Y: =(Parent.Height - Self.Height) / 2
+                                    ZIndex: =2
 
                     ctnFooterFormEmpresaPrestouServico As groupContainer.horizontalAutoLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
@@ -4139,7 +4220,7 @@
 
                     ctnNenhumaDescricaoAdicionada As groupContainer.verticalAutoLayoutContainer:
                         DropShadow: =DropShadow.None
-                        Height: =593
+                        Height: =549
                         LayoutAlignItems: =LayoutAlignItems.Center
                         LayoutDirection: =LayoutDirection.Vertical
                         LayoutGap: =12
@@ -4189,14 +4270,15 @@
 
                     glrDescricoesAdicionadas As gallery.variableTemplateHeightGallery:
                         DelayItemLoading: =true
-                        Height: =531
+                        Height: =536
                         Items: =colDescricaoAdicionada
                         Layout: =Layout.Vertical
                         LoadingSpinner: =LoadingSpinner.Data
                         TemplateFill: =gblTema.OffWhiteColor
                         TemplateSize: =126
-                        Width: =512
-                        Y: =18
+                        Width: =Parent.Width - 24
+                        X: =(Parent.Width - Self.Width) / 2
+                        Y: =12
                         ZIndex: =4
 
                         Label9 As label:
