@@ -6079,6 +6079,7 @@
 
                     "dcvEditarObjetoAtestado As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
+                        BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
                         Height: =32
                         Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
@@ -6140,6 +6141,7 @@
 
                     "dcvEditarQtdHorasAtestado As 'Text input'":
                         AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                        BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
                         Height: =32
                         ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
@@ -6199,6 +6201,7 @@
 
                     "dtvEditarDataInicioAtestado As 'Date picker'":
                         AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                        BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
                         Height: =32
                         SelectedDate: =Parent.Default
@@ -6258,6 +6261,7 @@
 
                     "dtvEditarDataFinalAtestado As 'Date picker'":
                         AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                        BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
                         Height: =32
                         SelectedDate: =Parent.Default
@@ -6318,6 +6322,7 @@
 
                     "dcvEditarLocalAtestado As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
+                        BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
                         Height: =32
                         Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
@@ -6380,6 +6385,7 @@
 
                     "dcvEditarEngagementCode As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
+                        BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
                         Height: =32
                         Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
@@ -6616,7 +6622,7 @@
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =70
                         Required: =false
-                        Update: =DataCardValue9.Selected
+                        Update: =dcvEditarProfissionalAtestado.Selected
                         Width: =600
                         X: =0
                         Y: =0
@@ -6633,7 +6639,7 @@
                             Y: =10
                             ZIndex: =1
 
-                        DataCardValue9 As Combobox.pcfdataset:
+                        dcvEditarProfissionalAtestado As Combobox.pcfdataset:
                             AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
                             DisplayMode: =Parent.DisplayMode
                             Height: =32
@@ -6644,21 +6650,13 @@
                             Y: =DataCardKey71.Y + DataCardKey71.Height + 4
                             ZIndex: =2
 
-                            id1 As pcfDataField.textualColumn:
-                                FieldDisplayName: ="id"
-                                FieldName: ="gps_id"
+                            nome_completo2 As pcfDataField.textualColumn:
+                                FieldDisplayName: ="nome_completo"
+                                FieldName: ="gps_nome_completo"
                                 FieldType: ="s"
                                 FieldVariantName: ="textualColumn"
-                                Order: =1
-                                ZIndex: =0
-
-                            "'Created On1' As pcfDataField.textualColumn":
-                                FieldDisplayName: ="Created On"
-                                FieldName: ="createdon"
-                                FieldType: ="d"
-                                FieldVariantName: ="textualColumn"
                                 Order: =2
-                                ZIndex: =0
+                                ZIndex: =54
 
                     prof_funcao_projeto_DataCard2 As typedDataCard.fluentV9TextualEditCard:
                         BorderStyle: =BorderStyle.Solid
@@ -6670,7 +6668,7 @@
                         Height: =70
                         MaxLength: =DataSourceInfo([@AtestadoProfissionais], DataSourceInfo.MaxLength, "gps_prof_funcao_projeto")
                         Required: =false
-                        Update: =DataCardValue10.Value
+                        Update: =dcvEditarFuncaoProjetoAtestado.Value
                         Width: =600
                         X: =1
                         Y: =0
@@ -6687,8 +6685,9 @@
                             Y: =10
                             ZIndex: =1
 
-                        "DataCardValue10 As 'Text input'":
+                        "dcvEditarFuncaoProjetoAtestado As 'Text input'":
                             AccessibleLabel: =Parent.DisplayName
+                            BasePaletteColor: =
                             DisplayMode: =Parent.DisplayMode
                             Height: =32
                             Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
@@ -6708,7 +6707,7 @@
                             Width: =Parent.Width - 48
                             Wrap: =true
                             X: =24
-                            Y: =DataCardValue10.Y + DataCardValue10.Height
+                            Y: =dcvEditarFuncaoProjetoAtestado.Y + dcvEditarFuncaoProjetoAtestado.Height
                             ZIndex: =3
 
                         StarVisible71 As Text:
@@ -6732,7 +6731,7 @@
                         Height: =70
                         MaxLength: =DataSourceInfo([@AtestadoProfissionais], DataSourceInfo.MaxLength, "gps_prof_dominio_atuacao")
                         Required: =false
-                        Update: =DataCardValue11.Value
+                        Update: =dcvEditarDominioAtuacao.Value
                         Width: =600
                         X: =0
                         Y: =1
@@ -6749,8 +6748,9 @@
                             Y: =10
                             ZIndex: =1
 
-                        "DataCardValue11 As 'Text input'":
+                        "dcvEditarDominioAtuacao As 'Text input'":
                             AccessibleLabel: =Parent.DisplayName
+                            BasePaletteColor: =
                             DisplayMode: =Parent.DisplayMode
                             Height: =32
                             Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
@@ -6770,7 +6770,7 @@
                             Width: =Parent.Width - 48
                             Wrap: =true
                             X: =24
-                            Y: =DataCardValue11.Y + DataCardValue11.Height
+                            Y: =dcvEditarDominioAtuacao.Y + dcvEditarDominioAtuacao.Height
                             ZIndex: =3
 
                         StarVisible72 As Text:
@@ -6793,7 +6793,7 @@
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =70
                         Required: =false
-                        Update: =Value(DataCardValue12.Value)
+                        Update: =Value(dcvEditarHorasTrabalhadas.Value)
                         Width: =600
                         X: =1
                         Y: =1
@@ -6810,8 +6810,9 @@
                             Y: =10
                             ZIndex: =1
 
-                        "DataCardValue12 As 'Text input'":
+                        "dcvEditarHorasTrabalhadas As 'Text input'":
                             AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                            BasePaletteColor: =
                             DisplayMode: =Parent.DisplayMode
                             Height: =32
                             ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
@@ -6829,7 +6830,7 @@
                             Width: =Parent.Width - 48
                             Wrap: =true
                             X: =24
-                            Y: =DataCardValue12.Y + DataCardValue12.Height
+                            Y: =dcvEditarHorasTrabalhadas.Y + dcvEditarHorasTrabalhadas.Height
                             ZIndex: =3
 
                         StarVisible73 As Text:
@@ -6874,10 +6875,10 @@
                             =Collect(
                                 colEditarMembrosEquipe,
                                 {
-                                    Name: DataCardValue17_1.Value,
-                                    DominioAtuacao: DataCardValue19_1.Value,
-                                    QuantidadeHoras: DataCardValue20_1.Value,
-                                    Funcao: DataCardValue18_1.Value
+                                    prof_id: dcvEditarProfissionalAtestado.Selected,
+                                    prof_dominio_atuacao: dcvEditarDominioAtuacao.Value,
+                                    horas_trabalhadas: Value(dcvEditarHorasTrabalhadas.Value),
+                                    prof_funcao_projeto: dcvEditarFuncaoProjetoAtestado.Value
                                 }
                             );
                             
@@ -6934,7 +6935,7 @@
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         OnSelect: =Select(Parent)
-                        Text: =ThisItem.DominioAtuacao
+                        Text: =ThisItem.prof_dominio_atuacao
                         X: =351
                         Y: =(Parent.TemplateHeight - Self.Height) / 2
                         ZIndex: =1
@@ -6951,7 +6952,7 @@
                         Font: =Font.'Segoe UI'
                         Height: =Parent.TemplateHeight
                         OnSelect: =Select(Parent)
-                        Text: =ThisItem.Name
+                        Text: =ThisItem.prof_id.nome_completo
                         Width: =200
                         X: =13
                         Y: =(Parent.TemplateHeight - Self.Height) / 2
@@ -6968,7 +6969,7 @@
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         OnSelect: =Select(Parent)
-                        Text: =ThisItem.QuantidadeHoras
+                        Text: =ThisItem.horas_trabalhadas
                         X: =662
                         Y: =(Parent.TemplateHeight - Self.Height) / 2
                         ZIndex: =3
@@ -6984,7 +6985,7 @@
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         OnSelect: =Select(Parent)
-                        Text: =ThisItem.Funcao
+                        Text: =ThisItem.prof_funcao_projeto
                         Width: =230
                         X: =940.8120000000001
                         Y: =(Parent.TemplateHeight - Self.Height) / 2
