@@ -2218,6 +2218,7 @@
 
                             glrDescricaoDoObjeto_1 As gallery.variableTemplateHeightGallery:
                                 DelayItemLoading: =true
+                                DisplayMode: =DisplayMode.View
                                 Fill: =RGBA(242, 242, 242, 0)
                                 Height: =310
                                 Items: =Split(Parent.Default, ";")
@@ -6578,6 +6579,580 @@
                             X: =10
                             Y: =10
                             ZIndex: =1
+
+            ctnEditarMembrosDaEquipe As groupContainer.verticalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.Center
+                Height: =230
+                LayoutAlignItems: =LayoutAlignItems.Stretch
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutGap: =12
+                LayoutJustifyContent: =LayoutJustifyContent.Center
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                PaddingRight: =4
+                Visible: =If(!locMostrarEquipeDoAtestado, true, false)
+                Width: =Parent.Width * 0.98
+                ZIndex: =11
+
+                frmEditarMembrosDaEquipe As form.PowerApps_CoreControls_Form:
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    BorderColor: =RGBA(245, 245, 245, 1)
+                    DataSource: =AtestadoProfissionais
+                    DefaultMode: =FormMode.New
+                    Height: =180
+                    LayoutMinHeight: =250
+                    LayoutMinWidth: =400
+                    NumberOfColumns: =2
+                    UseFluentV9Cards: =true
+                    ZIndex: =1
+
+                    prof_id_DataCard2 As typedDataCard.fluentV9ComboBoxEditCard:
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="gps_prof_id"
+                        Default: =ThisItem.prof_id
+                        DisplayMode: =Parent.DisplayMode
+                        DisplayName: =DataSourceInfo([@AtestadoProfissionais],DataSourceInfo.DisplayName,"gps_prof_id")
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =70
+                        Required: =false
+                        Update: =DataCardValue9.Selected
+                        Width: =600
+                        X: =0
+                        Y: =0
+                        ZIndex: =1
+
+                        DataCardKey71 As Text:
+                            DisplayMode: =DisplayMode.Edit
+                            Height: =22
+                            Text: =Parent.DisplayName
+                            Weight: ='TextCanvas.Weight'.Semibold
+                            Width: =Parent.Width - 48
+                            Wrap: =false
+                            X: =24
+                            Y: =10
+                            ZIndex: =1
+
+                        DataCardValue9 As Combobox.pcfdataset:
+                            AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                            DisplayMode: =Parent.DisplayMode
+                            Height: =32
+                            Items: =Choices([@AtestadoProfissionais].gps_prof_id)
+                            ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                            Width: =Parent.Width - 48
+                            X: =24
+                            Y: =DataCardKey71.Y + DataCardKey71.Height + 4
+                            ZIndex: =2
+
+                            id1 As pcfDataField.textualColumn:
+                                FieldDisplayName: ="id"
+                                FieldName: ="gps_id"
+                                FieldType: ="s"
+                                FieldVariantName: ="textualColumn"
+                                Order: =1
+                                ZIndex: =0
+
+                            "'Created On1' As pcfDataField.textualColumn":
+                                FieldDisplayName: ="Created On"
+                                FieldName: ="createdon"
+                                FieldType: ="d"
+                                FieldVariantName: ="textualColumn"
+                                Order: =2
+                                ZIndex: =0
+
+                    prof_funcao_projeto_DataCard2 As typedDataCard.fluentV9TextualEditCard:
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="gps_prof_funcao_projeto"
+                        Default: =ThisItem.prof_funcao_projeto
+                        DisplayMode: =Parent.DisplayMode
+                        DisplayName: =DataSourceInfo([@AtestadoProfissionais],DataSourceInfo.DisplayName,"gps_prof_funcao_projeto")
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =70
+                        MaxLength: =DataSourceInfo([@AtestadoProfissionais], DataSourceInfo.MaxLength, "gps_prof_funcao_projeto")
+                        Required: =false
+                        Update: =DataCardValue10.Value
+                        Width: =600
+                        X: =1
+                        Y: =0
+                        ZIndex: =1
+
+                        DataCardKey72 As Text:
+                            DisplayMode: =DisplayMode.Edit
+                            Height: =22
+                            Text: =Parent.DisplayName
+                            Weight: ='TextCanvas.Weight'.Semibold
+                            Width: =Parent.Width - 48
+                            Wrap: =false
+                            X: =24
+                            Y: =10
+                            ZIndex: =1
+
+                        "DataCardValue10 As 'Text input'":
+                            AccessibleLabel: =Parent.DisplayName
+                            DisplayMode: =Parent.DisplayMode
+                            Height: =32
+                            Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                            Required: =Parent.Required
+                            ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                            Value: =Parent.Default
+                            Width: =Parent.Width - 48
+                            X: =24
+                            Y: =DataCardKey72.Y + DataCardKey72.Height + 4
+                            ZIndex: =2
+
+                        ErrorMessage71 As Text:
+                            DisplayMode: =DisplayMode.Edit
+                            Height: =30
+                            Text: =Parent.Error
+                            Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =Parent.Width - 48
+                            Wrap: =true
+                            X: =24
+                            Y: =DataCardValue10.Y + DataCardValue10.Height
+                            ZIndex: =3
+
+                        StarVisible71 As Text:
+                            Align: ='TextCanvas.Align'.Center
+                            DisplayMode: =DisplayMode.Edit
+                            Height: =30
+                            Text: ="*"
+                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =30
+                            X: =0
+                            Y: =DataCardKey72.Y
+                            ZIndex: =4
+
+                    prof_dominio_atuacao_DataCard2 As typedDataCard.fluentV9TextualEditCard:
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="gps_prof_dominio_atuacao"
+                        Default: =ThisItem.prof_dominio_atuacao
+                        DisplayMode: =Parent.DisplayMode
+                        DisplayName: =DataSourceInfo([@AtestadoProfissionais],DataSourceInfo.DisplayName,"gps_prof_dominio_atuacao")
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =70
+                        MaxLength: =DataSourceInfo([@AtestadoProfissionais], DataSourceInfo.MaxLength, "gps_prof_dominio_atuacao")
+                        Required: =false
+                        Update: =DataCardValue11.Value
+                        Width: =600
+                        X: =0
+                        Y: =1
+                        ZIndex: =1
+
+                        DataCardKey73 As Text:
+                            DisplayMode: =DisplayMode.Edit
+                            Height: =22
+                            Text: =Parent.DisplayName
+                            Weight: ='TextCanvas.Weight'.Semibold
+                            Width: =Parent.Width - 48
+                            Wrap: =false
+                            X: =24
+                            Y: =10
+                            ZIndex: =1
+
+                        "DataCardValue11 As 'Text input'":
+                            AccessibleLabel: =Parent.DisplayName
+                            DisplayMode: =Parent.DisplayMode
+                            Height: =32
+                            Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                            Required: =Parent.Required
+                            ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                            Value: =Parent.Default
+                            Width: =Parent.Width - 48
+                            X: =24
+                            Y: =DataCardKey73.Y + DataCardKey73.Height + 4
+                            ZIndex: =2
+
+                        ErrorMessage72 As Text:
+                            DisplayMode: =DisplayMode.Edit
+                            Height: =30
+                            Text: =Parent.Error
+                            Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =Parent.Width - 48
+                            Wrap: =true
+                            X: =24
+                            Y: =DataCardValue11.Y + DataCardValue11.Height
+                            ZIndex: =3
+
+                        StarVisible72 As Text:
+                            Align: ='TextCanvas.Align'.Center
+                            DisplayMode: =DisplayMode.Edit
+                            Height: =30
+                            Text: ="*"
+                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =30
+                            X: =0
+                            Y: =DataCardKey73.Y
+                            ZIndex: =4
+
+                    horas_trabalhadas_DataCard2 As typedDataCard.fluentV9NumberEditCard:
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="gps_horas_trabalhadas"
+                        Default: =ThisItem.horas_trabalhadas
+                        DisplayMode: =Parent.DisplayMode
+                        DisplayName: =DataSourceInfo([@AtestadoProfissionais],DataSourceInfo.DisplayName,"gps_horas_trabalhadas")
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =70
+                        Required: =false
+                        Update: =Value(DataCardValue12.Value)
+                        Width: =600
+                        X: =1
+                        Y: =1
+                        ZIndex: =1
+
+                        DataCardKey74 As Text:
+                            DisplayMode: =DisplayMode.Edit
+                            Height: =22
+                            Text: =Parent.DisplayName
+                            Weight: ='TextCanvas.Weight'.Semibold
+                            Width: =Parent.Width - 48
+                            Wrap: =false
+                            X: =24
+                            Y: =10
+                            ZIndex: =1
+
+                        "DataCardValue12 As 'Text input'":
+                            AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                            DisplayMode: =Parent.DisplayMode
+                            Height: =32
+                            ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                            Value: =Parent.Default
+                            Width: =Parent.Width - 48
+                            X: =24
+                            Y: =DataCardKey74.Y + DataCardKey74.Height + 4
+                            ZIndex: =2
+
+                        ErrorMessage73 As Text:
+                            DisplayMode: =DisplayMode.Edit
+                            Height: =30
+                            Text: =Parent.Error
+                            Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =Parent.Width - 48
+                            Wrap: =true
+                            X: =24
+                            Y: =DataCardValue12.Y + DataCardValue12.Height
+                            ZIndex: =3
+
+                        StarVisible73 As Text:
+                            Align: ='TextCanvas.Align'.Center
+                            DisplayMode: =DisplayMode.Edit
+                            Height: =30
+                            Text: ="*"
+                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =30
+                            X: =0
+                            Y: =DataCardKey74.Y
+                            ZIndex: =4
+
+                ctnBotaoAdicionarEquipeEditarAtestado As groupContainer.manualLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    DropShadow: =DropShadow.None
+                    FillPortions: =0
+                    Height: =50
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    PaddingRight: =32
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    ZIndex: =3
+
+                    btnAdicionarMembroEquipeEditarAtestado As button:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(161, 159, 157, 1)
+                        DisabledFill: =RGBA(242, 242, 241, 0)
+                        Fill: =gblTema.AccentColor
+                        FocusedBorderColor: =ColorFade(Self.Fill, 75%)
+                        FocusedBorderThickness: =1
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Normal
+                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                        HoverFill: =ColorFade(gblTema.AccentColor, -10%)
+                        OnSelect: |-
+                            =Collect(
+                                colEditarMembrosEquipe,
+                                {
+                                    Name: DataCardValue17_1.Value,
+                                    DominioAtuacao: DataCardValue19_1.Value,
+                                    QuantidadeHoras: DataCardValue20_1.Value,
+                                    Funcao: DataCardValue18_1.Value
+                                }
+                            );
+                            
+                            ResetForm(frmEditarMembrosDaEquipe)
+                        PressedBorderColor: =RGBA(0, 69, 120, 1)
+                        PressedColor: =RGBA(255, 255, 255, 1)
+                        PressedFill: =RGBA(16, 110, 190, 1)
+                        RadiusBottomLeft: =4
+                        RadiusBottomRight: =4
+                        RadiusTopLeft: =4
+                        RadiusTopRight: =4
+                        Size: =14
+                        Text: ="Adicionar"
+                        Width: =120
+                        X: =Parent.Width - Self.Width - Parent.PaddingRight
+                        Y: =(Parent.Height - Self.Height) / 2
+                        ZIndex: =1
+
+            ctnMembrosAdicionados_1 As groupContainer.manualLayoutContainer:
+                AlignInContainer: =AlignInContainer.Center
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                PaddingBottom: =12
+                PaddingLeft: =12
+                PaddingRight: =12
+                PaddingTop: =12
+                Visible: =If(!locMostrarEquipeDoAtestado, true, false)
+                Width: |
+                    =Parent.Width * 0.98
+                ZIndex: =12
+
+                glrMembrosAdicionados_1 As gallery.galleryVertical:
+                    BorderColor: =RGBA(245, 245, 245, 1)
+                    DelayItemLoading: =true
+                    Height: =Parent.Height - Label7_8.Height - Label2_12.Height - 6
+                    Items: =colEditarMembrosEquipe
+                    Layout: =Layout.Vertical
+                    LoadingSpinner: =LoadingSpinner.Data
+                    TemplateSize: =51
+                    Visible: =If(CountRows(glrMembrosAdicionados_1.AllItems) > 0, true, false)
+                    Width: =Parent.Width - 24
+                    X: =(Parent.Width - Self.Width) / 2
+                    Y: =Label7_8.Y + Label7_8.Height + 6
+                    ZIndex: =1
+
+                    Label7_13 As label:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(50, 49, 48, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(161, 159, 157, 1)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        OnSelect: =Select(Parent)
+                        Text: =ThisItem.DominioAtuacao
+                        X: =351
+                        Y: =(Parent.TemplateHeight - Self.Height) / 2
+                        ZIndex: =1
+
+                    Label7_12 As label:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(50, 49, 48, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(161, 159, 157, 1)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        Height: =Parent.TemplateHeight
+                        OnSelect: =Select(Parent)
+                        Text: =ThisItem.Name
+                        Width: =200
+                        X: =13
+                        Y: =(Parent.TemplateHeight - Self.Height) / 2
+                        ZIndex: =2
+
+                    Label7_14 As label:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(50, 49, 48, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(161, 159, 157, 1)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        OnSelect: =Select(Parent)
+                        Text: =ThisItem.QuantidadeHoras
+                        X: =662
+                        Y: =(Parent.TemplateHeight - Self.Height) / 2
+                        ZIndex: =3
+
+                    Label7_15 As label:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(50, 49, 48, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(161, 159, 157, 1)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        OnSelect: =Select(Parent)
+                        Text: =ThisItem.Funcao
+                        Width: =230
+                        X: =940.8120000000001
+                        Y: =(Parent.TemplateHeight - Self.Height) / 2
+                        ZIndex: =4
+
+                    Icon4_1 As icon.Trash:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        Color: =RGBA(0, 120, 212, 1)
+                        DisabledBorderColor: =RGBA(245, 245, 245, 1)
+                        DisabledColor: =RGBA(225, 223, 221, 1)
+                        DisabledFill: =RGBA(0, 0, 0, 0)
+                        FocusedBorderThickness: =4
+                        Height: =28
+                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                        HoverColor: =RGBA(16, 110, 190, 1)
+                        HoverFill: =RGBA(0, 0, 0, 0)
+                        Icon: =Icon.Trash
+                        OnSelect: =Remove(colEditarMembrosEquipe, ThisItem)
+                        PressedBorderColor: =RGBA(0, 0, 0, 0)
+                        PressedColor: =RGBA(16, 110, 190, 1)
+                        PressedFill: =RGBA(0, 0, 0, 0)
+                        Width: =28
+                        X: =1142.8120000000001
+                        Y: =12
+                        ZIndex: =5
+
+                    Rectangle4_1 As rectangle:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        DisabledFill: =RGBA(161, 159, 157, 1)
+                        Fill: =RGBA(0, 120, 212, 1)
+                        FocusedBorderThickness: =4
+                        Height: =1
+                        HoverFill: =RGBA(0, 120, 212, 1)
+                        OnSelect: =Select(Parent)
+                        PressedFill: =RGBA(0, 120, 212, 1)
+                        Width: =Parent.Width * 0.98
+                        X: =(Parent.TemplateWidth - Self.Width) / 2
+                        Y: =Parent.TemplateHeight - Self.Height - 2
+                        ZIndex: =6
+
+                Label2_12 As label:
+                    Align: =If(CountRows(glrMembrosAdicionados_1.AllItems) > 0, Align.Left, Align.Center)
+                    AutoHeight: =true
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    Color: =gblTema.DarkGrayColor
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledColor: =RGBA(161, 159, 157, 1)
+                    FocusedBorderThickness: =4
+                    Font: =Font.'Segoe UI'
+                    Height: =30
+                    Italic: =true
+                    Size: =12
+                    Text: =If(CountRows(glrMembrosAdicionados_1.AllItems) > 0, "Mebros adicionados", "Lista de membros vazia")
+                    Width: =Parent.Width
+                    X: =(Parent.Width - Self.Width) / 2
+                    Y: =2
+                    ZIndex: =2
+
+                Label7_8 As label:
+                    Align: =Align.Center
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    Color: =RGBA(50, 49, 48, 1)
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledColor: =RGBA(161, 159, 157, 1)
+                    FocusedBorderThickness: =4
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    OnSelect: =
+                    Text: ="Nome do profissional"
+                    Visible: =If(CountRows(glrMembrosAdicionados_1.AllItems) > 0, true, false)
+                    Width: =192
+                    X: =29
+                    Y: =31
+                    ZIndex: =3
+
+                Label7_9 As label:
+                    Align: =Align.Center
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    Color: =RGBA(50, 49, 48, 1)
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledColor: =RGBA(161, 159, 157, 1)
+                    FocusedBorderThickness: =4
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    OnSelect: =
+                    Text: ="Domínio de atuação"
+                    Visible: =If(CountRows(glrMembrosAdicionados_1.AllItems) > 0, true, false)
+                    Width: =192
+                    X: =346
+                    Y: =31
+                    ZIndex: =4
+
+                Label7_10 As label:
+                    Align: =Align.Center
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    Color: =RGBA(50, 49, 48, 1)
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledColor: =RGBA(161, 159, 157, 1)
+                    FocusedBorderThickness: =4
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    OnSelect: =
+                    Text: ="Qntd horas"
+                    Visible: =If(CountRows(glrMembrosAdicionados_1.AllItems) > 0, true, false)
+                    Width: =192
+                    X: =663
+                    Y: =31
+                    ZIndex: =5
+
+                Label7_11 As label:
+                    Align: =Align.Center
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    Color: =RGBA(50, 49, 48, 1)
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledColor: =RGBA(161, 159, 157, 1)
+                    FocusedBorderThickness: =4
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    OnSelect: =
+                    Text: ="Função no projeto"
+                    Visible: =If(CountRows(glrMembrosAdicionados_1.AllItems) > 0, true, false)
+                    Width: =192
+                    X: =982
+                    Y: =31
+                    ZIndex: =6
+
+                ctnNenhumMembroAdicionado_1 As groupContainer.verticalAutoLayoutContainer:
+                    DropShadow: =DropShadow.None
+                    Height: =Parent.Height - Label2_12.Height - Parent.PaddingBottom
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutGap: =12
+                    LayoutJustifyContent: =LayoutJustifyContent.Center
+                    LayoutMode: =LayoutMode.Auto
+                    Visible: =If(CountRows(glrMembrosAdicionados_1.AllItems) > 0, false, true)
+                    Width: =Parent.Width * 0.98
+                    X: =(Parent.Width - Self.Width) / 2
+                    Y: =32
+                    ZIndex: =7
+
+                    imgNenhumMembroAdicionado_4 As image:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledFill: =RGBA(0, 0, 0, 0)
+                        FocusedBorderThickness: =4
+                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                        HoverFill: =RGBA(0, 0, 0, 0)
+                        Image: =empty
+                        PressedBorderColor: =RGBA(0, 0, 0, 0)
+                        PressedFill: =RGBA(0, 0, 0, 0)
+                        Transparency: =0.7
+                        X: =40
+                        Y: =40
+                        ZIndex: =1
 
     ctnPopUpEditarDescricaoAtestado As groupContainer.manualLayoutContainer:
         Fill: =RGBA(0, 0, 0, 0.6)
