@@ -6555,6 +6555,7 @@
 
                     glrDescricaoDoObjeto As gallery.variableTemplateHeightGallery:
                         DelayItemLoading: =true
+                        DisplayMode: =DisplayMode.View
                         Fill: =RGBA(242, 242, 242, 0)
                         Height: =310
                         Items: =Split(Parent.Default, ";")
