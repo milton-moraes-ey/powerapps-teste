@@ -4031,20 +4031,6 @@
                     LayoutMinWidth: =250
                     ZIndex: =1
 
-                    "txtAddDescObjeto As 'Text input'":
-                        AccessibleLabel: =
-                        BasePaletteColor: =
-                        DisplayMode: =Parent.DisplayMode
-                        Height: =40
-                        Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
-                        Required: =
-                        ValidationState: =
-                        Value: =
-                        Width: =Parent.Width - 60
-                        X: =(Parent.Width - Self.Width)  / 2
-                        Y: =65
-                        ZIndex: =1
-
                     Label4 As label:
                         FontWeight: =FontWeight.Bold
                         Size: =11
@@ -4071,10 +4057,10 @@
                         OnSelect: |-
                             =Collect(colDescricaoAdicionada,
                                 {
-                                    Descricao: txtAddDescObjeto.Value
+                                    Descricao: txtAddDescricao.Value
                                 }
                             );
-                            Reset(txtAddDescObjeto)
+                            Reset(txtAddDescricao)
                         PressedBorderColor: =RGBA(0, 69, 120, 1)
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: =RGBA(16, 110, 190, 1)
@@ -4085,9 +4071,24 @@
                         Size: =12
                         Text: ="+ Adicionar"
                         Width: =130
-                        X: =txtAddDescObjeto.X + txtAddDescObjeto.Width - Self.Width
-                        Y: =txtAddDescObjeto.Y + txtAddDescObjeto.Height + 12
+                        X: =txtAddDescricao.X + txtAddDescricao.Width - Self.Width
+                        Y: =txtAddDescricao.Y + txtAddDescricao.Height + 12
                         ZIndex: =3
+
+                    "txtAddDescricao As 'Text input'":
+                        AccessibleLabel: =
+                        BasePaletteColor: =
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =120
+                        Mode: ='TextInputCanvas.Mode'.Multiline
+                        Required: =
+                        ValidationState: =
+                        Value: =
+                        Visible: =true
+                        Width: =Parent.Width - 48
+                        X: =(Parent.Width - Self.Width)  / 2
+                        Y: =Label4.Y + Label4.Height
+                        ZIndex: =4
 
                 ctnAdicionarNovasDescricoes As groupContainer.manualLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
@@ -4097,41 +4098,7 @@
                     LayoutMinWidth: =250
                     ZIndex: =2
 
-                    glrDescricoesAdicionadas As gallery.galleryVertical:
-                        DelayItemLoading: =true
-                        Height: =537
-                        Items: =colDescricaoAdicionada
-                        Layout: =Layout.Vertical
-                        LoadingSpinner: =LoadingSpinner.Data
-                        TemplateFill: =gblTema.OffWhiteColor
-                        TemplateSize: =46
-                        Visible: =If(CountRows(colDescricaoAdicionada) > 0, true, false)
-                        Width: =Parent.Width - 24
-                        X: =(Parent.Width - Self.Width) / 2
-                        Y: |
-                            =12
-                        ZIndex: =1
-
-                        Label5 As label:
-                            Height: =39
-                            OnSelect: =Select(Parent)
-                            Size: =12
-                            Text: =ThisItem.Descricao
-                            X: =12
-                            Y: =(Parent.TemplateHeight - Self.Height) / 2
-                            ZIndex: =1
-
-                        Icon6 As icon.Trash:
-                            Color: =gblTema.AccentColor
-                            Height: =28
-                            Icon: =Icon.Trash
-                            OnSelect: =Remove(colDescricaoAdicionada, ThisItem)
-                            Width: =28
-                            X: =Parent.TemplateWidth - Self.Width - 12
-                            Y: =(Parent.TemplateHeight - Self.Height) / 2
-                            ZIndex: =2
-
-                    btnAdicionarDescricao_1 As button:
+                    btnConfirmarAdicaoDeDescricao As button:
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
@@ -4166,7 +4133,7 @@
                         Size: =12
                         Text: ="Confirmar"
                         Width: =130
-                        X: =glrDescricoesAdicionadas.X + glrDescricoesAdicionadas.Width - Self.Width
+                        X: =369
                         Y: =Parent.Height - Self.Height - 12
                         ZIndex: =2
 
@@ -4218,6 +4185,37 @@
                             Transparency: =0.7
                             X: =(Parent.Width - Self.Width) / 2
                             Y: =(Parent.Height - Self.Height) / 2
+                            ZIndex: =2
+
+                    glrDescricoesAdicionadas As gallery.variableTemplateHeightGallery:
+                        DelayItemLoading: =true
+                        Height: =531
+                        Items: =colDescricaoAdicionada
+                        Layout: =Layout.Vertical
+                        LoadingSpinner: =LoadingSpinner.Data
+                        TemplateFill: =gblTema.OffWhiteColor
+                        TemplateSize: =126
+                        Width: =512
+                        Y: =18
+                        ZIndex: =4
+
+                        Label9 As label:
+                            AutoHeight: =true
+                            OnSelect: =Select(Parent)
+                            Text: =ThisItem.Descricao
+                            Width: =Parent.TemplateWidth - Icon6_2.Width - 32
+                            X: =10
+                            Y: =12
+                            ZIndex: =1
+
+                        Icon6_2 As icon.Trash:
+                            Color: =gblTema.AccentColor
+                            Height: =28
+                            Icon: =Icon.Trash
+                            OnSelect: =Remove(colDescricaoAdicionada, ThisItem)
+                            Width: =28
+                            X: =Parent.TemplateWidth - Self.Width - 12
+                            Y: =12
                             ZIndex: =2
 
     ctnPopUpEditarAtestado As groupContainer.manualLayoutContainer:
