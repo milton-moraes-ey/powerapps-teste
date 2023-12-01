@@ -283,20 +283,6 @@
     "OverridableProperties": {},
     "Version": "1.4.0"
   },
-  "radio": {
-    "CustomGroupControlTemplateName": "",
-    "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/radio",
-    "IsComponentTemplate": false,
-    "IsCustomGroupControlTemplate": false,
-    "IsPcfControl": false,
-    "IsPremiumPcfControl": false,
-    "IsWidgetTemplate": true,
-    "LastModifiedTimestamp": "0",
-    "Name": "radio",
-    "OverridableProperties": {},
-    "Version": "2.3.0"
-  },
   "rectangle": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
@@ -383,21 +369,6 @@
     "OverridableProperties": {},
     "TemplateDisplayName": "Text input",
     "Version": "0.0.21"
-  },
-  "Toggle": {
-    "CustomGroupControlTemplateName": "",
-    "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/powercontrol/PowerApps_CoreControls_Toggle",
-    "IsComponentTemplate": false,
-    "IsCustomGroupControlTemplate": false,
-    "IsPcfControl": true,
-    "IsPremiumPcfControl": false,
-    "IsWidgetTemplate": false,
-    "LastModifiedTimestamp": "0",
-    "Name": "PowerApps_CoreControls_Toggle",
-    "OverridableProperties": {},
-    "TemplateDisplayName": "Toggle",
-    "Version": "1.0.19"
   },
   "typedDataCard": {
     "CustomGroupControlTemplateName": "",

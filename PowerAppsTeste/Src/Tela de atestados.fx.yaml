@@ -4663,28 +4663,6 @@
                     X: =btnSalvarEdicaoDeAtestado.X - Self.Width - Parent.PaddingRight
                     ZIndex: =11
 
-            Radio1 As radio:
-                Items: =["Dados da EY", "Dados do cliente"]
-                Layout: =Layout.Horizontal
-                ZIndex: =2
-
-            tglEntreEmpresas As Toggle:
-                BasePaletteColor: =
-                DisplayMode: =DisplayMode.Edit
-                Height: =35
-                Label: =If(locToogleEntreEmpresas, "Cliente", "EY")
-                LayoutMinHeight: =35
-                LayoutMinWidth: =110
-                OnCheck: |-
-                    =UpdateContext({locToogleEntreEmpresas: true})
-                OnUncheck: |-
-                    =UpdateContext({locToogleEntreEmpresas: false})
-                Visible: =locMostrarFormEditarEmpresasDoAtestado
-                Width: =110
-                X: =0
-                Y: =0
-                ZIndex: =4
-
             ctnLabel_2 As groupContainer.manualLayoutContainer:
                 DropShadow: =DropShadow.None
                 FillPortions: =0
@@ -4699,7 +4677,7 @@
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Visible: =locMostrarFormEditarEmpresasDoAtestado && locToogleEntreEmpresas
+                Visible: =locMostrarFormEditarEmpresasDoAtestado
                 X: =20
                 Y: =110
                 ZIndex: =5
@@ -4716,7 +4694,7 @@
                     Font: =Font.'Segoe UI'
                     Italic: =true
                     Size: =12
-                    Text: ="Editar atestado - Dados da empresa atestante"
+                    Text: ="Empresa atestante"
                     Width: =500
                     Y: =Parent.PaddingTop
                     ZIndex: =2
@@ -4747,7 +4725,7 @@
                 LayoutMinWidth: =400
                 NumberOfColumns: =2
                 UseFluentV9Cards: =true
-                Visible: =locMostrarFormEditarEmpresasDoAtestado && locToogleEntreEmpresas
+                Visible: =locMostrarFormEditarEmpresasDoAtestado
                 Width: =Parent.Width * 0.95
                 X: =(Parent.Width - Self.Width) / 2
                 Y: =Parent.PaddingTop + 32
@@ -5260,7 +5238,7 @@
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Visible: =locMostrarFormEditarEmpresasDoAtestado && !locToogleEntreEmpresas
+                Visible: =locMostrarFormEditarEmpresasDoAtestado
                 ZIndex: =7
 
                 Label2_8 As label:
@@ -5275,7 +5253,7 @@
                     Font: =Font.'Segoe UI'
                     Italic: =true
                     Size: =12
-                    Text: ="Editar atestado - Dados da empresa que prestou serviço"
+                    Text: ="Empresa que prestou serviço"
                     Width: =500
                     X: =Parent.PaddingLeft
                     Y: =Parent.PaddingTop
@@ -5306,7 +5284,7 @@
                 LayoutMinWidth: =400
                 NumberOfColumns: =2
                 UseFluentV9Cards: =true
-                Visible: =locMostrarFormEditarEmpresasDoAtestado && !locToogleEntreEmpresas
+                Visible: =locMostrarFormEditarEmpresasDoAtestado
                 ZIndex: =8
 
                 nome_empresa_prestadora_DataCard2 As typedDataCard.fluentV9TextualEditCard:
