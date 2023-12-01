@@ -668,8 +668,10 @@
 
                 tblControleAtestados As Table.pcfdataset:
                     AlignInContainer: =AlignInContainer.Stretch
+                    BasePaletteColor: =
                     DisplayMode: =DisplayMode.Edit
-                    FontSize: =0
+                    EnableRangeSelection: ='PowerAppsOneGrid.EnableRangeSelection'.Enable
+                    FontSize: =12
                     HeaderFontSize: =0
                     Height: =If(Self.Y + 500 > Parent.Height, Parent.Height - Self.Y, 500)
                     Items: =colAtestados
@@ -684,61 +686,221 @@
                     Y: =0
                     ZIndex: =8
 
-                    ID1 As pcfDataField.textualColumn:
-                        FieldDisplayName: ="ID"
-                        FieldName: ="ID"
+                    gps_nome_cliente1 As pcfDataField.textualColumn:
+                        FieldDisplayName: ="Nome cliente"
+                        FieldName: ="gps_nome_cliente"
                         FieldType: ="s"
                         FieldVariantName: ="textualColumn"
                         Order: =1
-                        ZIndex: =14
+                        ZIndex: =27
 
-                    DataInicial1 As pcfDataField.textualColumn:
-                        FieldDisplayName: ="DataInicial"
-                        FieldName: ="DataInicial"
+                    gps_endr_cliente1 As pcfDataField.textualColumn:
+                        FieldDisplayName: ="gps_endr_cliente"
+                        FieldName: ="gps_endr_cliente"
                         FieldType: ="s"
                         FieldVariantName: ="textualColumn"
                         Order: =2
-                        ZIndex: =15
+                        ZIndex: =28
 
-                    DataFinal1 As pcfDataField.textualColumn:
-                        FieldDisplayName: ="DataFinal"
-                        FieldName: ="DataFinal"
+                    gps_cnpj_cliente1 As pcfDataField.textualColumn:
+                        FieldDisplayName: ="gps_cnpj_cliente"
+                        FieldName: ="gps_cnpj_cliente"
                         FieldType: ="s"
                         FieldVariantName: ="textualColumn"
                         Order: =3
-                        ZIndex: =16
+                        ZIndex: =29
 
-                    LegalEntity1 As pcfDataField.textualColumn:
-                        FieldDisplayName: ="LegalEntity"
-                        FieldName: ="LegalEntity"
+                    gps_ativ_econ_cliente1 As pcfDataField.textualColumn:
+                        FieldDisplayName: ="gps_ativ_econ_cliente"
+                        FieldName: ="gps_ativ_econ_cliente"
                         FieldType: ="s"
                         FieldVariantName: ="textualColumn"
                         Order: =4
-                        ZIndex: =17
+                        ZIndex: =30
 
-                    NomeCliente1 As pcfDataField.textualColumn:
-                        FieldDisplayName: ="NomeCliente"
-                        FieldName: ="NomeCliente"
-                        FieldType: ="s"
+                    gps_num_func_cliente1 As pcfDataField.textualColumn:
+                        FieldDisplayName: ="gps_num_func_cliente"
+                        FieldName: ="gps_num_func_cliente"
+                        FieldType: ="n"
                         FieldVariantName: ="textualColumn"
                         Order: =5
-                        ZIndex: =18
+                        ZIndex: =31
 
-                    Serviço1 As pcfDataField.textualColumn:
-                        FieldDisplayName: ="Serviço"
-                        FieldName: ="Serviço"
-                        FieldType: ="s"
+                    gps_patrim_liq_cliente1 As pcfDataField.textualColumn:
+                        FieldDisplayName: ="gps_patrim_liq_cliente"
+                        FieldName: ="gps_patrim_liq_cliente"
+                        FieldType: ="n"
                         FieldVariantName: ="textualColumn"
                         Order: =6
-                        ZIndex: =19
+                        ZIndex: =32
 
-                    Time1 As pcfDataField.textualColumn:
-                        FieldDisplayName: ="Time"
-                        FieldName: ="Time"
-                        FieldType: ="s"
+                    gps_receita_bruta_cliente1 As pcfDataField.textualColumn:
+                        FieldDisplayName: ="gps_receita_bruta_cliente"
+                        FieldName: ="gps_receita_bruta_cliente"
+                        FieldType: ="n"
                         FieldVariantName: ="textualColumn"
                         Order: =7
-                        ZIndex: =20
+                        ZIndex: =33
+
+                    gps_tot_atv_cliente1 As pcfDataField.textualColumn:
+                        FieldDisplayName: ="gps_tot_atv_cliente"
+                        FieldName: ="gps_tot_atv_cliente"
+                        FieldType: ="n"
+                        FieldVariantName: ="textualColumn"
+                        Order: =8
+                        ZIndex: =34
+
+                    gps_nome_empresa_prestadora1 As pcfDataField.textualColumn:
+                        FieldDisplayName: ="gps_nome_empresa_prestadora"
+                        FieldName: ="gps_nome_empresa_prestadora"
+                        FieldType: ="s"
+                        FieldVariantName: ="textualColumn"
+                        Order: =9
+                        ZIndex: =35
+
+                    gps_cnpj_empresa_prestadora1 As pcfDataField.textualColumn:
+                        FieldDisplayName: ="gps_cnpj_empresa_prestadora"
+                        FieldName: ="gps_cnpj_empresa_prestadora"
+                        FieldType: ="s"
+                        FieldVariantName: ="textualColumn"
+                        Order: =10
+                        ZIndex: =36
+
+                    gps_endr_empresa_prestadora1 As pcfDataField.textualColumn:
+                        FieldDisplayName: ="gps_endr_empresa_prestadora"
+                        FieldName: ="gps_endr_empresa_prestadora"
+                        FieldType: ="s"
+                        FieldVariantName: ="textualColumn"
+                        Order: =11
+                        ZIndex: =37
+
+                    gps_atsd_obj_trab1 As pcfDataField.textualColumn:
+                        FieldDisplayName: ="gps_atsd_obj_trab"
+                        FieldName: ="gps_atsd_obj_trab"
+                        FieldType: ="s"
+                        FieldVariantName: ="textualColumn"
+                        Order: =12
+                        ZIndex: =38
+
+                    gps_atsd_descr_obj_trab1 As pcfDataField.textualColumn:
+                        FieldDisplayName: ="gps_atsd_descr_obj_trab"
+                        FieldName: ="gps_atsd_descr_obj_trab"
+                        FieldType: ="s"
+                        FieldVariantName: ="textualColumn"
+                        Order: =13
+                        ZIndex: =39
+
+                    gps_atsd_qtd_hrs1 As pcfDataField.textualColumn:
+                        FieldDisplayName: ="gps_atsd_qtd_hrs"
+                        FieldName: ="gps_atsd_qtd_hrs"
+                        FieldType: ="n"
+                        FieldVariantName: ="textualColumn"
+                        Order: =14
+                        ZIndex: =40
+
+                    gps_atsd_local1 As pcfDataField.textualColumn:
+                        FieldDisplayName: ="gps_atsd_local"
+                        FieldName: ="gps_atsd_local"
+                        FieldType: ="s"
+                        FieldVariantName: ="textualColumn"
+                        Order: =15
+                        ZIndex: =41
+
+                    gps_atsd_data_inicio1 As pcfDataField.textualColumn:
+                        FieldDisplayName: ="gps_atsd_data_inicio"
+                        FieldName: ="gps_atsd_data_inicio"
+                        FieldType: ="d"
+                        FieldVariantName: ="textualColumn"
+                        Order: =16
+                        ZIndex: =42
+
+                    gps_atsd_data_fim1 As pcfDataField.textualColumn:
+                        FieldDisplayName: ="gps_atsd_data_fim"
+                        FieldName: ="gps_atsd_data_fim"
+                        FieldType: ="d"
+                        FieldVariantName: ="textualColumn"
+                        Order: =17
+                        ZIndex: =43
+
+                    gps_proj_engagement_code1 As pcfDataField.textualColumn:
+                        FieldDisplayName: ="gps_proj_engagement_code"
+                        FieldName: ="gps_proj_engagement_code"
+                        FieldType: ="s"
+                        FieldVariantName: ="textualColumn"
+                        Order: =18
+                        ZIndex: =44
+
+                    gps_atsd_registrado1 As pcfDataField.textualColumn:
+                        FieldDisplayName: ="gps_atsd_registrado"
+                        FieldName: ="gps_atsd_registrado"
+                        FieldType: ="l"
+                        FieldVariantName: ="textualColumn"
+                        Order: =19
+                        ZIndex: =45
+
+                    gps_local_signatario1 As pcfDataField.textualColumn:
+                        FieldDisplayName: ="gps_local_signatario"
+                        FieldName: ="gps_local_signatario"
+                        FieldType: ="s"
+                        FieldVariantName: ="textualColumn"
+                        Order: =20
+                        ZIndex: =46
+
+                    gps_astd_data_assintr1 As pcfDataField.textualColumn:
+                        FieldDisplayName: ="gps_astd_data_assintr"
+                        FieldName: ="gps_astd_data_assintr"
+                        FieldType: ="d"
+                        FieldVariantName: ="textualColumn"
+                        Order: =21
+                        ZIndex: =47
+
+                    gps_nome_signatario1 As pcfDataField.textualColumn:
+                        FieldDisplayName: ="gps_nome_signatario"
+                        FieldName: ="gps_nome_signatario"
+                        FieldType: ="s"
+                        FieldVariantName: ="textualColumn"
+                        Order: =22
+                        ZIndex: =48
+
+                    gps_cargo_signatario1 As pcfDataField.textualColumn:
+                        FieldDisplayName: ="gps_cargo_signatario"
+                        FieldName: ="gps_cargo_signatario"
+                        FieldType: ="s"
+                        FieldVariantName: ="textualColumn"
+                        Order: =23
+                        ZIndex: =49
+
+                    gps_email_signatario1 As pcfDataField.textualColumn:
+                        FieldDisplayName: ="gps_email_signatario"
+                        FieldName: ="gps_email_signatario"
+                        FieldType: ="s"
+                        FieldVariantName: ="textualColumn"
+                        Order: =24
+                        ZIndex: =50
+
+                    gps_tel_signatario1 As pcfDataField.textualColumn:
+                        FieldDisplayName: ="gps_tel_signatario"
+                        FieldName: ="gps_tel_signatario"
+                        FieldType: ="s"
+                        FieldVariantName: ="textualColumn"
+                        Order: =25
+                        ZIndex: =51
+
+                    gps_endr_signatario1 As pcfDataField.textualColumn:
+                        FieldDisplayName: ="gps_endr_signatario"
+                        FieldName: ="gps_endr_signatario"
+                        FieldType: ="s"
+                        FieldVariantName: ="textualColumn"
+                        Order: =26
+                        ZIndex: =52
+
+                    gps_astd_file_uploaded1 As pcfDataField.textualColumn:
+                        FieldDisplayName: ="gps_astd_file_uploaded"
+                        FieldName: ="gps_astd_file_uploaded"
+                        FieldType: ="F"
+                        FieldVariantName: ="textualColumn"
+                        Order: =27
+                        ZIndex: =53
 
             ctnNovoAtestado As groupContainer.horizontalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
