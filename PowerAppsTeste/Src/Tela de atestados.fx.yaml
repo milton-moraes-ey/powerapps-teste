@@ -8022,9 +8022,8 @@
     ctnLoadSpinner_18 As groupContainer.manualLayoutContainer:
         Fill: =RGBA(0, 0, 0, 0.7)
         Height: =Parent.Height
-        Visible: |-
-            =//locLoadSpinner
-            true
+        Visible: |
+            =locLoadSpinner
         Width: =Parent.Width
         ZIndex: =10
 
