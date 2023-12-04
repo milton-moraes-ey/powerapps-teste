@@ -3330,6 +3330,22 @@
                                         Order: =1
                                         ZIndex: =24
 
+                                    gpn2 As pcfDataField.textualColumn:
+                                        FieldDisplayName: ="gpn"
+                                        FieldName: ="gps_gpn"
+                                        FieldType: ="s"
+                                        FieldVariantName: ="textualColumn"
+                                        Order: =3
+                                        ZIndex: =59
+
+                                    Profissional1 As pcfDataField.textualColumn:
+                                        FieldDisplayName: ="Profissional"
+                                        FieldName: ="gps_profissionalid"
+                                        FieldType: ="g"
+                                        FieldVariantName: ="textualColumn"
+                                        Order: =4
+                                        ZIndex: =60
+
                                 ErrorMessage28_1 As Text:
                                     DisplayMode: =DisplayMode.Edit
                                     Height: =30
@@ -4569,6 +4585,8 @@
                                             colEditarMembrosEquipe,
                                             "prof_id_guid",
                                             prof_id.Profissional,
+                                            "prof_d2",
+                                            prof_id.id,
                                             "atsd_id2",
                                             locDadosDoAtestado.id,
                                             "atsd_id_guid",
@@ -6719,6 +6737,38 @@
                                 Order: =2
                                 ZIndex: =54
 
+                            id1 As pcfDataField.textualColumn:
+                                FieldDisplayName: ="id"
+                                FieldName: ="gps_id"
+                                FieldType: ="s"
+                                FieldVariantName: ="textualColumn"
+                                Order: =2
+                                ZIndex: =55
+
+                            gpn1 As pcfDataField.textualColumn:
+                                FieldDisplayName: ="gpn"
+                                FieldName: ="gps_gpn"
+                                FieldType: ="s"
+                                FieldVariantName: ="textualColumn"
+                                Order: =3
+                                ZIndex: =56
+
+                            formacao_academica1 As pcfDataField.textualColumn:
+                                FieldDisplayName: ="formacao_academica"
+                                FieldName: ="gps_formacao_academica"
+                                FieldType: ="s"
+                                FieldVariantName: ="textualColumn"
+                                Order: =4
+                                ZIndex: =57
+
+                            historico_capacitacoes1 As pcfDataField.textualColumn:
+                                FieldDisplayName: ="historico_capacitacoes"
+                                FieldName: ="gps_historico_capacitacoes"
+                                FieldType: ="s"
+                                FieldVariantName: ="textualColumn"
+                                Order: =5
+                                ZIndex: =58
+
                     prof_funcao_projeto_DataCard2 As typedDataCard.fluentV9TextualEditCard:
                         BorderStyle: =BorderStyle.Solid
                         DataField: ="gps_prof_funcao_projeto"
@@ -6946,7 +6996,7 @@
                                     prof_funcao_projeto: dcvEditarFuncaoProjetoAtestado.Value
                                 }
                             );
-                            
+                            /*
                             Patch(
                                 AtestadoProfissionais,
                                 Defaults(AtestadoProfissionais),
@@ -6957,7 +7007,7 @@
                                     horas_trabalhadas: Value(dcvEditarHorasTrabalhadas.Value),
                                     prof_funcao_projeto: dcvEditarFuncaoProjetoAtestado.Value
                                 }
-                            );
+                            );*/
                             ResetForm(frmEditarMembrosDaEquipe)
                         PressedBorderColor: =RGBA(0, 69, 120, 1)
                         PressedColor: =RGBA(255, 255, 255, 1)
@@ -7084,7 +7134,7 @@
                         HoverFill: =RGBA(0, 0, 0, 0)
                         Icon: =Icon.Trash
                         OnSelect: |
-                            =Remove(colEditarMembrosEquipe, ThisItem); Remove(AtestadoProfissionais, ThisItem)
+                            =Remove(colEditarMembrosEquipe, ThisItem); /*Remove(AtestadoProfissionais, ThisItem)*/
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedColor: =RGBA(16, 110, 190, 1)
                         PressedFill: =RGBA(0, 0, 0, 0)
