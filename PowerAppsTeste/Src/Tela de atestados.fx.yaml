@@ -4494,6 +4494,7 @@
                     RadiusTopRight: =4
                     Size: =12
                     Text: ="🛠 Equipe"
+                    Tooltip: ="Dados da equipe do projeto"
                     Width: |
                         =120
                     X: =Rectangle3_1.X - Self.Width - Parent.PaddingRight
@@ -4512,7 +4513,7 @@
                     Font: =Font.'Segoe UI'
                     FontWeight: =FontWeight.Normal
                     HoverBorderColor: =RGBA(0, 0, 0, 0)
-                    HoverFill: =ColorFade(gblTema.AccentColor, -10%)
+                    HoverFill: =ColorFade(Self.Fill, -10%)
                     OnSelect: |+
                         =UpdateContext({locLoadSpinner: true});
                         Set(
@@ -4653,6 +4654,7 @@
                     RadiusTopRight: =4
                     Size: =12
                     Text: ="🛠 Signatário"
+                    Tooltip: ="Dados do signatário"
                     Width: |
                         =120
                     X: =btnVerEquipe.X - Self.Width - Parent.PaddingRight
@@ -4699,6 +4701,7 @@
                     RadiusTopRight: =4
                     Size: =12
                     Text: ="🛠 Objeto"
+                    Tooltip: ="Dados do objeto do atestado"
                     Width: |
                         =120
                     X: =btnSignatario.X - Self.Width - Parent.PaddingRight
@@ -4745,6 +4748,7 @@
                     RadiusTopRight: =4
                     Size: =12
                     Text: ="🛠 Empresas"
+                    Tooltip: ="Dados das empresas"
                     Width: |
                         =120
                     X: =btnDadosObjeto.X - Self.Width - Parent.PaddingRight
@@ -4764,6 +4768,7 @@
                     Icon: =Icon.Trash
                     OnSelect: |-
                         =UpdateContext({locMostrarPopUpDeConfirmarDelecaoDeAtestado: true})
+                    Tooltip: ="Deletar atestado"
                     Width: =32
                     X: =Rectangle3.X - Self.Width - Parent.PaddingRight
                     Y: =12
@@ -4774,6 +4779,7 @@
                     Height: =32
                     Icon: =Icon.DocumentPDF
                     OnSelect: =
+                    Tooltip: ="Ver arquivo do atestado"
                     Width: =32
                     X: =icoDeletarAtestado.X - Self.Width - Parent.PaddingRight
                     Y: =11
