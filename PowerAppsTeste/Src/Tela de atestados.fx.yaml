@@ -4547,10 +4547,7 @@
                                 )
                             )
                         );
-                        RemoveIf(
-                            AtestadoProfissionais,
-                            atsd_id.id = locDadosDoAtestado.id
-                        );
+                        /*
                         ForAll(
                             colEditarMembrosEquipe,
                             Patch(
@@ -4563,7 +4560,7 @@
                                     prof_dominio_atuacao: ThisRecord.prof_dominio_atuacao
                                 }
                             ).AtestadoProfissional
-                        );
+                        );*/
                         UpdateContext({locMostrarMensagemDeEdicaoDeAtestado: true})
                     PressedBorderColor: =RGBA(0, 69, 120, 1)
                     PressedColor: =RGBA(255, 255, 255, 1)
@@ -6931,7 +6928,7 @@
                                     prof_funcao_projeto: dcvEditarFuncaoProjetoAtestado.Value
                                 }
                             );
-                            /*
+                            
                             Patch(
                                 AtestadoProfissionais,
                                 Defaults(AtestadoProfissionais),
@@ -6942,7 +6939,7 @@
                                     horas_trabalhadas: Value(dcvEditarHorasTrabalhadas.Value),
                                     prof_funcao_projeto: dcvEditarFuncaoProjetoAtestado.Value
                                 }
-                            );*/
+                            );
                             ResetForm(frmEditarMembrosDaEquipe)
                         PressedBorderColor: =RGBA(0, 69, 120, 1)
                         PressedColor: =RGBA(255, 255, 255, 1)
@@ -7069,7 +7066,7 @@
                         HoverFill: =RGBA(0, 0, 0, 0)
                         Icon: =Icon.Trash
                         OnSelect: |
-                            =Remove(colEditarMembrosEquipe, ThisItem); /*Remove(AtestadoProfissionais, ThisItem)*/
+                            =Remove(colEditarMembrosEquipe, ThisItem); RemoveIf(AtestadoProfissionais, ThisItem.prof_id.id = prof_id.id)
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedColor: =RGBA(16, 110, 190, 1)
                         PressedFill: =RGBA(0, 0, 0, 0)
