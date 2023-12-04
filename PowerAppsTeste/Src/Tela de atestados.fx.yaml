@@ -408,7 +408,7 @@
                             =//If(App.Width<=LookUp(App.SizeBreakpoints,Value=1200,Value),14,14)
                             
                             12
-                        Text: =ThisItem.nome_signatario
+                        Text: =Concat(Filter(AtestadoProfissionais, gps_atsd_id.id = ThisItem.id), prof_id.nome_completo & " (" &  prof_funcao_projeto & ")", ", ")
                         VerticalAlign: =VerticalAlign.Top
                         Width: |-
                             =//If(App.Width<=LookUp(App.SizeBreakpoints,Value=1200,Value),483,If(App.Width>LookUp(App.SizeBreakpoints,Value=1200,Value)&&App.Width<=LookUp(App.SizeBreakpoints,Value=1800,Value), Parent .Width*0.7, Parent .Width*0.7))
@@ -597,7 +597,7 @@
                     LayoutMinHeight: =If(Self.Y + 500 > Parent.Height, Parent.Height - Self.Y, 500)
                     LayoutMinWidth: =If(Self.X + 800 > Parent.Width, Parent.Width - Self.X, 800)
                     NoDataText: =""
-                    ReflowBehavior: ='PowerAppsOneGrid.ReflowBehavior'.GridOnly
+                    ReflowBehavior: ='PowerAppsOneGrid.ReflowBehavior'.Reflow
                     ShowFooter: ="no"
                     Visible: =If(CountRows(glrAtestados.AllItems) > 0 && !locAlternarVisualizacaoControleDeAtestados, true, false)
                     Width: =If(Self.X + 800 > Parent.Width, Parent.Width - Self.X, 800)
