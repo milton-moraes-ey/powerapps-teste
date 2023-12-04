@@ -293,7 +293,7 @@
                     BorderColor: =RGBA(230, 230, 230, 1)
                     DelayItemLoading: =true
                     Fill: =gblTema.WhiteColor
-                    Items: =colAtestados
+                    Items: =Atestados
                     Layout: =Layout.Vertical
                     LayoutMinHeight: =287
                     LayoutMinWidth: =640
@@ -4384,7 +4384,8 @@
                                 locDadosDoAtestado: Blank()
                             }
                         );
-                        Clear(colDescricaoAtual)
+                        Clear(colDescricaoAtual);
+                        ClearCollect(colAtestados, Atestados)
                     PressedBorderColor: =RGBA(0, 0, 0, 0)
                     PressedColor: =RGBA(16, 110, 190, 1)
                     PressedFill: =RGBA(0, 0, 0, 0)
@@ -4588,7 +4589,11 @@
                         If(
                             locRespostaFlowEditarrelacionamentoAtestadoProfissionais = "completed" || !IsBlank(gblEditarRegistroAtestado),
                             UpdateContext({locMostrarMensagemDeEdicaoDeAtestado: true})
-                        )
+                        );
+                        
+                        Refresh(Atestados);
+                        
+                        ClearCollect(colAtestados, Atestados)
                         
                         
                         
