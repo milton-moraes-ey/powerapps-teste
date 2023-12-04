@@ -4549,9 +4549,19 @@
                         );
                         ForAll(
                             colEditarMembrosEquipe,
+                            Remove(
+                                AtestadoProfissionais,
+                                ThisRecord
+                            );
                             Patch(
                                 AtestadoProfissionais,
-                                LookUp(AtestadoProfissionais, atsd_id.id = locDadosDoAtestado.id),
+                                Coalesce(
+                                    LookUp(
+                                        AtestadoProfissionais,
+                                        atsd_id.id = locDadosDoAtestado.id
+                                    ),
+                                    Defaults(AtestadoProfissionais)
+                                ),
                                 {
                                     prof_id: ThisRecord.prof_id,
                                     horas_trabalhadas: Value(ThisRecord.horas_trabalhadas),
@@ -4560,7 +4570,6 @@
                                 }
                             ).AtestadoProfissional
                         );
-                        
                         UpdateContext({locMostrarMensagemDeEdicaoDeAtestado: true})
                     PressedBorderColor: =RGBA(0, 69, 120, 1)
                     PressedColor: =RGBA(255, 255, 255, 1)
@@ -6928,7 +6937,18 @@
                                     prof_funcao_projeto: dcvEditarFuncaoProjetoAtestado.Value
                                 }
                             );
-                            
+                            /*
+                            Patch(
+                                AtestadoProfissionais,
+                                Defaults(AtestadoProfissionais),
+                                {
+                                    atsd_id: locDadosDoAtestado,
+                                    prof_id: dcvEditarProfissionalAtestado.Selected,
+                                    prof_dominio_atuacao: dcvEditarDominioAtuacao.Value,
+                                    horas_trabalhadas: Value(dcvEditarHorasTrabalhadas.Value),
+                                    prof_funcao_projeto: dcvEditarFuncaoProjetoAtestado.Value
+                                }
+                            );*/
                             ResetForm(frmEditarMembrosDaEquipe)
                         PressedBorderColor: =RGBA(0, 69, 120, 1)
                         PressedColor: =RGBA(255, 255, 255, 1)
@@ -7055,7 +7075,7 @@
                         HoverFill: =RGBA(0, 0, 0, 0)
                         Icon: =Icon.Trash
                         OnSelect: |
-                            =Remove(colEditarMembrosEquipe, ThisItem);
+                            =Remove(colEditarMembrosEquipe, ThisItem); /*Remove(AtestadoProfissionais, ThisItem)*/
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedColor: =RGBA(16, 110, 190, 1)
                         PressedFill: =RGBA(0, 0, 0, 0)
