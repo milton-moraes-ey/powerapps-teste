@@ -4388,6 +4388,7 @@
                     PressedBorderColor: =RGBA(0, 0, 0, 0)
                     PressedColor: =RGBA(16, 110, 190, 1)
                     PressedFill: =RGBA(0, 0, 0, 0)
+                    Tooltip: ="Cancelar edição"
                     Width: =32
                     X: =Parent.Width - Self.Width - Parent.PaddingRight
                     Y: =Parent.PaddingTop
@@ -6292,7 +6293,9 @@
                         AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
                         BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
+                        Format: ="Short"
                         Height: =32
+                        Placeholder: ="Selecionar data"
                         SelectedDate: =Parent.Default
                         ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                         Width: =(Parent.Width - 48)
@@ -6352,7 +6355,9 @@
                         AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
                         BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
+                        Format: ="Short"
                         Height: =32
+                        Placeholder: ="Selecionar data"
                         SelectedDate: =Parent.Default
                         ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                         Width: =(Parent.Width - 48)
@@ -6619,7 +6624,7 @@
                         Color: =gblTema.AccentColor
                         Fill: =gblTema.WhiteColor  
                         Height: =32
-                        Icon: =Icon.Edit
+                        Icon: =Icon.Add
                         OnSelect: |-
                             =ClearCollect(
                                 colDescricaoAtual,
@@ -6629,6 +6634,7 @@
                                 )
                             );
                             UpdateContext({locMostrarPopUpParaEditarDescricao: true})
+                        Tooltip: ="Adicionar ou remover descrição do objeto"
                         Width: =32
                         X: =dcvEditarDescricaoDoAtestado.X + dcvEditarDescricaoDoAtestado.Width - Self.Width
                         Y: =DataCardKey63.Y
@@ -7147,6 +7153,7 @@
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedColor: =RGBA(16, 110, 190, 1)
                         PressedFill: =RGBA(0, 0, 0, 0)
+                        Tooltip: ="Remover membro adicionado"
                         Width: =28
                         X: =1142.8120000000001
                         Y: =12
