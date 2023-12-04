@@ -1484,19 +1484,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblObjetivo.FocusedBorderThickness"
+                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblDescricaoDoProjeto.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblObjetivo.FocusedBorderThickness",
+                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblDescricaoDoProjeto.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "FocusedBorderThickness",
                 "module": "Tela de atestados",
-                "type": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblObjetivo"
+                "type": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblDescricaoDoProjeto"
               }
             }
           ],
@@ -1514,19 +1514,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblObjetivo.TabIndex"
+                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblDescricaoDoProjeto.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblObjetivo.TabIndex",
+                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblDescricaoDoProjeto.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Tela de atestados",
-                "type": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblObjetivo"
+                "type": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblDescricaoDoProjeto"
               }
             }
           ],
