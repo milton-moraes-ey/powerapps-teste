@@ -408,7 +408,7 @@
                             =//If(App.Width<=LookUp(App.SizeBreakpoints,Value=1200,Value),14,14)
                             
                             12
-                        Text: =Concat(Filter(AtestadoProfissionais, gps_atsd_id.id = ThisItem.id), prof_id.nome_completo & " (" &  prof_funcao_projeto & ")", ", ")
+                        Text: =Concat(Filter(AtestadoProfissionais, atsd_id.id = ThisItem.id), prof_id.nome_completo & " (" &  prof_funcao_projeto & ")", ", ")
                         VerticalAlign: =VerticalAlign.Top
                         Width: |-
                             =//If(App.Width<=LookUp(App.SizeBreakpoints,Value=1200,Value),483,If(App.Width>LookUp(App.SizeBreakpoints,Value=1200,Value)&&App.Width<=LookUp(App.SizeBreakpoints,Value=1800,Value), Parent .Width*0.7, Parent .Width*0.7))
@@ -4547,21 +4547,15 @@
                                 )
                             )
                         );
+                        RemoveIf(
+                            AtestadoProfissionais,
+                            atsd_id.id = locDadosDoAtestado.id
+                        );
                         ForAll(
                             colEditarMembrosEquipe,
-                            Remove(
-                                AtestadoProfissionais,
-                                ThisRecord
-                            );
                             Patch(
                                 AtestadoProfissionais,
-                                Coalesce(
-                                    LookUp(
-                                        AtestadoProfissionais,
-                                        atsd_id.id = locDadosDoAtestado.id
-                                    ),
-                                    Defaults(AtestadoProfissionais)
-                                ),
+                                Defaults(AtestadoProfissionais),
                                 {
                                     prof_id: ThisRecord.prof_id,
                                     horas_trabalhadas: Value(ThisRecord.horas_trabalhadas),
@@ -6695,7 +6689,7 @@
                             AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
                             DisplayMode: =Parent.DisplayMode
                             Height: =32
-                            Items: =Choices([@AtestadoProfissionais].gps_prof_id)
+                            Items: =Choices([@AtestadoProfissionais].prof_id)
                             ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                             Width: =Parent.Width - 48
                             X: =24
