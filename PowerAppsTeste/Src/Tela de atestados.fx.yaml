@@ -846,11 +846,23 @@
                     gps_nome_cliente_Column1 As dataTableColumn.textualColumn:
                         AutoWidth: =true
                         DisplayMode: =DisplayMode.Edit
-                        FieldDisplayName: ="gps_nome_cliente"
+                        FieldDisplayName: ="Nome cliente"
                         FieldName: ="gps_nome_cliente"
                         FieldVariantName: ="textualColumn"
                         Height: =Parent.Height
                         LayoutHeight: =Parent.Height
+                        OnSelect: |-
+                            =UpdateContext(
+                                {
+                                    locAcaoEscolhida: "Editar",
+                                    locDadosDoAtestado: DataTable1.Selected,
+                                    locMostrarPopUpParaAdicionarDescricao: false,
+                                    locMostrarFormEditarEmpresasDoAtestado: true,
+                                    locMostrarFormEditarSignatarioDoAtestado: false,
+                                    locMostrarFormEditarEquipeDoAtestado: false,
+                                    locMostrarDadosDoProjeto: false
+                                }
+                            )
                         Order: =1
                         Text: =ThisItem.gps_nome_cliente
                         Visible: =true
@@ -861,11 +873,23 @@
 
                     gps_cnpj_cliente_Column1 As dataTableColumn.textualColumn:
                         DisplayMode: =DisplayMode.Edit
-                        FieldDisplayName: ="gps_cnpj_cliente"
+                        FieldDisplayName: ="CNPJ cliente"
                         FieldName: ="gps_cnpj_cliente"
                         FieldVariantName: ="textualColumn"
                         Height: =Parent.Height
                         LayoutHeight: =Parent.Height
+                        OnSelect: |-
+                            =UpdateContext(
+                                {
+                                    locAcaoEscolhida: "Editar",
+                                    locDadosDoAtestado: DataTable1.Selected,
+                                    locMostrarPopUpParaAdicionarDescricao: false,
+                                    locMostrarFormEditarEmpresasDoAtestado: true,
+                                    locMostrarFormEditarSignatarioDoAtestado: false,
+                                    locMostrarFormEditarEquipeDoAtestado: false,
+                                    locMostrarDadosDoProjeto: false
+                                }
+                            )
                         Order: =2
                         Text: =ThisItem.gps_cnpj_cliente
                         Width: =100
@@ -875,11 +899,23 @@
 
                     gps_endr_cliente_Column1 As dataTableColumn.textualColumn:
                         DisplayMode: =DisplayMode.Edit
-                        FieldDisplayName: ="gps_endr_cliente"
+                        FieldDisplayName: ="Endereço cliente"
                         FieldName: ="gps_endr_cliente"
                         FieldVariantName: ="textualColumn"
                         Height: =Parent.Height
                         LayoutHeight: =Parent.Height
+                        OnSelect: |-
+                            =UpdateContext(
+                                {
+                                    locAcaoEscolhida: "Editar",
+                                    locDadosDoAtestado: DataTable1.Selected,
+                                    locMostrarPopUpParaAdicionarDescricao: false,
+                                    locMostrarFormEditarEmpresasDoAtestado: true,
+                                    locMostrarFormEditarSignatarioDoAtestado: false,
+                                    locMostrarFormEditarEquipeDoAtestado: false,
+                                    locMostrarDadosDoProjeto: false
+                                }
+                            )
                         Order: =3
                         Text: =ThisItem.gps_endr_cliente
                         Width: =100
@@ -889,11 +925,23 @@
 
                     gps_ativ_econ_cliente_Column1 As dataTableColumn.textualColumn:
                         DisplayMode: =DisplayMode.Edit
-                        FieldDisplayName: ="gps_ativ_econ_cliente"
+                        FieldDisplayName: ="Atividade econômica"
                         FieldName: ="gps_ativ_econ_cliente"
                         FieldVariantName: ="textualColumn"
                         Height: =Parent.Height
                         LayoutHeight: =Parent.Height
+                        OnSelect: |-
+                            =UpdateContext(
+                                {
+                                    locAcaoEscolhida: "Editar",
+                                    locDadosDoAtestado: DataTable1.Selected,
+                                    locMostrarPopUpParaAdicionarDescricao: false,
+                                    locMostrarFormEditarEmpresasDoAtestado: true,
+                                    locMostrarFormEditarSignatarioDoAtestado: false,
+                                    locMostrarFormEditarEquipeDoAtestado: false,
+                                    locMostrarDadosDoProjeto: false
+                                }
+                            )
                         Order: =4
                         Text: =ThisItem.gps_ativ_econ_cliente
                         Width: =100
@@ -903,11 +951,23 @@
 
                     gps_num_func_cliente_Column1 As dataTableColumn.textualColumn:
                         DisplayMode: =DisplayMode.Edit
-                        FieldDisplayName: ="gps_num_func_cliente"
+                        FieldDisplayName: ="Número de funcionários"
                         FieldName: ="gps_num_func_cliente"
                         FieldVariantName: ="textualColumn"
                         Height: =Parent.Height
                         LayoutHeight: =Parent.Height
+                        OnSelect: |-
+                            =UpdateContext(
+                                {
+                                    locAcaoEscolhida: "Editar",
+                                    locDadosDoAtestado: DataTable1.Selected,
+                                    locMostrarPopUpParaAdicionarDescricao: false,
+                                    locMostrarFormEditarEmpresasDoAtestado: true,
+                                    locMostrarFormEditarSignatarioDoAtestado: false,
+                                    locMostrarFormEditarEquipeDoAtestado: false,
+                                    locMostrarDadosDoProjeto: false
+                                }
+                            )
                         Order: =5
                         Text: =ThisItem.gps_num_func_cliente
                         Width: =100
@@ -917,11 +977,23 @@
 
                     gps_patrim_liq_cliente_Column1 As dataTableColumn.textualColumn:
                         DisplayMode: =DisplayMode.Edit
-                        FieldDisplayName: ="gps_patrim_liq_cliente"
+                        FieldDisplayName: ="Patrimônio líquido"
                         FieldName: ="gps_patrim_liq_cliente"
                         FieldVariantName: ="textualColumn"
                         Height: =Parent.Height
                         LayoutHeight: =Parent.Height
+                        OnSelect: |-
+                            =UpdateContext(
+                                {
+                                    locAcaoEscolhida: "Editar",
+                                    locDadosDoAtestado: DataTable1.Selected,
+                                    locMostrarPopUpParaAdicionarDescricao: false,
+                                    locMostrarFormEditarEmpresasDoAtestado: true,
+                                    locMostrarFormEditarSignatarioDoAtestado: false,
+                                    locMostrarFormEditarEquipeDoAtestado: false,
+                                    locMostrarDadosDoProjeto: false
+                                }
+                            )
                         Order: =6
                         Text: =ThisItem.gps_patrim_liq_cliente
                         Width: =100
@@ -931,11 +1003,23 @@
 
                     gps_receita_bruta_cliente_Column1 As dataTableColumn.textualColumn:
                         DisplayMode: =DisplayMode.Edit
-                        FieldDisplayName: ="gps_receita_bruta_cliente"
+                        FieldDisplayName: ="Receita bruta"
                         FieldName: ="gps_receita_bruta_cliente"
                         FieldVariantName: ="textualColumn"
                         Height: =Parent.Height
                         LayoutHeight: =Parent.Height
+                        OnSelect: |-
+                            =UpdateContext(
+                                {
+                                    locAcaoEscolhida: "Editar",
+                                    locDadosDoAtestado: DataTable1.Selected,
+                                    locMostrarPopUpParaAdicionarDescricao: false,
+                                    locMostrarFormEditarEmpresasDoAtestado: true,
+                                    locMostrarFormEditarSignatarioDoAtestado: false,
+                                    locMostrarFormEditarEquipeDoAtestado: false,
+                                    locMostrarDadosDoProjeto: false
+                                }
+                            )
                         Order: =7
                         Text: =ThisItem.gps_receita_bruta_cliente
                         Width: =100
@@ -945,11 +1029,23 @@
 
                     gps_tot_atv_cliente_Column1 As dataTableColumn.textualColumn:
                         DisplayMode: =DisplayMode.Edit
-                        FieldDisplayName: ="gps_tot_atv_cliente"
+                        FieldDisplayName: ="Total de ativos"
                         FieldName: ="gps_tot_atv_cliente"
                         FieldVariantName: ="textualColumn"
                         Height: =Parent.Height
                         LayoutHeight: =Parent.Height
+                        OnSelect: |-
+                            =UpdateContext(
+                                {
+                                    locAcaoEscolhida: "Editar",
+                                    locDadosDoAtestado: DataTable1.Selected,
+                                    locMostrarPopUpParaAdicionarDescricao: false,
+                                    locMostrarFormEditarEmpresasDoAtestado: true,
+                                    locMostrarFormEditarSignatarioDoAtestado: false,
+                                    locMostrarFormEditarEquipeDoAtestado: false,
+                                    locMostrarDadosDoProjeto: false
+                                }
+                            )
                         Order: =8
                         Text: =ThisItem.gps_tot_atv_cliente
                         Width: =100
@@ -959,11 +1055,23 @@
 
                     gps_nome_empresa_prestadora_Column1 As dataTableColumn.textualColumn:
                         DisplayMode: =DisplayMode.Edit
-                        FieldDisplayName: ="gps_nome_empresa_prestadora"
+                        FieldDisplayName: ="Prestadora do serviço"
                         FieldName: ="gps_nome_empresa_prestadora"
                         FieldVariantName: ="textualColumn"
                         Height: =Parent.Height
                         LayoutHeight: =Parent.Height
+                        OnSelect: |-
+                            =UpdateContext(
+                                {
+                                    locAcaoEscolhida: "Editar",
+                                    locDadosDoAtestado: DataTable1.Selected,
+                                    locMostrarPopUpParaAdicionarDescricao: false,
+                                    locMostrarFormEditarEmpresasDoAtestado: true,
+                                    locMostrarFormEditarSignatarioDoAtestado: false,
+                                    locMostrarFormEditarEquipeDoAtestado: false,
+                                    locMostrarDadosDoProjeto: false
+                                }
+                            )
                         Order: =9
                         Text: =ThisItem.gps_nome_empresa_prestadora
                         Width: =100
@@ -973,11 +1081,23 @@
 
                     gps_cnpj_empresa_prestadora_Column1 As dataTableColumn.textualColumn:
                         DisplayMode: =DisplayMode.Edit
-                        FieldDisplayName: ="gps_cnpj_empresa_prestadora"
+                        FieldDisplayName: ="CNPJ"
                         FieldName: ="gps_cnpj_empresa_prestadora"
                         FieldVariantName: ="textualColumn"
                         Height: =Parent.Height
                         LayoutHeight: =Parent.Height
+                        OnSelect: |-
+                            =UpdateContext(
+                                {
+                                    locAcaoEscolhida: "Editar",
+                                    locDadosDoAtestado: DataTable1.Selected,
+                                    locMostrarPopUpParaAdicionarDescricao: false,
+                                    locMostrarFormEditarEmpresasDoAtestado: true,
+                                    locMostrarFormEditarSignatarioDoAtestado: false,
+                                    locMostrarFormEditarEquipeDoAtestado: false,
+                                    locMostrarDadosDoProjeto: false
+                                }
+                            )
                         Order: =10
                         Text: =ThisItem.gps_cnpj_empresa_prestadora
                         Width: =100
@@ -987,11 +1107,23 @@
 
                     gps_endr_empresa_prestadora_Column1 As dataTableColumn.textualColumn:
                         DisplayMode: =DisplayMode.Edit
-                        FieldDisplayName: ="gps_endr_empresa_prestadora"
+                        FieldDisplayName: ="Endereço"
                         FieldName: ="gps_endr_empresa_prestadora"
                         FieldVariantName: ="textualColumn"
                         Height: =Parent.Height
                         LayoutHeight: =Parent.Height
+                        OnSelect: |-
+                            =UpdateContext(
+                                {
+                                    locAcaoEscolhida: "Editar",
+                                    locDadosDoAtestado: DataTable1.Selected,
+                                    locMostrarPopUpParaAdicionarDescricao: false,
+                                    locMostrarFormEditarEmpresasDoAtestado: true,
+                                    locMostrarFormEditarSignatarioDoAtestado: false,
+                                    locMostrarFormEditarEquipeDoAtestado: false,
+                                    locMostrarDadosDoProjeto: false
+                                }
+                            )
                         Order: =11
                         Text: =ThisItem.gps_endr_empresa_prestadora
                         Width: =100
@@ -1001,11 +1133,23 @@
 
                     gps_nome_signatario_Column1 As dataTableColumn.textualColumn:
                         DisplayMode: =DisplayMode.Edit
-                        FieldDisplayName: ="gps_nome_signatario"
+                        FieldDisplayName: ="Nome signatário"
                         FieldName: ="gps_nome_signatario"
                         FieldVariantName: ="textualColumn"
                         Height: =Parent.Height
                         LayoutHeight: =Parent.Height
+                        OnSelect: |-
+                            =UpdateContext(
+                                {
+                                    locAcaoEscolhida: "Editar",
+                                    locDadosDoAtestado: DataTable1.Selected,
+                                    locMostrarPopUpParaAdicionarDescricao: false,
+                                    locMostrarFormEditarEmpresasDoAtestado: true,
+                                    locMostrarFormEditarSignatarioDoAtestado: false,
+                                    locMostrarFormEditarEquipeDoAtestado: false,
+                                    locMostrarDadosDoProjeto: false
+                                }
+                            )
                         Order: =12
                         Text: =ThisItem.gps_nome_signatario
                         Width: =100
@@ -1015,11 +1159,23 @@
 
                     gps_email_signatario_Column1 As dataTableColumn.textualColumn:
                         DisplayMode: =DisplayMode.Edit
-                        FieldDisplayName: ="gps_email_signatario"
+                        FieldDisplayName: ="Email signatário"
                         FieldName: ="gps_email_signatario"
                         FieldVariantName: ="textualColumn"
                         Height: =Parent.Height
                         LayoutHeight: =Parent.Height
+                        OnSelect: |-
+                            =UpdateContext(
+                                {
+                                    locAcaoEscolhida: "Editar",
+                                    locDadosDoAtestado: DataTable1.Selected,
+                                    locMostrarPopUpParaAdicionarDescricao: false,
+                                    locMostrarFormEditarEmpresasDoAtestado: true,
+                                    locMostrarFormEditarSignatarioDoAtestado: false,
+                                    locMostrarFormEditarEquipeDoAtestado: false,
+                                    locMostrarDadosDoProjeto: false
+                                }
+                            )
                         Order: =13
                         Text: =ThisItem.gps_email_signatario
                         Width: =100
@@ -1029,11 +1185,23 @@
 
                     gps_cargo_signatario_Column1 As dataTableColumn.textualColumn:
                         DisplayMode: =DisplayMode.Edit
-                        FieldDisplayName: ="gps_cargo_signatario"
+                        FieldDisplayName: ="Cargo signatário"
                         FieldName: ="gps_cargo_signatario"
                         FieldVariantName: ="textualColumn"
                         Height: =Parent.Height
                         LayoutHeight: =Parent.Height
+                        OnSelect: |-
+                            =UpdateContext(
+                                {
+                                    locAcaoEscolhida: "Editar",
+                                    locDadosDoAtestado: DataTable1.Selected,
+                                    locMostrarPopUpParaAdicionarDescricao: false,
+                                    locMostrarFormEditarEmpresasDoAtestado: true,
+                                    locMostrarFormEditarSignatarioDoAtestado: false,
+                                    locMostrarFormEditarEquipeDoAtestado: false,
+                                    locMostrarDadosDoProjeto: false
+                                }
+                            )
                         Order: =14
                         Text: =ThisItem.gps_cargo_signatario
                         Width: =100
@@ -1043,11 +1211,23 @@
 
                     gps_endr_signatario_Column1 As dataTableColumn.textualColumn:
                         DisplayMode: =DisplayMode.Edit
-                        FieldDisplayName: ="gps_endr_signatario"
+                        FieldDisplayName: ="Endereço signatário"
                         FieldName: ="gps_endr_signatario"
                         FieldVariantName: ="textualColumn"
                         Height: =Parent.Height
                         LayoutHeight: =Parent.Height
+                        OnSelect: |-
+                            =UpdateContext(
+                                {
+                                    locAcaoEscolhida: "Editar",
+                                    locDadosDoAtestado: DataTable1.Selected,
+                                    locMostrarPopUpParaAdicionarDescricao: false,
+                                    locMostrarFormEditarEmpresasDoAtestado: true,
+                                    locMostrarFormEditarSignatarioDoAtestado: false,
+                                    locMostrarFormEditarEquipeDoAtestado: false,
+                                    locMostrarDadosDoProjeto: false
+                                }
+                            )
                         Order: =15
                         Text: =ThisItem.gps_endr_signatario
                         Width: =100
@@ -1057,11 +1237,23 @@
 
                     gps_tel_signatario_Column1 As dataTableColumn.textualColumn:
                         DisplayMode: =DisplayMode.Edit
-                        FieldDisplayName: ="gps_tel_signatario"
+                        FieldDisplayName: ="Telefone signatário"
                         FieldName: ="gps_tel_signatario"
                         FieldVariantName: ="textualColumn"
                         Height: =Parent.Height
                         LayoutHeight: =Parent.Height
+                        OnSelect: |-
+                            =UpdateContext(
+                                {
+                                    locAcaoEscolhida: "Editar",
+                                    locDadosDoAtestado: DataTable1.Selected,
+                                    locMostrarPopUpParaAdicionarDescricao: false,
+                                    locMostrarFormEditarEmpresasDoAtestado: true,
+                                    locMostrarFormEditarSignatarioDoAtestado: false,
+                                    locMostrarFormEditarEquipeDoAtestado: false,
+                                    locMostrarDadosDoProjeto: false
+                                }
+                            )
                         Order: =16
                         Text: =ThisItem.gps_tel_signatario
                         Width: =100
@@ -1071,11 +1263,23 @@
 
                     gps_local_signatario_Column1 As dataTableColumn.textualColumn:
                         DisplayMode: =DisplayMode.Edit
-                        FieldDisplayName: ="gps_local_signatario"
+                        FieldDisplayName: ="Local signatário"
                         FieldName: ="gps_local_signatario"
                         FieldVariantName: ="textualColumn"
                         Height: =Parent.Height
                         LayoutHeight: =Parent.Height
+                        OnSelect: |-
+                            =UpdateContext(
+                                {
+                                    locAcaoEscolhida: "Editar",
+                                    locDadosDoAtestado: DataTable1.Selected,
+                                    locMostrarPopUpParaAdicionarDescricao: false,
+                                    locMostrarFormEditarEmpresasDoAtestado: true,
+                                    locMostrarFormEditarSignatarioDoAtestado: false,
+                                    locMostrarFormEditarEquipeDoAtestado: false,
+                                    locMostrarDadosDoProjeto: false
+                                }
+                            )
                         Order: =17
                         Text: =ThisItem.gps_local_signatario
                         Width: =100
@@ -1085,11 +1289,23 @@
 
                     gps_atsd_obj_trab_Column1 As dataTableColumn.textualColumn:
                         DisplayMode: =DisplayMode.Edit
-                        FieldDisplayName: ="gps_atsd_obj_trab"
+                        FieldDisplayName: ="Objeto de trabalho"
                         FieldName: ="gps_atsd_obj_trab"
                         FieldVariantName: ="textualColumn"
                         Height: =Parent.Height
                         LayoutHeight: =Parent.Height
+                        OnSelect: |-
+                            =UpdateContext(
+                                {
+                                    locAcaoEscolhida: "Editar",
+                                    locDadosDoAtestado: DataTable1.Selected,
+                                    locMostrarPopUpParaAdicionarDescricao: false,
+                                    locMostrarFormEditarEmpresasDoAtestado: true,
+                                    locMostrarFormEditarSignatarioDoAtestado: false,
+                                    locMostrarFormEditarEquipeDoAtestado: false,
+                                    locMostrarDadosDoProjeto: false
+                                }
+                            )
                         Order: =18
                         Text: =ThisItem.gps_atsd_obj_trab
                         Width: =100
@@ -1099,11 +1315,23 @@
 
                     gps_atsd_descr_obj_trab_Column1 As dataTableColumn.textualColumn:
                         DisplayMode: =DisplayMode.Edit
-                        FieldDisplayName: ="gps_atsd_descr_obj_trab"
+                        FieldDisplayName: ="Descrição do objeto"
                         FieldName: ="gps_atsd_descr_obj_trab"
                         FieldVariantName: ="textualColumn"
                         Height: =Parent.Height
                         LayoutHeight: =Parent.Height
+                        OnSelect: |-
+                            =UpdateContext(
+                                {
+                                    locAcaoEscolhida: "Editar",
+                                    locDadosDoAtestado: DataTable1.Selected,
+                                    locMostrarPopUpParaAdicionarDescricao: false,
+                                    locMostrarFormEditarEmpresasDoAtestado: true,
+                                    locMostrarFormEditarSignatarioDoAtestado: false,
+                                    locMostrarFormEditarEquipeDoAtestado: false,
+                                    locMostrarDadosDoProjeto: false
+                                }
+                            )
                         Order: =19
                         Text: =ThisItem.gps_atsd_descr_obj_trab
                         Width: =100
@@ -1113,11 +1341,23 @@
 
                     gps_atsd_data_inicio_Column1 As dataTableColumn.textualColumn:
                         DisplayMode: =DisplayMode.Edit
-                        FieldDisplayName: ="gps_atsd_data_inicio"
+                        FieldDisplayName: ="Data de início"
                         FieldName: ="gps_atsd_data_inicio"
                         FieldVariantName: ="textualColumn"
                         Height: =Parent.Height
                         LayoutHeight: =Parent.Height
+                        OnSelect: |-
+                            =UpdateContext(
+                                {
+                                    locAcaoEscolhida: "Editar",
+                                    locDadosDoAtestado: DataTable1.Selected,
+                                    locMostrarPopUpParaAdicionarDescricao: false,
+                                    locMostrarFormEditarEmpresasDoAtestado: true,
+                                    locMostrarFormEditarSignatarioDoAtestado: false,
+                                    locMostrarFormEditarEquipeDoAtestado: false,
+                                    locMostrarDadosDoProjeto: false
+                                }
+                            )
                         Order: =20
                         Text: =ThisItem.gps_atsd_data_inicio
                         Width: =100
@@ -1127,11 +1367,23 @@
 
                     gps_atsd_data_fim_Column1 As dataTableColumn.textualColumn:
                         DisplayMode: =DisplayMode.Edit
-                        FieldDisplayName: ="gps_atsd_data_fim"
+                        FieldDisplayName: ="Data final"
                         FieldName: ="gps_atsd_data_fim"
                         FieldVariantName: ="textualColumn"
                         Height: =Parent.Height
                         LayoutHeight: =Parent.Height
+                        OnSelect: |-
+                            =UpdateContext(
+                                {
+                                    locAcaoEscolhida: "Editar",
+                                    locDadosDoAtestado: DataTable1.Selected,
+                                    locMostrarPopUpParaAdicionarDescricao: false,
+                                    locMostrarFormEditarEmpresasDoAtestado: true,
+                                    locMostrarFormEditarSignatarioDoAtestado: false,
+                                    locMostrarFormEditarEquipeDoAtestado: false,
+                                    locMostrarDadosDoProjeto: false
+                                }
+                            )
                         Order: =21
                         Text: =ThisItem.gps_atsd_data_fim
                         Width: =100
@@ -1141,11 +1393,23 @@
 
                     gps_atsd_local_Column1 As dataTableColumn.textualColumn:
                         DisplayMode: =DisplayMode.Edit
-                        FieldDisplayName: ="gps_atsd_local"
+                        FieldDisplayName: ="Local"
                         FieldName: ="gps_atsd_local"
                         FieldVariantName: ="textualColumn"
                         Height: =Parent.Height
                         LayoutHeight: =Parent.Height
+                        OnSelect: |-
+                            =UpdateContext(
+                                {
+                                    locAcaoEscolhida: "Editar",
+                                    locDadosDoAtestado: DataTable1.Selected,
+                                    locMostrarPopUpParaAdicionarDescricao: false,
+                                    locMostrarFormEditarEmpresasDoAtestado: true,
+                                    locMostrarFormEditarSignatarioDoAtestado: false,
+                                    locMostrarFormEditarEquipeDoAtestado: false,
+                                    locMostrarDadosDoProjeto: false
+                                }
+                            )
                         Order: =22
                         Text: =ThisItem.gps_atsd_local
                         Width: =100
@@ -1155,11 +1419,23 @@
 
                     gps_atsd_qtd_hrs_Column1 As dataTableColumn.textualColumn:
                         DisplayMode: =DisplayMode.Edit
-                        FieldDisplayName: ="gps_atsd_qtd_hrs"
+                        FieldDisplayName: ="Quantidade total de horas"
                         FieldName: ="gps_atsd_qtd_hrs"
                         FieldVariantName: ="textualColumn"
                         Height: =Parent.Height
                         LayoutHeight: =Parent.Height
+                        OnSelect: |-
+                            =UpdateContext(
+                                {
+                                    locAcaoEscolhida: "Editar",
+                                    locDadosDoAtestado: DataTable1.Selected,
+                                    locMostrarPopUpParaAdicionarDescricao: false,
+                                    locMostrarFormEditarEmpresasDoAtestado: true,
+                                    locMostrarFormEditarSignatarioDoAtestado: false,
+                                    locMostrarFormEditarEquipeDoAtestado: false,
+                                    locMostrarDadosDoProjeto: false
+                                }
+                            )
                         Order: =23
                         Text: =ThisItem.gps_atsd_qtd_hrs
                         Width: =100
@@ -1169,11 +1445,23 @@
 
                     gps_atsd_registrado_Column1 As dataTableColumn.textualColumn:
                         DisplayMode: =DisplayMode.Edit
-                        FieldDisplayName: ="gps_atsd_registrado"
+                        FieldDisplayName: ="Registrado no COE"
                         FieldName: ="gps_atsd_registrado"
                         FieldVariantName: ="textualColumn"
                         Height: =Parent.Height
                         LayoutHeight: =Parent.Height
+                        OnSelect: |-
+                            =UpdateContext(
+                                {
+                                    locAcaoEscolhida: "Editar",
+                                    locDadosDoAtestado: DataTable1.Selected,
+                                    locMostrarPopUpParaAdicionarDescricao: false,
+                                    locMostrarFormEditarEmpresasDoAtestado: true,
+                                    locMostrarFormEditarSignatarioDoAtestado: false,
+                                    locMostrarFormEditarEquipeDoAtestado: false,
+                                    locMostrarDadosDoProjeto: false
+                                }
+                            )
                         Order: =24
                         Text: =ThisItem.gps_atsd_registrado
                         Width: =100
