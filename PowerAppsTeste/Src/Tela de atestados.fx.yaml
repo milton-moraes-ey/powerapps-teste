@@ -4389,7 +4389,7 @@
                     Italic: =true
                     Size: =12
                     Text: |-
-                        ="Editar atestado" & Switch(
+                        =/*"Editar atestado" & Switch(
                             true,
                             locMostrarFormEditarEmpresasDoAtestado,
                             " - Dados das empresas",
@@ -4399,7 +4399,9 @@
                             " - Equipe relacionada ao atestado",
                             locMostrarDadosDoProjeto,
                             " - Dados do objeto do atestado"
-                        )
+                        )*/
+                        
+                        "Editar atestado (id): " & locDadosDoAtestado.id
                     Width: =350
                     X: =Parent.PaddingLeft
                     Y: =Parent.PaddingTop
@@ -4451,8 +4453,21 @@
                     HoverBorderColor: =RGBA(0, 0, 0, 0)
                     HoverFill: =ColorFade(gblTema.AccentColor, -10%)
                     OnSelect: |-
-                        =UpdateContext({locMostrarFormEditarEmpresasDoAtestado: false, locMostrarFormEditarSignatarioDoAtestado: false, locMostrarFormEditarEquipeDoAtestado: true, locMostrarDadosDoProjeto: false});
-                        ClearCollect(colEditarMembrosEquipe, Filter(AtestadoProfissionais, atsd_id.id = locDadosDoAtestado.id))
+                        =UpdateContext(
+                            {
+                                locMostrarFormEditarEmpresasDoAtestado: false,
+                                locMostrarFormEditarSignatarioDoAtestado: false,
+                                locMostrarFormEditarEquipeDoAtestado: true,
+                                locMostrarDadosDoProjeto: false
+                            }
+                        );
+                        ClearCollect(
+                            colEditarMembrosEquipe,
+                            Filter(
+                                AtestadoProfissionais,
+                                atsd_id.id = locDadosDoAtestado.id
+                            )
+                        )
                     PressedBorderColor: =RGBA(0, 69, 120, 1)
                     PressedColor: =RGBA(255, 255, 255, 1)
                     PressedFill: =RGBA(16, 110, 190, 1)
@@ -7024,7 +7039,8 @@
                         HoverColor: =RGBA(16, 110, 190, 1)
                         HoverFill: =RGBA(0, 0, 0, 0)
                         Icon: =Icon.Trash
-                        OnSelect: =Remove(colEditarMembrosEquipe, ThisItem)
+                        OnSelect: |
+                            =Remove(colEditarMembrosEquipe, ThisItem);
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedColor: =RGBA(16, 110, 190, 1)
                         PressedFill: =RGBA(0, 0, 0, 0)
