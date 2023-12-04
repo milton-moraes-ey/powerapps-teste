@@ -4030,7 +4030,8 @@
                                         );
                                         UpdateContext({locMostrarConfirmacaoDeCadastroDeAtestado: true});
                                         Clear(colMembrosEquipe),
-                                        UpdateContext({locMostrarConfirmacaoDeCadastroDeAtestado: false})
+                                        UpdateContext({locMostrarConfirmacaoDeCadastroDeAtestado: false});
+                                        Notify("Erro! Algo deu errado no cadastro de Atestados. Tente novamente.", NotificationType.Error)
                                     );
                                 PressedBorderColor: =RGBA(0, 69, 120, 1)
                                 PressedColor: =RGBA(255, 255, 255, 1)
@@ -7545,7 +7546,9 @@
                 FontWeight: =FontWeight.Normal
                 HoverBorderColor: =RGBA(0, 0, 0, 0)
                 HoverFill: =ColorFade(gblTema.AccentColor, -10%)
-                OnSelect: =Select(btnNovoAtestado);
+                OnSelect: |-
+                    =UpdateContext({locMostrarConfirmacaoDeCadastroDeAtestado: false});
+                    Select(btnNovoAtestado);
                 PressedBorderColor: =RGBA(0, 69, 120, 1)
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(16, 110, 190, 1)
