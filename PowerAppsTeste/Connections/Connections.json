@@ -1,4 +1,34 @@
 {
+  "65b7c3b9-66ad-4b5c-bd16-1904576bda34": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowEntityId": {
+          "value": "63858255-ac92-ee11-be37-002248e0d3ca"
+        },
+        "workflowName": {
+          "value": "55f6060e-5d2d-5a61-8bdf-1d1af7605921"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowEntityId": {
+          "value": "63858255-ac92-ee11-be37-002248e0d3ca"
+        },
+        "workflowName": {
+          "value": "55f6060e-5d2d-5a61-8bdf-1d1af7605921"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "[FerramentaGPS]EditarrelacionamentoAtestadoProfissionais"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "65b7c3b9-66ad-4b5c-bd16-1904576bda34"
+  },
   "77c5bb54-e5f6-466c-92b9-1a97289c26e5": {
     "connectionRef": {
       "displayName": "Microsoft Dataverse",

@@ -1,0 +1,10 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_logicflows",
+    "FlowNameId": "0b4dfcad-47b2-4bab-b2ac-5a42835bd7d7",
+    "Name": "[FerramentaGPS]EditarrelacionamentoAtestadoProfissionais",
+    "ServiceKind": "ConnectedWadl",
+    "Type": "ServiceInfo",
+    "WorkflowEntityId": "63858255-ac92-ee11-be37-002248e0d3ca"
+  }
+]

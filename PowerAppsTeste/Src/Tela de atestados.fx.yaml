@@ -4561,6 +4561,24 @@
                                 }
                             ).AtestadoProfissional
                         );*/
+                        UpdateContext(
+                            {
+                                locRespostaFlowEditarrelacionamentoAtestadoProfissionais: '[FerramentaGPS]EditarrelacionamentoAtestadoProfissionais'.Run(
+                                    JSON(
+                                        AddColumns(
+                                            colEditarMembrosEquipe,
+                                            "prof_id_guid",
+                                            prof_id.Profissional,
+                                            "atsd_id2",
+                                            locDadosDoAtestado.id,
+                                            "atsd_id_guid",
+                                            locDadosDoAtestado.Atestado
+                                        ),
+                                        JSONFormat.IgnoreUnsupportedTypes
+                                    )
+                                )
+                            }
+                        );
                         UpdateContext({locMostrarMensagemDeEdicaoDeAtestado: true})
                     PressedBorderColor: =RGBA(0, 69, 120, 1)
                     PressedColor: =RGBA(255, 255, 255, 1)
@@ -7066,7 +7084,7 @@
                         HoverFill: =RGBA(0, 0, 0, 0)
                         Icon: =Icon.Trash
                         OnSelect: |
-                            =Remove(colEditarMembrosEquipe, ThisItem); RemoveIf(AtestadoProfissionais, ThisItem.prof_id.id = prof_id.id)
+                            =Remove(colEditarMembrosEquipe, ThisItem); Remove(AtestadoProfissionais, ThisItem)
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedColor: =RGBA(16, 110, 190, 1)
                         PressedFill: =RGBA(0, 0, 0, 0)
