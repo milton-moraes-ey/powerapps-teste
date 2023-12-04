@@ -131,8 +131,8 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "Tela de atestados",
     "Tela inicial",
+    "Tela de atestados",
     "Tela de profissionais",
     "Tela de inteligencia de mercado",
     "Tela de admins",

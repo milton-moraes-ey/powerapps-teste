@@ -1,9 +1,2 @@
 "'Tela inicial' As screen":
 
-    ComboBox2 As combobox:
-        IsSearchable: =false
-        SearchItems: =[]
-        X: =120
-        Y: =210
-        ZIndex: =1
-

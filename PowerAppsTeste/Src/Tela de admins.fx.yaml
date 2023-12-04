@@ -1,10 +1,2 @@
 "'Tela de admins' As screen":
 
-    Label10 As label:
-        Height: =88
-        Text: =LookUp(Atestados, id = "000016").atsd_registrado
-        Width: =422
-        X: =445
-        Y: =60
-        ZIndex: =1
-

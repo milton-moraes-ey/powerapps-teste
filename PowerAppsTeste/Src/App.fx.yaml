@@ -58,6 +58,10 @@ App As appinfo:
             ClearCollect(
                 colAtestadoProfissionais,
                 AtestadoProfissionais
+            ),
+            ClearCollect(
+                colProfissionais,
+                Profissionais
             )
         );
         ClearCollect(
