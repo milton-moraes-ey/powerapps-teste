@@ -256,7 +256,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "14",
+                "InvariantScript": "12",
                 "Property": "Size",
                 "RuleProviderType": "Unknown"
               },
@@ -1023,7 +1023,7 @@
       "HintText",
       "ParentHeight"
     ],
-    "LastModifiedTimestamp": "638372869456815215",
+    "LastModifiedTimestamp": "638373045208742807",
     "Name": "ComponentSearchTextInput",
     "Rules": [
       {
@@ -1173,7 +1173,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638372869456815215",
+  "LastModifiedTimestamp": "638373045208742807",
   "Name": "be1716024b5c435b97eb159a4e4ead53",
   "OverridableProperties": {},
   "TemplateOriginalName": "f77320e7256241d3bc64ffe2d24f1897",

@@ -42,7 +42,7 @@ ComponentSearchTextInput As CanvasComponent:
             RadiusBottomRight: =4
             RadiusTopLeft: =4
             RadiusTopRight: =4
-            Size: =14
+            Size: =12
             Width: =Parent.Width * 0.6
             X: |+
                 =(Parent.Width - Self.Width) / 2

@@ -4514,7 +4514,8 @@
                     HoverBorderColor: =RGBA(0, 0, 0, 0)
                     HoverFill: =ColorFade(gblTema.AccentColor, -10%)
                     OnSelect: |+
-                        =Set(
+                        =UpdateContext({locLoadSpinner: true});
+                        Set(
                             gblEditarRegistroAtestado,
                             Patch(
                                 colAtestados,
@@ -4589,6 +4590,8 @@
                             locRespostaFlowEditarrelacionamentoAtestadoProfissionais = "completed" || !IsBlank(gblEditarRegistroAtestado),
                             UpdateContext({locMostrarMensagemDeEdicaoDeAtestado: true})
                         );
+                        
+                        UpdateContext({locLoadSpinner: false});
                         
                         
                         
@@ -8015,4 +8018,32 @@
                     =(Parent.Width - Self.Width) / 2
                 Y: =260
                 ZIndex: =5
+
+    ctnLoadSpinner_18 As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(0, 0, 0, 0.7)
+        Height: =Parent.Height
+        Visible: |-
+            =//locLoadSpinner
+            true
+        Width: =Parent.Width
+        ZIndex: =10
+
+        imgLoadSpinner_1 As image:
+            Height: =185
+            Image: ='Spinner-1s-200px'
+            ImagePosition: =ImagePosition.Center
+            Width: =151
+            X: =608
+            Y: =257
+            ZIndex: =1
+
+        Label10_1 As label:
+            Align: =Align.Center
+            Color: =gblTema.WhiteColor
+            Height: =47
+            Text: ="Carregando..."
+            Width: =179
+            X: =594
+            Y: =395
+            ZIndex: =2
 
