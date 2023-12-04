@@ -222,6 +222,8 @@
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
+                PaddingLeft: =12
+                PaddingRight: =12
                 Visible: =locMostrarContainerPesquisaAtestados
                 ZIndex: =2
 
@@ -821,7 +823,7 @@
                         Order: =27
                         ZIndex: =53
 
-                DataTable1 As dataTable.datatable:
+                dtbAtestados As dataTable.datatable:
                     BorderStyle: =BorderStyle.Solid
                     DisplayMode: =DisplayMode.Edit
                     Fill: =RGBA(0, 0, 0, 0)
@@ -855,7 +857,7 @@
                             =UpdateContext(
                                 {
                                     locAcaoEscolhida: "Editar",
-                                    locDadosDoAtestado: DataTable1.Selected,
+                                    locDadosDoAtestado: dtbAtestados.Selected,
                                     locMostrarPopUpParaAdicionarDescricao: false,
                                     locMostrarFormEditarEmpresasDoAtestado: true,
                                     locMostrarFormEditarSignatarioDoAtestado: false,
@@ -882,7 +884,7 @@
                             =UpdateContext(
                                 {
                                     locAcaoEscolhida: "Editar",
-                                    locDadosDoAtestado: DataTable1.Selected,
+                                    locDadosDoAtestado: dtbAtestados.Selected,
                                     locMostrarPopUpParaAdicionarDescricao: false,
                                     locMostrarFormEditarEmpresasDoAtestado: true,
                                     locMostrarFormEditarSignatarioDoAtestado: false,
@@ -908,7 +910,7 @@
                             =UpdateContext(
                                 {
                                     locAcaoEscolhida: "Editar",
-                                    locDadosDoAtestado: DataTable1.Selected,
+                                    locDadosDoAtestado: dtbAtestados.Selected,
                                     locMostrarPopUpParaAdicionarDescricao: false,
                                     locMostrarFormEditarEmpresasDoAtestado: true,
                                     locMostrarFormEditarSignatarioDoAtestado: false,
@@ -934,7 +936,7 @@
                             =UpdateContext(
                                 {
                                     locAcaoEscolhida: "Editar",
-                                    locDadosDoAtestado: DataTable1.Selected,
+                                    locDadosDoAtestado: dtbAtestados.Selected,
                                     locMostrarPopUpParaAdicionarDescricao: false,
                                     locMostrarFormEditarEmpresasDoAtestado: true,
                                     locMostrarFormEditarSignatarioDoAtestado: false,
@@ -960,7 +962,7 @@
                             =UpdateContext(
                                 {
                                     locAcaoEscolhida: "Editar",
-                                    locDadosDoAtestado: DataTable1.Selected,
+                                    locDadosDoAtestado: dtbAtestados.Selected,
                                     locMostrarPopUpParaAdicionarDescricao: false,
                                     locMostrarFormEditarEmpresasDoAtestado: true,
                                     locMostrarFormEditarSignatarioDoAtestado: false,
@@ -986,7 +988,7 @@
                             =UpdateContext(
                                 {
                                     locAcaoEscolhida: "Editar",
-                                    locDadosDoAtestado: DataTable1.Selected,
+                                    locDadosDoAtestado: dtbAtestados.Selected,
                                     locMostrarPopUpParaAdicionarDescricao: false,
                                     locMostrarFormEditarEmpresasDoAtestado: true,
                                     locMostrarFormEditarSignatarioDoAtestado: false,
@@ -1012,7 +1014,7 @@
                             =UpdateContext(
                                 {
                                     locAcaoEscolhida: "Editar",
-                                    locDadosDoAtestado: DataTable1.Selected,
+                                    locDadosDoAtestado: dtbAtestados.Selected,
                                     locMostrarPopUpParaAdicionarDescricao: false,
                                     locMostrarFormEditarEmpresasDoAtestado: true,
                                     locMostrarFormEditarSignatarioDoAtestado: false,
@@ -1038,7 +1040,7 @@
                             =UpdateContext(
                                 {
                                     locAcaoEscolhida: "Editar",
-                                    locDadosDoAtestado: DataTable1.Selected,
+                                    locDadosDoAtestado: dtbAtestados.Selected,
                                     locMostrarPopUpParaAdicionarDescricao: false,
                                     locMostrarFormEditarEmpresasDoAtestado: true,
                                     locMostrarFormEditarSignatarioDoAtestado: false,
@@ -1064,7 +1066,7 @@
                             =UpdateContext(
                                 {
                                     locAcaoEscolhida: "Editar",
-                                    locDadosDoAtestado: DataTable1.Selected,
+                                    locDadosDoAtestado: dtbAtestados.Selected,
                                     locMostrarPopUpParaAdicionarDescricao: false,
                                     locMostrarFormEditarEmpresasDoAtestado: true,
                                     locMostrarFormEditarSignatarioDoAtestado: false,
@@ -1090,7 +1092,7 @@
                             =UpdateContext(
                                 {
                                     locAcaoEscolhida: "Editar",
-                                    locDadosDoAtestado: DataTable1.Selected,
+                                    locDadosDoAtestado: dtbAtestados.Selected,
                                     locMostrarPopUpParaAdicionarDescricao: false,
                                     locMostrarFormEditarEmpresasDoAtestado: true,
                                     locMostrarFormEditarSignatarioDoAtestado: false,
@@ -1116,7 +1118,7 @@
                             =UpdateContext(
                                 {
                                     locAcaoEscolhida: "Editar",
-                                    locDadosDoAtestado: DataTable1.Selected,
+                                    locDadosDoAtestado: dtbAtestados.Selected,
                                     locMostrarPopUpParaAdicionarDescricao: false,
                                     locMostrarFormEditarEmpresasDoAtestado: true,
                                     locMostrarFormEditarSignatarioDoAtestado: false,
@@ -1142,7 +1144,7 @@
                             =UpdateContext(
                                 {
                                     locAcaoEscolhida: "Editar",
-                                    locDadosDoAtestado: DataTable1.Selected,
+                                    locDadosDoAtestado: dtbAtestados.Selected,
                                     locMostrarPopUpParaAdicionarDescricao: false,
                                     locMostrarFormEditarEmpresasDoAtestado: true,
                                     locMostrarFormEditarSignatarioDoAtestado: false,
@@ -1168,7 +1170,7 @@
                             =UpdateContext(
                                 {
                                     locAcaoEscolhida: "Editar",
-                                    locDadosDoAtestado: DataTable1.Selected,
+                                    locDadosDoAtestado: dtbAtestados.Selected,
                                     locMostrarPopUpParaAdicionarDescricao: false,
                                     locMostrarFormEditarEmpresasDoAtestado: true,
                                     locMostrarFormEditarSignatarioDoAtestado: false,
@@ -1194,7 +1196,7 @@
                             =UpdateContext(
                                 {
                                     locAcaoEscolhida: "Editar",
-                                    locDadosDoAtestado: DataTable1.Selected,
+                                    locDadosDoAtestado: dtbAtestados.Selected,
                                     locMostrarPopUpParaAdicionarDescricao: false,
                                     locMostrarFormEditarEmpresasDoAtestado: true,
                                     locMostrarFormEditarSignatarioDoAtestado: false,
@@ -1220,7 +1222,7 @@
                             =UpdateContext(
                                 {
                                     locAcaoEscolhida: "Editar",
-                                    locDadosDoAtestado: DataTable1.Selected,
+                                    locDadosDoAtestado: dtbAtestados.Selected,
                                     locMostrarPopUpParaAdicionarDescricao: false,
                                     locMostrarFormEditarEmpresasDoAtestado: true,
                                     locMostrarFormEditarSignatarioDoAtestado: false,
@@ -1246,7 +1248,7 @@
                             =UpdateContext(
                                 {
                                     locAcaoEscolhida: "Editar",
-                                    locDadosDoAtestado: DataTable1.Selected,
+                                    locDadosDoAtestado: dtbAtestados.Selected,
                                     locMostrarPopUpParaAdicionarDescricao: false,
                                     locMostrarFormEditarEmpresasDoAtestado: true,
                                     locMostrarFormEditarSignatarioDoAtestado: false,
@@ -1272,7 +1274,7 @@
                             =UpdateContext(
                                 {
                                     locAcaoEscolhida: "Editar",
-                                    locDadosDoAtestado: DataTable1.Selected,
+                                    locDadosDoAtestado: dtbAtestados.Selected,
                                     locMostrarPopUpParaAdicionarDescricao: false,
                                     locMostrarFormEditarEmpresasDoAtestado: true,
                                     locMostrarFormEditarSignatarioDoAtestado: false,
@@ -1298,7 +1300,7 @@
                             =UpdateContext(
                                 {
                                     locAcaoEscolhida: "Editar",
-                                    locDadosDoAtestado: DataTable1.Selected,
+                                    locDadosDoAtestado: dtbAtestados.Selected,
                                     locMostrarPopUpParaAdicionarDescricao: false,
                                     locMostrarFormEditarEmpresasDoAtestado: true,
                                     locMostrarFormEditarSignatarioDoAtestado: false,
@@ -1324,7 +1326,7 @@
                             =UpdateContext(
                                 {
                                     locAcaoEscolhida: "Editar",
-                                    locDadosDoAtestado: DataTable1.Selected,
+                                    locDadosDoAtestado: dtbAtestados.Selected,
                                     locMostrarPopUpParaAdicionarDescricao: false,
                                     locMostrarFormEditarEmpresasDoAtestado: true,
                                     locMostrarFormEditarSignatarioDoAtestado: false,
@@ -1350,7 +1352,7 @@
                             =UpdateContext(
                                 {
                                     locAcaoEscolhida: "Editar",
-                                    locDadosDoAtestado: DataTable1.Selected,
+                                    locDadosDoAtestado: dtbAtestados.Selected,
                                     locMostrarPopUpParaAdicionarDescricao: false,
                                     locMostrarFormEditarEmpresasDoAtestado: true,
                                     locMostrarFormEditarSignatarioDoAtestado: false,
@@ -1376,7 +1378,7 @@
                             =UpdateContext(
                                 {
                                     locAcaoEscolhida: "Editar",
-                                    locDadosDoAtestado: DataTable1.Selected,
+                                    locDadosDoAtestado: dtbAtestados.Selected,
                                     locMostrarPopUpParaAdicionarDescricao: false,
                                     locMostrarFormEditarEmpresasDoAtestado: true,
                                     locMostrarFormEditarSignatarioDoAtestado: false,
@@ -1402,7 +1404,7 @@
                             =UpdateContext(
                                 {
                                     locAcaoEscolhida: "Editar",
-                                    locDadosDoAtestado: DataTable1.Selected,
+                                    locDadosDoAtestado: dtbAtestados.Selected,
                                     locMostrarPopUpParaAdicionarDescricao: false,
                                     locMostrarFormEditarEmpresasDoAtestado: true,
                                     locMostrarFormEditarSignatarioDoAtestado: false,
@@ -1428,7 +1430,7 @@
                             =UpdateContext(
                                 {
                                     locAcaoEscolhida: "Editar",
-                                    locDadosDoAtestado: DataTable1.Selected,
+                                    locDadosDoAtestado: dtbAtestados.Selected,
                                     locMostrarPopUpParaAdicionarDescricao: false,
                                     locMostrarFormEditarEmpresasDoAtestado: true,
                                     locMostrarFormEditarSignatarioDoAtestado: false,
@@ -1454,7 +1456,7 @@
                             =UpdateContext(
                                 {
                                     locAcaoEscolhida: "Editar",
-                                    locDadosDoAtestado: DataTable1.Selected,
+                                    locDadosDoAtestado: dtbAtestados.Selected,
                                     locMostrarPopUpParaAdicionarDescricao: false,
                                     locMostrarFormEditarEmpresasDoAtestado: true,
                                     locMostrarFormEditarSignatarioDoAtestado: false,
