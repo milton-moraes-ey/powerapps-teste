@@ -836,6 +836,7 @@
                     Items: =colAtestados
                     LayoutMinHeight: =250
                     LayoutMinWidth: =400
+                    NoDataText: ="Não encontramos dados para mostrar"
                     SelectedColor: =gblTema.OffBlackColor
                     SelectedFill: =RGBA(0, 120, 212, .2)
                     Size: =10
