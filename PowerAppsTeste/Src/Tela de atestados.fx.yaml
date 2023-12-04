@@ -866,7 +866,7 @@
                                     locMostrarDadosDoProjeto: false
                                 }
                             )
-                        Order: =1
+                        Order: =2
                         Text: =ThisItem.gps_nome_cliente
                         Visible: =true
                         Width: =100
@@ -893,7 +893,7 @@
                                     locMostrarDadosDoProjeto: false
                                 }
                             )
-                        Order: =2
+                        Order: =3
                         Text: =ThisItem.gps_cnpj_cliente
                         Width: =100
                         X: =0
@@ -919,7 +919,7 @@
                                     locMostrarDadosDoProjeto: false
                                 }
                             )
-                        Order: =3
+                        Order: =4
                         Text: =ThisItem.gps_endr_cliente
                         Width: =100
                         X: =0
@@ -945,7 +945,7 @@
                                     locMostrarDadosDoProjeto: false
                                 }
                             )
-                        Order: =4
+                        Order: =5
                         Text: =ThisItem.gps_ativ_econ_cliente
                         Width: =100
                         X: =0
@@ -971,7 +971,7 @@
                                     locMostrarDadosDoProjeto: false
                                 }
                             )
-                        Order: =5
+                        Order: =6
                         Text: =ThisItem.gps_num_func_cliente
                         Width: =100
                         X: =0
@@ -997,7 +997,7 @@
                                     locMostrarDadosDoProjeto: false
                                 }
                             )
-                        Order: =6
+                        Order: =7
                         Text: =ThisItem.gps_patrim_liq_cliente
                         Width: =100
                         X: =0
@@ -1023,7 +1023,7 @@
                                     locMostrarDadosDoProjeto: false
                                 }
                             )
-                        Order: =7
+                        Order: =8
                         Text: =ThisItem.gps_receita_bruta_cliente
                         Width: =100
                         X: =0
@@ -1049,7 +1049,7 @@
                                     locMostrarDadosDoProjeto: false
                                 }
                             )
-                        Order: =8
+                        Order: =9
                         Text: =ThisItem.gps_tot_atv_cliente
                         Width: =100
                         X: =0
@@ -1075,7 +1075,7 @@
                                     locMostrarDadosDoProjeto: false
                                 }
                             )
-                        Order: =9
+                        Order: =10
                         Text: =ThisItem.gps_nome_empresa_prestadora
                         Width: =100
                         X: =0
@@ -1101,7 +1101,7 @@
                                     locMostrarDadosDoProjeto: false
                                 }
                             )
-                        Order: =10
+                        Order: =11
                         Text: =ThisItem.gps_cnpj_empresa_prestadora
                         Width: =100
                         X: =0
@@ -1127,7 +1127,7 @@
                                     locMostrarDadosDoProjeto: false
                                 }
                             )
-                        Order: =11
+                        Order: =12
                         Text: =ThisItem.gps_endr_empresa_prestadora
                         Width: =100
                         X: =0
@@ -1153,7 +1153,7 @@
                                     locMostrarDadosDoProjeto: false
                                 }
                             )
-                        Order: =12
+                        Order: =13
                         Text: =ThisItem.gps_nome_signatario
                         Width: =100
                         X: =0
@@ -1179,7 +1179,7 @@
                                     locMostrarDadosDoProjeto: false
                                 }
                             )
-                        Order: =13
+                        Order: =14
                         Text: =ThisItem.gps_email_signatario
                         Width: =100
                         X: =0
@@ -1205,7 +1205,7 @@
                                     locMostrarDadosDoProjeto: false
                                 }
                             )
-                        Order: =14
+                        Order: =15
                         Text: =ThisItem.gps_cargo_signatario
                         Width: =100
                         X: =0
@@ -1231,7 +1231,7 @@
                                     locMostrarDadosDoProjeto: false
                                 }
                             )
-                        Order: =15
+                        Order: =16
                         Text: =ThisItem.gps_endr_signatario
                         Width: =100
                         X: =0
@@ -1257,7 +1257,7 @@
                                     locMostrarDadosDoProjeto: false
                                 }
                             )
-                        Order: =16
+                        Order: =17
                         Text: =ThisItem.gps_tel_signatario
                         Width: =100
                         X: =0
@@ -1283,7 +1283,7 @@
                                     locMostrarDadosDoProjeto: false
                                 }
                             )
-                        Order: =17
+                        Order: =18
                         Text: =ThisItem.gps_local_signatario
                         Width: =100
                         X: =0
@@ -1309,7 +1309,7 @@
                                     locMostrarDadosDoProjeto: false
                                 }
                             )
-                        Order: =18
+                        Order: =19
                         Text: =ThisItem.gps_atsd_obj_trab
                         Width: =100
                         X: =0
@@ -1335,7 +1335,7 @@
                                     locMostrarDadosDoProjeto: false
                                 }
                             )
-                        Order: =19
+                        Order: =20
                         Text: =ThisItem.gps_atsd_descr_obj_trab
                         Width: =100
                         X: =0
@@ -1361,7 +1361,7 @@
                                     locMostrarDadosDoProjeto: false
                                 }
                             )
-                        Order: =20
+                        Order: =21
                         Text: =ThisItem.gps_atsd_data_inicio
                         Width: =100
                         X: =0
@@ -1387,7 +1387,7 @@
                                     locMostrarDadosDoProjeto: false
                                 }
                             )
-                        Order: =21
+                        Order: =22
                         Text: =ThisItem.gps_atsd_data_fim
                         Width: =100
                         X: =0
@@ -1413,7 +1413,7 @@
                                     locMostrarDadosDoProjeto: false
                                 }
                             )
-                        Order: =22
+                        Order: =23
                         Text: =ThisItem.gps_atsd_local
                         Width: =100
                         X: =0
@@ -1439,7 +1439,7 @@
                                     locMostrarDadosDoProjeto: false
                                 }
                             )
-                        Order: =23
+                        Order: =24
                         Text: =ThisItem.gps_atsd_qtd_hrs
                         Width: =100
                         X: =0
@@ -1465,12 +1465,27 @@
                                     locMostrarDadosDoProjeto: false
                                 }
                             )
-                        Order: =24
+                        Order: =25
                         Text: =ThisItem.gps_atsd_registrado
                         Width: =100
                         X: =0
                         Y: =0
                         ZIndex: =84
+
+                    gps_id_Column1 As dataTableColumn.textualColumn:
+                        AutoWidth: =false
+                        DisplayMode: =DisplayMode.Edit
+                        FieldDisplayName: ="ID"
+                        FieldName: ="gps_id"
+                        FieldVariantName: ="textualColumn"
+                        Height: =Parent.Height
+                        LayoutHeight: =Parent.Height
+                        Order: =1
+                        Text: =ThisItem.gps_id
+                        Width: =84
+                        X: =0
+                        Y: =0
+                        ZIndex: =85
 
             ctnNovoAtestado As groupContainer.horizontalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
