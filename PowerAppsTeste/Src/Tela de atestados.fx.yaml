@@ -3981,8 +3981,9 @@
                                 Height: =Parent.Height
                                 HoverBorderColor: =RGBA(0, 0, 0, 0)
                                 HoverFill: =ColorFade(gblTema.AccentColor, -10%)
-                                OnSelect: |
+                                OnSelect: |+
                                     =// Salvar os dados do Atestado na tabela de Atestados e na Collection de Atestados (colAtestados). Informar esse registro em uma variável global, para podermos encontrar o último atestado criado de forma mais fácil (gblRegistroDoAtestado)
+                                    UpdateContext({locLoadSpinner: true});
                                     Set(
                                         gblRegistroDoAtestado,
                                         Patch(
@@ -4047,8 +4048,13 @@
                                         UpdateContext({locMostrarConfirmacaoDeCadastroDeAtestado: true});
                                         Clear(colMembrosEquipe),
                                         UpdateContext({locMostrarConfirmacaoDeCadastroDeAtestado: false});
-                                        Notify("Erro! Algo deu errado no cadastro de Atestados. Tente novamente.", NotificationType.Error)
+                                        Notify(
+                                            "Erro! Algo deu errado no cadastro de Atestados. Tente novamente.",
+                                            NotificationType.Error
+                                        )
                                     );
+                                    UpdateContext({locLoadSpinner: false});
+                                    
                                 PressedBorderColor: =RGBA(0, 69, 120, 1)
                                 PressedColor: =RGBA(255, 255, 255, 1)
                                 PressedFill: =RGBA(16, 110, 190, 1)
