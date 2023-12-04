@@ -1,2 +1,15 @@
 "'Tela de admins' As screen":
 
+    ComponentSearchTextInput_1 As ComponentSearchTextInput:
+        FillColorTheme: =RGBA(214, 221, 224, 1)
+        IconColor: =RGBA(106, 122, 127, 1)
+        Width: =864
+        X: =210
+        Y: =108
+
+    Label2 As label:
+        Text: =ComponentSearchTextInput_1.TextOutput
+        X: =189
+        Y: =300
+        ZIndex: =2
+
