@@ -4432,7 +4432,7 @@
                     DisabledFill: =RGBA(161, 159, 157, 1)
                     Fill: =gblTema.DarkGrayColor
                     FocusedBorderThickness: =4
-                    Height: =1
+                    Height: =0.5
                     HoverFill: =RGBA(0, 120, 212, 1)
                     PressedFill: =RGBA(0, 120, 212, 1)
                     Width: =Parent.Width * 0.99
@@ -4794,6 +4794,108 @@
                     X: =btnSalvarEdicaoDeAtestado.X - Self.Width - Parent.PaddingRight
                     ZIndex: =12
 
+            ctnLabel_4 As groupContainer.manualLayoutContainer:
+                DropShadow: =DropShadow.None
+                FillPortions: =0
+                Height: =55
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                PaddingBottom: =12
+                PaddingLeft: =12
+                PaddingRight: =12
+                PaddingTop: =12
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Visible: =locMostrarFormEditarSignatarioDoAtestado
+                X: =20
+                Y: =110
+                ZIndex: =2
+
+                Label2_14 As label:
+                    AutoHeight: =true
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    Color: =gblTema.DarkGrayColor
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledColor: =RGBA(161, 159, 157, 1)
+                    FocusedBorderThickness: =4
+                    Font: =Font.'Segoe UI'
+                    Italic: =true
+                    Size: =12
+                    Text: ="Dados do signatário"
+                    Width: =500
+                    Y: =Parent.PaddingTop
+                    ZIndex: =2
+
+                Rectangle2_8 As rectangle:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    DisabledFill: =RGBA(161, 159, 157, 1)
+                    Fill: =gblTema.DarkGrayColor
+                    FocusedBorderThickness: =4
+                    Height: =1
+                    HoverFill: =RGBA(0, 120, 212, 1)
+                    PressedFill: =RGBA(0, 120, 212, 1)
+                    Width: =Parent.Width * 0.99
+                    X: =(Parent.Width - Self.Width) / 2
+                    Y: =54
+                    ZIndex: =3
+
+            ctnLabel_3 As groupContainer.manualLayoutContainer:
+                DropShadow: =DropShadow.None
+                FillPortions: =0
+                Height: =55
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                PaddingBottom: =12
+                PaddingLeft: =12
+                PaddingRight: =12
+                PaddingTop: =12
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Visible: =locMostrarDadosDoProjeto
+                X: =20
+                Y: =110
+                ZIndex: =3
+
+                Label2_13 As label:
+                    AutoHeight: =true
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    Color: =gblTema.DarkGrayColor
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledColor: =RGBA(161, 159, 157, 1)
+                    FocusedBorderThickness: =4
+                    Font: =Font.'Segoe UI'
+                    Italic: =true
+                    Size: =12
+                    Text: ="Dados do objeto"
+                    Width: =500
+                    Y: =Parent.PaddingTop
+                    ZIndex: =2
+
+                Rectangle2_7 As rectangle:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    DisabledFill: =RGBA(161, 159, 157, 1)
+                    Fill: =gblTema.DarkGrayColor
+                    FocusedBorderThickness: =4
+                    Height: =1
+                    HoverFill: =RGBA(0, 120, 212, 1)
+                    PressedFill: =RGBA(0, 120, 212, 1)
+                    Width: =Parent.Width * 0.99
+                    X: =(Parent.Width - Self.Width) / 2
+                    Y: =54
+                    ZIndex: =3
+
             ctnLabel_2 As groupContainer.manualLayoutContainer:
                 DropShadow: =DropShadow.None
                 FillPortions: =0
@@ -4811,7 +4913,7 @@
                 Visible: =locMostrarFormEditarEmpresasDoAtestado
                 X: =20
                 Y: =110
-                ZIndex: =5
+                ZIndex: =4
 
                 Label2_11 As label:
                     AutoHeight: =true
@@ -4860,7 +4962,7 @@
                 Width: =Parent.Width * 0.95
                 X: =(Parent.Width - Self.Width) / 2
                 Y: =Parent.PaddingTop + 32
-                ZIndex: =6
+                ZIndex: =5
 
                 nome_cliente_DataCard2 As typedDataCard.fluentV9TextualEditCard:
                     BorderStyle: =BorderStyle.Solid
@@ -5370,7 +5472,7 @@
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Visible: =locMostrarFormEditarEmpresasDoAtestado
-                ZIndex: =7
+                ZIndex: =6
 
                 Label2_8 As label:
                     AutoHeight: =true
@@ -5416,7 +5518,7 @@
                 NumberOfColumns: =2
                 UseFluentV9Cards: =true
                 Visible: =locMostrarFormEditarEmpresasDoAtestado
-                ZIndex: =8
+                ZIndex: =7
 
                 nome_empresa_prestadora_DataCard2 As typedDataCard.fluentV9TextualEditCard:
                     BorderStyle: =BorderStyle.Solid
@@ -5614,7 +5716,7 @@
                 LayoutMinWidth: =400
                 UseFluentV9Cards: =true
                 Visible: =locMostrarFormEditarSignatarioDoAtestado
-                ZIndex: =9
+                ZIndex: =8
 
                 nome_signatario_DataCard1 As typedDataCard.fluentV9TextualEditCard:
                     BorderStyle: =BorderStyle.Solid
@@ -6138,7 +6240,7 @@
                 NumberOfColumns: =2
                 UseFluentV9Cards: =true
                 Visible: =locMostrarDadosDoProjeto
-                ZIndex: =10
+                ZIndex: =9
 
                 atsd_obj_trab_DataCard3 As typedDataCard.fluentV9TextualEditCard:
                     BorderStyle: =BorderStyle.Solid
@@ -6694,7 +6796,7 @@
                 PaddingRight: =4
                 Visible: =locMostrarFormEditarEquipeDoAtestado
                 Width: =Parent.Width * 0.98
-                ZIndex: =11
+                ZIndex: =10
 
                 frmEditarMembrosDaEquipe As form.PowerApps_CoreControls_Form:
                     AlignInContainer: =AlignInContainer.SetByContainer
@@ -7050,7 +7152,7 @@
                 Visible: =locMostrarFormEditarEquipeDoAtestado
                 Width: |
                     =Parent.Width * 0.98
-                ZIndex: =12
+                ZIndex: =11
 
                 glrMembrosAdicionados_1 As gallery.galleryVertical:
                     BorderColor: =RGBA(245, 245, 245, 1)
