@@ -4607,6 +4607,7 @@
                     RadiusTopRight: =4
                     Size: =12
                     Text: ="Salvar"
+                    Tooltip: ="Salvar alterações"
                     Width: |
                         =120
                     X: =icoCancelarEdicaoAtestados.X - Self.Width - Parent.PaddingRight
@@ -4879,7 +4880,7 @@
                     DataCardKey25 As Text:
                         DisplayMode: =DisplayMode.Edit
                         Height: =22
-                        Text: =Parent.DisplayName
+                        Text: ="Nome do cliente"
                         Weight: ='TextCanvas.Weight'.Semibold
                         Width: =Parent.Width - 48
                         Wrap: =false
@@ -4942,7 +4943,7 @@
                     DataCardKey26 As Text:
                         DisplayMode: =DisplayMode.Edit
                         Height: =22
-                        Text: =Parent.DisplayName
+                        Text: ="CNPJ do cliente"
                         Weight: ='TextCanvas.Weight'.Semibold
                         Width: =Parent.Width - 48
                         Wrap: =false
@@ -5005,7 +5006,7 @@
                     DataCardKey31 As Text:
                         DisplayMode: =DisplayMode.Edit
                         Height: =22
-                        Text: =Parent.DisplayName
+                        Text: ="Endereço do cliente"
                         Weight: ='TextCanvas.Weight'.Semibold
                         Width: =Parent.Width - 48
                         Wrap: =false
@@ -5067,7 +5068,7 @@
                     DataCardKey32 As Text:
                         DisplayMode: =DisplayMode.Edit
                         Height: =22
-                        Text: =Parent.DisplayName
+                        Text: ="Número de funcionários do cliente"
                         Weight: ='TextCanvas.Weight'.Semibold
                         Width: =Parent.Width - 48
                         Wrap: =false
@@ -5128,7 +5129,7 @@
                     DataCardKey39 As Text:
                         DisplayMode: =DisplayMode.Edit
                         Height: =22
-                        Text: =Parent.DisplayName
+                        Text: ="Atividade econômnica do cliente"
                         Weight: ='TextCanvas.Weight'.Semibold
                         Width: =Parent.Width - 48
                         Wrap: =false
@@ -5190,7 +5191,7 @@
                     DataCardKey41 As Text:
                         DisplayMode: =DisplayMode.Edit
                         Height: =22
-                        Text: =Parent.DisplayName
+                        Text: ="Receita bruta do cliente"
                         Weight: ='TextCanvas.Weight'.Semibold
                         Width: =Parent.Width - 48
                         Wrap: =false
@@ -5435,7 +5436,7 @@
                     DataCardKey44 As Text:
                         DisplayMode: =DisplayMode.Edit
                         Height: =22
-                        Text: =Parent.DisplayName
+                        Text: ="Nome da empresa que prestou o serviço"
                         Weight: ='TextCanvas.Weight'.Semibold
                         Width: =Parent.Width - 48
                         Wrap: =false
@@ -5498,7 +5499,7 @@
                     DataCardKey45 As Text:
                         DisplayMode: =DisplayMode.Edit
                         Height: =22
-                        Text: =Parent.DisplayName
+                        Text: ="CNPJ da empresa que prestou o serviço"
                         Weight: ='TextCanvas.Weight'.Semibold
                         Width: =Parent.Width - 48
                         Wrap: =false
@@ -5561,7 +5562,7 @@
                     DataCardKey46 As Text:
                         DisplayMode: =DisplayMode.Edit
                         Height: =22
-                        Text: =Parent.DisplayName
+                        Text: ="Endereço"
                         Weight: ='TextCanvas.Weight'.Semibold
                         Width: =Parent.Width - 48
                         Wrap: =false
@@ -5633,7 +5634,7 @@
                     DataCardKey55 As Text:
                         DisplayMode: =DisplayMode.Edit
                         Height: =22
-                        Text: =Parent.DisplayName
+                        Text: ="Nome do signatário"
                         Weight: ='TextCanvas.Weight'.Semibold
                         Width: =Parent.Width - 48
                         Wrap: =false
@@ -5696,7 +5697,7 @@
                     DataCardKey56 As Text:
                         DisplayMode: =DisplayMode.Edit
                         Height: =22
-                        Text: =Parent.DisplayName
+                        Text: ="Cargo do signatário"
                         Weight: ='TextCanvas.Weight'.Semibold
                         Width: =Parent.Width - 48
                         Wrap: =false
@@ -5759,7 +5760,7 @@
                     DataCardKey57 As Text:
                         DisplayMode: =DisplayMode.Edit
                         Height: =22
-                        Text: =Parent.DisplayName
+                        Text: ="Email do signatário"
                         Weight: ='TextCanvas.Weight'.Semibold
                         Width: =Parent.Width - 48
                         Wrap: =false
@@ -5822,7 +5823,7 @@
                     DataCardKey58 As Text:
                         DisplayMode: =DisplayMode.Edit
                         Height: =22
-                        Text: =Parent.DisplayName
+                        Text: ="Telefone do signatário"
                         Weight: ='TextCanvas.Weight'.Semibold
                         Width: =Parent.Width - 48
                         Wrap: =false
@@ -5885,7 +5886,7 @@
                     DataCardKey59 As Text:
                         DisplayMode: =DisplayMode.Edit
                         Height: =22
-                        Text: =Parent.DisplayName
+                        Text: ="Endereço do signatário"
                         Weight: ='TextCanvas.Weight'.Semibold
                         Width: =Parent.Width - 48
                         Wrap: =false
@@ -5948,7 +5949,7 @@
                     DataCardKey60 As Text:
                         DisplayMode: =DisplayMode.Edit
                         Height: =22
-                        Text: =Parent.DisplayName
+                        Text: ="Local do signatário"
                         Weight: ='TextCanvas.Weight'.Semibold
                         Width: =Parent.Width - 48
                         Wrap: =false
@@ -6010,7 +6011,7 @@
                     DataCardKey61 As Text:
                         DisplayMode: =DisplayMode.Edit
                         Height: =22
-                        Text: =Parent.DisplayName
+                        Text: ="Data de assinatura do documento"
                         Weight: ='TextCanvas.Weight'.Semibold
                         Width: =Parent.Width - 48
                         Wrap: =false
@@ -6071,7 +6072,7 @@
                     DataCardKey62 As Text:
                         DisplayMode: =DisplayMode.Edit
                         Height: =34
-                        Text: =Parent.DisplayName
+                        Text: ="Documento do atestado"
                         Weight: ='TextCanvas.Weight'.Semibold
                         Width: =Parent.Width - 60
                         Wrap: =false
@@ -6083,11 +6084,13 @@
                         AddAttachmentText: ="Upload file"
                         BorderColor: =gblTema.LightGrayColor
                         BorderThickness: =1
+                        Color: =gblTema.DarkGrayColor
                         DisplayMode: =Parent.DisplayMode
                         FocusedBorderThickness: =1
                         Height: =170
                         HoverFill: =gblTema.LightBorderColor
                         IsInDataCard: =true
+                        ItemColor: =gblTema.OffBlackColor
                         ItemFill: =gblTema.LightBorderColor
                         Items: =Parent.Default
                         MaxAttachments: =1
@@ -6155,7 +6158,7 @@
                     DataCardKey64 As Text:
                         DisplayMode: =DisplayMode.Edit
                         Height: =22
-                        Text: =Parent.DisplayName
+                        Text: ="Objeto do trabalho"
                         Weight: ='TextCanvas.Weight'.Semibold
                         Width: =Parent.Width - 48
                         Wrap: =false
@@ -6217,7 +6220,7 @@
                     DataCardKey67 As Text:
                         DisplayMode: =DisplayMode.Edit
                         Height: =22
-                        Text: =Parent.DisplayName
+                        Text: ="Quantidade de horas totais do projeto"
                         Weight: ='TextCanvas.Weight'.Semibold
                         Width: =Parent.Width - 48
                         Wrap: =false
@@ -6277,7 +6280,7 @@
                     DataCardKey65 As Text:
                         DisplayMode: =DisplayMode.Edit
                         Height: =22
-                        Text: =Parent.DisplayName
+                        Text: ="Data de início"
                         Weight: ='TextCanvas.Weight'.Semibold
                         Width: =Parent.Width - 48
                         Wrap: =false
@@ -6337,7 +6340,7 @@
                     DataCardKey66 As Text:
                         DisplayMode: =DisplayMode.Edit
                         Height: =22
-                        Text: =Parent.DisplayName
+                        Text: ="Data final"
                         Weight: ='TextCanvas.Weight'.Semibold
                         Width: =Parent.Width - 48
                         Wrap: =false
@@ -6398,7 +6401,7 @@
                     DataCardKey68 As Text:
                         DisplayMode: =DisplayMode.Edit
                         Height: =22
-                        Text: =Parent.DisplayName
+                        Text: ="Local"
                         Weight: ='TextCanvas.Weight'.Semibold
                         Width: =Parent.Width - 48
                         Wrap: =false
@@ -6461,7 +6464,7 @@
                     DataCardKey69 As Text:
                         DisplayMode: =DisplayMode.Edit
                         Height: =22
-                        Text: =Parent.DisplayName
+                        Text: ="Engagement code"
                         Weight: ='TextCanvas.Weight'.Semibold
                         Width: =Parent.Width - 48
                         Wrap: =false
@@ -6523,7 +6526,7 @@
                     DataCardKey70 As Text:
                         DisplayMode: =DisplayMode.Edit
                         Height: =22
-                        Text: =Parent.DisplayName
+                        Text: ="Registrado pelo COE?"
                         Weight: ='TextCanvas.Weight'.Semibold
                         Width: =Parent.Width - 48
                         Wrap: =false
@@ -6582,7 +6585,7 @@
                     DataCardKey63 As Text:
                         DisplayMode: =DisplayMode.Edit
                         Height: =22
-                        Text: =Parent.DisplayName
+                        Text: ="Descrição do objeto de trabalho"
                         Weight: ='TextCanvas.Weight'.Semibold
                         Width: =Parent.Width - 48
                         Wrap: =false
