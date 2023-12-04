@@ -4697,6 +4697,8 @@
                     Color: =gblTema.AccentColor
                     Height: =32
                     Icon: =Icon.Trash
+                    OnSelect: |-
+                        =UpdateContext({locMostrarPopUpDeConfirmarDelecaoDeAtestado: true})
                     Width: =32
                     X: =Rectangle3.X - Self.Width - Parent.PaddingRight
                     Y: =12
@@ -4706,6 +4708,7 @@
                     Color: =gblTema.AccentColor
                     Height: =32
                     Icon: =Icon.DocumentPDF
+                    OnSelect: =
                     Width: =32
                     X: =icoDeletarAtestado.X - Self.Width - Parent.PaddingRight
                     Y: =11
@@ -7563,4 +7566,252 @@
                     =(Parent.Width - Self.Width) / 2
                 Y: =268
                 ZIndex: =5
+
+    ctnPopUpConfirmarDelecaoDeAtestados As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(0, 0, 0, 0.5)
+        Height: =Parent.Height
+        Visible: =locMostrarPopUpDeConfirmarDelecaoDeAtestado
+        Width: =Parent.Width
+        ZIndex: =7
+
+        ctnMensagemConfirmacao_1 As groupContainer.manualLayoutContainer:
+            Fill: =gblTema.WhiteColor
+            Height: =342
+            Width: =600
+            X: =(Parent.Width - Self.Width) / 2
+            Y: =(Parent.Height - Self.Height) / 2
+            ZIndex: =1
+
+            icoCancelar_2 As icon.Cancel:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                Color: =RGBA(0, 120, 212, 1)
+                DisabledBorderColor: =RGBA(245, 245, 245, 1)
+                DisabledColor: =RGBA(225, 223, 221, 1)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                FocusedBorderThickness: =4
+                Height: =32
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverColor: =RGBA(16, 110, 190, 1)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                Icon: =Icon.Cancel
+                OnSelect: |-
+                    =UpdateContext({locMostrarPopUpDeConfirmarDelecaoDeAtestado: false})
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedColor: =RGBA(16, 110, 190, 1)
+                PressedFill: =RGBA(0, 0, 0, 0)
+                Width: =32
+                X: =548
+                Y: =20
+                ZIndex: =1
+
+            Icon8_1 As icon.CheckBadge:
+                Color: |-
+                    =ColorValue("#FF4A1C")
+                DisplayMode: =DisplayMode.View
+                Height: =52
+                Icon: =Icon.Warning
+                Width: =52
+                X: |
+                    =(Parent.Width - Self.Width) / 2
+                Y: =40
+                ZIndex: =2
+
+            Label1_2 As label:
+                Align: =Align.Center
+                AutoHeight: =true
+                Color: =gblTema.OffBlackColor
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Bold
+                Height: =57
+                Size: =16
+                Text: |-
+                    ="Você está prestes a deletar o atestado: 
+                    " & locDadosDoAtestado.id
+                Width: =588
+                X: |
+                    =(Parent.Width - Self.Width) / 2
+                Y: =109
+                ZIndex: =3
+
+            Label13_1 As label:
+                Align: =Align.Center
+                AutoHeight: =true
+                Color: =gblTema.DarkGrayColor
+                Font: =Font.'Segoe UI'
+                Height: =70
+                LineHeight: =1.5
+                Size: =12
+                Text: ="Tem certeza que deseja escluir esse atestado? Essa ação não poderá ser desfeita!"
+                Width: =512
+                X: |
+                    =(Parent.Width - Self.Width) / 2
+                Y: =188
+                ZIndex: =4
+
+            btnCancelarDelecao As button:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(161, 159, 157, 1)
+                DisabledFill: =RGBA(242, 242, 241, 0)
+                Fill: =gblTema.AccentColor
+                FocusedBorderColor: =ColorFade(Self.Fill, 75%)
+                FocusedBorderThickness: =1
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Normal
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverFill: =ColorFade(gblTema.AccentColor, -10%)
+                OnSelect: |-
+                    =UpdateContext({locMostrarPopUpDeConfirmarDelecaoDeAtestado: false})
+                PressedBorderColor: =RGBA(0, 69, 120, 1)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =RGBA(16, 110, 190, 1)
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Size: =12
+                Text: ="Cancelar"
+                Width: =140
+                X: =149
+                Y: =265
+                ZIndex: =6
+
+            btnConfirmarDelecao As button:
+                BorderColor: =gblTema.AccentColor
+                BorderThickness: =1
+                Color: =gblTema.AccentColor
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(161, 159, 157, 1)
+                DisabledFill: =RGBA(242, 242, 241, 0)
+                Fill: =gblTema.WhiteColor
+                FocusedBorderColor: =ColorFade(Self.Fill, 75%)
+                FocusedBorderThickness: =1
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Normal
+                HoverBorderColor: =ColorFade(gblTema.AccentColor, -10%)
+                HoverColor: =Self.Color
+                HoverFill: =ColorFade(Self.Fill, -5%)
+                OnSelect: |-
+                    =Remove(Atestados, locDadosDoAtestado);RemoveIf(colAtestados, locDadosDoAtestado.id = ThisRecord.id);
+                    UpdateContext({locMostrarPopUpDeConfirmarDelecaoDeAtestado: false, locMostrarConfirmacaoDelecaoDeAtestado: true})
+                PressedBorderColor: =RGBA(0, 69, 120, 1)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =RGBA(16, 110, 190, 1)
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Size: =12
+                Text: ="Sim, deletar"
+                Width: =140
+                X: =311
+                Y: =265
+                ZIndex: =7
+
+    ctnPopUpConfirmacaoDelecaoDoAtestado As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(0, 0, 0, 0.5)
+        Height: =Parent.Height
+        Visible: =locMostrarConfirmacaoDelecaoDeAtestado
+        Width: =Parent.Width
+        ZIndex: =8
+
+        ctnMensagemConfirmacao_2 As groupContainer.manualLayoutContainer:
+            Fill: =gblTema.WhiteColor
+            Height: =342
+            Width: =600
+            X: =(Parent.Width - Self.Width) / 2
+            Y: =(Parent.Height - Self.Height) / 2
+            ZIndex: =1
+
+            icoCancelar As icon.Cancel:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                Color: =RGBA(0, 120, 212, 1)
+                DisabledBorderColor: =RGBA(245, 245, 245, 1)
+                DisabledColor: =RGBA(225, 223, 221, 1)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                FocusedBorderThickness: =4
+                Height: =32
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverColor: =RGBA(16, 110, 190, 1)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                Icon: =Icon.Cancel
+                OnSelect: |-
+                    =UpdateContext({locMostrarConfirmacaoDelecaoDeAtestado: false})
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedColor: =RGBA(16, 110, 190, 1)
+                PressedFill: =RGBA(0, 0, 0, 0)
+                Width: =32
+                X: =548
+                Y: =20
+                ZIndex: =1
+
+            Icon8_2 As icon.CheckBadge:
+                Color: |-
+                    =ColorValue("#1bc58f")
+                DisplayMode: =DisplayMode.View
+                Icon: =Icon.CheckBadge
+                X: |
+                    =(Parent.Width - Self.Width) / 2
+                Y: =40
+                ZIndex: =2
+
+            Label1_3 As label:
+                Align: =Align.Center
+                AutoHeight: =true
+                Color: =gblTema.OffBlackColor
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Bold
+                Height: =57
+                Size: =18
+                Text: ="O atestado foi deletado do banco de dados"
+                Width: =588
+                X: |
+                    =(Parent.Width - Self.Width) / 2
+                Y: =125
+                ZIndex: =3
+
+            Label13_2 As label:
+                Align: =Align.Center
+                AutoHeight: =true
+                Color: =gblTema.DarkGrayColor
+                Font: =Font.'Segoe UI'
+                Height: =70
+                LineHeight: =1.5
+                Size: =12
+                Text: ="O atestado foi deletado com sucesso! Lembre-se, essa ação não pode ser revertida."
+                Width: =512
+                X: |
+                    =(Parent.Width - Self.Width) / 2
+                Y: =186
+                ZIndex: =4
+
+            btnSairAtestadoDeletadoComSucesso As button:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(161, 159, 157, 1)
+                DisabledFill: =RGBA(242, 242, 241, 0)
+                Fill: =gblTema.AccentColor
+                FocusedBorderColor: =ColorFade(Self.Fill, 75%)
+                FocusedBorderThickness: =1
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Normal
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverFill: =ColorFade(gblTema.AccentColor, -10%)
+                OnSelect: |-
+                    =UpdateContext({locMostrarConfirmacaoDelecaoDeAtestado: false})
+                PressedBorderColor: =RGBA(0, 69, 120, 1)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =RGBA(16, 110, 190, 1)
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Size: =14
+                Text: ="OK"
+                Width: =140
+                X: =230
+                Y: =265
+                ZIndex: =6
 
