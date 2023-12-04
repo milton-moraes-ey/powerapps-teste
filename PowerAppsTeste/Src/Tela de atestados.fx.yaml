@@ -344,7 +344,7 @@
                         Size: |-
                             =//If(App.Width<=LookUp(App.SizeBreakpoints,Value=1200,Value),14,16)
                             14
-                        Text: =ThisItem.nome_cliente
+                        Text: =ThisItem.id & " - " & ThisItem.nome_cliente
                         Width: =466
                         X: =6
                         Y: |
@@ -4364,7 +4364,8 @@
                         =UpdateContext(
                             {
                                 locAcaoEscolhida: Blank(),
-                                locConcatenarDescricoesAtuais: Blank()
+                                locConcatenarDescricoesAtuais: Blank(),
+                                locDadosDoAtestado: Blank()
                             }
                         );
                         Clear(colDescricaoAtual)
@@ -4546,6 +4547,20 @@
                                 )
                             )
                         );
+                        ForAll(
+                            colEditarMembrosEquipe,
+                            Patch(
+                                AtestadoProfissionais,
+                                LookUp(AtestadoProfissionais, atsd_id.id = locDadosDoAtestado.id),
+                                {
+                                    prof_id: ThisRecord.prof_id,
+                                    horas_trabalhadas: Value(ThisRecord.horas_trabalhadas),
+                                    prof_funcao_projeto: ThisRecord.prof_funcao_projeto,
+                                    prof_dominio_atuacao: ThisRecord.prof_dominio_atuacao
+                                }
+                            ).AtestadoProfissional
+                        );
+                        
                         UpdateContext({locMostrarMensagemDeEdicaoDeAtestado: true})
                     PressedBorderColor: =RGBA(0, 69, 120, 1)
                     PressedColor: =RGBA(255, 255, 255, 1)
