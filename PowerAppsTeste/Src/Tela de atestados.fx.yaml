@@ -455,7 +455,7 @@
                             =//If(App.Width<=LookUp(App.SizeBreakpoints,Value=1200,Value),14,14)
                             
                             12
-                        Text: =ThisItem.atsd_descr_obj_trab
+                        Text: =Concat(Split(ThisItem.atsd_descr_obj_trab, ";"), Value, ", - ")
                         VerticalAlign: =VerticalAlign.Top
                         Width: |-
                             =//If(App.Width<=LookUp(App.SizeBreakpoints,Value=1200,Value),483,If(App.Width>LookUp(App.SizeBreakpoints,Value=1200,Value)&&App.Width<=LookUp(App.SizeBreakpoints,Value=1800,Value), Parent .Width*0.7, Parent .Width*0.7))
@@ -538,6 +538,30 @@
                         X: =(Parent.TemplateWidth - Self.Width) / 2
                         Y: =(Parent.TemplateHeight - Self.Height) / 2
                         ZIndex: =11
+
+                    Gallery3 As gallery.variableTemplateHeightGallery:
+                        DelayItemLoading: =true
+                        Height: =103
+                        Items: =Split(ThisItem.atsd_descr_obj_trab, ";")
+                        Layout: =Layout.Vertical
+                        LoadingSpinner: =LoadingSpinner.Data
+                        TemplateSize: =97
+                        Visible: =false
+                        Width: =1156
+                        X: =100
+                        Y: =147
+                        ZIndex: =12
+
+                        Label11 As label:
+                            Color: =gblTema.OffBlackColor
+                            FontWeight: =FontWeight.Lighter
+                            Height: =38
+                            OnSelect: =Select(Parent)
+                            Size: =12
+                            Text: =ThisItem.Value
+                            Width: =562
+                            Y: =5
+                            ZIndex: =1
 
                 ctnNenhumResultadoEncontrado As groupContainer.verticalAutoLayoutContainer:
                     DropShadow: =DropShadow.None
