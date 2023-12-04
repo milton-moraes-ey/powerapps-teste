@@ -4585,7 +4585,7 @@
                                             colEditarMembrosEquipe,
                                             "prof_id_guid",
                                             prof_id.Profissional,
-                                            "prof_d2",
+                                            "prof_id2",
                                             prof_id.id,
                                             "atsd_id2",
                                             locDadosDoAtestado.id,
@@ -4593,7 +4593,7 @@
                                             locDadosDoAtestado.Atestado
                                         ),
                                         JSONFormat.IgnoreUnsupportedTypes
-                                    )
+                                    ), locDadosDoAtestado.id
                                 )
                             }
                         );

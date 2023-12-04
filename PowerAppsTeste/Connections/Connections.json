@@ -9,11 +9,12 @@
     "dataSources": [],
     "dependencies": {},
     "dependents": [
-      "daee284c-cac9-4106-9a07-a91a2d6b6e93"
+      "daee284c-cac9-4106-9a07-a91a2d6b6e93",
+      "a63c6632-8f2a-4d46-b26a-57f6cecf7ef0"
     ],
     "id": "77c5bb54-e5f6-466c-92b9-1a97289c26e5"
   },
-  "c4ce867c-7c0c-4913-b14c-9cd45b5d8c94": {
+  "a63c6632-8f2a-4d46-b26a-57f6cecf7ef0": {
     "connectionRef": {
       "displayName": "Logic flows",
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
@@ -39,9 +40,11 @@
     "dataSources": [
       "[FerramentaGPS]EditarrelacionamentoAtestadoProfissionais"
     ],
-    "dependencies": {},
+    "dependencies": {
+      "shared_commondataserviceforapps": "77c5bb54-e5f6-466c-92b9-1a97289c26e5"
+    },
     "dependents": [],
-    "id": "c4ce867c-7c0c-4913-b14c-9cd45b5d8c94"
+    "id": "a63c6632-8f2a-4d46-b26a-57f6cecf7ef0"
   },
   "daee284c-cac9-4106-9a07-a91a2d6b6e93": {
     "connectionRef": {
