@@ -118,7 +118,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "ctnLoggedUser",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 649,
+            "PublishOrderIndex": 678,
             "Rules": [
               {
                 "Category": "Data",
@@ -418,7 +418,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "ctnLoggedUser",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 650,
+            "PublishOrderIndex": 679,
             "Rules": [
               {
                 "Category": "Data",
@@ -791,7 +791,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "ComponentLoggedUser",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 648,
+        "PublishOrderIndex": 677,
         "Rules": [
           {
             "Category": "Design",
