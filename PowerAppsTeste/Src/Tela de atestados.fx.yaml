@@ -2250,11 +2250,21 @@
                         LayoutMode: =LayoutMode.Auto
                         ZIndex: =4
 
+                        ctnVoltarFormEmpresaAtestante_2 As groupContainer.manualLayoutContainer:
+                            AlignInContainer: =AlignInContainer.SetByContainer
+                            DropShadow: =DropShadow.None
+                            FillPortions: =0
+                            Height: =40
+                            LayoutMinHeight: =40
+                            LayoutMinWidth: =250
+                            Width: =130
+                            ZIndex: =1
+
                         Label5 As label:
                             Align: =Align.Center
                             FillPortions: =1
                             Text: ="1/4"
-                            ZIndex: =1
+                            ZIndex: =2
 
                         ctnAvancarProximoForm As groupContainer.manualLayoutContainer:
                             AlignInContainer: =AlignInContainer.Start
@@ -2264,7 +2274,7 @@
                             LayoutMinHeight: =40
                             LayoutMinWidth: =250
                             Width: =130
-                            ZIndex: =2
+                            ZIndex: =3
 
                             lblAvancar As label:
                                 BorderColor: =RGBA(0, 0, 0, 0)
@@ -5334,7 +5344,7 @@
                             Height: =40
                             LayoutMinHeight: =40
                             LayoutMinWidth: =250
-                            Width: =150
+                            Width: =130
                             ZIndex: =3
 
                             btnSalvarAtestado As button:
@@ -9879,6 +9889,7 @@
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                 PressedColor: =RGBA(16, 110, 190, 1)
                 PressedFill: =RGBA(0, 0, 0, 0)
+                Tooltip: ="Cancelar deleção"
                 Width: =32
                 X: =548
                 Y: =20
