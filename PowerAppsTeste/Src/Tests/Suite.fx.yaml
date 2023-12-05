@@ -9,25 +9,25 @@
         Step1 As TestStep:
             Description: ="Select 'gps_nome_cliente_Column1'"
             Screen: =Tela de atestados
-            Value: =Select('gps_nome_cliente_Column1')
+            Value: =Select(gps_nome_cliente_Column1)
 
         Step2 As TestStep:
             Description: ="Select 'btnVerEquipe'"
             Screen: =Tela de atestados
-            Value: =Select('btnVerEquipe')
+            Value: =Select(btnVerEquipe)
 
         Step3 As TestStep:
             Description: ="Select 'Icon4_1' in row 2 in 'glrMembrosAdicionados_1'"
             Screen: =Tela de atestados
-            Value: =Select('glrMembrosAdicionados_1', 2, 'Icon4_1')
+            Value: =Select(glrMembrosAdicionados_1, 2, Icon4_1)
 
         Step4 As TestStep:
             Description: ="Select 'btnSalvarEdicaoDeAtestado'"
             Screen: =Tela de atestados
-            Value: =Select('btnSalvarEdicaoDeAtestado')
+            Value: =Select(btnSalvarEdicaoDeAtestado)
 
         Step5 As TestStep:
             Description: ="Select 'btnConfirmarCadastro_1'"
             Screen: =Tela de atestados
-            Value: =Select('btnConfirmarCadastro_1')
+            Value: =Select(btnConfirmarCadastro_1)
 

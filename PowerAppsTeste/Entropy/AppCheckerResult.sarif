@@ -14,36 +14,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ComponentSearchTextInput.ctnSearchTextInput.txtSearchTextInput.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ComponentSearchTextInput.ctnSearchTextInput.txtSearchTextInput.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "ComponentSearchTextInput",
-                "type": "ComponentSearchTextInput.ctnSearchTextInput.txtSearchTextInput"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "ComponentWinSizeNavigateMenu.ctnWinSizeNavigateMenu.glrWinSizeNavigateMenu.AccessibleLabel"
                 }
               ],
@@ -98,6 +68,36 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ComponentSearchTextInput.ctnSearchTextInput.txtSearchTextInput.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ComponentSearchTextInput.ctnSearchTextInput.txtSearchTextInput.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ComponentSearchTextInput",
+                "type": "ComponentSearchTextInput.ctnSearchTextInput.txtSearchTextInput"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -914,6 +914,576 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Tela de atestados",
+                "type": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Tela de atestados",
+                "type": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblTitulo.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblTitulo.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "Tela de atestados",
+                "type": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblTitulo"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblTitulo.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblTitulo.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Tela de atestados",
+                "type": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblTitulo"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblIndicadorTime.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblIndicadorTime.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "Tela de atestados",
+                "type": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblIndicadorTime"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblIndicadorTime.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblIndicadorTime.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Tela de atestados",
+                "type": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblIndicadorTime"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblTime.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblTime.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "Tela de atestados",
+                "type": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblTime"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblTime.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblTime.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Tela de atestados",
+                "type": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblTime"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblIndicadorProjeto.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblIndicadorProjeto.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "Tela de atestados",
+                "type": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblIndicadorProjeto"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblIndicadorProjeto.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblIndicadorProjeto.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Tela de atestados",
+                "type": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblIndicadorProjeto"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblProjeto.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblProjeto.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "Tela de atestados",
+                "type": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblProjeto"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblProjeto.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblProjeto.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Tela de atestados",
+                "type": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblProjeto"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblIndicadorObjetivo.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblIndicadorObjetivo.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "Tela de atestados",
+                "type": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblIndicadorObjetivo"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblIndicadorObjetivo.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblIndicadorObjetivo.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Tela de atestados",
+                "type": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblIndicadorObjetivo"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblDescricaoDoProjeto.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblDescricaoDoProjeto.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "Tela de atestados",
+                "type": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblDescricaoDoProjeto"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblDescricaoDoProjeto.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblDescricaoDoProjeto.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Tela de atestados",
+                "type": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblDescricaoDoProjeto"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.tblControleAtestados.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.tblControleAtestados.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Tela de atestados",
+                "type": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.tblControleAtestados"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.ctnLabelResultados.Icon1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.ctnLabelResultados.Icon1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Tela de atestados",
+                "type": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.ctnLabelResultados.Icon1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.ctnLabelResultados.Icon1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.ctnLabelResultados.Icon1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Tela de atestados",
+                "type": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.ctnLabelResultados.Icon1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnNovoAtestado.ctnFrmEmpresaPrestouServico.frmDadosEmpresaPrestouServico.atsd_descr_obj_trab_DataCard1.icoAddDescricaoDoObjeto.AccessibleLabel"
                 }
               ],
@@ -1167,576 +1737,6 @@
                 "member": "TabIndex",
                 "module": "Tela de atestados",
                 "type": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnNovoAtestado.ctnMainSectionFrmAdicionarMembrosEquipe.ctnMembrosAdicionados.glrMembrosAdicionados.Icon4"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.ctnLabelResultados.Icon1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.ctnLabelResultados.Icon1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Tela de atestados",
-                "type": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.ctnLabelResultados.Icon1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.ctnLabelResultados.Icon1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.ctnLabelResultados.Icon1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Tela de atestados",
-                "type": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.ctnLabelResultados.Icon1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.tblControleAtestados.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.tblControleAtestados.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Tela de atestados",
-                "type": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.tblControleAtestados"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Tela de atestados",
-                "type": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Tela de atestados",
-                "type": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblTitulo.FocusedBorderThickness"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblTitulo.FocusedBorderThickness",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThickness",
-                "module": "Tela de atestados",
-                "type": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblTitulo"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblTitulo.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblTitulo.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Tela de atestados",
-                "type": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblTitulo"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblIndicadorProjeto.FocusedBorderThickness"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblIndicadorProjeto.FocusedBorderThickness",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThickness",
-                "module": "Tela de atestados",
-                "type": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblIndicadorProjeto"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblIndicadorProjeto.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblIndicadorProjeto.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Tela de atestados",
-                "type": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblIndicadorProjeto"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblProjeto.FocusedBorderThickness"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblProjeto.FocusedBorderThickness",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThickness",
-                "module": "Tela de atestados",
-                "type": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblProjeto"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblProjeto.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblProjeto.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Tela de atestados",
-                "type": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblProjeto"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblIndicadorTime.FocusedBorderThickness"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblIndicadorTime.FocusedBorderThickness",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThickness",
-                "module": "Tela de atestados",
-                "type": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblIndicadorTime"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblIndicadorTime.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblIndicadorTime.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Tela de atestados",
-                "type": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblIndicadorTime"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblTime.FocusedBorderThickness"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblTime.FocusedBorderThickness",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThickness",
-                "module": "Tela de atestados",
-                "type": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblTime"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblTime.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblTime.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Tela de atestados",
-                "type": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblTime"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblIndicadorObjetivo.FocusedBorderThickness"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblIndicadorObjetivo.FocusedBorderThickness",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThickness",
-                "module": "Tela de atestados",
-                "type": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblIndicadorObjetivo"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblIndicadorObjetivo.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblIndicadorObjetivo.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Tela de atestados",
-                "type": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblIndicadorObjetivo"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblDescricaoDoProjeto.FocusedBorderThickness"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblDescricaoDoProjeto.FocusedBorderThickness",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThickness",
-                "module": "Tela de atestados",
-                "type": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblDescricaoDoProjeto"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblDescricaoDoProjeto.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblDescricaoDoProjeto.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Tela de atestados",
-                "type": "'Tela de atestados'.ctnMainAtestados.ctnCounteudoAtestados.ctnResultadosPesquisarAtestados.glrAtestados.lblDescricaoDoProjeto"
               }
             }
           ],

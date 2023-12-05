@@ -6885,7 +6885,7 @@
                         FontStrikethrough: =false
                         FontUnderline: =false
                         Height: =22
-                        Text: =Parent.DisplayName
+                        Text: ="Total de ativos do cliente"
                         Weight: ='TextCanvas.Weight'.Semibold
                         Width: =Parent.Width - 48
                         Wrap: =false
@@ -6967,7 +6967,7 @@
                         FontStrikethrough: =false
                         FontUnderline: =false
                         Height: =22
-                        Text: =Parent.DisplayName
+                        Text: ="Patrimônio líquido"
                         Weight: ='TextCanvas.Weight'.Semibold
                         Width: =Parent.Width - 48
                         Wrap: =false
@@ -8573,7 +8573,7 @@
                         FontStrikethrough: =false
                         FontUnderline: =false
                         Height: =22
-                        Text: ="Registrado pelo COE?"
+                        Text: ="Registrado no conselho?"
                         Weight: ='TextCanvas.Weight'.Semibold
                         Width: =Parent.Width - 48
                         Wrap: =false
