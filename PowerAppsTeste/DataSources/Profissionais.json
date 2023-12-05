@@ -18,7 +18,6 @@
       "gps_gpn": "gpn",
       "gps_historico_capacitacoes": "historico_capacitacoes",
       "gps_id": "id",
-      "gps_list_capacitacao": "list_capacitacao",
       "gps_nome_completo": "nome_completo",
       "gps_profissional_AsyncOperations": "System Jobs",
       "gps_profissional_BulkDeleteFailures": "Bulk Delete Failures",

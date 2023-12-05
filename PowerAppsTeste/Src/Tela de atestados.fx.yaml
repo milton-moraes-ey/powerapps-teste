@@ -1577,6 +1577,11 @@
 
                             DataCardKey1 As Text:
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =22
                                 Text: ="Nome do cliente"
                                 Weight: ='TextCanvas.Weight'.Semibold
@@ -1588,8 +1593,15 @@
 
                             "dcvNomeCliente As 'Text input'":
                                 AccessibleLabel: =Parent.DisplayName
+                                Align: ="Start"
                                 BasePaletteColor: =
                                 DisplayMode: =Parent.DisplayMode
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
+                                FontWeight: =""
                                 Height: =32
                                 Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                                 Required: =Parent.Required
@@ -1602,6 +1614,11 @@
 
                             ErrorMessage1 As Text:
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =30
                                 Text: =Parent.Error
                                 Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -1614,6 +1631,11 @@
                             StarVisible1 As Text:
                                 Align: ='TextCanvas.Align'.Center
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =30
                                 Text: ="*"
                                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -1640,6 +1662,11 @@
 
                             DataCardKey2 As Text:
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =22
                                 Text: ="CNPJ"
                                 Weight: ='TextCanvas.Weight'.Semibold
@@ -1651,8 +1678,15 @@
 
                             "dcvCnpjCliente As 'Text input'":
                                 AccessibleLabel: =Parent.DisplayName
+                                Align: ="Start"
                                 BasePaletteColor: =
                                 DisplayMode: =Parent.DisplayMode
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
+                                FontWeight: =""
                                 Height: =32
                                 Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                                 Required: =Parent.Required
@@ -1665,6 +1699,11 @@
 
                             ErrorMessage2 As Text:
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =30
                                 Text: =Parent.Error
                                 Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -1677,6 +1716,11 @@
                             StarVisible2 As Text:
                                 Align: ='TextCanvas.Align'.Center
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =30
                                 Text: ="*"
                                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -1703,6 +1747,11 @@
 
                             DataCardKey3 As Text:
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =22
                                 Text: ="Endereço"
                                 Weight: ='TextCanvas.Weight'.Semibold
@@ -1714,8 +1763,15 @@
 
                             "dcvEnderecoCliente As 'Text input'":
                                 AccessibleLabel: =Parent.DisplayName
+                                Align: ="Start"
                                 BasePaletteColor: =
                                 DisplayMode: =Parent.DisplayMode
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
+                                FontWeight: =""
                                 Height: =32
                                 Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                                 Required: =Parent.Required
@@ -1728,6 +1784,11 @@
 
                             ErrorMessage3 As Text:
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =30
                                 Text: =Parent.Error
                                 Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -1740,6 +1801,11 @@
                             StarVisible3 As Text:
                                 Align: ='TextCanvas.Align'.Center
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =30
                                 Text: ="*"
                                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -1765,6 +1831,11 @@
 
                             DataCardKey4 As Text:
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =22
                                 Text: ="Número de funcionários"
                                 Weight: ='TextCanvas.Weight'.Semibold
@@ -1776,8 +1847,15 @@
 
                             "dctNumeroFuncionariosDoCliente As 'Text input'":
                                 AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                                Align: ="Start"
                                 BasePaletteColor: =
                                 DisplayMode: =Parent.DisplayMode
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
+                                FontWeight: =""
                                 Height: =32
                                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                                 Value: =Parent.Default
@@ -1788,6 +1866,11 @@
 
                             ErrorMessage4 As Text:
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =30
                                 Text: =Parent.Error
                                 Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -1800,6 +1883,11 @@
                             StarVisible4 As Text:
                                 Align: ='TextCanvas.Align'.Center
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =30
                                 Text: ="*"
                                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -1826,6 +1914,11 @@
 
                             DataCardKey5 As Text:
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =22
                                 Text: ="Atividade econômica"
                                 Weight: ='TextCanvas.Weight'.Semibold
@@ -1837,8 +1930,15 @@
 
                             "dcvAtividadeEconomicaDoCliente As 'Text input'":
                                 AccessibleLabel: =Parent.DisplayName
+                                Align: ="Start"
                                 BasePaletteColor: =
                                 DisplayMode: =Parent.DisplayMode
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
+                                FontWeight: =""
                                 Height: =32
                                 Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                                 Required: =Parent.Required
@@ -1851,6 +1951,11 @@
 
                             ErrorMessage5 As Text:
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =30
                                 Text: =Parent.Error
                                 Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -1863,6 +1968,11 @@
                             StarVisible5 As Text:
                                 Align: ='TextCanvas.Align'.Center
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =30
                                 Text: ="*"
                                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -1888,6 +1998,11 @@
 
                             DataCardKey6 As Text:
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =22
                                 Text: ="Receita bruta"
                                 Weight: ='TextCanvas.Weight'.Semibold
@@ -1899,8 +2014,15 @@
 
                             "dcvReceitaBrutaDoCliente As 'Text input'":
                                 AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                                Align: ="Start"
                                 BasePaletteColor: =
                                 DisplayMode: =Parent.DisplayMode
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
+                                FontWeight: =""
                                 Height: =32
                                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                                 Value: =Parent.Default
@@ -1911,6 +2033,11 @@
 
                             ErrorMessage6 As Text:
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =30
                                 Text: =Parent.Error
                                 Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -1923,6 +2050,11 @@
                             StarVisible6 As Text:
                                 Align: ='TextCanvas.Align'.Center
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =30
                                 Text: ="*"
                                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -1948,6 +2080,11 @@
 
                             DataCardKey7 As Text:
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =22
                                 Text: ="Total de ativos"
                                 Weight: ='TextCanvas.Weight'.Semibold
@@ -1959,8 +2096,15 @@
 
                             "dcvTotalAtivosDoCliente As 'Text input'":
                                 AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                                Align: ="Start"
                                 BasePaletteColor: =
                                 DisplayMode: =Parent.DisplayMode
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
+                                FontWeight: =""
                                 Height: =32
                                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                                 Value: =Parent.Default
@@ -1971,6 +2115,11 @@
 
                             ErrorMessage7 As Text:
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =30
                                 Text: =Parent.Error
                                 Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -1983,6 +2132,11 @@
                             StarVisible7 As Text:
                                 Align: ='TextCanvas.Align'.Center
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =30
                                 Text: ="*"
                                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -2008,6 +2162,11 @@
 
                             DataCardKey8 As Text:
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =22
                                 Text: ="Patrimônio líquido"
                                 Weight: ='TextCanvas.Weight'.Semibold
@@ -2019,8 +2178,15 @@
 
                             "dcvPatrimonioLiquidoCliente As 'Text input'":
                                 AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                                Align: ="Start"
                                 BasePaletteColor: =
                                 DisplayMode: =Parent.DisplayMode
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
+                                FontWeight: =""
                                 Height: =32
                                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                                 Value: =Parent.Default
@@ -2031,6 +2197,11 @@
 
                             ErrorMessage8 As Text:
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =30
                                 Text: =Parent.Error
                                 Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -2043,6 +2214,11 @@
                             StarVisible8 As Text:
                                 Align: ='TextCanvas.Align'.Center
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =30
                                 Text: ="*"
                                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -2209,6 +2385,11 @@
 
                             DataCardKey9 As Text:
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =22
                                 Text: ="Nome da empresa prestadora do serviço"
                                 Weight: ='TextCanvas.Weight'.Semibold
@@ -2220,8 +2401,15 @@
 
                             "dcvNomeEmpresaPrestadora As 'Text input'":
                                 AccessibleLabel: =Parent.DisplayName
+                                Align: ="Start"
                                 BasePaletteColor: =
                                 DisplayMode: =Parent.DisplayMode
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
+                                FontWeight: =""
                                 Height: =32
                                 Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                                 Required: =Parent.Required
@@ -2234,6 +2422,11 @@
 
                             ErrorMessage9 As Text:
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =30
                                 Text: =Parent.Error
                                 Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -2246,6 +2439,11 @@
                             StarVisible9 As Text:
                                 Align: ='TextCanvas.Align'.Center
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =30
                                 Text: ="*"
                                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -2272,6 +2470,11 @@
 
                             DataCardKey10 As Text:
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =22
                                 Text: ="CNPJ"
                                 Weight: ='TextCanvas.Weight'.Semibold
@@ -2283,8 +2486,15 @@
 
                             "dcvCnpjEmpresaPrestadora As 'Text input'":
                                 AccessibleLabel: =Parent.DisplayName
+                                Align: ="Start"
                                 BasePaletteColor: =
                                 DisplayMode: =Parent.DisplayMode
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
+                                FontWeight: =""
                                 Height: =32
                                 Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                                 Required: =Parent.Required
@@ -2297,6 +2507,11 @@
 
                             ErrorMessage10 As Text:
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =30
                                 Text: =Parent.Error
                                 Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -2309,6 +2524,11 @@
                             StarVisible10 As Text:
                                 Align: ='TextCanvas.Align'.Center
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =30
                                 Text: ="*"
                                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -2335,6 +2555,11 @@
 
                             DataCardKey17 As Text:
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =22
                                 Text: ="Endereço"
                                 Weight: ='TextCanvas.Weight'.Semibold
@@ -2346,8 +2571,15 @@
 
                             "dcvEnderecoEmpresaPretadora As 'Text input'":
                                 AccessibleLabel: =Parent.DisplayName
+                                Align: ="Start"
                                 BasePaletteColor: =
                                 DisplayMode: =Parent.DisplayMode
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
+                                FontWeight: =""
                                 Height: =32
                                 Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                                 Required: =Parent.Required
@@ -2360,6 +2592,11 @@
 
                             ErrorMessage17 As Text:
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =30
                                 Text: =Parent.Error
                                 Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -2372,6 +2609,11 @@
                             StarVisible17 As Text:
                                 Align: ='TextCanvas.Align'.Center
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =30
                                 Text: ="*"
                                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -2398,6 +2640,11 @@
 
                             DataCardKey11 As Text:
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =22
                                 Text: ="Objeto do trabalho"
                                 Weight: ='TextCanvas.Weight'.Semibold
@@ -2409,8 +2656,15 @@
 
                             "dcvObjetoTrabalho As 'Text input'":
                                 AccessibleLabel: =Parent.DisplayName
+                                Align: ="Start"
                                 BasePaletteColor: =
                                 DisplayMode: =Parent.DisplayMode
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
+                                FontWeight: =""
                                 Height: =32
                                 Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                                 Required: =Parent.Required
@@ -2423,6 +2677,11 @@
 
                             ErrorMessage11 As Text:
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =30
                                 Text: =Parent.Error
                                 Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -2435,6 +2694,11 @@
                             StarVisible11 As Text:
                                 Align: ='TextCanvas.Align'.Center
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =30
                                 Text: ="*"
                                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -2460,6 +2724,11 @@
 
                             DataCardKey15 As Text:
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =22
                                 Text: ="Data de início"
                                 Weight: ='TextCanvas.Weight'.Semibold
@@ -2473,6 +2742,12 @@
                                 AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
                                 BasePaletteColor: =
                                 DisplayMode: =Parent.DisplayMode
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
+                                FontWeight: =""
                                 Height: =32
                                 SelectedDate: =Parent.Default
                                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
@@ -2483,6 +2758,11 @@
 
                             ErrorMessage15 As Text:
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =30
                                 Text: =Parent.Error
                                 Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -2495,6 +2775,11 @@
                             StarVisible15 As Text:
                                 Align: ='TextCanvas.Align'.Center
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =20
                                 Text: ="*"
                                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -2520,6 +2805,11 @@
 
                             DataCardKey16 As Text:
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =22
                                 Text: ="Data final"
                                 Weight: ='TextCanvas.Weight'.Semibold
@@ -2533,6 +2823,12 @@
                                 AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
                                 BasePaletteColor: =
                                 DisplayMode: =Parent.DisplayMode
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
+                                FontWeight: =""
                                 Height: =32
                                 SelectedDate: =Parent.Default
                                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
@@ -2543,6 +2839,11 @@
 
                             ErrorMessage16 As Text:
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =30
                                 Text: =Parent.Error
                                 Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -2555,6 +2856,11 @@
                             StarVisible16 As Text:
                                 Align: ='TextCanvas.Align'.Center
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =20
                                 Text: ="*"
                                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -2580,6 +2886,11 @@
 
                             DataCardKey13 As Text:
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =22
                                 Text: ="Quantidade de horas envolvidas"
                                 Weight: ='TextCanvas.Weight'.Semibold
@@ -2591,8 +2902,15 @@
 
                             "dcvQuantidadeTotalDeHoras As 'Text input'":
                                 AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                                Align: ="Start"
                                 BasePaletteColor: =
                                 DisplayMode: =Parent.DisplayMode
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
+                                FontWeight: =""
                                 Height: =32
                                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                                 Value: =Parent.Default
@@ -2603,6 +2921,11 @@
 
                             ErrorMessage13 As Text:
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =30
                                 Text: =Parent.Error
                                 Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -2615,6 +2938,11 @@
                             StarVisible13 As Text:
                                 Align: ='TextCanvas.Align'.Center
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =30
                                 Text: ="*"
                                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -2641,6 +2969,11 @@
 
                             DataCardKey14 As Text:
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =22
                                 Text: ="Local"
                                 Weight: ='TextCanvas.Weight'.Semibold
@@ -2652,8 +2985,15 @@
 
                             "dcvLocal As 'Text input'":
                                 AccessibleLabel: =Parent.DisplayName
+                                Align: ="Start"
                                 BasePaletteColor: =
                                 DisplayMode: =Parent.DisplayMode
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
+                                FontWeight: =""
                                 Height: =32
                                 Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                                 Required: =Parent.Required
@@ -2666,6 +3006,11 @@
 
                             ErrorMessage14 As Text:
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =30
                                 Text: =Parent.Error
                                 Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -2678,6 +3023,11 @@
                             StarVisible14 As Text:
                                 Align: ='TextCanvas.Align'.Center
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =30
                                 Text: ="*"
                                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -2704,6 +3054,11 @@
 
                             DataCardKey21 As Text:
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =22
                                 Text: ="Código do projeto"
                                 Weight: ='TextCanvas.Weight'.Semibold
@@ -2715,8 +3070,15 @@
 
                             "dcvEngagementCode As 'Text input'":
                                 AccessibleLabel: =Parent.DisplayName
+                                Align: ="Start"
                                 BasePaletteColor: =
                                 DisplayMode: =Parent.DisplayMode
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
+                                FontWeight: =""
                                 Height: =32
                                 Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                                 Required: =Parent.Required
@@ -2729,6 +3091,11 @@
 
                             ErrorMessage21 As Text:
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =30
                                 Text: =Parent.Error
                                 Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -2741,6 +3108,11 @@
                             StarVisible21 As Text:
                                 Align: ='TextCanvas.Align'.Center
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =30
                                 Text: ="*"
                                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -2766,6 +3138,11 @@
 
                             DataCardKey23 As Text:
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =22
                                 Text: ="Registrado"
                                 Weight: ='TextCanvas.Weight'.Semibold
@@ -2778,6 +3155,11 @@
                             dcvRegistrado As Combobox.pcfdataset:
                                 AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
                                 DisplayMode: =Parent.DisplayMode
+                                Font: =""
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
+                                FontWeight: =""
                                 Height: =32
                                 Items: =Choices('atsd_registrado (Atestados)')
                                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
@@ -2796,6 +3178,11 @@
 
                             ErrorMessage23 As Text:
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =30
                                 Text: =Parent.Error
                                 Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -2808,6 +3195,11 @@
                             StarVisible23 As Text:
                                 Align: ='TextCanvas.Align'.Center
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =20
                                 Text: ="*"
                                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -2833,6 +3225,11 @@
 
                             DataCardKey12 As Text:
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =22
                                 Text: ="Descrição"
                                 Weight: ='TextCanvas.Weight'.Semibold
@@ -2844,8 +3241,15 @@
 
                             "dcvDescricaoDoObjetoDoTrabalho As 'Text input'":
                                 AccessibleLabel: =Parent.DisplayName
+                                Align: ="Start"
                                 BasePaletteColor: =
                                 DisplayMode: =Parent.DisplayMode
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
+                                FontWeight: =""
                                 Height: =144
                                 Mode: ='TextInputCanvas.Mode'.Multiline
                                 Required: =Parent.Required
@@ -2859,6 +3263,11 @@
 
                             ErrorMessage12 As Text:
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =30
                                 Text: =Parent.Error
                                 Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -2871,6 +3280,11 @@
                             StarVisible12 As Text:
                                 Align: ='TextCanvas.Align'.Center
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =30
                                 Text: ="*"
                                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -3210,6 +3624,11 @@
 
                             DataCardKey33 As Text:
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =22
                                 Text: ="Nome do signatário"
                                 Weight: ='TextCanvas.Weight'.Semibold
@@ -3221,8 +3640,15 @@
 
                             "dcvNomeSignatario As 'Text input'":
                                 AccessibleLabel: =Parent.DisplayName
+                                Align: ="Start"
                                 BasePaletteColor: =
                                 DisplayMode: =Parent.DisplayMode
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
+                                FontWeight: =""
                                 Height: =32
                                 Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                                 Required: =Parent.Required
@@ -3235,6 +3661,11 @@
 
                             ErrorMessage32 As Text:
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =30
                                 Text: =Parent.Error
                                 Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -3247,6 +3678,11 @@
                             StarVisible32 As Text:
                                 Align: ='TextCanvas.Align'.Center
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =30
                                 Text: ="*"
                                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -3273,6 +3709,11 @@
 
                             DataCardKey34 As Text:
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =22
                                 Text: ="Cargo do signatário"
                                 Weight: ='TextCanvas.Weight'.Semibold
@@ -3284,8 +3725,15 @@
 
                             "dcvCargoSignatario As 'Text input'":
                                 AccessibleLabel: =Parent.DisplayName
+                                Align: ="Start"
                                 BasePaletteColor: =
                                 DisplayMode: =Parent.DisplayMode
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
+                                FontWeight: =""
                                 Height: =32
                                 Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                                 Required: =Parent.Required
@@ -3298,6 +3746,11 @@
 
                             ErrorMessage33 As Text:
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =30
                                 Text: =Parent.Error
                                 Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -3310,6 +3763,11 @@
                             StarVisible33 As Text:
                                 Align: ='TextCanvas.Align'.Center
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =30
                                 Text: ="*"
                                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -3336,6 +3794,11 @@
 
                             DataCardKey35 As Text:
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =22
                                 Text: ="Email do signatário"
                                 Weight: ='TextCanvas.Weight'.Semibold
@@ -3347,8 +3810,15 @@
 
                             "dcvEmailSignatario As 'Text input'":
                                 AccessibleLabel: =Parent.DisplayName
+                                Align: ="Start"
                                 BasePaletteColor: =
                                 DisplayMode: =Parent.DisplayMode
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
+                                FontWeight: =""
                                 Height: =32
                                 Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                                 Required: =Parent.Required
@@ -3361,6 +3831,11 @@
 
                             ErrorMessage34 As Text:
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =30
                                 Text: =Parent.Error
                                 Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -3373,6 +3848,11 @@
                             StarVisible34 As Text:
                                 Align: ='TextCanvas.Align'.Center
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =30
                                 Text: ="*"
                                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -3399,6 +3879,11 @@
 
                             DataCardKey36 As Text:
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =22
                                 Text: ="Telefone do signatário"
                                 Weight: ='TextCanvas.Weight'.Semibold
@@ -3410,8 +3895,15 @@
 
                             "dcvTelefoneSignatario As 'Text input'":
                                 AccessibleLabel: =Parent.DisplayName
+                                Align: ="Start"
                                 BasePaletteColor: =
                                 DisplayMode: =Parent.DisplayMode
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
+                                FontWeight: =""
                                 Height: =32
                                 Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                                 Required: =Parent.Required
@@ -3424,6 +3916,11 @@
 
                             ErrorMessage35 As Text:
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =30
                                 Text: =Parent.Error
                                 Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -3436,6 +3933,11 @@
                             StarVisible35 As Text:
                                 Align: ='TextCanvas.Align'.Center
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =30
                                 Text: ="*"
                                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -3462,6 +3964,11 @@
 
                             DataCardKey37 As Text:
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =22
                                 Text: ="Endereço do signatário"
                                 Weight: ='TextCanvas.Weight'.Semibold
@@ -3473,8 +3980,15 @@
 
                             "dcvEnderecoSignatario As 'Text input'":
                                 AccessibleLabel: =Parent.DisplayName
+                                Align: ="Start"
                                 BasePaletteColor: =
                                 DisplayMode: =Parent.DisplayMode
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
+                                FontWeight: =""
                                 Height: =32
                                 Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                                 Required: =Parent.Required
@@ -3487,6 +4001,11 @@
 
                             ErrorMessage36 As Text:
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =30
                                 Text: =Parent.Error
                                 Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -3499,6 +4018,11 @@
                             StarVisible36 As Text:
                                 Align: ='TextCanvas.Align'.Center
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =30
                                 Text: ="*"
                                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -3525,6 +4049,11 @@
 
                             DataCardKey38 As Text:
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =22
                                 Text: ="Local do signatário"
                                 Weight: ='TextCanvas.Weight'.Semibold
@@ -3536,8 +4065,15 @@
 
                             "dcvLocalSignatario As 'Text input'":
                                 AccessibleLabel: =Parent.DisplayName
+                                Align: ="Start"
                                 BasePaletteColor: =
                                 DisplayMode: =Parent.DisplayMode
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
+                                FontWeight: =""
                                 Height: =32
                                 Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                                 Required: =Parent.Required
@@ -3550,6 +4086,11 @@
 
                             ErrorMessage37 As Text:
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =30
                                 Text: =Parent.Error
                                 Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -3562,6 +4103,11 @@
                             StarVisible37 As Text:
                                 Align: ='TextCanvas.Align'.Center
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =30
                                 Text: ="*"
                                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -3587,6 +4133,11 @@
 
                             DataCardKey18 As Text:
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =22
                                 Text: ="Data da assinatura"
                                 Weight: ='TextCanvas.Weight'.Semibold
@@ -3600,6 +4151,12 @@
                                 AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
                                 BasePaletteColor: =
                                 DisplayMode: =Parent.DisplayMode
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
+                                FontWeight: =""
                                 Height: =32
                                 SelectedDate: =Parent.Default
                                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
@@ -3610,6 +4167,11 @@
 
                             ErrorMessage18 As Text:
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =30
                                 Text: =Parent.Error
                                 Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -3622,6 +4184,11 @@
                             StarVisible18 As Text:
                                 Align: ='TextCanvas.Align'.Center
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =20
                                 Text: ="*"
                                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -3648,6 +4215,11 @@
 
                             DataCardKey40 As Text:
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =34
                                 Text: =Parent.DisplayName
                                 Weight: ='TextCanvas.Weight'.Semibold
@@ -3683,6 +4255,11 @@
 
                             ErrorMessage39 As Text:
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =10
                                 Size: =12
                                 Text: =Parent.Error
@@ -3695,6 +4272,11 @@
                             StarVisible39 As Text:
                                 Align: ='TextCanvas.Align'.Center
                                 DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
                                 Height: =DataCardKey40.Height
                                 Text: ="*"
                                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -3960,6 +4542,11 @@
 
                                 DataCardKey27 As Text:
                                     DisplayMode: =DisplayMode.Edit
+                                    Font: =""
+                                    FontColor: =
+                                    FontItalic: =false
+                                    FontStrikethrough: =false
+                                    FontUnderline: =false
                                     Height: =22
                                     Text: ="Profissional"
                                     Weight: ='TextCanvas.Weight'.Semibold
@@ -3972,6 +4559,11 @@
                                 dcvIDProfissionalAtestado As Combobox.pcfdataset:
                                     AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
                                     DisplayMode: =Parent.DisplayMode
+                                    Font: =""
+                                    FontItalic: =false
+                                    FontStrikethrough: =false
+                                    FontUnderline: =false
+                                    FontWeight: =""
                                     Height: =32
                                     Items: =Choices([@AtestadoProfissionais].prof_id)
                                     ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
@@ -4014,6 +4606,11 @@
 
                                 ErrorMessage28_1 As Text:
                                     DisplayMode: =DisplayMode.Edit
+                                    Font: =""
+                                    FontColor: =
+                                    FontItalic: =false
+                                    FontStrikethrough: =false
+                                    FontUnderline: =false
                                     Height: =30
                                     Text: =Parent.Error
                                     Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -4026,6 +4623,11 @@
                                 StarVisible28_1 As Text:
                                     Align: ='TextCanvas.Align'.Center
                                     DisplayMode: =DisplayMode.Edit
+                                    Font: =""
+                                    FontColor: =
+                                    FontItalic: =false
+                                    FontStrikethrough: =false
+                                    FontUnderline: =false
                                     Height: =30
                                     Text: ="*"
                                     Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -4052,6 +4654,11 @@
 
                                 DataCardKey28 As Text:
                                     DisplayMode: =DisplayMode.Edit
+                                    Font: =""
+                                    FontColor: =
+                                    FontItalic: =false
+                                    FontStrikethrough: =false
+                                    FontUnderline: =false
                                     Height: =22
                                     Text: ="Função no projeto"
                                     Weight: ='TextCanvas.Weight'.Semibold
@@ -4063,8 +4670,15 @@
 
                                 "dcvProfissionalFuncaoNoProjeto As 'Text input'":
                                     AccessibleLabel: =Parent.DisplayName
+                                    Align: ="Start"
                                     BasePaletteColor: =
                                     DisplayMode: =Parent.DisplayMode
+                                    Font: =""
+                                    FontColor: =
+                                    FontItalic: =false
+                                    FontStrikethrough: =false
+                                    FontUnderline: =false
+                                    FontWeight: =""
                                     Height: =32
                                     Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                                     Required: =Parent.Required
@@ -4077,6 +4691,11 @@
 
                                 ErrorMessage28 As Text:
                                     DisplayMode: =DisplayMode.Edit
+                                    Font: =""
+                                    FontColor: =
+                                    FontItalic: =false
+                                    FontStrikethrough: =false
+                                    FontUnderline: =false
                                     Height: =30
                                     Text: =Parent.Error
                                     Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -4089,6 +4708,11 @@
                                 StarVisible28 As Text:
                                     Align: ='TextCanvas.Align'.Center
                                     DisplayMode: =DisplayMode.Edit
+                                    Font: =""
+                                    FontColor: =
+                                    FontItalic: =false
+                                    FontStrikethrough: =false
+                                    FontUnderline: =false
                                     Height: =30
                                     Text: ="*"
                                     Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -4115,6 +4739,11 @@
 
                                 DataCardKey29 As Text:
                                     DisplayMode: =DisplayMode.Edit
+                                    Font: =""
+                                    FontColor: =
+                                    FontItalic: =false
+                                    FontStrikethrough: =false
+                                    FontUnderline: =false
                                     Height: =22
                                     Text: ="Domínio de atuação"
                                     Weight: ='TextCanvas.Weight'.Semibold
@@ -4126,8 +4755,15 @@
 
                                 "dcvProfissionalDominioAtuacao As 'Text input'":
                                     AccessibleLabel: =Parent.DisplayName
+                                    Align: ="Start"
                                     BasePaletteColor: =
                                     DisplayMode: =Parent.DisplayMode
+                                    Font: =""
+                                    FontColor: =
+                                    FontItalic: =false
+                                    FontStrikethrough: =false
+                                    FontUnderline: =false
+                                    FontWeight: =""
                                     Height: =32
                                     Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                                     Required: =Parent.Required
@@ -4140,6 +4776,11 @@
 
                                 ErrorMessage29 As Text:
                                     DisplayMode: =DisplayMode.Edit
+                                    Font: =""
+                                    FontColor: =
+                                    FontItalic: =false
+                                    FontStrikethrough: =false
+                                    FontUnderline: =false
                                     Height: =30
                                     Text: =Parent.Error
                                     Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -4152,6 +4793,11 @@
                                 StarVisible29 As Text:
                                     Align: ='TextCanvas.Align'.Center
                                     DisplayMode: =DisplayMode.Edit
+                                    Font: =""
+                                    FontColor: =
+                                    FontItalic: =false
+                                    FontStrikethrough: =false
+                                    FontUnderline: =false
                                     Height: =30
                                     Text: ="*"
                                     Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -4177,6 +4823,11 @@
 
                                 DataCardKey30 As Text:
                                     DisplayMode: =DisplayMode.Edit
+                                    Font: =""
+                                    FontColor: =
+                                    FontItalic: =false
+                                    FontStrikethrough: =false
+                                    FontUnderline: =false
                                     Height: =22
                                     Text: ="Horas trabalhadas"
                                     Weight: ='TextCanvas.Weight'.Semibold
@@ -4188,8 +4839,15 @@
 
                                 "dcvHorasTrabalhadas As 'Text input'":
                                     AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                                    Align: ="Start"
                                     BasePaletteColor: =
                                     DisplayMode: =Parent.DisplayMode
+                                    Font: =""
+                                    FontColor: =
+                                    FontItalic: =false
+                                    FontStrikethrough: =false
+                                    FontUnderline: =false
+                                    FontWeight: =""
                                     Height: =32
                                     ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                                     Value: =Parent.Default
@@ -4200,6 +4858,11 @@
 
                                 ErrorMessage30 As Text:
                                     DisplayMode: =DisplayMode.Edit
+                                    Font: =""
+                                    FontColor: =
+                                    FontItalic: =false
+                                    FontStrikethrough: =false
+                                    FontUnderline: =false
                                     Height: =30
                                     Text: =Parent.Error
                                     Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -4212,6 +4875,11 @@
                                 StarVisible30 As Text:
                                     Align: ='TextCanvas.Align'.Center
                                     DisplayMode: =DisplayMode.Edit
+                                    Font: =""
+                                    FontColor: =
+                                    FontItalic: =false
+                                    FontStrikethrough: =false
+                                    FontUnderline: =false
                                     Height: =30
                                     Text: ="*"
                                     Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -4857,8 +5525,15 @@
 
                     "txtAddDescricao As 'Text input'":
                         AccessibleLabel: =
+                        Align: ="Start"
                         BasePaletteColor: =
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
+                        FontWeight: =""
                         Height: =120
                         Mode: ='TextInputCanvas.Mode'.Multiline
                         Required: =
@@ -5654,6 +6329,11 @@
 
                     DataCardKey25 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =22
                         Text: ="Nome do cliente"
                         Weight: ='TextCanvas.Weight'.Semibold
@@ -5665,8 +6345,15 @@
 
                     "dcvEditarNomeCliente As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
+                        Align: ="Start"
                         BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
+                        FontWeight: =""
                         Height: =32
                         Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                         Required: =Parent.Required
@@ -5679,6 +6366,11 @@
 
                     ErrorMessage25 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =30
                         Text: =Parent.Error
                         Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -5691,6 +6383,11 @@
                     StarVisible25 As Text:
                         Align: ='TextCanvas.Align'.Center
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =30
                         Text: ="*"
                         Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -5717,6 +6414,11 @@
 
                     DataCardKey26 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =22
                         Text: ="CNPJ do cliente"
                         Weight: ='TextCanvas.Weight'.Semibold
@@ -5728,8 +6430,15 @@
 
                     "dcvEditarCnpjCliente As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
+                        Align: ="Start"
                         BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
+                        FontWeight: =""
                         Height: =32
                         Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                         Required: =Parent.Required
@@ -5742,6 +6451,11 @@
 
                     ErrorMessage26 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =30
                         Text: =Parent.Error
                         Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -5754,6 +6468,11 @@
                     StarVisible26 As Text:
                         Align: ='TextCanvas.Align'.Center
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =30
                         Text: ="*"
                         Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -5780,6 +6499,11 @@
 
                     DataCardKey31 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =22
                         Text: ="Endereço do cliente"
                         Weight: ='TextCanvas.Weight'.Semibold
@@ -5791,8 +6515,15 @@
 
                     "dcvEditarEnderecoCliente As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
+                        Align: ="Start"
                         BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
+                        FontWeight: =""
                         Height: =32
                         Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                         Required: =Parent.Required
@@ -5805,6 +6536,11 @@
 
                     ErrorMessage27 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =30
                         Text: =Parent.Error
                         Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -5817,6 +6553,11 @@
                     StarVisible27 As Text:
                         Align: ='TextCanvas.Align'.Center
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =30
                         Text: ="*"
                         Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -5842,6 +6583,11 @@
 
                     DataCardKey32 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =22
                         Text: ="Número de funcionários do cliente"
                         Weight: ='TextCanvas.Weight'.Semibold
@@ -5853,8 +6599,15 @@
 
                     "dcvEditarNumeroFuncionarioCliente As 'Text input'":
                         AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                        Align: ="Start"
                         BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
+                        FontWeight: =""
                         Height: =32
                         ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                         Value: =Parent.Default
@@ -5865,6 +6618,11 @@
 
                     ErrorMessage31 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =30
                         Text: =Parent.Error
                         Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -5877,6 +6635,11 @@
                     StarVisible31 As Text:
                         Align: ='TextCanvas.Align'.Center
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =30
                         Text: ="*"
                         Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -5903,6 +6666,11 @@
 
                     DataCardKey39 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =22
                         Text: ="Atividade econômnica do cliente"
                         Weight: ='TextCanvas.Weight'.Semibold
@@ -5914,8 +6682,15 @@
 
                     "dcvEditarAtividadeEconomicaCliente As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
+                        Align: ="Start"
                         BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
+                        FontWeight: =""
                         Height: =32
                         Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                         Required: =Parent.Required
@@ -5928,6 +6703,11 @@
 
                     ErrorMessage38 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =30
                         Text: =Parent.Error
                         Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -5940,6 +6720,11 @@
                     StarVisible38 As Text:
                         Align: ='TextCanvas.Align'.Center
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =30
                         Text: ="*"
                         Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -5965,6 +6750,11 @@
 
                     DataCardKey41 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =22
                         Text: ="Receita bruta do cliente"
                         Weight: ='TextCanvas.Weight'.Semibold
@@ -5976,8 +6766,15 @@
 
                     "dcvEditarReceitaBrutaCliente As 'Text input'":
                         AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                        Align: ="Start"
                         BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
+                        FontWeight: =""
                         Height: =32
                         ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                         Value: =Parent.Default
@@ -5988,6 +6785,11 @@
 
                     ErrorMessage40 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =30
                         Text: =Parent.Error
                         Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -6000,6 +6802,11 @@
                     StarVisible40 As Text:
                         Align: ='TextCanvas.Align'.Center
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =30
                         Text: ="*"
                         Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -6025,6 +6832,11 @@
 
                     DataCardKey42 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =22
                         Text: =Parent.DisplayName
                         Weight: ='TextCanvas.Weight'.Semibold
@@ -6036,8 +6848,15 @@
 
                     "dcvEditarTotalAtivoCliente As 'Text input'":
                         AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                        Align: ="Start"
                         BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
+                        FontWeight: =""
                         Height: =32
                         ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                         Value: =Parent.Default
@@ -6048,6 +6867,11 @@
 
                     ErrorMessage41 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =30
                         Text: =Parent.Error
                         Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -6060,6 +6884,11 @@
                     StarVisible41 As Text:
                         Align: ='TextCanvas.Align'.Center
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =30
                         Text: ="*"
                         Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -6085,6 +6914,11 @@
 
                     DataCardKey43 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =22
                         Text: =Parent.DisplayName
                         Weight: ='TextCanvas.Weight'.Semibold
@@ -6096,8 +6930,15 @@
 
                     "dcvEditarPatrimonioLiqCliente As 'Text input'":
                         AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                        Align: ="Start"
                         BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
+                        FontWeight: =""
                         Height: =32
                         ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                         Value: =Parent.Default
@@ -6108,6 +6949,11 @@
 
                     ErrorMessage42 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =30
                         Text: =Parent.Error
                         Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -6120,6 +6966,11 @@
                     StarVisible42 As Text:
                         Align: ='TextCanvas.Align'.Center
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =30
                         Text: ="*"
                         Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -6210,6 +7061,11 @@
 
                     DataCardKey44 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =22
                         Text: ="Nome da empresa que prestou o serviço"
                         Weight: ='TextCanvas.Weight'.Semibold
@@ -6221,8 +7077,15 @@
 
                     "dcvEditarNomeEmpresaPrestadora As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
+                        Align: ="Start"
                         BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
+                        FontWeight: =""
                         Height: =32
                         Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                         Required: =Parent.Required
@@ -6235,6 +7098,11 @@
 
                     ErrorMessage43 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =30
                         Text: =Parent.Error
                         Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -6247,6 +7115,11 @@
                     StarVisible43 As Text:
                         Align: ='TextCanvas.Align'.Center
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =30
                         Text: ="*"
                         Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -6273,6 +7146,11 @@
 
                     DataCardKey45 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =22
                         Text: ="CNPJ da empresa que prestou o serviço"
                         Weight: ='TextCanvas.Weight'.Semibold
@@ -6284,8 +7162,15 @@
 
                     "dcvEditarCnpjEmpresaPrestadora As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
+                        Align: ="Start"
                         BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
+                        FontWeight: =""
                         Height: =32
                         Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                         Required: =Parent.Required
@@ -6298,6 +7183,11 @@
 
                     ErrorMessage44 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =30
                         Text: =Parent.Error
                         Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -6310,6 +7200,11 @@
                     StarVisible44 As Text:
                         Align: ='TextCanvas.Align'.Center
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =30
                         Text: ="*"
                         Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -6336,6 +7231,11 @@
 
                     DataCardKey46 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =22
                         Text: ="Endereço"
                         Weight: ='TextCanvas.Weight'.Semibold
@@ -6347,8 +7247,15 @@
 
                     "dcvEditarEnderecoEmpresaPrestadora As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
+                        Align: ="Start"
                         BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
+                        FontWeight: =""
                         Height: =32
                         Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                         Required: =Parent.Required
@@ -6361,6 +7268,11 @@
 
                     ErrorMessage45 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =30
                         Text: =Parent.Error
                         Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -6373,6 +7285,11 @@
                     StarVisible45 As Text:
                         Align: ='TextCanvas.Align'.Center
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =30
                         Text: ="*"
                         Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -6408,6 +7325,11 @@
 
                     DataCardKey55 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =22
                         Text: ="Nome do signatário"
                         Weight: ='TextCanvas.Weight'.Semibold
@@ -6419,8 +7341,15 @@
 
                     "dcvEditarNomeSignatario As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
+                        Align: ="Start"
                         BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
+                        FontWeight: =""
                         Height: =32
                         Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                         Required: =Parent.Required
@@ -6433,6 +7362,11 @@
 
                     ErrorMessage54 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =30
                         Text: =Parent.Error
                         Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -6445,6 +7379,11 @@
                     StarVisible54 As Text:
                         Align: ='TextCanvas.Align'.Center
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =30
                         Text: ="*"
                         Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -6471,6 +7410,11 @@
 
                     DataCardKey56 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =22
                         Text: ="Cargo do signatário"
                         Weight: ='TextCanvas.Weight'.Semibold
@@ -6482,8 +7426,15 @@
 
                     "dcvEditarCargoSignatario As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
+                        Align: ="Start"
                         BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
+                        FontWeight: =""
                         Height: =32
                         Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                         Required: =Parent.Required
@@ -6496,6 +7447,11 @@
 
                     ErrorMessage55 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =30
                         Text: =Parent.Error
                         Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -6508,6 +7464,11 @@
                     StarVisible55 As Text:
                         Align: ='TextCanvas.Align'.Center
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =30
                         Text: ="*"
                         Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -6534,6 +7495,11 @@
 
                     DataCardKey57 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =22
                         Text: ="Email do signatário"
                         Weight: ='TextCanvas.Weight'.Semibold
@@ -6545,8 +7511,15 @@
 
                     "dcvEditarEmailSignatario As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
+                        Align: ="Start"
                         BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
+                        FontWeight: =""
                         Height: =32
                         Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                         Required: =Parent.Required
@@ -6559,6 +7532,11 @@
 
                     ErrorMessage56 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =30
                         Text: =Parent.Error
                         Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -6571,6 +7549,11 @@
                     StarVisible56 As Text:
                         Align: ='TextCanvas.Align'.Center
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =30
                         Text: ="*"
                         Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -6597,6 +7580,11 @@
 
                     DataCardKey58 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =22
                         Text: ="Telefone do signatário"
                         Weight: ='TextCanvas.Weight'.Semibold
@@ -6608,8 +7596,15 @@
 
                     "dcvEditarTelefoneSignatario As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
+                        Align: ="Start"
                         BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
+                        FontWeight: =""
                         Height: =32
                         Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                         Required: =Parent.Required
@@ -6622,6 +7617,11 @@
 
                     ErrorMessage57 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =30
                         Text: =Parent.Error
                         Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -6634,6 +7634,11 @@
                     StarVisible57 As Text:
                         Align: ='TextCanvas.Align'.Center
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =30
                         Text: ="*"
                         Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -6660,6 +7665,11 @@
 
                     DataCardKey59 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =22
                         Text: ="Endereço do signatário"
                         Weight: ='TextCanvas.Weight'.Semibold
@@ -6671,8 +7681,15 @@
 
                     "dcvEditarEnderecoSignatario As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
+                        Align: ="Start"
                         BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
+                        FontWeight: =""
                         Height: =32
                         Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                         Required: =Parent.Required
@@ -6685,6 +7702,11 @@
 
                     ErrorMessage58 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =30
                         Text: =Parent.Error
                         Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -6697,6 +7719,11 @@
                     StarVisible58 As Text:
                         Align: ='TextCanvas.Align'.Center
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =30
                         Text: ="*"
                         Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -6723,6 +7750,11 @@
 
                     DataCardKey60 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =22
                         Text: ="Local do signatário"
                         Weight: ='TextCanvas.Weight'.Semibold
@@ -6734,8 +7766,15 @@
 
                     "dcvEditarLocalSignatario As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
+                        Align: ="Start"
                         BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
+                        FontWeight: =""
                         Height: =32
                         Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                         Required: =Parent.Required
@@ -6748,6 +7787,11 @@
 
                     ErrorMessage59 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =30
                         Text: =Parent.Error
                         Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -6760,6 +7804,11 @@
                     StarVisible59 As Text:
                         Align: ='TextCanvas.Align'.Center
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =30
                         Text: ="*"
                         Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -6785,6 +7834,11 @@
 
                     DataCardKey61 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =22
                         Text: ="Data de assinatura do documento"
                         Weight: ='TextCanvas.Weight'.Semibold
@@ -6798,6 +7852,12 @@
                         AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
                         BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
+                        FontWeight: =""
                         Height: =32
                         SelectedDate: =Parent.Default
                         ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
@@ -6808,6 +7868,11 @@
 
                     ErrorMessage60 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =30
                         Text: =Parent.Error
                         Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -6820,6 +7885,11 @@
                     StarVisible60 As Text:
                         Align: ='TextCanvas.Align'.Center
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =20
                         Text: ="*"
                         Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -6846,6 +7916,11 @@
 
                     DataCardKey62 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =34
                         Text: ="Documento do atestado"
                         Weight: ='TextCanvas.Weight'.Semibold
@@ -6883,6 +7958,11 @@
 
                     ErrorMessage61 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =10
                         Size: =12
                         Text: =Parent.Error
@@ -6895,6 +7975,11 @@
                     StarVisible61 As Text:
                         Align: ='TextCanvas.Align'.Center
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =DataCardKey62.Height
                         Text: ="*"
                         Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -6932,6 +8017,11 @@
 
                     DataCardKey64 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =22
                         Text: ="Objeto do trabalho"
                         Weight: ='TextCanvas.Weight'.Semibold
@@ -6943,8 +8033,15 @@
 
                     "dcvEditarObjetoAtestado As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
+                        Align: ="Start"
                         BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
+                        FontWeight: =""
                         Height: =32
                         Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                         Required: =Parent.Required
@@ -6957,6 +8054,11 @@
 
                     ErrorMessage63 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =30
                         Text: =Parent.Error
                         Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -6969,6 +8071,11 @@
                     StarVisible63 As Text:
                         Align: ='TextCanvas.Align'.Center
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =30
                         Text: ="*"
                         Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -6994,6 +8101,11 @@
 
                     DataCardKey67 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =22
                         Text: ="Quantidade de horas totais do projeto"
                         Weight: ='TextCanvas.Weight'.Semibold
@@ -7005,8 +8117,15 @@
 
                     "dcvEditarQtdHorasAtestado As 'Text input'":
                         AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                        Align: ="Start"
                         BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
+                        FontWeight: =""
                         Height: =32
                         ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                         Value: =Parent.Default
@@ -7017,6 +8136,11 @@
 
                     ErrorMessage66 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =30
                         Text: =Parent.Error
                         Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -7029,6 +8153,11 @@
                     StarVisible66 As Text:
                         Align: ='TextCanvas.Align'.Center
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =30
                         Text: ="*"
                         Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -7054,6 +8183,11 @@
 
                     DataCardKey65 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =22
                         Text: ="Data de início"
                         Weight: ='TextCanvas.Weight'.Semibold
@@ -7067,6 +8201,12 @@
                         AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
                         BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
+                        FontWeight: =""
                         Format: ="Short"
                         Height: =32
                         Placeholder: ="Selecionar data"
@@ -7079,6 +8219,11 @@
 
                     ErrorMessage64 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =30
                         Text: =Parent.Error
                         Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -7091,6 +8236,11 @@
                     StarVisible64 As Text:
                         Align: ='TextCanvas.Align'.Center
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =20
                         Text: ="*"
                         Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -7116,6 +8266,11 @@
 
                     DataCardKey66 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =22
                         Text: ="Data final"
                         Weight: ='TextCanvas.Weight'.Semibold
@@ -7129,6 +8284,12 @@
                         AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
                         BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
+                        FontWeight: =""
                         Format: ="Short"
                         Height: =32
                         Placeholder: ="Selecionar data"
@@ -7141,6 +8302,11 @@
 
                     ErrorMessage65 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =30
                         Text: =Parent.Error
                         Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -7153,6 +8319,11 @@
                     StarVisible65 As Text:
                         Align: ='TextCanvas.Align'.Center
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =20
                         Text: ="*"
                         Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -7179,6 +8350,11 @@
 
                     DataCardKey68 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =22
                         Text: ="Local"
                         Weight: ='TextCanvas.Weight'.Semibold
@@ -7190,8 +8366,15 @@
 
                     "dcvEditarLocalAtestado As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
+                        Align: ="Start"
                         BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
+                        FontWeight: =""
                         Height: =32
                         Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                         Required: =Parent.Required
@@ -7204,6 +8387,11 @@
 
                     ErrorMessage67 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =30
                         Text: =Parent.Error
                         Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -7216,6 +8404,11 @@
                     StarVisible67 As Text:
                         Align: ='TextCanvas.Align'.Center
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =30
                         Text: ="*"
                         Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -7242,6 +8435,11 @@
 
                     DataCardKey69 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =22
                         Text: ="Engagement code"
                         Weight: ='TextCanvas.Weight'.Semibold
@@ -7253,8 +8451,15 @@
 
                     "dcvEditarEngagementCode As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
+                        Align: ="Start"
                         BasePaletteColor: =
                         DisplayMode: =Parent.DisplayMode
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
+                        FontWeight: =""
                         Height: =32
                         Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                         Required: =Parent.Required
@@ -7267,6 +8472,11 @@
 
                     ErrorMessage68 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =30
                         Text: =Parent.Error
                         Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -7279,6 +8489,11 @@
                     StarVisible68 As Text:
                         Align: ='TextCanvas.Align'.Center
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =30
                         Text: ="*"
                         Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -7304,6 +8519,11 @@
 
                     DataCardKey70 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =22
                         Text: ="Registrado pelo COE?"
                         Weight: ='TextCanvas.Weight'.Semibold
@@ -7316,6 +8536,11 @@
                     dcvEditarRegistrado As Combobox.pcfdataset:
                         AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
                         DisplayMode: =Parent.DisplayMode
+                        Font: =""
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
+                        FontWeight: =""
                         Height: =32
                         Items: =Choices('atsd_registrado (Atestados)')
                         ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
@@ -7326,6 +8551,11 @@
 
                     ErrorMessage69 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =30
                         Text: =Parent.Error
                         Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -7338,6 +8568,11 @@
                     StarVisible69 As Text:
                         Align: ='TextCanvas.Align'.Center
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =20
                         Text: ="*"
                         Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -7363,6 +8598,11 @@
 
                     DataCardKey63 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =22
                         Text: ="Descrição do objeto de trabalho"
                         Weight: ='TextCanvas.Weight'.Semibold
@@ -7374,6 +8614,11 @@
 
                     ErrorMessage62 As Text:
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =30
                         Text: =Parent.Error
                         Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -7386,6 +8631,11 @@
                     StarVisible62 As Text:
                         Align: ='TextCanvas.Align'.Center
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
                         Height: =30
                         Text: ="*"
                         Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -7416,8 +8666,15 @@
 
                     "dcvEditarDescricaoDoAtestado As 'Text input'":
                         AccessibleLabel: =Parent.DisplayName
+                        Align: ="Start"
                         BasePaletteColor: =
                         DisplayMode: =DisplayMode.View
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
+                        FontWeight: =""
                         Height: =144
                         Mode: ='TextInputCanvas.Mode'.Multiline
                         Required: =Parent.Required
@@ -7499,6 +8756,11 @@
 
                         DataCardKey71 As Text:
                             DisplayMode: =DisplayMode.Edit
+                            Font: =""
+                            FontColor: =
+                            FontItalic: =false
+                            FontStrikethrough: =false
+                            FontUnderline: =false
                             Height: =22
                             Text: ="* Profissional"
                             Weight: ='TextCanvas.Weight'.Semibold
@@ -7511,6 +8773,11 @@
                         dcvEditarProfissionalAtestado As Combobox.pcfdataset:
                             AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
                             DisplayMode: =Parent.DisplayMode
+                            Font: =""
+                            FontItalic: =false
+                            FontStrikethrough: =false
+                            FontUnderline: =false
+                            FontWeight: =""
                             Height: =32
                             Items: =Choices([@AtestadoProfissionais].prof_id)
                             ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
@@ -7577,6 +8844,11 @@
 
                         DataCardKey72 As Text:
                             DisplayMode: =DisplayMode.Edit
+                            Font: =""
+                            FontColor: =
+                            FontItalic: =false
+                            FontStrikethrough: =false
+                            FontUnderline: =false
                             Height: =22
                             Text: ="Função no projeto"
                             Weight: ='TextCanvas.Weight'.Semibold
@@ -7588,8 +8860,15 @@
 
                         "dcvEditarFuncaoProjetoAtestado As 'Text input'":
                             AccessibleLabel: =Parent.DisplayName
+                            Align: ="Start"
                             BasePaletteColor: =
                             DisplayMode: =Parent.DisplayMode
+                            Font: =""
+                            FontColor: =
+                            FontItalic: =false
+                            FontStrikethrough: =false
+                            FontUnderline: =false
+                            FontWeight: =""
                             Height: =32
                             Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                             Required: =Parent.Required
@@ -7602,6 +8881,11 @@
 
                         ErrorMessage71 As Text:
                             DisplayMode: =DisplayMode.Edit
+                            Font: =""
+                            FontColor: =
+                            FontItalic: =false
+                            FontStrikethrough: =false
+                            FontUnderline: =false
                             Height: =30
                             Text: =Parent.Error
                             Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -7614,6 +8898,11 @@
                         StarVisible71 As Text:
                             Align: ='TextCanvas.Align'.Center
                             DisplayMode: =DisplayMode.Edit
+                            Font: =""
+                            FontColor: =
+                            FontItalic: =false
+                            FontStrikethrough: =false
+                            FontUnderline: =false
                             Height: =30
                             Text: ="*"
                             Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -7640,6 +8929,11 @@
 
                         DataCardKey73 As Text:
                             DisplayMode: =DisplayMode.Edit
+                            Font: =""
+                            FontColor: =
+                            FontItalic: =false
+                            FontStrikethrough: =false
+                            FontUnderline: =false
                             Height: =22
                             Text: ="Domínio de atuação"
                             Weight: ='TextCanvas.Weight'.Semibold
@@ -7651,8 +8945,15 @@
 
                         "dcvEditarDominioAtuacao As 'Text input'":
                             AccessibleLabel: =Parent.DisplayName
+                            Align: ="Start"
                             BasePaletteColor: =
                             DisplayMode: =Parent.DisplayMode
+                            Font: =""
+                            FontColor: =
+                            FontItalic: =false
+                            FontStrikethrough: =false
+                            FontUnderline: =false
+                            FontWeight: =""
                             Height: =32
                             Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                             Required: =Parent.Required
@@ -7665,6 +8966,11 @@
 
                         ErrorMessage72 As Text:
                             DisplayMode: =DisplayMode.Edit
+                            Font: =""
+                            FontColor: =
+                            FontItalic: =false
+                            FontStrikethrough: =false
+                            FontUnderline: =false
                             Height: =30
                             Text: =Parent.Error
                             Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -7677,6 +8983,11 @@
                         StarVisible72 As Text:
                             Align: ='TextCanvas.Align'.Center
                             DisplayMode: =DisplayMode.Edit
+                            Font: =""
+                            FontColor: =
+                            FontItalic: =false
+                            FontStrikethrough: =false
+                            FontUnderline: =false
                             Height: =30
                             Text: ="*"
                             Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -7702,6 +9013,11 @@
 
                         DataCardKey74 As Text:
                             DisplayMode: =DisplayMode.Edit
+                            Font: =""
+                            FontColor: =
+                            FontItalic: =false
+                            FontStrikethrough: =false
+                            FontUnderline: =false
                             Height: =22
                             Text: |-
                                 ="Quantidade de horas trabalhadas
@@ -7715,8 +9031,15 @@
 
                         "dcvEditarHorasTrabalhadas As 'Text input'":
                             AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                            Align: ="Start"
                             BasePaletteColor: =
                             DisplayMode: =Parent.DisplayMode
+                            Font: =""
+                            FontColor: =
+                            FontItalic: =false
+                            FontStrikethrough: =false
+                            FontUnderline: =false
+                            FontWeight: =""
                             Height: =32
                             ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                             Value: =Parent.Default
@@ -7727,6 +9050,11 @@
 
                         ErrorMessage73 As Text:
                             DisplayMode: =DisplayMode.Edit
+                            Font: =""
+                            FontColor: =
+                            FontItalic: =false
+                            FontStrikethrough: =false
+                            FontUnderline: =false
                             Height: =30
                             Text: =Parent.Error
                             Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
@@ -7739,6 +9067,11 @@
                         StarVisible73 As Text:
                             Align: ='TextCanvas.Align'.Center
                             DisplayMode: =DisplayMode.Edit
+                            Font: =""
+                            FontColor: =
+                            FontItalic: =false
+                            FontStrikethrough: =false
+                            FontUnderline: =false
                             Height: =30
                             Text: ="*"
                             Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -8204,8 +9537,15 @@
 
                     "txtEditarDescricoes As 'Text input'":
                         AccessibleLabel: =
+                        Align: ="Start"
                         BasePaletteColor: =
                         DisplayMode: =DisplayMode.Edit
+                        Font: =""
+                        FontColor: =
+                        FontItalic: =false
+                        FontStrikethrough: =false
+                        FontUnderline: =false
+                        FontWeight: =""
                         Height: =120
                         Mode: ='TextInputCanvas.Mode'.Multiline
                         Required: =
@@ -8467,7 +9807,7 @@
                 Y: =268
                 ZIndex: =5
 
-    ctnPopUpConfirmarDelecaoDeAtestados As groupContainer.manualLayoutContainer:
+    ctnPopUpAlertaDeDelecaoDeAtestado As groupContainer.manualLayoutContainer:
         Fill: =RGBA(0, 0, 0, 0.5)
         Height: =Parent.Height
         Visible: =locMostrarPopUpDeConfirmarDelecaoDeAtestado
@@ -8593,8 +9933,20 @@
                 HoverColor: =Self.Color
                 HoverFill: =ColorFade(Self.Fill, -5%)
                 OnSelect: |-
-                    =Remove(Atestados, locDadosDoAtestado);RemoveIf(colAtestados, locDadosDoAtestado.id = ThisRecord.id);
-                    UpdateContext({locMostrarPopUpDeConfirmarDelecaoDeAtestado: false, locMostrarConfirmacaoDelecaoDeAtestado: true})
+                    =RemoveIf(
+                        Atestados,
+                        locDadosDoAtestado.id = ThisRecord.id
+                    );
+                    RemoveIf(
+                        colAtestados,
+                        locDadosDoAtestado.id = ThisRecord.id
+                    );
+                    UpdateContext(
+                        {
+                            locMostrarPopUpDeConfirmarDelecaoDeAtestado: false,
+                            locMostrarConfirmacaoDelecaoDeAtestado: true
+                        }
+                    )
                 PressedBorderColor: =RGBA(0, 69, 120, 1)
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(16, 110, 190, 1)
@@ -8609,7 +9961,7 @@
                 Y: =265
                 ZIndex: =7
 
-    ctnPopUpConfirmacaoDelecaoDoAtestado As groupContainer.manualLayoutContainer:
+    ctnPopUpMensagemDeConfirmacaoDelecaoDoAtestado As groupContainer.manualLayoutContainer:
         Fill: =RGBA(0, 0, 0, 0.5)
         Height: =Parent.Height
         Visible: =locMostrarConfirmacaoDelecaoDeAtestado
@@ -8637,7 +9989,7 @@
                 HoverFill: =RGBA(0, 0, 0, 0)
                 Icon: =Icon.Cancel
                 OnSelect: |-
-                    =UpdateContext({locMostrarConfirmacaoDelecaoDeAtestado: false})
+                    =UpdateContext({locMostrarConfirmacaoDelecaoDeAtestado: false}); Select(icoCancelarEdicaoAtestados)
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                 PressedColor: =RGBA(16, 110, 190, 1)
                 PressedFill: =RGBA(0, 0, 0, 0)
@@ -8700,7 +10052,7 @@
                 HoverBorderColor: =RGBA(0, 0, 0, 0)
                 HoverFill: =ColorFade(gblTema.AccentColor, -10%)
                 OnSelect: |-
-                    =UpdateContext({locMostrarConfirmacaoDelecaoDeAtestado: false})
+                    =UpdateContext({locMostrarConfirmacaoDelecaoDeAtestado: false}); Select(icoCancelarEdicaoAtestados)
                 PressedBorderColor: =RGBA(0, 69, 120, 1)
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(16, 110, 190, 1)

@@ -68,7 +68,6 @@
       "keeprecentscreensloaded": false,
       "longlivingcache": false,
       "mobilenativerendering": false,
-      "namedformulas": true,
       "nativecdsexperimental": true,
       "onegrid": false,
       "optimizedforteamsmeeting": false,
@@ -131,8 +130,8 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "Tela inicial",
     "Tela de atestados",
+    "Tela inicial",
     "Tela de profissionais",
     "Tela de inteligencia de mercado",
     "Tela de admins",
