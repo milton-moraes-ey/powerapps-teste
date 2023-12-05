@@ -1480,6 +1480,18 @@
                         FieldVariantName: ="textualColumn"
                         Height: =Parent.Height
                         LayoutHeight: =Parent.Height
+                        OnSelect: |-
+                            =UpdateContext(
+                                {
+                                    locAcaoEscolhida: "Editar",
+                                    locDadosDoAtestado: dtbAtestados.Selected,
+                                    locMostrarPopUpParaAdicionarDescricao: false,
+                                    locMostrarFormEditarEmpresasDoAtestado: true,
+                                    locMostrarFormEditarSignatarioDoAtestado: false,
+                                    locMostrarFormEditarEquipeDoAtestado: false,
+                                    locMostrarDadosDoProjeto: false
+                                }
+                            )
                         Order: =1
                         Text: =ThisItem.gps_id
                         Width: =84
@@ -1632,7 +1644,7 @@
                                 Align: ='TextCanvas.Align'.Center
                                 DisplayMode: =DisplayMode.Edit
                                 Font: =""
-                                FontColor: =
+                                FontColor: =gblTema.RedWarningColor
                                 FontItalic: =false
                                 FontStrikethrough: =false
                                 FontUnderline: =false
@@ -1717,7 +1729,7 @@
                                 Align: ='TextCanvas.Align'.Center
                                 DisplayMode: =DisplayMode.Edit
                                 Font: =""
-                                FontColor: =
+                                FontColor: =gblTema.RedWarningColor
                                 FontItalic: =false
                                 FontStrikethrough: =false
                                 FontUnderline: =false
@@ -1969,7 +1981,7 @@
                                 Align: ='TextCanvas.Align'.Center
                                 DisplayMode: =DisplayMode.Edit
                                 Font: =""
-                                FontColor: =
+                                FontColor: =gblTema.RedWarningColor
                                 FontItalic: =false
                                 FontStrikethrough: =false
                                 FontUnderline: =false
@@ -2238,6 +2250,12 @@
                         LayoutMode: =LayoutMode.Auto
                         ZIndex: =4
 
+                        Label5 As label:
+                            Align: =Align.Center
+                            FillPortions: =1
+                            Text: ="1/4"
+                            ZIndex: =1
+
                         ctnAvancarProximoForm As groupContainer.manualLayoutContainer:
                             AlignInContainer: =AlignInContainer.Start
                             DropShadow: =DropShadow.None
@@ -2246,7 +2264,7 @@
                             LayoutMinHeight: =40
                             LayoutMinWidth: =250
                             Width: =130
-                            ZIndex: =4
+                            ZIndex: =2
 
                             lblAvancar As label:
                                 BorderColor: =RGBA(0, 0, 0, 0)
@@ -2440,7 +2458,7 @@
                                 Align: ='TextCanvas.Align'.Center
                                 DisplayMode: =DisplayMode.Edit
                                 Font: =""
-                                FontColor: =
+                                FontColor: =gblTema.RedWarningColor
                                 FontItalic: =false
                                 FontStrikethrough: =false
                                 FontUnderline: =false
@@ -2525,7 +2543,7 @@
                                 Align: ='TextCanvas.Align'.Center
                                 DisplayMode: =DisplayMode.Edit
                                 Font: =""
-                                FontColor: =
+                                FontColor: =gblTema.RedWarningColor
                                 FontItalic: =false
                                 FontStrikethrough: =false
                                 FontUnderline: =false
@@ -2610,7 +2628,7 @@
                                 Align: ='TextCanvas.Align'.Center
                                 DisplayMode: =DisplayMode.Edit
                                 Font: =""
-                                FontColor: =
+                                FontColor: =gblTema.RedWarningColor
                                 FontItalic: =false
                                 FontStrikethrough: =false
                                 FontUnderline: =false
@@ -2695,7 +2713,7 @@
                                 Align: ='TextCanvas.Align'.Center
                                 DisplayMode: =DisplayMode.Edit
                                 Font: =""
-                                FontColor: =
+                                FontColor: =gblTema.RedWarningColor
                                 FontItalic: =false
                                 FontStrikethrough: =false
                                 FontUnderline: =false
@@ -2776,7 +2794,7 @@
                                 Align: ='TextCanvas.Align'.Center
                                 DisplayMode: =DisplayMode.Edit
                                 Font: =""
-                                FontColor: =
+                                FontColor: =gblTema.RedWarningColor
                                 FontItalic: =false
                                 FontStrikethrough: =false
                                 FontUnderline: =false
@@ -2857,7 +2875,7 @@
                                 Align: ='TextCanvas.Align'.Center
                                 DisplayMode: =DisplayMode.Edit
                                 Font: =""
-                                FontColor: =
+                                FontColor: =gblTema.RedWarningColor
                                 FontItalic: =false
                                 FontStrikethrough: =false
                                 FontUnderline: =false
@@ -2939,7 +2957,7 @@
                                 Align: ='TextCanvas.Align'.Center
                                 DisplayMode: =DisplayMode.Edit
                                 Font: =""
-                                FontColor: =
+                                FontColor: =gblTema.RedWarningColor
                                 FontItalic: =false
                                 FontStrikethrough: =false
                                 FontUnderline: =false
@@ -3024,7 +3042,7 @@
                                 Align: ='TextCanvas.Align'.Center
                                 DisplayMode: =DisplayMode.Edit
                                 Font: =""
-                                FontColor: =
+                                FontColor: =gblTema.RedWarningColor
                                 FontItalic: =false
                                 FontStrikethrough: =false
                                 FontUnderline: =false
@@ -3281,7 +3299,7 @@
                                 Align: ='TextCanvas.Align'.Center
                                 DisplayMode: =DisplayMode.Edit
                                 Font: =""
-                                FontColor: =
+                                FontColor: =gblTema.RedWarningColor
                                 FontItalic: =false
                                 FontStrikethrough: =false
                                 FontUnderline: =false
@@ -3405,7 +3423,7 @@
                             LayoutMinHeight: =40
                             LayoutMinWidth: =250
                             Width: =130
-                            ZIndex: =4
+                            ZIndex: =1
 
                             lblVoltar As label:
                                 BorderColor: =RGBA(0, 0, 0, 0)
@@ -3472,6 +3490,12 @@
                                 Width: =Parent.Width
                                 ZIndex: =3
 
+                        Label5_1 As label:
+                            Align: =Align.Center
+                            FillPortions: =1
+                            Text: ="2/4"
+                            ZIndex: =2
+
                         ctnAvancarProximoForm_2 As groupContainer.manualLayoutContainer:
                             AlignInContainer: =AlignInContainer.SetByContainer
                             DropShadow: =DropShadow.None
@@ -3480,7 +3504,7 @@
                             LayoutMinHeight: =40
                             LayoutMinWidth: =250
                             Width: =130
-                            ZIndex: =5
+                            ZIndex: =3
 
                             lblAvancar_2 As label:
                                 BorderColor: =RGBA(0, 0, 0, 0)
@@ -4305,7 +4329,7 @@
                             LayoutMinHeight: =40
                             LayoutMinWidth: =250
                             Width: =130
-                            ZIndex: =4
+                            ZIndex: =1
 
                             lblVoltar_2 As label:
                                 BorderColor: =RGBA(0, 0, 0, 0)
@@ -4371,6 +4395,12 @@
                                 Width: =Parent.Width
                                 ZIndex: =3
 
+                        Label5_2 As label:
+                            Align: =Align.Center
+                            FillPortions: =1
+                            Text: ="3/4"
+                            ZIndex: =2
+
                         ctnAvancarProximoForm_3 As groupContainer.manualLayoutContainer:
                             AlignInContainer: =AlignInContainer.SetByContainer
                             DropShadow: =DropShadow.None
@@ -4379,7 +4409,7 @@
                             LayoutMinHeight: =40
                             LayoutMinWidth: =250
                             Width: =130
-                            ZIndex: =5
+                            ZIndex: =3
 
                             lblAvancar_3 As label:
                                 BorderColor: =RGBA(0, 0, 0, 0)
@@ -4624,7 +4654,7 @@
                                     Align: ='TextCanvas.Align'.Center
                                     DisplayMode: =DisplayMode.Edit
                                     Font: =""
-                                    FontColor: =
+                                    FontColor: =gblTema.RedWarningColor
                                     FontItalic: =false
                                     FontStrikethrough: =false
                                     FontUnderline: =false
@@ -5225,7 +5255,7 @@
                             LayoutMinHeight: =40
                             LayoutMinWidth: =250
                             Width: =130
-                            ZIndex: =4
+                            ZIndex: =1
 
                             lblVoltar_1 As label:
                                 BorderColor: =RGBA(0, 0, 0, 0)
@@ -5291,6 +5321,12 @@
                                 Width: =Parent.Width
                                 ZIndex: =3
 
+                        Label5_3 As label:
+                            Align: =Align.Center
+                            FillPortions: =1
+                            Text: ="4/4"
+                            ZIndex: =2
+
                         ctnSalvarAtestado As groupContainer.manualLayoutContainer:
                             AlignInContainer: =AlignInContainer.SetByContainer
                             DropShadow: =DropShadow.None
@@ -5299,7 +5335,7 @@
                             LayoutMinHeight: =40
                             LayoutMinWidth: =250
                             Width: =150
-                            ZIndex: =5
+                            ZIndex: =3
 
                             btnSalvarAtestado As button:
                                 BorderColor: =RGBA(0, 0, 0, 0)
@@ -5307,6 +5343,12 @@
                                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                                 DisabledColor: =RGBA(161, 159, 157, 1)
                                 DisabledFill: =RGBA(242, 242, 241, 0)
+                                DisplayMode: |-
+                                    =If(
+                                        frmDadosDaEmpresaAtestante.Valid && frmDadosEmpresaPrestouServico.Valid,
+                                        DisplayMode.Edit,
+                                        DisplayMode.Disabled
+                                    )
                                 Fill: =gblTema.AccentColor
                                 FocusedBorderColor: =ColorFade(Self.Fill, 75%)
                                 FocusedBorderThickness: =1
@@ -5862,90 +5904,85 @@
                     FontWeight: =FontWeight.Normal
                     HoverBorderColor: =RGBA(0, 0, 0, 0)
                     HoverFill: =ColorFade(Self.Fill, -10%)
-                    OnSelect: |+
+                    OnSelect: |
                         =UpdateContext({locLoadSpinner: true});
-                        Set(
-                            gblEditarRegistroAtestado,
-                            Patch(
-                                colAtestados,
-                                LookUp(
-                                    colAtestados,
-                                    id = locDadosDoAtestado.id
-                                ),
+                        Concurrent(
+                            Set(
+                                gblEditarRegistroAtestado,
                                 Patch(
-                                    Atestados,
+                                    colAtestados,
                                     LookUp(
-                                        Atestados,
+                                        colAtestados,
                                         id = locDadosDoAtestado.id
                                     ),
-                                    {
-                                        nome_cliente: dcvEditarNomeCliente.Value,
-                                        cnpj_cliente: dcvEditarCnpjCliente.Value,
-                                        endr_cliente: dcvEditarEnderecoCliente.Value,
-                                        num_func_cliente: Value(dcvEditarNumeroFuncionarioCliente.Value),
-                                        ativ_econ_cliente: dcvEditarAtividadeEconomicaCliente.Value,
-                                        receita_bruta_cliente: Value(dcvEditarReceitaBrutaCliente.Value),
-                                        tot_atv_cliente: Value(dcvEditarTotalAtivoCliente.Value),
-                                        patrim_liq_cliente: Value(dcvEditarPatrimonioLiqCliente.Value),
-                                        nome_empresa_prestadora: dcvEditarNomeEmpresaPrestadora.Value,
-                                        cnpj_empresa_prestadora: dcvEditarCnpjEmpresaPrestadora.Value,
-                                        endr_empresa_prestadora: dcvEditarEnderecoEmpresaPrestadora.Value,
-                                        atsd_obj_trab: dcvEditarObjetoAtestado.Value,
-                                        atsd_descr_obj_trab: dcvEditarDescricaoDoAtestado.Value,
-                                        atsd_qtd_hrs: Value(dcvEditarQtdHorasAtestado.Value),
-                                        atsd_local: dcvEditarLocalAtestado.Value,
-                                        atsd_data_inicio: dtvEditarDataInicioAtestado.SelectedDate,
-                                        atsd_data_fim: dtvEditarDataFinalAtestado.SelectedDate,
-                                        proj_engagement_code: dcvEditarEngagementCode.Value,
-                                        atsd_registrado: dcvEditarRegistrado.Selected.Value,
-                                        nome_signatario: dcvEditarNomeSignatario.Value,
-                                        cargo_signatario: dcvEditarCargoSignatario.Value,
-                                        email_signatario: dcvEditarEmailSignatario.Value,
-                                        tel_signatario: dcvEditarTelefoneSignatario.Value,
-                                        endr_signatario: dcvEditarEnderecoSignatario.Value,
-                                        local_signatario: dcvEditarLocalSignatario.Value,
-                                        astd_data_assintr: dtvEditarDataAssinaturaSignatario.SelectedDate,
-                                        astd_file_uploaded: {
-                                            FileName: First(dcvEditarArquivoUploadedAtestado.Attachments).Name,
-                                            Value: First(dcvEditarArquivoUploadedAtestado.Attachments).Value
+                                    Patch(
+                                        Atestados,
+                                        LookUp(
+                                            Atestados,
+                                            id = locDadosDoAtestado.id
+                                        ),
+                                        {
+                                            nome_cliente: dcvEditarNomeCliente.Value,
+                                            cnpj_cliente: dcvEditarCnpjCliente.Value,
+                                            endr_cliente: dcvEditarEnderecoCliente.Value,
+                                            num_func_cliente: Value(dcvEditarNumeroFuncionarioCliente.Value),
+                                            ativ_econ_cliente: dcvEditarAtividadeEconomicaCliente.Value,
+                                            receita_bruta_cliente: Value(dcvEditarReceitaBrutaCliente.Value),
+                                            tot_atv_cliente: Value(dcvEditarTotalAtivoCliente.Value),
+                                            patrim_liq_cliente: Value(dcvEditarPatrimonioLiqCliente.Value),
+                                            nome_empresa_prestadora: dcvEditarNomeEmpresaPrestadora.Value,
+                                            cnpj_empresa_prestadora: dcvEditarCnpjEmpresaPrestadora.Value,
+                                            endr_empresa_prestadora: dcvEditarEnderecoEmpresaPrestadora.Value,
+                                            atsd_obj_trab: dcvEditarObjetoAtestado.Value,
+                                            atsd_descr_obj_trab: dcvEditarDescricaoDoAtestado.Value,
+                                            atsd_qtd_hrs: Value(dcvEditarQtdHorasAtestado.Value),
+                                            atsd_local: dcvEditarLocalAtestado.Value,
+                                            atsd_data_inicio: dtvEditarDataInicioAtestado.SelectedDate,
+                                            atsd_data_fim: dtvEditarDataFinalAtestado.SelectedDate,
+                                            proj_engagement_code: dcvEditarEngagementCode.Value,
+                                            atsd_registrado: dcvEditarRegistrado.Selected.Value,
+                                            nome_signatario: dcvEditarNomeSignatario.Value,
+                                            cargo_signatario: dcvEditarCargoSignatario.Value,
+                                            email_signatario: dcvEditarEmailSignatario.Value,
+                                            tel_signatario: dcvEditarTelefoneSignatario.Value,
+                                            endr_signatario: dcvEditarEnderecoSignatario.Value,
+                                            local_signatario: dcvEditarLocalSignatario.Value,
+                                            astd_data_assintr: dtvEditarDataAssinaturaSignatario.SelectedDate,
+                                            astd_file_uploaded: {
+                                                FileName: First(dcvEditarArquivoUploadedAtestado.Attachments).Name,
+                                                Value: First(dcvEditarArquivoUploadedAtestado.Attachments).Value
+                                            }
                                         }
-                                    }
+                                    )
                                 )
+                            ),
+                            UpdateContext(
+                                {
+                                    locRespostaFlowEditarrelacionamentoAtestadoProfissionais: '[FerramentaGPS]EditarrelacionamentoAtestadoProfissionais'.Run(
+                                        JSON(
+                                            AddColumns(
+                                                colEditarMembrosEquipe,
+                                                "prof_id_guid",
+                                                prof_id.Profissional,
+                                                "prof_id2",
+                                                prof_id.id,
+                                                "atsd_id2",
+                                                locDadosDoAtestado.id,
+                                                "atsd_id_guid",
+                                                locDadosDoAtestado.Atestado
+                                            ),
+                                            JSONFormat.IgnoreUnsupportedTypes
+                                        ),
+                                        locDadosDoAtestado.id
+                                    ).flowresponse
+                                }
                             )
                         );
-                        
-                        UpdateContext(
-                            {
-                                locRespostaFlowEditarrelacionamentoAtestadoProfissionais: '[FerramentaGPS]EditarrelacionamentoAtestadoProfissionais'.Run(
-                                    JSON(
-                                        AddColumns(
-                                            colEditarMembrosEquipe,
-                                            "prof_id_guid",
-                                            prof_id.Profissional,
-                                            "prof_id2",
-                                            prof_id.id,
-                                            "atsd_id2",
-                                            locDadosDoAtestado.id,
-                                            "atsd_id_guid",
-                                            locDadosDoAtestado.Atestado
-                                        ),
-                                        JSONFormat.IgnoreUnsupportedTypes
-                                    ), locDadosDoAtestado.id
-                                ).flowresponse
-                            }
-                        );
-                        
                         If(
                             locRespostaFlowEditarrelacionamentoAtestadoProfissionais = "completed" || !IsBlank(gblEditarRegistroAtestado),
                             UpdateContext({locMostrarMensagemDeEdicaoDeAtestado: true})
                         );
-                        
                         UpdateContext({locLoadSpinner: false});
-                        
-                        
-                        
-                        
-                        
                     PressedBorderColor: =RGBA(0, 69, 120, 1)
                     PressedColor: =RGBA(255, 255, 255, 1)
                     PressedFill: =RGBA(16, 110, 190, 1)
@@ -7034,7 +7071,8 @@
                 AlignInContainer: =AlignInContainer.SetByContainer
                 BorderColor: =RGBA(245, 245, 245, 1)
                 DataSource: =Atestados
-                FillPortions: =2
+                FillPortions: =0
+                Height: =260
                 Item: =locDadosDoAtestado
                 LayoutMinHeight: =250
                 LayoutMinWidth: =400
@@ -9463,6 +9501,7 @@
                             }
                         );
                         Clear(colDescricaoAtual)
+                    Tooltip: ="Suas alterações serão canceladas."
                     Width: =32
                     X: =Parent.Width - Self.Width - 12
                     Y: =(Parent.Height - Self.Height) / 2
@@ -9695,6 +9734,7 @@
                             Height: =28
                             Icon: =Icon.Trash
                             OnSelect: =Remove(colDescricaoAtual, ThisItem)
+                            Tooltip: ="Remover descrição"
                             Width: =28
                             X: =Parent.TemplateWidth - Self.Width - 12
                             Y: =12
@@ -10138,12 +10178,12 @@
                 OnSelect: |
                     =UpdateContext(
                         {
-                            locMostrarMensagemDeEdicaoDeAtestado: false,
-                            locAcaoEscolhida: Blank()
+                            locMostrarMensagemDeEdicaoDeAtestado: false
                         }
                     );
                     
                     Refresh(Atestados);
+                    Refresh(AtestadoProfissionais);
                     
                     ClearCollect(colAtestados, Atestados)
                 PressedBorderColor: =RGBA(0, 69, 120, 1)
@@ -10153,7 +10193,7 @@
                 RadiusBottomRight: =4
                 RadiusTopLeft: =4
                 RadiusTopRight: =4
-                Size: =14
+                Size: =12
                 Text: ="OK"
                 Width: =140
                 X: |

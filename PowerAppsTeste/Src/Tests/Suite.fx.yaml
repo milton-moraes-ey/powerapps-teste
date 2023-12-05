@@ -1,0 +1,33 @@
+"'69e4f73a-61cb-4bcd-8e41-883fb7f32556' As TestSuite":
+    Description: =""
+    DisplayName: ="Suite"
+
+    "'6c475d69-39b0-49dc-bbf8-1d8ad155ff47' As TestCase":
+        Description: =""
+        DisplayName: ="Case"
+
+        Step1 As TestStep:
+            Description: ="Select 'gps_nome_cliente_Column1'"
+            Screen: =Tela de atestados
+            Value: =Select('gps_nome_cliente_Column1')
+
+        Step2 As TestStep:
+            Description: ="Select 'btnVerEquipe'"
+            Screen: =Tela de atestados
+            Value: =Select('btnVerEquipe')
+
+        Step3 As TestStep:
+            Description: ="Select 'Icon4_1' in row 2 in 'glrMembrosAdicionados_1'"
+            Screen: =Tela de atestados
+            Value: =Select('glrMembrosAdicionados_1', 2, 'Icon4_1')
+
+        Step4 As TestStep:
+            Description: ="Select 'btnSalvarEdicaoDeAtestado'"
+            Screen: =Tela de atestados
+            Value: =Select('btnSalvarEdicaoDeAtestado')
+
+        Step5 As TestStep:
+            Description: ="Select 'btnConfirmarCadastro_1'"
+            Screen: =Tela de atestados
+            Value: =Select('btnConfirmarCadastro_1')
+
