@@ -8370,7 +8370,7 @@
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =70
                     Required: =false
-                    Update: =Value(DataCardValue10.Value)
+                    Update: =Value(dcvEditarValorContrato.Value)
                     Width: =614
                     X: =0
                     Y: =3
@@ -8379,7 +8379,7 @@
                     DataCardKey52 As Text:
                         DisplayMode: =DisplayMode.Edit
                         Height: =22
-                        Text: =Parent.DisplayName
+                        Text: ="Valor do contrato"
                         Weight: ='TextCanvas.Weight'.Semibold
                         Width: =Parent.Width - 48
                         Wrap: =false
@@ -8387,7 +8387,7 @@
                         Y: =10
                         ZIndex: =1
 
-                    "DataCardValue10 As 'Text input'":
+                    "dcvEditarValorContrato As 'Text input'":
                         AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
                         DisplayMode: =Parent.DisplayMode
                         Height: =32
@@ -8406,7 +8406,7 @@
                         Width: =Parent.Width - 48
                         Wrap: =true
                         X: =24
-                        Y: =DataCardValue10.Y + DataCardValue10.Height
+                        Y: =dcvEditarValorContrato.Y + dcvEditarValorContrato.Height
                         ZIndex: =3
 
                     StarVisible50 As Text:
