@@ -6255,6 +6255,7 @@
                                             atsd_local: dcvEditarLocalAtestado.Value,
                                             atsd_data_inicio: dtvEditarDataInicioAtestado.SelectedDate,
                                             atsd_data_fim: dtvEditarDataFinalAtestado.SelectedDate,
+                                            //atsd_vlr_contr: Value(dcvEditarValorContrato.Value),
                                             proj_engagement_code: dcvEditarEngagementCode.Value,
                                             atsd_registrado: dcvEditarRegistrado.Selected.Value,
                                             nome_signatario: dcvEditarNomeSignatario.Value,
