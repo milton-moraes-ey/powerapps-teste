@@ -2798,6 +2798,65 @@
                         UseFluentV9Cards: =true
                         ZIndex: =3
 
+                        astd_vlr_contr_DataCard1 As typedDataCard.fluentV9NumberEditCard:
+                            BorderStyle: =BorderStyle.Solid
+                            DataField: ="gps_astd_vlr_contr"
+                            Default: =ThisItem.astd_vlr_contr
+                            DisplayMode: =Parent.DisplayMode
+                            DisplayName: =DataSourceInfo([@Atestados],DataSourceInfo.DisplayName,"gps_astd_vlr_contr")
+                            Fill: =RGBA(0, 0, 0, 0)
+                            Height: =70
+                            Required: =false
+                            Update: =Value(DataCardValue9.Value)
+                            Width: =653
+                            X: =0
+                            Y: =3
+                            ZIndex: =1
+
+                            DataCardKey51 As Text:
+                                DisplayMode: =DisplayMode.Edit
+                                Height: =22
+                                Text: =Parent.DisplayName
+                                Weight: ='TextCanvas.Weight'.Semibold
+                                Width: =Parent.Width - 48
+                                Wrap: =false
+                                X: =24
+                                Y: =10
+                                ZIndex: =1
+
+                            "DataCardValue9 As 'Text input'":
+                                AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                                DisplayMode: =Parent.DisplayMode
+                                Height: =32
+                                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                                Value: =Parent.Default
+                                Width: =Parent.Width - 48
+                                X: =24
+                                Y: =DataCardKey51.Y + DataCardKey51.Height + 4
+                                ZIndex: =2
+
+                            ErrorMessage49 As Text:
+                                DisplayMode: =DisplayMode.Edit
+                                Height: =30
+                                Text: =Parent.Error
+                                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                                Width: =Parent.Width - 48
+                                Wrap: =true
+                                X: =24
+                                Y: =DataCardValue9.Y + DataCardValue9.Height
+                                ZIndex: =3
+
+                            StarVisible49 As Text:
+                                Align: ='TextCanvas.Align'.Center
+                                DisplayMode: =DisplayMode.Edit
+                                Height: =30
+                                Text: ="*"
+                                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                Width: =30
+                                X: =0
+                                Y: =DataCardKey51.Y
+                                ZIndex: =4
+
                         atsd_obj_trab_DataCard1 As typedDataCard.fluentV9TextualEditCard:
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="gps_atsd_obj_trab"
@@ -3329,7 +3388,7 @@
                             Update: =dcvDescricaoDoObjetoDoTrabalho.Value
                             Width: =1306
                             X: =0
-                            Y: =4
+                            Y: =5
                             ZIndex: =1
 
                             DataCardKey12 As Text:
@@ -3590,9 +3649,9 @@
                             Height: =70
                             Required: =false
                             Update: =dcvValidadoPeloCoe.Selected.Value
-                            Width: =653
+                            Width: =1306
                             X: =0
-                            Y: =3
+                            Y: =4
                             ZIndex: =1
 
                             DataCardKey47 As Text:
