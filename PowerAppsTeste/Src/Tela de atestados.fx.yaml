@@ -3160,8 +3160,8 @@
                             Required: =true
                             Update: =dcvLocal.Value
                             Width: =653
-                            X: =1
-                            Y: =3
+                            X: =0
+                            Y: =4
                             ZIndex: =1
 
                             DataCardKey14 As Text:
@@ -3244,8 +3244,8 @@
                             Required: =false
                             Update: =dcvValidadoPeloCoe.Selected.Value
                             Width: =653
-                            X: =0
-                            Y: =4
+                            X: =1
+                            Y: =3
                             ZIndex: =1
 
                             DataCardKey47 As Text:
@@ -3315,7 +3315,7 @@
                                 OnCheck: =false
                                 OnUncheck: =false
                                 Width: =189
-                                X: =40
+                                X: =24
                                 Y: =(Parent.Height - Self.Height) / 2
                                 ZIndex: =5
 
