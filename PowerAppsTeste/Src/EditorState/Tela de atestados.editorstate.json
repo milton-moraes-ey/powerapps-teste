@@ -19493,7 +19493,7 @@
       "MetaDataIDKey": "",
       "Name": "ctnFrmEmpresaAtestante",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -19777,7 +19777,7 @@
       "MetaDataIDKey": "",
       "Name": "ctnFrmEmpresaPrestouServico",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -20061,7 +20061,7 @@
       "MetaDataIDKey": "",
       "Name": "ctnFrmSignatario",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -22125,6 +22125,14 @@
           "InvariantPropertyName": "RadiusBottomRight",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Visible",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
         }
       ],
       "DynamicProperties": [
@@ -22294,6 +22302,11 @@
         {
           "Category": "Design",
           "PropertyName": "Width",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Visible",
           "RuleProviderType": "Unknown"
         }
       ],
@@ -22872,7 +22885,7 @@
       "MetaDataIDKey": "",
       "Name": "ctnMainSectionFrmAdicionarMembrosEquipe",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

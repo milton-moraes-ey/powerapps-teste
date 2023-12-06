@@ -20,7 +20,7 @@
             DropShadow: =DropShadow.Semilight
             Fill: =gblTema.WhiteColor
             FillPortions: =0
-            Height: =75
+            Height: =60
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutGap: =12
             LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
@@ -94,6 +94,7 @@
                     Size: =16
                     Text: ="Atestados"
                     Width: =350
+                    X: =12
                     Y: =(Parent.Height - Self.Height) / 2 
                     ZIndex: =1
 
@@ -238,6 +239,7 @@
                     RadiusBottomRight: =0
                     RadiusTopLeft: =0
                     RadiusTopRight: =0
+                    Visible: =false
                     ZIndex: =2
 
                     lblResultados As label:
