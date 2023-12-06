@@ -8361,6 +8361,65 @@
                 Visible: =locMostrarDadosDoProjeto
                 ZIndex: =9
 
+                astd_vlr_contr_DataCard2 As typedDataCard.fluentV9NumberEditCard:
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="gps_astd_vlr_contr"
+                    Default: =ThisItem.astd_vlr_contr
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@Atestados],DataSourceInfo.DisplayName,"gps_astd_vlr_contr")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =70
+                    Required: =false
+                    Update: =Value(DataCardValue10.Value)
+                    Width: =614
+                    X: =0
+                    Y: =3
+                    ZIndex: =1
+
+                    DataCardKey52 As Text:
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =22
+                        Text: =Parent.DisplayName
+                        Weight: ='TextCanvas.Weight'.Semibold
+                        Width: =Parent.Width - 48
+                        Wrap: =false
+                        X: =24
+                        Y: =10
+                        ZIndex: =1
+
+                    "DataCardValue10 As 'Text input'":
+                        AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                        DisplayMode: =Parent.DisplayMode
+                        Height: =32
+                        ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                        Value: =Parent.Default
+                        Width: =Parent.Width - 48
+                        X: =24
+                        Y: =DataCardKey52.Y + DataCardKey52.Height + 4
+                        ZIndex: =2
+
+                    ErrorMessage50 As Text:
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =30
+                        Text: =Parent.Error
+                        Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =Parent.Width - 48
+                        Wrap: =true
+                        X: =24
+                        Y: =DataCardValue10.Y + DataCardValue10.Height
+                        ZIndex: =3
+
+                    StarVisible50 As Text:
+                        Align: ='TextCanvas.Align'.Center
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =30
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        X: =0
+                        Y: =DataCardKey52.Y
+                        ZIndex: =4
+
                 atsd_obj_trab_DataCard3 As typedDataCard.fluentV9TextualEditCard:
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="gps_atsd_obj_trab"
@@ -8875,7 +8934,7 @@
                     Required: =false
                     Update: =dcvEditarRegistrado.Selected.Value
                     Width: =614
-                    X: =0
+                    X: =1
                     Y: =3
                     ZIndex: =1
 
@@ -8981,8 +9040,8 @@
                     Required: =false
                     Update: =dcvEditarValidadoPeloCoe.Selected.Value
                     Width: =614
-                    X: =1
-                    Y: =3
+                    X: =0
+                    Y: =4
                     ZIndex: =1
 
                     DataCardKey24 As Text:
@@ -9076,7 +9135,7 @@
                     Update: =dcvEditarDescricaoDoAtestado.Value
                     Width: =1228
                     X: =0
-                    Y: =4
+                    Y: =5
                     ZIndex: =1
 
                     DataCardKey63 As Text:
