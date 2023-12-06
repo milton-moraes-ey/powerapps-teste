@@ -8583,6 +8583,7 @@
 
                     dcvEditarRegistrado As Combobox.pcfdataset:
                         AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                        DefaultSelectedItems: =
                         DisplayMode: =Parent.DisplayMode
                         Font: =""
                         FontItalic: =false
@@ -8628,6 +8629,90 @@
                         X: =0
                         Y: =DataCardKey70.Y
                         ZIndex: =4
+
+                validado_COE_DataCard4 As typedDataCard.fluentV9ComboBoxOptionSetSingleEditCard:
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="gps_validado_coe"
+                    Default: =ThisItem.validado_COE
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@Atestados],DataSourceInfo.DisplayName,"gps_validado_coe")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =70
+                    Required: =false
+                    Update: =DataCardValue4.Selected.Value
+                    Width: =614
+                    X: =1
+                    Y: =3
+                    ZIndex: =1
+
+                    DataCardKey24 As Text:
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =22
+                        Text: =Parent.DisplayName
+                        Visible: =false
+                        Weight: ='TextCanvas.Weight'.Semibold
+                        Width: =Parent.Width - 48
+                        Wrap: =false
+                        X: =30
+                        Y: =15
+                        ZIndex: =1
+
+                    DataCardValue4 As Combobox.pcfdataset:
+                        AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                        DefaultSelectedItems: |-
+                            =If(CheckboxCanvas2.Checked, {Value: "SIM"}, {Value: "NAO"})
+                        DisplayMode: =Parent.DisplayMode
+                        Height: =32
+                        Items: =Choices(CHOICE_SIM_NAO)
+                        ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                        Visible: =false
+                        Width: =Parent.Width - 48
+                        X: =24
+                        Y: =DataCardKey24.Y + DataCardKey24.Height + 4
+                        ZIndex: =2
+
+                        Value3 As pcfDataField.textualColumn:
+                            FieldDisplayName: ="Value"
+                            FieldName: ="Value"
+                            FieldType: ="l"
+                            FieldVariantName: ="textualColumn"
+                            Order: =1
+                            ZIndex: =86
+
+                    ErrorMessage22 As Text:
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =30
+                        Text: =Parent.Error
+                        Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =Parent.Width - 48
+                        Wrap: =true
+                        X: =24
+                        Y: =DataCardValue4.Y + DataCardValue4.Height
+                        ZIndex: =3
+
+                    StarVisible22 As Text:
+                        Align: ='TextCanvas.Align'.Center
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =20
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        X: =0
+                        Y: =DataCardKey24.Y
+                        ZIndex: =4
+
+                    CheckboxCanvas2 As Checkbox:
+                        BasePaletteColor: =
+                        DisplayMode: =DisplayMode.Edit
+                        FontColor: =
+                        Height: =32
+                        Label: ="Validado pelo COE?"
+                        OnCheck: =false
+                        OnUncheck: =false
+                        Width: =189
+                        X: =24
+                        Y: =15
+                        ZIndex: =5
 
                 atsd_descr_obj_trab_DataCard3 As typedDataCard.fluentV9TextualMultiLineEditCard:
                     BorderStyle: =BorderStyle.Solid

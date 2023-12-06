@@ -54,6 +54,7 @@
       "gps_tel_signatario": "tel_signatario",
       "gps_testing_column": "testing_column",
       "gps_tot_atv_cliente": "tot_atv_cliente",
+      "gps_validado_coe": "validado_COE",
       "importsequencenumber": "Import Sequence Number",
       "modifiedby": "Modified By",
       "modifiedon": "Modified On",
@@ -142,6 +143,26 @@
     },
     "OptionSetTypeKey": "StatusType",
     "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Atestados",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "CHOICE_SIM_NAO",
+    "Name": "gps_choice_sim_nao",
+    "OptionSetInfoNameMapping": {
+      "807940000": "SIM",
+      "807940001": "NAO"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "gps_validado_coe",
+        "OptionSetReferenceEntityName": "Atestados"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "gps_validado_coe",
     "RelatedEntityName": "Atestados",
     "Type": "OptionSetInfo"
   }
