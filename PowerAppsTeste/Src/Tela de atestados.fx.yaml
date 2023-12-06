@@ -216,6 +216,7 @@
             ctnResultadosPesquisarAtestados As groupContainer.horizontalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 BorderColor: =RGBA(230, 230, 230, 1)
+                DropShadow: =DropShadow.None
                 Fill: =gblTema.WhiteColor
                 LayoutAlignItems: =LayoutAlignItems.Center
                 LayoutDirection: =LayoutDirection.Vertical
@@ -226,18 +227,6 @@
                 PaddingRight: =12
                 Visible: =locMostrarContainerPesquisaAtestados
                 ZIndex: =2
-
-                ComponentSearchTextInput_2 As ComponentSearchTextInput:
-                    FillColorTheme: =gblTema.WhiteColor
-                    Height: =65
-                    HintText: ="Pesquisar atestados..."
-                    IconColor: =gblTema.DarkGrayColor
-                    LayoutMinHeight: =640
-                    LayoutMinWidth: =640
-                    ParentHeight: =Parent.Height * 0.1
-                    ParentWidth: =Parent.Width
-                    X: =542
-                    Y: =134
 
                 ctnLabelResultados As groupContainer.manualLayoutContainer:
                     DropShadow: =DropShadow.None
@@ -287,6 +276,7 @@
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedColor: =RGBA(16, 110, 190, 1)
                         PressedFill: =RGBA(0, 0, 0, 0)
+                        Visible: =false
                         X: =Parent.Width - Self.Width - 24
                         ZIndex: =2
 
