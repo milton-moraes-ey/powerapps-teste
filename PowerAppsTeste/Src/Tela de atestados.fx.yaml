@@ -160,11 +160,15 @@
                             ResetForm(frmDadosDaEmpresaAtestante);
                             NewForm(frmDadosDaEmpresaAtestante);
                             
-                            ResetForm(frmDadosEmpresaPrestouServico);
-                            NewForm(frmDadosEmpresaPrestouServico);
+                            ResetForm(frmDadosDoObjetoDeTrabalho);
+                            NewForm(frmDadosDoObjetoDeTrabalho);
                             
                             ResetForm(frmInformacoesDoSignatario);
                             NewForm(frmInformacoesDoSignatario);
+                            
+                            ResetForm(frmDadosDaEmpresaPrestadora);
+                            NewForm(frmDadosDaEmpresaPrestadora);
+                            
                             Clear(colDescricaoAdicionada)
                             
                         PressedBorderColor: =RGBA(0, 69, 120, 1)
@@ -2420,7 +2424,7 @@
                         Font: =Font.'Segoe UI'
                         Italic: =true
                         Size: =12
-                        Text: ="Criar novo atestado - Dados da Empresa Atestante"
+                        Text: ="Criar novo atestado - Dados da Empresa prestadora do serviço"
                         X: |
                             =glrAtestados.X
                         Y: =(Parent.Height - Self.Height) / 2
@@ -2441,6 +2445,7 @@
 
                     frmDadosDaEmpresaPrestadora As form.PowerApps_CoreControls_Form:
                         DataSource: =Atestados
+                        DefaultMode: =FormMode.New
                         FillPortions: =0
                         Height: =100
                         LayoutMinHeight: =250
@@ -2467,7 +2472,7 @@
                             DataCardKey48 As Text:
                                 DisplayMode: =DisplayMode.Edit
                                 Height: =22
-                                Text: =Parent.DisplayName
+                                Text: ="Nome da empresa prestadora do serviço"
                                 Weight: ='TextCanvas.Weight'.Semibold
                                 Width: =Parent.Width - 48
                                 Wrap: =false
@@ -2529,7 +2534,7 @@
                             DataCardKey49 As Text:
                                 DisplayMode: =DisplayMode.Edit
                                 Height: =22
-                                Text: =Parent.DisplayName
+                                Text: ="CNPJ"
                                 Weight: ='TextCanvas.Weight'.Semibold
                                 Width: =Parent.Width - 48
                                 Wrap: =false
@@ -2591,7 +2596,7 @@
                             DataCardKey50 As Text:
                                 DisplayMode: =DisplayMode.Edit
                                 Height: =22
-                                Text: =Parent.DisplayName
+                                Text: ="Endereço"
                                 Weight: ='TextCanvas.Weight'.Semibold
                                 Width: =Parent.Width - 48
                                 Wrap: =false
@@ -2780,7 +2785,7 @@
                         Width: =Parent.Width * 0.99
                         ZIndex: =2
 
-                    frmDadosEmpresaPrestouServico As form.PowerApps_CoreControls_Form:
+                    frmDadosDoObjetoDeTrabalho As form.PowerApps_CoreControls_Form:
                         BorderColor: =RGBA(245, 245, 245, 1)
                         DataSource: =Atestados
                         DefaultMode: =FormMode.New
@@ -2874,6 +2879,87 @@
                                 X: =0
                                 Y: =DataCardKey11.Y
                                 ZIndex: =4
+
+                        atsd_data_inicio_DataCard1 As typedDataCard.fluentV9DateTimeEditCard:
+                            BorderStyle: =BorderStyle.Solid
+                            DataField: ="gps_atsd_data_inicio"
+                            Default: =ThisItem.atsd_data_inicio
+                            DisplayMode: =Parent.DisplayMode
+                            DisplayName: =DataSourceInfo([@Atestados],DataSourceInfo.DisplayName,"gps_atsd_data_inicio")
+                            Fill: =RGBA(0, 0, 0, 0)
+                            Height: =70
+                            Required: =true
+                            Update: =If(Not IsBlank(dtvDataInicio.SelectedDate), Date(Year(dtvDataInicio.SelectedDate), Month(dtvDataInicio.SelectedDate), Day(dtvDataInicio.SelectedDate)))
+                            Width: =653
+                            X: =1
+                            Y: =0
+                            ZIndex: =1
+
+                            DataCardKey15 As Text:
+                                DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
+                                Height: =22
+                                Text: ="Data de início"
+                                Weight: ='TextCanvas.Weight'.Semibold
+                                Width: =Parent.Width - 48
+                                Wrap: =false
+                                X: =24
+                                Y: =10
+                                ZIndex: =1
+
+                            "dtvDataInicio As 'Date picker'":
+                                AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                                BasePaletteColor: =
+                                DisplayMode: =Parent.DisplayMode
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
+                                FontWeight: =""
+                                Height: =32
+                                SelectedDate: =Parent.Default
+                                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                                Width: =Parent.Width - 48
+                                X: =24
+                                Y: =DataCardKey15.Y + DataCardKey15.Height + 4
+                                ZIndex: =2
+
+                            ErrorMessage15 As Text:
+                                DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
+                                Height: =30
+                                Text: =Parent.Error
+                                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                                Width: =Parent.Width - 48
+                                Wrap: =true
+                                X: =24
+                                Y: =dtvDataInicio.Y + dtvDataInicio.Height
+                                ZIndex: =6
+
+                            StarVisible15 As Text:
+                                Align: ='TextCanvas.Align'.Center
+                                DisplayMode: =DisplayMode.Edit
+                                Font: =""
+                                FontColor: =gblTema.RedWarningColor
+                                FontItalic: =false
+                                FontStrikethrough: =false
+                                FontUnderline: =false
+                                Height: =20
+                                Text: ="*"
+                                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                Width: =30
+                                X: =0
+                                Y: =DataCardKey15.Y
+                                ZIndex: =7
 
                         atsd_data_fim_DataCard1 As typedDataCard.fluentV9DateTimeEditCard:
                             BorderStyle: =BorderStyle.Solid
@@ -3147,87 +3233,6 @@
                                 Y: =(Parent.Height - Self.Height) / 2
                                 ZIndex: =5
 
-                        atsd_data_inicio_DataCard1 As typedDataCard.fluentV9DateTimeEditCard:
-                            BorderStyle: =BorderStyle.Solid
-                            DataField: ="gps_atsd_data_inicio"
-                            Default: =ThisItem.atsd_data_inicio
-                            DisplayMode: =Parent.DisplayMode
-                            DisplayName: =DataSourceInfo([@Atestados],DataSourceInfo.DisplayName,"gps_atsd_data_inicio")
-                            Fill: =RGBA(0, 0, 0, 0)
-                            Height: =70
-                            Required: =true
-                            Update: =If(Not IsBlank(dtvDataInicio.SelectedDate), Date(Year(dtvDataInicio.SelectedDate), Month(dtvDataInicio.SelectedDate), Day(dtvDataInicio.SelectedDate)))
-                            Width: =653
-                            X: =1
-                            Y: =0
-                            ZIndex: =1
-
-                            DataCardKey15 As Text:
-                                DisplayMode: =DisplayMode.Edit
-                                Font: =""
-                                FontColor: =
-                                FontItalic: =false
-                                FontStrikethrough: =false
-                                FontUnderline: =false
-                                Height: =22
-                                Text: ="Data de início"
-                                Weight: ='TextCanvas.Weight'.Semibold
-                                Width: =Parent.Width - 48
-                                Wrap: =false
-                                X: =24
-                                Y: =10
-                                ZIndex: =1
-
-                            "dtvDataInicio As 'Date picker'":
-                                AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
-                                BasePaletteColor: =
-                                DisplayMode: =Parent.DisplayMode
-                                Font: =""
-                                FontColor: =
-                                FontItalic: =false
-                                FontStrikethrough: =false
-                                FontUnderline: =false
-                                FontWeight: =""
-                                Height: =32
-                                SelectedDate: =Parent.Default
-                                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                                Width: =Parent.Width - 48
-                                X: =24
-                                Y: =DataCardKey15.Y + DataCardKey15.Height + 4
-                                ZIndex: =2
-
-                            ErrorMessage15 As Text:
-                                DisplayMode: =DisplayMode.Edit
-                                Font: =""
-                                FontColor: =
-                                FontItalic: =false
-                                FontStrikethrough: =false
-                                FontUnderline: =false
-                                Height: =30
-                                Text: =Parent.Error
-                                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                                Width: =Parent.Width - 48
-                                Wrap: =true
-                                X: =24
-                                Y: =dtvDataInicio.Y + dtvDataInicio.Height
-                                ZIndex: =6
-
-                            StarVisible15 As Text:
-                                Align: ='TextCanvas.Align'.Center
-                                DisplayMode: =DisplayMode.Edit
-                                Font: =""
-                                FontColor: =gblTema.RedWarningColor
-                                FontItalic: =false
-                                FontStrikethrough: =false
-                                FontUnderline: =false
-                                Height: =20
-                                Text: ="*"
-                                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                                Width: =30
-                                X: =0
-                                Y: =DataCardKey15.Y
-                                ZIndex: =7
-
                         atsd_qtd_hrs_DataCard1 As typedDataCard.fluentV9NumberEditCard:
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="gps_atsd_qtd_hrs"
@@ -3490,7 +3495,7 @@
                             Height: =215
                             Required: =true
                             Update: =dcvDescricaoDoObjetoDoTrabalho.Value
-                            Width: =1306
+                            Width: =653
                             X: =0
                             Y: =4
                             ZIndex: =1
@@ -5599,7 +5604,7 @@
                                 DisabledFill: =RGBA(242, 242, 241, 0)
                                 DisplayMode: |-
                                     =If(
-                                        frmDadosDaEmpresaAtestante.Valid && frmDadosEmpresaPrestouServico.Valid,
+                                        frmDadosDaEmpresaAtestante.Valid && frmDadosDoObjetoDeTrabalho.Valid,
                                         DisplayMode.Edit,
                                         DisplayMode.Disabled
                                     )
