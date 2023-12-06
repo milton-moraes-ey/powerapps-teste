@@ -17737,7 +17737,7 @@
       "MetaDataIDKey": "",
       "Name": "ctnEditarMembrosDaEquipe",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -21312,7 +21312,7 @@
       "MetaDataIDKey": "",
       "Name": "ctnLabel_2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 6,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -21618,7 +21618,7 @@
       "MetaDataIDKey": "",
       "Name": "ctnLabel_3",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 5,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -23374,7 +23374,7 @@
       "MetaDataIDKey": "",
       "Name": "ctnMembrosAdicionados_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -57588,7 +57588,7 @@
       "MetaDataIDKey": "",
       "Name": "frmDadosDoObjeto",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 8,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -57982,7 +57982,7 @@
       "MetaDataIDKey": "",
       "Name": "frmEditarAtestadoDadosDaEmpresaAtestante",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 7,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -58549,7 +58549,7 @@
       "MetaDataIDKey": "",
       "Name": "frmEditarSignatarioDoAtestado",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

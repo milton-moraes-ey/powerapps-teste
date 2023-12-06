@@ -14,6 +14,7 @@
       "createdon": "Created On",
       "createdonbehalfby": "Created By (Delegate)",
       "gps_atestadoprofissional_prof_id": "AtestadoProfissionais",
+      "gps_email": "email",
       "gps_formacao_academica": "formacao_academica",
       "gps_gpn": "gpn",
       "gps_historico_capacitacoes": "historico_capacitacoes",

@@ -16,6 +16,7 @@
       "gps_astd_data_assintr": "astd_data_assintr",
       "gps_astd_file_created": "astd_file_created",
       "gps_astd_file_uploaded": "astd_file_uploaded",
+      "gps_astd_vlr_contr": "astd_vlr_contr",
       "gps_atestado_AsyncOperations": "System Jobs",
       "gps_atestado_BulkDeleteFailures": "Bulk Delete Failures",
       "gps_atestado_DuplicateBaseRecord": "Duplicate Records (gps_atestado_DuplicateBaseRecord)",

@@ -1,2 +1,106 @@
 "'Tela de profissionais' As screen":
 
+    Container4 As groupContainer.verticalAutoLayoutContainer:
+        Height: =768
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        ZIndex: =2
+
+        PowerAppsOneGrid1 As Table.pcfdataset:
+            AlignInContainer: =AlignInContainer.Stretch
+            DisplayMode: =DisplayMode.Edit
+            Height: =If(Self.Y + 500 > Parent.Height, Parent.Height - Self.Y, 500)
+            Items: =colAtestados
+            LayoutMinHeight: =If(Self.Y + 500 > Parent.Height, Parent.Height - Self.Y, 500)
+            LayoutMinWidth: =If(Self.X + 800 > Parent.Width, Parent.Width - Self.X, 800)
+            onCellValueChange: =false
+            onFilter: =false
+            onNavigate: =false
+            onRowSelect: =false
+            onSave: =false
+            Width: =If(Self.X + 800 > Parent.Width, Parent.Width - Self.X, 800)
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            gps_astd_file_created1 As pcfDataField.textualColumn:
+                FieldDisplayName: ="gps_astd_file_created"
+                FieldName: ="gps_astd_file_created"
+                FieldType: ="F"
+                FieldVariantName: ="textualColumn"
+                Order: =1
+                ZIndex: =2
+
+            gps_astd_vlr_contr1 As pcfDataField.textualColumn:
+                FieldDisplayName: ="gps_astd_vlr_contr"
+                FieldName: ="gps_astd_vlr_contr"
+                FieldType: ="n"
+                FieldVariantName: ="textualColumn"
+                Order: =2
+                ZIndex: =3
+
+            gps_astd_file_uploaded2 As pcfDataField.textualColumn:
+                FieldDisplayName: ="gps_astd_file_uploaded"
+                FieldName: ="gps_astd_file_uploaded"
+                FieldType: ="F"
+                FieldVariantName: ="textualColumn"
+                Order: =3
+                ZIndex: =4
+
+            gps_atestadoid1 As pcfDataField.textualColumn:
+                FieldDisplayName: ="gps_atestadoid"
+                FieldName: ="gps_atestadoid"
+                FieldType: ="g"
+                FieldVariantName: ="textualColumn"
+                Order: =4
+                ZIndex: =5
+
+            gps_ativ_econ_cliente2 As pcfDataField.textualColumn:
+                FieldDisplayName: ="gps_ativ_econ_cliente"
+                FieldName: ="gps_ativ_econ_cliente"
+                FieldType: ="s"
+                FieldVariantName: ="textualColumn"
+                Order: =5
+                ZIndex: =6
+
+            gps_atsd_data_fim2 As pcfDataField.textualColumn:
+                FieldDisplayName: ="gps_atsd_data_fim"
+                FieldName: ="gps_atsd_data_fim"
+                FieldType: ="d"
+                FieldVariantName: ="textualColumn"
+                Order: =6
+                ZIndex: =7
+
+            gps_atsd_data_inicio2 As pcfDataField.textualColumn:
+                FieldDisplayName: ="gps_atsd_data_inicio"
+                FieldName: ="gps_atsd_data_inicio"
+                FieldType: ="d"
+                FieldVariantName: ="textualColumn"
+                Order: =7
+                ZIndex: =8
+
+            gps_atsd_descr_obj_trab2 As pcfDataField.textualColumn:
+                FieldDisplayName: ="gps_atsd_descr_obj_trab"
+                FieldName: ="gps_atsd_descr_obj_trab"
+                FieldType: ="s"
+                FieldVariantName: ="textualColumn"
+                Order: =8
+                ZIndex: =9
+
+            gps_atsd_local2 As pcfDataField.textualColumn:
+                FieldDisplayName: ="gps_atsd_local"
+                FieldName: ="gps_atsd_local"
+                FieldType: ="s"
+                FieldVariantName: ="textualColumn"
+                Order: =9
+                ZIndex: =10
+
+            gps_atsd_obj_trab2 As pcfDataField.textualColumn:
+                FieldDisplayName: ="gps_atsd_obj_trab"
+                FieldName: ="gps_atsd_obj_trab"
+                FieldType: ="s"
+                FieldVariantName: ="textualColumn"
+                Order: =10
+                ZIndex: =11
+
