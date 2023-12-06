@@ -6461,6 +6461,17 @@
                     Y: =54
                     ZIndex: =3
 
+                Label6 As label:
+                    Text: |-
+                        =LookUp(
+                            Atestados,
+                            id = locDadosDoAtestado.id,
+                            validado_COE
+                        )
+                    X: =410
+                    Y: =15
+                    ZIndex: =4
+
             ctnLabel_2 As groupContainer.manualLayoutContainer:
                 DropShadow: =DropShadow.None
                 FillPortions: =0
@@ -8745,6 +8756,7 @@
                         FontUnderline: =false
                         Height: =22
                         Text: ="Registrado no conselho?"
+                        Visible: =false
                         Weight: ='TextCanvas.Weight'.Semibold
                         Width: =Parent.Width - 48
                         Wrap: =false
@@ -8754,7 +8766,8 @@
 
                     dcvEditarRegistrado As Combobox.pcfdataset:
                         AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
-                        DefaultSelectedItems: =
+                        DefaultSelectedItems: |-
+                            =If(ckbEditarRegistradoNoConselho.Checked, {Value: 'atsd_registrado (Atestados)'.Yes}, {Value: 'atsd_registrado (Atestados)'.No})
                         DisplayMode: =Parent.DisplayMode
                         Font: =""
                         FontItalic: =false
@@ -8764,6 +8777,7 @@
                         Height: =32
                         Items: =Choices('atsd_registrado (Atestados)')
                         ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                        Visible: =false
                         Width: =Parent.Width - 48
                         X: =24
                         Y: =DataCardKey70.Y + DataCardKey70.Height + 4
@@ -8801,6 +8815,29 @@
                         Y: =DataCardKey70.Y
                         ZIndex: =4
 
+                    ckbEditarRegistradoNoConselho As Checkbox:
+                        BasePaletteColor: =
+                        Checked: |-
+                            =If(
+                                LookUp(
+                                    Atestados,
+                                    id = locDadosDoAtestado.id,
+                                    atsd_registrado
+                                ),
+                                true,
+                                false
+                            )
+                        DisplayMode: =DisplayMode.Edit
+                        FontColor: =
+                        Height: =32
+                        Label: ="Registrado no conselho?"
+                        OnCheck: =false
+                        OnUncheck: =false
+                        Width: =231
+                        X: =24
+                        Y: =(Parent.Height - Self.Height) / 2
+                        ZIndex: =5
+
                 validado_COE_DataCard4 As typedDataCard.fluentV9ComboBoxOptionSetSingleEditCard:
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="gps_validado_coe"
@@ -8831,7 +8868,7 @@
                     dcvEditarValidadoPeloCoe As Combobox.pcfdataset:
                         AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
                         DefaultSelectedItems: |-
-                            =If(CheckboxCanvas2.Checked, {Value: "SIM"}, {Value: "NAO"})
+                            =If(ckbEditarValidadoPeloCoe.Checked, {Value: CHOICE_SIM_NAO.SIM}, {Value: CHOICE_SIM_NAO.NAO})
                         DisplayMode: =Parent.DisplayMode
                         Height: =32
                         Items: =Choices(CHOICE_SIM_NAO)
@@ -8872,8 +8909,18 @@
                         Y: =DataCardKey24.Y
                         ZIndex: =4
 
-                    CheckboxCanvas2 As Checkbox:
+                    ckbEditarValidadoPeloCoe As Checkbox:
                         BasePaletteColor: =
+                        Checked: |-
+                            =If(
+                                LookUp(
+                                    Atestados,
+                                    id = locDadosDoAtestado.id,
+                                    validado_COE
+                                ) in "SIM",
+                                true,
+                                false
+                            )
                         DisplayMode: =DisplayMode.Edit
                         FontColor: =
                         Height: =32
@@ -8882,7 +8929,7 @@
                         OnUncheck: =false
                         Width: =189
                         X: =24
-                        Y: =15
+                        Y: =(Parent.Height - Self.Height) / 2
                         ZIndex: =5
 
                 atsd_descr_obj_trab_DataCard3 As typedDataCard.fluentV9TextualMultiLineEditCard:

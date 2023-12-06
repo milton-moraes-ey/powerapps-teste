@@ -2744,19 +2744,49 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnPopUpEditarAtestado.ctnFrmEditarAtestado.frmDadosDoObjeto.validado_COE_DataCard4.CheckboxCanvas2.AccessibleLabel"
+                  "fullyQualifiedName": "'Tela de atestados'.ctnPopUpEditarAtestado.ctnFrmEditarAtestado.frmDadosDoObjeto.validado_COE_DataCard4.ckbEditarValidadoPeloCoe.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Tela de atestados'.ctnPopUpEditarAtestado.ctnFrmEditarAtestado.frmDadosDoObjeto.validado_COE_DataCard4.CheckboxCanvas2.AccessibleLabel",
+                  "fullyQualifiedName": "'Tela de atestados'.ctnPopUpEditarAtestado.ctnFrmEditarAtestado.frmDadosDoObjeto.validado_COE_DataCard4.ckbEditarValidadoPeloCoe.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Tela de atestados",
-                "type": "'Tela de atestados'.ctnPopUpEditarAtestado.ctnFrmEditarAtestado.frmDadosDoObjeto.validado_COE_DataCard4.CheckboxCanvas2"
+                "type": "'Tela de atestados'.ctnPopUpEditarAtestado.ctnFrmEditarAtestado.frmDadosDoObjeto.validado_COE_DataCard4.ckbEditarValidadoPeloCoe"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Tela de atestados'.ctnPopUpEditarAtestado.ctnFrmEditarAtestado.frmDadosDoObjeto.atsd_registrado_DataCard3.ckbEditarRegistradoNoConselho.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Tela de atestados'.ctnPopUpEditarAtestado.ctnFrmEditarAtestado.frmDadosDoObjeto.atsd_registrado_DataCard3.ckbEditarRegistradoNoConselho.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Tela de atestados",
+                "type": "'Tela de atestados'.ctnPopUpEditarAtestado.ctnFrmEditarAtestado.frmDadosDoObjeto.atsd_registrado_DataCard3.ckbEditarRegistradoNoConselho"
               }
             }
           ],
@@ -3163,7 +3193,7 @@
                 ],
                 "level": "Medium",
                 "primaryCategory": "performance",
-                "whyFix": "Each control consumes resources, and an app may become slow or unresponsive if a screen has too many controls. The estimated complexity of \"Tela de atestados\" is 753, which exceeds the maximum threshold recommended (300)."
+                "whyFix": "Each control consumes resources, and an app may become slow or unresponsive if a screen has too many controls. The estimated complexity of \"Tela de atestados\" is 755, which exceeds the maximum threshold recommended (300)."
               }
             }
           ],
